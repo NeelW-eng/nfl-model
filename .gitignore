@@ -1,0 +1,5 @@
+data/*.parquet
+data/*.pkl
+data/*.tmp
+data/games.csv
+__pycache__/

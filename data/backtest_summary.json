@@ -1,0 +1,122 @@
+{
+ "games": [
+  {
+   "market": "Spread",
+   "ev_bucket": "-900% to +0%",
+   "bets": 771,
+   "win_rate": 0.481,
+   "roi": -0.086
+  },
+  {
+   "market": "Spread",
+   "ev_bucket": "+0% to +3%",
+   "bets": 234,
+   "win_rate": 0.5,
+   "roi": -0.018
+  },
+  {
+   "market": "Spread",
+   "ev_bucket": "+3% to +6%",
+   "bets": 78,
+   "win_rate": 0.455,
+   "roi": -0.102
+  },
+  {
+   "market": "Spread",
+   "ev_bucket": ">+6%",
+   "bets": 56,
+   "win_rate": 0.407,
+   "roi": -0.177
+  },
+  {
+   "market": "Total",
+   "ev_bucket": "-900% to +0%",
+   "bets": 567,
+   "win_rate": 0.496,
+   "roi": -0.054
+  },
+  {
+   "market": "Total",
+   "ev_bucket": "+0% to +3%",
+   "bets": 274,
+   "win_rate": 0.535,
+   "roi": 0.029
+  },
+  {
+   "market": "Total",
+   "ev_bucket": "+3% to +6%",
+   "bets": 131,
+   "win_rate": 0.574,
+   "roi": 0.103
+  },
+  {
+   "market": "Total",
+   "ev_bucket": ">+6%",
+   "bets": 167,
+   "win_rate": 0.47,
+   "roi": -0.087
+  },
+  {
+   "market": "Moneyline",
+   "ev_bucket": "-900% to +0%",
+   "bets": 426,
+   "win_rate": 0.466,
+   "roi": -0.124
+  },
+  {
+   "market": "Moneyline",
+   "ev_bucket": "+0% to +3%",
+   "bets": 219,
+   "win_rate": 0.388,
+   "roi": -0.084
+  },
+  {
+   "market": "Moneyline",
+   "ev_bucket": "+3% to +6%",
+   "bets": 153,
+   "win_rate": 0.283,
+   "roi": -0.241
+  },
+  {
+   "market": "Moneyline",
+   "ev_bucket": ">+6%",
+   "bets": 341,
+   "win_rate": 0.256,
+   "roi": -0.068
+  }
+ ],
+ "n_games": 1139,
+ "seasons": "2022-2025",
+ "mae": {
+  "margin_model": 10.09,
+  "margin_market": 9.54
+ },
+ "props": [
+  {
+   "stat": "passing_yards",
+   "new": 67.29,
+   "old": 70.22
+  },
+  {
+   "stat": "passing_tds",
+   "new": 0.885,
+   "old": 0.911
+  },
+  {
+   "stat": "rushing_yards",
+   "new": 9.1,
+   "old": 9.66
+  },
+  {
+   "stat": "receiving_yards",
+   "new": 16.45,
+   "old": 17.38
+  },
+  {
+   "stat": "receptions",
+   "new": 1.323,
+   "old": 1.341
+  }
+ ],
+ "props_note": "2024-2025 player-games, each season predicted from earlier seasons only. Average miss; lower is better."
+}

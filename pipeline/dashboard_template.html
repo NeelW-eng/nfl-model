@@ -1,0 +1,262 @@
+<title>Sunday Edge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F3F5F1;--surface:#FFFFFF;--ink:#101A14;--muted:#5A6A61;--line:#D8DED7;--soft:#E9EEE8;
+  --accent:#0B6E4F;--accent-ink:#FFFFFF;--amber:#A86F00;--amber-bg:#FBF1DC;--bad:#B3261E;--good:#0B6E4F;
+  --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;--bg:#0D1310;--surface:#141C18;--ink:#E6ECE8;--muted:#92A299;--line:#26312B;--soft:#1B2520;
+  --accent:#3DBB85;--accent-ink:#06130D;--amber:#E6B04A;--amber-bg:#2A2212;--bad:#F08A80;--good:#3DBB85;}}
+:root[data-theme="dark"]{
+  color-scheme:dark;--bg:#0D1310;--surface:#141C18;--ink:#E6ECE8;--muted:#92A299;--line:#26312B;--soft:#1B2520;
+  --accent:#3DBB85;--accent-ink:#06130D;--amber:#E6B04A;--amber-bg:#2A2212;--bad:#F08A80;--good:#3DBB85;}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;padding-block:28px 64px}
+.wrap{max-width:1080px;margin:0 auto;display:grid;gap:44px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.05}
+h1{font-size:clamp(40px,7vw,64px);font-weight:800;letter-spacing:.01em;text-transform:uppercase}
+h2{font-size:28px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+header{display:grid;gap:14px;border-bottom:3px solid var(--ink);padding-bottom:22px;position:relative}
+header .yard{position:absolute;right:0;bottom:10px;font:800 110px/1 var(--display);color:var(--soft);z-index:0;user-select:none}
+header>*:not(.yard){position:relative;z-index:1}
+.status{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;font:500 12px/1 var(--mono);padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface);white-space:nowrap}
+.pill.warn{background:var(--amber-bg);border-color:transparent;color:var(--amber)}
+.pill.ok{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+section{display:grid;gap:16px}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th{font:500 11px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:13px}
+.units{display:inline-block;min-width:44px;text-align:center;font:700 16px/1 var(--display);padding:5px 8px;border-radius:4px;background:var(--amber-bg);color:var(--amber)}
+.units.u2{background:var(--amber);color:var(--surface)}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+.diff{font-family:var(--mono);font-size:12px;padding:2px 6px;border-radius:3px;background:var(--soft)}
+.empty{border:1.5px dashed var(--line);border-radius:6px;padding:22px;display:grid;gap:12px;background:var(--surface)}
+.empty ol{margin:0;padding-left:20px;display:grid;gap:6px}
+code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:3px;word-break:break-all}
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tabs button{font:600 13px var(--body);padding:7px 12px;border-radius:4px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:18px;display:grid;gap:10px;align-content:start}
+.card h3{font-size:20px;text-transform:uppercase}
+.ladder{display:grid;gap:6px;font-size:14px}
+.ladder div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dotted var(--line);padding-bottom:5px}
+.bar{height:8px;border-radius:2px;background:var(--accent)}
+.flag{font:500 11px var(--mono);color:var(--bad);margin-left:6px}
+.note{font-size:13px;color:var(--muted);max-width:80ch}
+@media (max-width:520px){header .yard{font-size:70px}}
+</style>
+
+<style>
+.picks{display:grid;gap:12px}
+.pick{display:grid;grid-template-columns:auto 1fr auto;gap:6px 16px;align-items:start;border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:14px 16px}
+.pick .main{display:grid;gap:4px;min-width:0}
+.pick .title{font-weight:600;font-size:16px}
+.pick .meta{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px;font-variant-numeric:tabular-nums}
+.pick .meta b{color:var(--ink);font-weight:600}
+.support{display:grid;justify-items:end;gap:6px;text-align:right}
+.meter{display:flex;gap:3px}
+.meter i{width:9px;height:14px;border-radius:2px;background:var(--line)}
+.meter i.on{background:var(--accent)}
+.support small{font:500 11px var(--mono);color:var(--muted);letter-spacing:.04em}
+.chips{grid-column:2 / -1;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;line-height:1.3;padding:4px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted);background:var(--bg)}
+.chip.ok{border-color:transparent;background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--ink)}
+.chip.ok::before{content:"✓ ";color:var(--accent);font-weight:700}
+.tag{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rec{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline}
+.rec .big{font:800 44px/1 var(--display)}
+.rec .lbl{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.range{font-family:var(--mono);font-size:12px;color:var(--muted)}
+@media (max-width:620px){.pick{grid-template-columns:auto 1fr}.support{grid-column:1 / -1;justify-items:start;text-align:left;grid-row:3}.chips{grid-column:1 / -1}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="yard" aria-hidden="true" id="yard">W</span>
+    <span class="eyebrow">NFL · FanDuel vs the market · updates itself</span>
+    <h1>Sunday Edge</h1>
+    <div class="status" id="status"></div>
+  </header>
+
+  <section>
+    <div class="sec-head"><h2>Best supported plays</h2><span class="eyebrow" id="plays-count"></span></div>
+    <p class="note">Each play clears a 2% edge at FanDuel's price and has at least three independent signals behind it: other books' prices, the projection, role and snap trends, matchup, game script, and Next Gen Stats or PFR efficiency. Sorted by how many signals agree, then by edge.</p>
+    <div id="plays" class="picks"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Results so far</h2><span class="eyebrow">Every published play, graded after the game</span></div>
+    <div id="record"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Player projections</h2><span class="eyebrow">Next Gen Stats · PFR · snaps · play-by-play</span></div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="scroll"><table id="proj"></table></div>
+    <p class="note">Projection is the median outcome. The range is the middle half of outcomes (25th to 75th percentile). Opp factor is how much the opponent allows to this position versus league average. Players listed Out on the latest report are flagged.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Game board</h2><span class="eyebrow">Home team spread · negative = home favored</span></div>
+    <p class="note">Market is the consensus line. Model uses EPA, early-down EPA, explosive-play rate, PFR pressure rates, CPOE, pass rate over expected, rest and weather. It gets about 6% weight against the market on spreads, so a gap here is a lead, not a bet.</p>
+    <div class="scroll"><table id="board"></table></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>How the models tested</h2><span class="eyebrow" id="bt-label"></span></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Game model alone vs closing lines</h3>
+        <p class="note">Each season predicted using only earlier seasons. Rows group bets by how much edge the model believed it had.</p>
+        <div class="scroll"><table id="bt"></table></div>
+        <p class="note">Bigger claimed edges lost more. Public stats don't beat closing NFL lines on their own, so game plays require FanDuel to be off the other books, with the model as one supporting signal.</p>
+      </div>
+      <div class="card">
+        <h3>Prop projection accuracy</h3>
+        <p class="note" id="pnote"></p>
+        <div class="scroll"><table id="pbt"></table></div>
+        <p class="note">Probabilities are calibrated: when the model says 60%, it hit about 58–60% in testing. Historical prop lines aren't public, so prop betting results are tracked live above.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How units are sized</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Edge sets the base</h3>
+        <div class="ladder">
+          <div><span>Expected value 2–4%</span><b>0.5u</b></div>
+          <div><span>4–6%</span><b>1u</b></div>
+          <div><span>6–9%</span><b>1.5u</b></div>
+          <div><span>9%+</span><b>2u</b></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Certainty adjusts it</h3>
+        <div class="ladder">
+          <div><span>5 or more signals agree</span><b>+0.5u</b></div>
+          <div><span>5+ other books priced it</span><b>+0.5u</b></div>
+          <div><span>Win chance under 35%</span><b>max 1u</b></div>
+          <div><span>Player listed Questionable</span><b>max 0.5u</b></div>
+          <div><span>Any single play</span><b>max 3u</b></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Keep 1 unit at 1–2% of your bankroll. Even a real 4% edge loses about 45% of the time, so judge results over hundreds of bets. Check injury news before kickoff; the page refreshes Thursday morning and Sunday morning. If gambling stops being fun, 1-800-GAMBLER is free and confidential.</p>
+  </section>
+</div>
+
+<script>
+const D = /*DATA*/null;
+const $ = id => document.getElementById(id);
+const fmtOdds = o => (o > 0 ? '+' : '') + o;
+const pct = x => (x * 100).toFixed(0) + '%';
+const pct1 = x => (x * 100).toFixed(1) + '%';
+const sgn = x => (x > 0 ? '+' : '') + x;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const when = iso => iso ? new Date(iso).toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) : '';
+$('yard').textContent = 'W' + D.week;
+
+const st = [`<span class="pill">Week ${D.week} · ${D.season}</span>`];
+st.push(D.has_odds ? `<span class="pill ok">FanDuel lines ${esc(when(D.odds_pulled))}</span>`
+                   : `<span class="pill warn">No FanDuel pull for this week yet</span>`);
+if (D.props_pulled) st.push(`<span class="pill">Props ${esc(when(D.props_pulled))}</span>`);
+st.push(`<span class="pill">Stats through ${esc(D.stats_through)}</span>`);
+st.push(`<span class="pill">Updated ${esc(when(D.generated))}</span>`);
+$('status').innerHTML = st.join('');
+
+// plays
+const plays = D.picks || [];
+if (!D.has_odds) {
+  $('plays').innerHTML = `<div class="empty"><b>Plays appear after the next scheduled FanDuel pull.</b><span class="muted">Odds are pulled Thursday and Sunday mornings. Projections and the game board below are already current.</span></div>`;
+} else if (!plays.length) {
+  $('plays').innerHTML = `<div class="empty"><b>Nothing clears the bar this week.</b><span class="muted">${D.considered} FanDuel prices checked. None had both a 2% edge and three supporting signals. Passing is a position.</span></div>`;
+} else {
+  const total = plays.reduce((s, p) => s + p.units, 0);
+  $('plays-count').textContent = `${plays.length} plays · ${total}u · from ${D.considered} prices`;
+  $('plays').innerHTML = plays.map(p => {
+    const sigs = p.signals || [];
+    const meter = sigs.map(s => `<i class="${s.ok ? 'on' : ''}"></i>`).join('');
+    const chips = sigs.slice().sort((a, b) => b.ok - a.ok).map(s => `<span class="chip ${s.ok ? 'ok' : ''}">${esc(s.txt)}</span>`).join('');
+    return `<article class="pick">
+      <span class="units ${p.units >= 2 ? 'u2' : ''}">${p.units}u</span>
+      <div class="main">
+        <span class="tag">${esc(p.market === 'Prop' ? 'Player prop' : p.market)} · ${esc(p.game)}</span>
+        <span class="title">${esc(p.pick)}${p.injury ? `<span class="flag">${esc(p.injury)}</span>` : ''}</span>
+        <div class="meta"><span>FanDuel <b>${fmtOdds(p.price)}</b></span><span>Fair <b>${fmtOdds(p.fair_odds)}</b></span><span>Win chance <b>${pct(p.p)}</b></span><span>Edge <b class="pos">+${pct1(p.ev)}</b></span></div>
+      </div>
+      <div class="support"><div class="meter" aria-label="${p.support} of ${sigs.length} signals">${meter}</div><small>${p.support} OF ${sigs.length} SIGNALS</small></div>
+      <div class="chips">${chips}</div>
+    </article>`;
+  }).join('');
+}
+
+// record
+const R = D.record;
+if (!R) {
+  $('record').innerHTML = `<div class="empty"><b>No graded plays yet.</b><span class="muted">Each published play is logged at FanDuel's price and graded after the game, win or lose.</span></div>`;
+} else {
+  const bm = Object.entries(R.by_market).map(([m, v]) => `<span class="pill">${esc(m)} · ${v.bets} bets · ${sgn(v.profit_units)}u</span>`).join('');
+  $('record').innerHTML = `<div class="card"><div class="rec">
+    <div><div class="big ${R.profit_units >= 0 ? 'pos' : 'neg'}">${sgn(R.profit_units)}u</div><div class="lbl">Profit</div></div>
+    <div><div class="big">${R.wins}-${R.losses}${R.pushes ? '-' + R.pushes : ''}</div><div class="lbl">Record</div></div>
+    <div><div class="big">${sgn((R.roi * 100).toFixed(1))}%</div><div class="lbl">Return per unit</div></div>
+    </div><div class="status">${bm}</div>
+    <div class="scroll"><table><thead><tr><th>Wk</th><th>Play</th><th class="num">Price</th><th class="num">Units</th><th>Result</th><th class="num">Units won</th></tr></thead><tbody>${
+      R.recent.slice().reverse().map(r => `<tr><td>${r.week}</td><td>${esc(r.pick)}</td><td class="num">${fmtOdds(r.price)}</td><td class="num">${r.units}</td><td class="${r.result === 'win' ? 'pos' : r.result === 'loss' ? 'neg' : 'muted'}">${esc(r.result)}</td><td class="num">${sgn(Number(r.profit_units).toFixed(2))}</td></tr>`).join('')
+    }</tbody></table></div></div>`;
+}
+
+// projections
+const LAB = {passing_yards:'Pass yds', passing_tds:'Pass TDs', rushing_yards:'Rush yds', receiving_yards:'Rec yds', receptions:'Receptions', anytime_td:'Anytime TD'};
+const keys = Object.keys(LAB).filter(k => (D.projections || {})[k]);
+let cur = keys[0];
+function drawProj() {
+  $('tabs').innerHTML = keys.map(k => `<button role="tab" aria-selected="${k === cur}" data-k="${k}">${LAB[k]}</button>`).join('');
+  const rows = D.projections[cur] || [];
+  const td = cur === 'anytime_td', yd = ['passing_yards', 'rushing_yards', 'receiving_yards'].includes(cur);
+  const max = Math.max(...rows.map(r => td ? r.p_td : (r.hi || r.proj)));
+  $('proj').innerHTML = `<thead><tr><th>Player</th><th>Matchup</th><th class="num">${td ? 'TD chance' : 'Projection'}</th>${yd ? '<th class="num">Middle 50%</th>' : ''}<th style="width:28%"></th><th class="num">Opp factor</th></tr></thead><tbody>${
+    rows.map(r => {
+      const v = td ? r.p_td : r.proj;
+      return `<tr><td><b>${esc(r.player)}</b> <span class="muted">${esc(r.pos)}</span>${r.injury ? `<span class="flag">${esc(r.injury)}</span>` : ''}</td>
+      <td class="muted">${esc(r.team)} vs ${esc(r.opp)}</td><td class="num">${td ? pct(v) : v}</td>
+      ${yd ? `<td class="num range">${r.lo}–${r.hi}</td>` : ''}
+      <td><div class="bar" style="width:${Math.max(4, v / max * 100).toFixed(0)}%"></div></td>
+      <td class="num ${r.matchup > 1.05 ? 'pos' : r.matchup < .95 ? 'neg' : ''}">${Number(r.matchup).toFixed(2)}</td></tr>`}).join('')}</tbody>`;
+}
+$('tabs').addEventListener('click', e => { const k = e.target.dataset?.k; if (k) { cur = k; drawProj(); } });
+if (cur) drawProj();
+
+// board
+$('board').innerHTML = `<thead><tr><th>Game</th><th>Kickoff</th><th class="num">Market spread</th><th class="num">Model spread</th><th class="num">Gap</th><th class="num">Market total</th><th class="num">Model total</th><th class="num">Gap</th><th class="num">Home win</th></tr></thead><tbody>${
+  D.fair_lines.map(g => {
+    const ds = +(g.model_home_spread - g.market_home_spread).toFixed(1), dt = +(g.model_total - g.market_total).toFixed(1);
+    const k = new Date(g.kickoff.replace(' ', 'T'));
+    return `<tr><td><b>${esc(g.game)}</b></td><td class="muted">${k.toLocaleDateString([], {weekday:'short'})} ${esc(g.kickoff.slice(11))} ET</td>
+    <td class="num">${sgn(g.market_home_spread)}</td><td class="num">${sgn(g.model_home_spread)}</td><td class="num"><span class="diff">${sgn(ds)}</span></td>
+    <td class="num">${g.market_total}</td><td class="num">${g.model_total}</td><td class="num"><span class="diff">${sgn(dt)}</span></td>
+    <td class="num">${pct(g.home_win_p)}</td></tr>`}).join('')}</tbody>`;
+
+// backtests
+const B = D.backtest;
+$('bt-label').textContent = B.n_games + ' games · ' + B.seasons;
+$('bt').innerHTML = `<thead><tr><th>Market</th><th>Model's edge</th><th class="num">Bets</th><th class="num">Win %</th><th class="num">ROI</th></tr></thead><tbody>${
+  B.games.map(r => `<tr><td>${r.market}</td><td class="muted">${r.ev_bucket.replace('-900% to +0%', 'None (below 0%)')}</td><td class="num">${r.bets}</td><td class="num">${pct1(r.win_rate)}</td><td class="num ${r.roi > 0 ? 'pos' : 'neg'}">${sgn((r.roi * 100).toFixed(1))}%</td></tr>`).join('')}</tbody>`;
+$('pnote').textContent = B.props_note || '';
+$('pbt').innerHTML = `<thead><tr><th>Stat</th><th class="num">Advanced model</th><th class="num">Simple average</th><th class="num">Better by</th></tr></thead><tbody>${
+  (B.props || []).map(r => `<tr><td>${LAB[r.stat]}</td><td class="num"><b>${r.new}</b></td><td class="num muted">${r.old}</td><td class="num pos">${((1 - r.new / r.old) * 100).toFixed(1)}%</td></tr>`).join('')}</tbody>`;
+</script>
