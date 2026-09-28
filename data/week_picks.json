@@ -1,12 +1,12 @@
 {
  "season": 2026,
  "week": 4,
- "generated": "2026-09-28T06:36+00:00",
+ "generated": "2026-09-28T06:37+00:00",
  "has_odds": true,
  "picks": [],
  "considered": 96,
  "locked": [],
- "odds_pulled": "2026-09-28T06:23:30.785573+00:00",
+ "odds_pulled": "2026-09-28T06:37:33.403207+00:00",
  "props_pulled": null,
  "record": null,
  "fair_lines": [
@@ -148,11 +148,11 @@
   {
    "game": "ATL @ NO",
    "kickoff": "2026-10-05 20:15",
-   "market_home_spread": -3.0,
+   "market_home_spread": -2.5,
    "model_home_spread": -1.0,
    "market_total": 48.5,
    "model_total": 44.6,
-   "home_win_p": 0.594
+   "home_win_p": 0.578
   }
  ],
  "projections": {
@@ -213,6 +213,17 @@
     "hi": 306.3
    },
    {
+    "player": "Tyler Shough",
+    "team": "NO",
+    "opp": "ATL",
+    "pos": "QB",
+    "proj": 255.6,
+    "matchup": 1.09,
+    "injury": null,
+    "lo": 186.1,
+    "hi": 304.6
+   },
+   {
     "player": "Patrick Mahomes",
     "team": "KC",
     "opp": "LV",
@@ -221,17 +232,6 @@
     "matchup": 0.95,
     "injury": null,
     "lo": 185.9,
-    "hi": 304.2
-   },
-   {
-    "player": "Tyler Shough",
-    "team": "NO",
-    "opp": "ATL",
-    "pos": "QB",
-    "proj": 255.3,
-    "matchup": 1.09,
-    "injury": null,
-    "lo": 185.8,
     "hi": 304.2
    },
    {
@@ -392,7 +392,7 @@
     "team": "NO",
     "opp": "ATL",
     "pos": "QB",
-    "proj": 1.78,
+    "proj": 1.79,
     "matchup": 1.09,
     "injury": null
    },
@@ -466,11 +466,11 @@
     "team": "ATL",
     "opp": "NO",
     "pos": "RB",
-    "proj": 75.9,
+    "proj": 76.4,
     "matchup": 1.1,
     "injury": null,
-    "lo": 45.5,
-    "hi": 115.6
+    "lo": 45.8,
+    "hi": 116.4
    },
    {
     "player": "Derrick Henry",
@@ -644,11 +644,11 @@
     "team": "NO",
     "opp": "ATL",
     "pos": "WR",
-    "proj": 70.4,
+    "proj": 70.3,
     "matchup": 1.13,
     "injury": null,
-    "lo": 38.2,
-    "hi": 117.1
+    "lo": 38.1,
+    "hi": 116.8
    },
    {
     "player": "Jaxon Smith-Njigba",
@@ -827,7 +827,7 @@
     "team": "ATL",
     "opp": "NO",
     "pos": "WR",
-    "proj": 5.5,
+    "proj": 5.4,
     "matchup": 0.91,
     "injury": null
    },
