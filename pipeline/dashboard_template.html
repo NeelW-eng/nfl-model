@@ -5,14 +5,15 @@
 :root{
   --bg:#F3F5F1;--surface:#FFFFFF;--ink:#101A14;--muted:#5A6A61;--line:#D8DED7;--soft:#E9EEE8;
   --accent:#0B6E4F;--accent-ink:#FFFFFF;--amber:#A86F00;--amber-bg:#FBF1DC;--bad:#B3261E;--good:#0B6E4F;
+  --series-1:#2a78d6;--series-2:#eb6834;--grid:#E4E8E3;
   --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   color-scheme:dark;--bg:#0D1310;--surface:#141C18;--ink:#E6ECE8;--muted:#92A299;--line:#26312B;--soft:#1B2520;
-  --accent:#3DBB85;--accent-ink:#06130D;--amber:#E6B04A;--amber-bg:#2A2212;--bad:#F08A80;--good:#3DBB85;}}
+  --accent:#3DBB85;--accent-ink:#06130D;--amber:#E6B04A;--amber-bg:#2A2212;--bad:#F08A80;--good:#3DBB85;--series-1:#3987e5;--series-2:#d95926;--grid:#222C27;}}
 :root[data-theme="dark"]{
   color-scheme:dark;--bg:#0D1310;--surface:#141C18;--ink:#E6ECE8;--muted:#92A299;--line:#26312B;--soft:#1B2520;
-  --accent:#3DBB85;--accent-ink:#06130D;--amber:#E6B04A;--amber-bg:#2A2212;--bad:#F08A80;--good:#3DBB85;}
+  --accent:#3DBB85;--accent-ink:#06130D;--amber:#E6B04A;--amber-bg:#2A2212;--bad:#F08A80;--good:#3DBB85;--series-1:#3987e5;--series-2:#d95926;--grid:#222C27;}
 body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;padding-block:28px 64px}
 .wrap{max-width:1080px;margin:0 auto;display:grid;gap:44px}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.05}
@@ -80,12 +81,33 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
 .reload button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .reload button:disabled{opacity:.6;cursor:progress}
 .reload span{font-size:13px}
+.rank{font:800 26px/1 var(--display);color:var(--muted);min-width:34px}
+.lead{display:grid;gap:6px;justify-items:start}
+.conf{display:grid;gap:4px;justify-items:end;text-align:right}
+.conf b{font:600 22px/1 var(--body);font-variant-numeric:tabular-nums}
+.conf small{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.hero{display:flex;flex-wrap:wrap;gap:14px 36px;align-items:baseline}
+.hero .v{font:600 44px/1.05 var(--body);font-variant-numeric:proportional-nums}
+.hero .v.sm{font-size:28px}
+.hero .l{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font:12px var(--body);fill:var(--muted)}
+.chart .lbl{fill:var(--ink);font-weight:600}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.4;box-shadow:0 4px 14px rgb(0 0 0 / .12);min-width:160px;max-width:260px;z-index:2}
+.tip b{font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.tk{width:14px;height:3px;border-radius:2px;display:inline-block}
+.tracker-table{max-height:420px;overflow:auto}
+.tracker-table thead th{position:sticky;top:0;background:var(--surface);z-index:1}
 .tag{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .rec{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline}
 .rec .big{font:800 44px/1 var(--display)}
 .rec .lbl{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .range{font-family:var(--mono);font-size:12px;color:var(--muted)}
-@media (max-width:620px){.pick{grid-template-columns:auto 1fr}.support{grid-column:1 / -1;justify-items:start;text-align:left;grid-row:3}.chips{grid-column:1 / -1}}
+@media (max-width:620px){.pick{grid-template-columns:auto 1fr}.conf{justify-items:start;text-align:left}.support{grid-column:1 / -1;justify-items:start;text-align:left;grid-row:3}.chips{grid-column:1 / -1}}
 </style>
 
 <div class="wrap">
@@ -104,8 +126,8 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
   </section>
 
   <section>
-    <div class="sec-head"><h2>Results so far</h2><span class="eyebrow">Every published play, graded after the game</span></div>
-    <div id="record"></div>
+    <div class="sec-head"><h2>Pick tracker</h2><span class="eyebrow">Every published play, graded after the game</span></div>
+    <div id="tracker"></div>
   </section>
 
   <section>
@@ -140,29 +162,30 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
   </section>
 
   <section>
-    <h2>How units are sized</h2>
+    <h2>Confidence and unit size</h2>
     <div class="grid2">
       <div class="card">
-        <h3>Edge sets the base</h3>
+        <h3>How confidence is scored</h3>
         <div class="ladder">
-          <div><span>Expected value 2–4%</span><b>0.5u</b></div>
-          <div><span>4–6%</span><b>1u</b></div>
-          <div><span>6–9%</span><b>1.5u</b></div>
-          <div><span>9%+</span><b>2u</b></div>
+          <div><span>Size of the edge at FanDuel's price (full marks at 8%)</span><b>40 pts</b></div>
+          <div><span>Share of the signals that agree</span><b>40 pts</b></div>
+          <div><span>How many other books back the fair price (full marks at 8)</span><b>20 pts</b></div>
+          <div><span>Player listed Questionable</span><b>−10 pts</b></div>
         </div>
       </div>
       <div class="card">
-        <h3>Certainty adjusts it</h3>
+        <h3>Units by confidence</h3>
         <div class="ladder">
-          <div><span>5 or more signals agree</span><b>+0.5u</b></div>
-          <div><span>5+ other books priced it</span><b>+0.5u</b></div>
-          <div><span>Win chance under 35%</span><b>max 1u</b></div>
-          <div><span>Player listed Questionable</span><b>max 0.5u</b></div>
-          <div><span>Any single play</span><b>max 3u</b></div>
+          <div><span>Top · 85+</span><b>3u</b></div>
+          <div><span>Strong · 75–84</span><b>2u</b></div>
+          <div><span>Solid · 60–74</span><b>1.5u</b></div>
+          <div><span>Standard · 50–59</span><b>1u</b></div>
+          <div><span>Lean · under 50</span><b>0.5u</b></div>
+          <div><span>Win chance under 35% / Questionable</span><b>max 1u / 0.5u</b></div>
         </div>
       </div>
     </div>
-    <p class="note">Keep 1 unit at 1–2% of your bankroll. Even a real 4% edge loses about 45% of the time, so judge results over hundreds of bets. Check injury news before kickoff; the page refreshes Thursday morning and Sunday morning. If gambling stops being fun, 1-800-GAMBLER is free and confidential.</p>
+    <p class="note">At most 20 plays per NFL week, counting Thursday's. Keep 1 unit at 1–2% of your bankroll. Even a real 4% edge loses about 45% of the time, so judge the model on the tracker over a full season, not one weekend. If gambling stops being fun, 1-800-GAMBLER is free and confidential.</p>
   </section>
 </div>
 
@@ -178,6 +201,108 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const when = iso => iso ? new Date(iso).toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) : '';
 let LAB, keys = [], cur, drawProj = () => {};
 
+
+// ---------------- tracker charts ----------------
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function tipAt(box, tip, x, y, lines) {
+  tip.replaceChildren();
+  lines.forEach(([v, l], i) => { const row = document.createElement('div'); if (v !== null) { const b = document.createElement('b'); b.textContent = v; row.appendChild(b); row.appendChild(document.createTextNode(' ')); } row.appendChild(document.createTextNode(l)); tip.appendChild(row); });
+  tip.hidden = false;
+  const bw = box.clientWidth, tw = tip.offsetWidth;
+  tip.style.left = Math.min(Math.max(x + 12, 0), bw - tw) + 'px'; tip.style.top = Math.max(y - 70, 0) + 'px';
+}
+function niceStep(range) { const raw = range / 4, p = Math.pow(10, Math.floor(Math.log10(raw))); return [1, 2, 2.5, 5, 10].map(m => m * p).find(s => s >= raw); }
+
+function cumChart(box, series) {
+  const W = 640, H = 240, m = {l: 44, r: 56, t: 16, b: 30};
+  const svg = el('svg', {viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Running profit in units after each graded play'}, box);
+  const n = series.length, ys = series.map(d => d.cum).concat([0]);
+  let lo = Math.min(...ys), hi = Math.max(...ys); if (hi - lo < 2) { hi += 1; lo -= 1; }
+  const st = niceStep(hi - lo); lo = Math.floor(lo / st) * st; hi = Math.ceil(hi / st) * st;
+  const X = i => m.l + (n <= 1 ? (W - m.l - m.r) / 2 : i / (n - 1) * (W - m.l - m.r)), Y = v => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  for (let v = lo; v <= hi + 1e-9; v += st) {
+    el('line', {x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: v === 0 ? 'var(--muted)' : 'var(--grid)', 'stroke-width': 1}, svg);
+    el('text', {x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end'}, svg).textContent = (v > 0 ? '+' : '') + (+v.toFixed(1)) + 'u';
+  }
+  el('text', {x: m.l, y: H - 8}, svg).textContent = 'Play 1';
+  el('text', {x: W - m.r, y: H - 8, 'text-anchor': 'end'}, svg).textContent = 'Play ' + n;
+  const pts = series.map((d, i) => [X(i), Y(d.cum)]);
+  const path = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+  el('path', {d: path + ` L${pts[n - 1][0]} ${Y(0)} L${pts[0][0]} ${Y(0)} Z`, fill: 'var(--series-1)', 'fill-opacity': .1, stroke: 'none'}, svg);
+  el('path', {d: path, fill: 'none', stroke: 'var(--series-1)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round'}, svg);
+  const last = pts[n - 1];
+  el('circle', {cx: last[0], cy: last[1], r: 5, fill: 'var(--series-1)', stroke: 'var(--surface)', 'stroke-width': 2}, svg);
+  const endLbl = el('text', {x: last[0] + 10, y: last[1] + 4, class: 'lbl'}, svg); endLbl.textContent = (series[n - 1].cum > 0 ? '+' : '') + series[n - 1].cum + 'u';
+  // crosshair + tooltip
+  const cross = el('line', {y1: m.t, y2: H - m.b, stroke: 'var(--muted)', 'stroke-width': 1, visibility: 'hidden'}, svg);
+  const dot = el('circle', {r: 5, fill: 'var(--series-1)', stroke: 'var(--surface)', 'stroke-width': 2, visibility: 'hidden'}, svg);
+  const hit = el('rect', {x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: 'transparent', tabindex: 0}, svg);
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; box.appendChild(tip);
+  const show = i => {
+    const d = series[i], [x, y] = pts[i];
+    cross.setAttribute('x1', x); cross.setAttribute('x2', x); cross.setAttribute('visibility', 'visible');
+    dot.setAttribute('cx', x); dot.setAttribute('cy', y); dot.setAttribute('visibility', 'visible');
+    const r = box.getBoundingClientRect(), s = r.width / W;
+    tipAt(box, tip, x * s, y * s, [[(d.cum > 0 ? '+' : '') + d.cum + 'u', 'running total'], [null, `Play ${d.n} · Week ${d.week}`], [null, d.pick], [(d.profit > 0 ? '+' : '') + d.profit + 'u', d.result + ' · ' + d.units + 'u risked']]);
+  };
+  let cur_i = n - 1;
+  hit.addEventListener('pointermove', e => { const r = svg.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width * W; cur_i = Math.round((x - m.l) / Math.max(W - m.l - m.r, 1) * (n - 1)); cur_i = Math.min(Math.max(cur_i, 0), n - 1); show(cur_i); });
+  hit.addEventListener('pointerleave', () => { tip.hidden = true; cross.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); });
+  hit.addEventListener('focus', () => show(cur_i));
+  hit.addEventListener('blur', () => { tip.hidden = true; cross.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); });
+  hit.addEventListener('keydown', e => { if (e.key === 'ArrowRight') { cur_i = Math.min(cur_i + 1, n - 1); show(cur_i); } if (e.key === 'ArrowLeft') { cur_i = Math.max(cur_i - 1, 0); show(cur_i); } });
+}
+
+function tierChart(box, tiers) {
+  const W = 640, H = 240, m = {l: 44, r: 12, t: 22, b: 44};
+  const svg = el('svg', {viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Actual win rate versus the model’s expected win rate by confidence tier'}, box);
+  const Y = v => m.t + (1 - v) * (H - m.t - m.b);
+  [0, .25, .5, .75, 1].forEach(v => { el('line', {x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: v === 0 ? 'var(--muted)' : 'var(--grid)', 'stroke-width': 1}, svg); el('text', {x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end'}, svg).textContent = (v * 100) + '%'; });
+  const band = (W - m.l - m.r) / tiers.length, bw = Math.min(24, band * .4);
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; box.appendChild(tip);
+  tiers.forEach((t, i) => {
+    const cx = m.l + band * (i + .5), top = Y(t.actual), base = Y(0), h = Math.max(base - top, 0), r = Math.min(4, h);
+    const g = el('g', {tabindex: 0, role: 'img', 'aria-label': `${t.tier}: won ${Math.round(t.actual * 100)}% of ${t.bets}, model expected ${Math.round(t.expected * 100)}%`}, svg);
+    el('path', {d: `M${cx - bw / 2} ${base} V${top + r} Q${cx - bw / 2} ${top} ${cx - bw / 2 + r} ${top} H${cx + bw / 2 - r} Q${cx + bw / 2} ${top} ${cx + bw / 2} ${top + r} V${base} Z`, fill: 'var(--series-1)'}, g);
+    el('line', {x1: cx - bw / 2 - 8, x2: cx + bw / 2 + 8, y1: Y(t.expected), y2: Y(t.expected), stroke: 'var(--surface)', 'stroke-width': 6, 'stroke-linecap': 'round'}, g);
+    el('line', {x1: cx - bw / 2 - 8, x2: cx + bw / 2 + 8, y1: Y(t.expected), y2: Y(t.expected), stroke: 'var(--series-2)', 'stroke-width': 3, 'stroke-linecap': 'round'}, g);
+    el('text', {x: cx, y: Math.min(top, Y(t.expected)) - 8, 'text-anchor': 'middle', class: 'lbl'}, g).textContent = Math.round(t.actual * 100) + '%';
+    el('text', {x: cx, y: H - 24, 'text-anchor': 'middle'}, svg).textContent = t.tier;
+    el('text', {x: cx, y: H - 8, 'text-anchor': 'middle'}, svg).textContent = t.bets + ' bets';
+    el('rect', {x: cx - band / 2, y: m.t, width: band, height: H - m.t - m.b, fill: 'transparent'}, g);
+    const show = () => { const s = box.getBoundingClientRect().width / W; tipAt(box, tip, cx * s, top * s, [[Math.round(t.actual * 100) + '%', 'actual win rate'], [Math.round(t.expected * 100) + '%', 'model expected'], [null, `${t.tier} · ${t.wins}-${t.bets - t.wins} · ${(t.profit_units > 0 ? '+' : '') + t.profit_units}u`]]); };
+    g.addEventListener('pointermove', show); g.addEventListener('focus', show);
+    g.addEventListener('pointerleave', () => tip.hidden = true); g.addEventListener('blur', () => tip.hidden = true);
+  });
+}
+
+function renderTracker(R) {
+  const box = $('tracker');
+  if (!R || !R.all || !R.all.length) {
+    box.innerHTML = `<div class="empty"><b>The tracker starts with the first published play.</b><span class="muted">Every play is logged at FanDuel's price with its confidence and units, then graded after the game. Charts appear once plays are graded.</span></div>`;
+    return;
+  }
+  const graded = R.bets || 0;
+  const hero = graded ? `<div class="hero">
+      <div><div class="v ${R.profit_units >= 0 ? 'pos' : 'neg'}">${sgn(R.profit_units)}u</div><div class="l">Profit</div></div>
+      <div><div class="v sm">${R.wins}-${R.losses}${R.pushes ? '-' + R.pushes : ''}</div><div class="l">Record</div></div>
+      <div><div class="v sm">${sgn((R.roi * 100).toFixed(1))}%</div><div class="l">Return per unit risked</div></div>
+      <div><div class="v sm">${pct(R.win_rate)} <span class="muted" style="font-size:16px">vs ${pct(R.expected_win_rate)} expected</span></div><div class="l">Win rate</div></div>
+      <div><div class="v sm">${R.pending}</div><div class="l">Pending</div></div>
+    </div>` : `<div class="hero"><div><div class="v sm">${R.pending}</div><div class="l">Plays waiting on results</div></div></div>`;
+  const markets = R.by_market ? Object.entries(R.by_market).map(([m, v]) => `<span class="pill">${esc(m)} · ${v.wins}-${v.losses} · ${sgn(v.profit_units)}u</span>`).join('') : '';
+  const charts = graded ? `<div class="grid2">
+      <div class="card"><h3>Running profit</h3><p class="note">Units won or lost after each graded play, in the order the games were played.</p><div class="chart" id="cum"></div></div>
+      <div class="card"><h3>Accuracy by confidence</h3><div class="legend"><span><i class="sw" style="background:var(--series-1)"></i>Actual win rate</span><span><i class="tk" style="background:var(--series-2)"></i>Model expected</span></div><div class="chart" id="tiers"></div><p class="note">If the model is honest, bars land near their ticks, and higher tiers win more often.</p></div>
+    </div>` : '';
+  const rows = R.all.map(r => `<tr><td>${r.week}</td><td>${esc(r.pick)}</td><td class="num">${fmtOdds(r.price)}</td><td class="num">${r.confidence == null ? '' : Math.round(r.confidence)}</td><td>${esc(r.tier || '')}</td><td class="num">${r.units}</td><td class="num">${pct(r.p)}</td><td class="${r.result === 'win' ? 'pos' : r.result === 'loss' ? 'neg' : 'muted'}">${esc(r.result || 'pending')}</td><td class="num">${r.profit == null ? '' : sgn(r.profit)}</td></tr>`).join('');
+  box.innerHTML = `<div class="card" style="gap:18px">${hero}${markets ? `<div class="status">${markets}</div>` : ''}</div>${charts}
+    <div class="card"><h3>Every play</h3><div class="scroll tracker-table"><table><thead><tr><th>Wk</th><th>Play</th><th class="num">Price</th><th class="num">Conf.</th><th>Tier</th><th class="num">Units</th><th class="num">Win chance</th><th>Result</th><th class="num">Units won</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+  box.style.display = 'grid'; box.style.gap = '16px';
+  if (graded) { cumChart($('cum'), R.series); if (R.tiers && R.tiers.length) tierChart($('tiers'), R.tiers); }
+}
+
 function render(data) {
 D = data;
 $('yard').textContent = 'W' + D.week;
@@ -191,47 +316,35 @@ st.push(`<span class="pill">Updated ${esc(when(D.generated))}</span>`);
 $('status').innerHTML = st.join('');
 
 // plays
-const plays = D.picks || [];
+const plays = (D.picks || []).slice().sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0));
 $('plays-count').textContent = '';
+const locked = D.locked || [];
 if (!D.has_odds) {
   $('plays').innerHTML = `<div class="empty"><b>Plays appear after the next scheduled FanDuel pull.</b><span class="muted">Odds are pulled Thursday and Sunday mornings. Projections and the game board below are already current.</span></div>`;
 } else if (!plays.length) {
-  $('plays').innerHTML = `<div class="empty"><b>Nothing clears the bar this week.</b><span class="muted">${D.considered} FanDuel prices checked. None had both a 2% edge and three supporting signals. Player props are priced Thursday and Sunday mornings, so check back then.</span></div>`;
+  $('plays').innerHTML = `<div class="empty"><b>Nothing clears the bar right now.</b><span class="muted">${D.considered} FanDuel prices checked. None had both a 2% edge and three supporting signals. Player props are priced Thursday and Sunday mornings, so check back then.</span></div>`;
 } else {
   const total = plays.reduce((s, p) => s + p.units, 0);
-  $('plays-count').textContent = `${plays.length} plays · ${total}u · from ${D.considered} prices`;
-  $('plays').innerHTML = plays.map(p => {
+  $('plays-count').textContent = `${plays.length} plays · ${total}u · ranked by confidence`;
+  $('plays').innerHTML = plays.map((p, i) => {
     const sigs = p.signals || [];
     const meter = sigs.map(s => `<i class="${s.ok ? 'on' : ''}"></i>`).join('');
     const chips = sigs.slice().sort((a, b) => b.ok - a.ok).map(s => `<span class="chip ${s.ok ? 'ok' : ''}">${esc(s.txt)}</span>`).join('');
     return `<article class="pick">
-      <span class="units ${p.units >= 2 ? 'u2' : ''}">${p.units}u</span>
+      <div class="lead"><span class="rank">#${i + 1}</span><span class="units ${p.units >= 2 ? 'u2' : ''}">${p.units}u</span></div>
       <div class="main">
         <span class="tag">${esc(p.market === 'Prop' ? 'Player prop' : p.market)} · ${esc(p.game)}</span>
         <span class="title">${esc(p.pick)}${p.injury ? `<span class="flag">${esc(p.injury)}</span>` : ''}</span>
         <div class="meta"><span>FanDuel <b>${fmtOdds(p.price)}</b></span><span>Fair <b>${fmtOdds(p.fair_odds)}</b></span><span>Win chance <b>${pct(p.p)}</b></span><span>Edge <b class="pos">+${pct1(p.ev)}</b></span></div>
       </div>
-      <div class="support"><div class="meter" aria-label="${p.support} of ${sigs.length} signals">${meter}</div><small>${p.support} OF ${sigs.length} SIGNALS</small></div>
+      <div class="conf"><b>${Math.round(p.confidence ?? 0)}</b><small>${esc(p.tier || '')} confidence</small><div class="meter" aria-label="${p.support} of ${sigs.length} signals">${meter}</div><small>${p.support} of ${sigs.length} signals</small></div>
       <div class="chips">${chips}</div>
     </article>`;
-  }).join('');
+  }).join('') + (locked.length ? `<p class="note">Already locked in this week (game started): ${locked.map(l => esc(l.pick) + ' ' + l.units + 'u').join(' · ')}</p>` : '');
 }
 
-// record
-const R = D.record;
-if (!R) {
-  $('record').innerHTML = `<div class="empty"><b>No graded plays yet.</b><span class="muted">Each published play is logged at FanDuel's price and graded after the game, win or lose.</span></div>`;
-} else {
-  const bm = Object.entries(R.by_market).map(([m, v]) => `<span class="pill">${esc(m)} · ${v.bets} bets · ${sgn(v.profit_units)}u</span>`).join('');
-  $('record').innerHTML = `<div class="card"><div class="rec">
-    <div><div class="big ${R.profit_units >= 0 ? 'pos' : 'neg'}">${sgn(R.profit_units)}u</div><div class="lbl">Profit</div></div>
-    <div><div class="big">${R.wins}-${R.losses}${R.pushes ? '-' + R.pushes : ''}</div><div class="lbl">Record</div></div>
-    <div><div class="big">${sgn((R.roi * 100).toFixed(1))}%</div><div class="lbl">Return per unit</div></div>
-    </div><div class="status">${bm}</div>
-    <div class="scroll"><table><thead><tr><th>Wk</th><th>Play</th><th class="num">Price</th><th class="num">Units</th><th>Result</th><th class="num">Units won</th></tr></thead><tbody>${
-      R.recent.slice().reverse().map(r => `<tr><td>${r.week}</td><td>${esc(r.pick)}</td><td class="num">${fmtOdds(r.price)}</td><td class="num">${r.units}</td><td class="${r.result === 'win' ? 'pos' : r.result === 'loss' ? 'neg' : 'muted'}">${esc(r.result)}</td><td class="num">${sgn(Number(r.profit_units).toFixed(2))}</td></tr>`).join('')
-    }</tbody></table></div></div>`;
-}
+// tracker
+renderTracker(D.record);
 
 // projections
 LAB = {passing_yards:'Pass yds', passing_tds:'Pass TDs', rushing_yards:'Rush yds', receiving_yards:'Rec yds', receptions:'Receptions', anytime_td:'Anytime TD'};

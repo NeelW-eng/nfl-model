@@ -60,19 +60,6 @@ def to_american(p):
     return int(round(-100 * p / (1 - p))) if p >= 0.5 else int(round(100 * (1 - p) / p))
 
 
-def units(ev, p, support, n_books, flag=None):
-    u = 0.5 if ev < 0.04 else 1.0 if ev < 0.06 else 1.5 if ev < 0.09 else 2.0
-    if support >= 5:
-        u += 0.5
-    if n_books >= 5:
-        u += 0.5
-    if p < 0.35:
-        u = min(u, 1.0)
-    if flag == 'Questionable':
-        u = min(u, 0.5)
-    return min(u, 3.0)
-
-
 # ---------------------------------------------------------------- game lines
 def game_candidates(odds, feats, week):
     m = model.fit(feats[feats.season < feats.season.max()])
@@ -334,22 +321,54 @@ def shift_proj(r, stat, new_center):
 
 
 # ---------------------------------------------------------------- selection
-def select(cands):
+MAX_PICKS = 20  # per NFL week, across the Thursday and Sunday boards
+
+
+def confidence(c):
+    """0-100 score: how strongly the data backs this bet.
+    40% size of the edge (maxes out at 8% EV), 40% share of signals that agree,
+    20% depth of the market comparison (maxes out at 8 other books)."""
+    edge = min(max(c['ev'], 0) / 0.08, 1.0)
+    sup = c['support'] / max(c['n_signals'], 1)
+    depth = min(c['n_books'] / 8, 1.0)
+    score = 100 * (0.40 * edge + 0.40 * sup + 0.20 * depth)
+    if c.get('injury') == 'Questionable':
+        score -= 10
+    return round(score, 1)
+
+
+TIERS = [(85, 'Top', 3.0), (75, 'Strong', 2.0), (60, 'Solid', 1.5), (50, 'Standard', 1.0), (0, 'Lean', 0.5)]
+
+
+def size(score, p, injury=None):
+    tier, u = next((t, u) for cut, t, u in TIERS if score >= cut)
+    if p < 0.35:
+        u = min(u, 1.0)       # long shots: high variance
+    if injury == 'Questionable':
+        u = min(u, 0.5)
+    return tier, u
+
+
+def select(cands, max_n=MAX_PICKS):
     for c in cands:
         c['support'] = sum(1 for s in c['signals'] if s['ok'])
         c['n_signals'] = len(c['signals'])
         anchor = any(s['ok'] and s['k'] in ('market', 'model') for s in c['signals'])
         c['qualifies'] = bool(c['ev'] >= MIN_EV and c['support'] >= MIN_SUPPORT and anchor)
-        c['units'] = units(c['ev'], c['p'], c['support'], c['n_books'], c.get('injury')) if c['qualifies'] else 0
-    q = [c for c in cands if c['qualifies']]
-    # one bet per player-stat and per game-market-team (keep the best supported)
-    q.sort(key=lambda c: (-c['support'], -c['ev']))
+        c['confidence'] = confidence(c)
+        c['tier'], c['units'] = size(c['confidence'], c['p'], c.get('injury')) if c['qualifies'] else (None, 0)
+    q = sorted((c for c in cands if c['qualifies']), key=lambda c: (-c['confidence'], -c['ev']))
+    # one bet per player-stat and per game market (spread and moneyline on a game count as one side bet)
     seen, picks = set(), []
     for c in q:
         key = (c.get('player_id'), c.get('stat')) if c['market'] == 'Prop' else (c['game'], c['market'] if c['market'] == 'Total' else 'side')
         if key in seen:
             continue
         seen.add(key); picks.append(c)
+        if len(picks) >= max_n:
+            break
+    for i, c in enumerate(picks, 1):
+        c['rank'] = i
     return picks
 
 
