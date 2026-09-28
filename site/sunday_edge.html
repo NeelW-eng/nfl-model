@@ -104,6 +104,10 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
 .tk{width:14px;height:3px;border-radius:2px;display:inline-block}
 .tracker-table{max-height:420px;overflow:auto}
 .tracker-table thead th{position:sticky;top:0;background:var(--surface);z-index:1}
+.verdict{margin:0;font-size:15px;max-width:72ch}
+.verdict b{font-weight:600}
+.verdict.v-pos b{color:var(--good)}
+.verdict.v-neg b{color:var(--bad)}
 .tag{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .rec{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline}
 .rec .big{font:800 44px/1 var(--display)}
@@ -280,6 +284,52 @@ function tierChart(box, tiers) {
   });
 }
 
+function weekChart(box, weeks) {
+  const W = 1040, H = 300, m = {l: 40, r: 12, t: 24, b: 40};
+  const svg = el('svg', {viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Wins and losses each week, with the wins the model predicted'}, box);
+  const maxV = Math.max(4, ...weeks.map(w => Math.max(w.wins, w.losses, Math.ceil(w.expected))));
+  const st = maxV <= 8 ? 2 : maxV <= 20 ? 5 : 10, top = Math.ceil(maxV / st) * st;
+  const Y0 = m.t + (H - m.t - m.b) / 2, Y = v => Y0 - v / top * (H - m.t - m.b) / 2;
+  for (let v = -top; v <= top; v += st) {
+    el('line', {x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: v === 0 ? 'var(--muted)' : 'var(--grid)', 'stroke-width': 1}, svg);
+    el('text', {x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end'}, svg).textContent = Math.abs(v);
+  }
+  el('text', {x: m.l - 8, y: m.t - 10, 'text-anchor': 'end'}, svg).textContent = 'Wins';
+  el('text', {x: m.l - 8, y: H - m.b + 16, 'text-anchor': 'end'}, svg).textContent = 'Losses';
+  const band = (W - m.l - m.r) / weeks.length, bw = Math.min(24, band * .55);
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; box.appendChild(tip);
+  const col = (x, y1, y2, fill, up, g) => { const h = Math.abs(y2 - y1); if (h < .5) return; const r = Math.min(4, h), L = x - bw / 2, R = x + bw / 2;
+    const d = up ? `M${L} ${y1} V${y2 + r} Q${L} ${y2} ${L + r} ${y2} H${R - r} Q${R} ${y2} ${R} ${y2 + r} V${y1} Z`
+                 : `M${L} ${y1} V${y2 - r} Q${L} ${y2} ${L + r} ${y2} H${R - r} Q${R} ${y2} ${R} ${y2 - r} V${y1} Z`;
+    el('path', {d, fill}, g); };
+  weeks.forEach((w, i) => {
+    const cx = m.l + band * (i + .5);
+    const g = el('g', {tabindex: 0, role: 'img', 'aria-label': `Week ${w.week}: ${w.wins} wins, ${w.losses} losses, ${w.expected} predicted wins`}, svg);
+    col(cx, Y0 - 1, Y(w.wins), 'var(--series-1)', true, g);
+    col(cx, Y0 + 1, Y(-w.losses), 'var(--series-2)', false, g);
+    el('line', {x1: cx - bw / 2 - 6, x2: cx + bw / 2 + 6, y1: Y(w.expected), y2: Y(w.expected), stroke: 'var(--surface)', 'stroke-width': 6, 'stroke-linecap': 'round'}, g);
+    el('line', {x1: cx - bw / 2 - 6, x2: cx + bw / 2 + 6, y1: Y(w.expected), y2: Y(w.expected), stroke: 'var(--ink)', 'stroke-width': 2.5, 'stroke-linecap': 'round'}, g);
+    if (weeks.length <= 12) {
+      el('text', {x: cx, y: Math.min(Y(w.wins), Y(w.expected)) - 7, 'text-anchor': 'middle', class: 'lbl'}, g).textContent = w.wins;
+      el('text', {x: cx, y: Y(-w.losses) + 15, 'text-anchor': 'middle', class: 'lbl'}, g).textContent = w.losses;
+    }
+    if (weeks.length <= 18 || i % 2 === 0) el('text', {x: cx, y: H - 6, 'text-anchor': 'middle'}, svg).textContent = 'Wk ' + w.week;
+    el('rect', {x: cx - band / 2, y: m.t, width: band, height: H - m.t - m.b, fill: 'transparent'}, g);
+    const show = () => { const s = box.getBoundingClientRect().width / W; tipAt(box, tip, cx * s, Y(w.wins) * s, [[`${w.wins}-${w.losses}${w.pushes ? '-' + w.pushes : ''}`, `Week ${w.week}`], [w.expected.toFixed(1), 'wins predicted'], [(w.profit_units > 0 ? '+' : '') + w.profit_units + 'u', 'profit']]); };
+    g.addEventListener('pointermove', show); g.addEventListener('focus', show);
+    g.addEventListener('pointerleave', () => tip.hidden = true); g.addEventListener('blur', () => tip.hidden = true);
+  });
+}
+
+function verdict(R) {
+  const n = (R.wins || 0) + (R.losses || 0);
+  if (n < 30) return {cls: '', head: 'Too early to judge', body: `${n} graded plays so far. Wins and losses swing a lot in small samples; the verdict firms up after about 30 plays and is solid after 100+.`};
+  const diff = (R.wins - R.expected_wins).toFixed(1);
+  if (R.z >= 2) return {cls: 'v-pos', head: 'Beating its predictions', body: `${R.wins} wins against ${R.expected_wins} predicted (${sgn(+diff)}). That gap is bigger than luck usually explains.`};
+  if (R.z <= -2) return {cls: 'v-neg', head: 'Falling short of its predictions', body: `${R.wins} wins against ${R.expected_wins} predicted (${diff}). That gap is bigger than luck usually explains, so the percentages are running too high.`};
+  return {cls: '', head: 'On track with its predictions', body: `${R.wins} wins against ${R.expected_wins} predicted (${sgn(+diff)}). The percentages are holding up; the difference is within normal luck.`};
+}
+
 function renderTracker(R) {
   const box = $('tracker');
   if (!R || !R.all || !R.all.length) {
@@ -295,15 +345,20 @@ function renderTracker(R) {
       <div><div class="v sm">${R.pending}</div><div class="l">Pending</div></div>
     </div>` : `<div class="hero"><div><div class="v sm">${R.pending}</div><div class="l">Plays waiting on results</div></div></div>`;
   const markets = R.by_market ? Object.entries(R.by_market).map(([m, v]) => `<span class="pill">${esc(m)} · ${v.wins}-${v.losses} · ${sgn(v.profit_units)}u</span>`).join('') : '';
+  const V = graded ? verdict(R) : null;
+  const weekCard = graded ? `<div class="card"><h3>Wins and losses by week</h3>
+      <p class="verdict ${V.cls}"><b>${esc(V.head)}.</b> ${esc(V.body)}</p>
+      <div class="legend"><span><i class="sw" style="background:var(--series-1)"></i>Wins</span><span><i class="sw" style="background:var(--series-2)"></i>Losses</span><span><i class="tk" style="background:var(--ink)"></i>Wins predicted</span></div>
+      <div class="chart" id="weeks"></div></div>` : '';
   const charts = graded ? `<div class="grid2">
       <div class="card"><h3>Running profit</h3><p class="note">Units won or lost after each graded play, in the order the games were played.</p><div class="chart" id="cum"></div></div>
       <div class="card"><h3>Accuracy by win chance</h3><div class="legend"><span><i class="sw" style="background:var(--series-1)"></i>Actual win rate</span><span><i class="tk" style="background:var(--series-2)"></i>Predicted chance</span></div><div class="chart" id="tiers"></div><p class="note">If the percentages are accurate, each bar lands on its tick: "Very likely" picks should win about 80%+ of the time.</p></div>
     </div>` : '';
   const rows = R.all.map(r => `<tr><td>${r.week}</td><td>${esc(r.pick)}</td><td class="num">${fmtOdds(r.price)}</td><td>${esc(r.tier || '')}</td><td class="num">${r.units}</td><td class="num">${pct(r.p)}</td><td class="${r.result === 'win' ? 'pos' : r.result === 'loss' ? 'neg' : 'muted'}">${esc(r.result || 'pending')}</td><td class="num">${r.profit == null ? '' : sgn(r.profit)}</td></tr>`).join('');
-  box.innerHTML = `<div class="card" style="gap:18px">${hero}${markets ? `<div class="status">${markets}</div>` : ''}</div>${charts}
+  box.innerHTML = `<div class="card" style="gap:18px">${hero}${markets ? `<div class="status">${markets}</div>` : ''}</div>${weekCard}${charts}
     <div class="card"><h3>Every play</h3><div class="scroll tracker-table"><table><thead><tr><th>Wk</th><th>Play</th><th class="num">Price</th><th>Tier</th><th class="num">Units</th><th class="num">Win chance</th><th>Result</th><th class="num">Units won</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
   box.style.display = 'grid'; box.style.gap = '16px';
-  if (graded) { cumChart($('cum'), R.series); if (R.tiers && R.tiers.length) tierChart($('tiers'), R.tiers); }
+  if (graded) { weekChart($('weeks'), R.weeks || []); cumChart($('cum'), R.series); if (R.tiers && R.tiers.length) tierChart($('tiers'), R.tiers); }
 }
 
 function drawAll() {

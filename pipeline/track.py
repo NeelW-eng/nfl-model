@@ -116,6 +116,18 @@ def record(log):
                                   actual=round(float((x.result == 'win').mean()), 4), expected=round(float(x.p.mean()), 4),
                                   profit_units=round(float(d[d.tier == t_].profit_units.sum()), 2)))
         out['tiers'] = tiers
+        # week by week: wins, losses, and the wins the model's percentages predicted
+        wk = []
+        for (s_, w_), x in d.groupby(['season', 'week']):
+            xd = x[x.result != 'push']
+            wk.append(dict(season=int(s_), week=int(w_), wins=int((x.result == 'win').sum()),
+                           losses=int((x.result == 'loss').sum()), pushes=int((x.result == 'push').sum()),
+                           expected=round(float(xd.p.sum()), 2), profit_units=round(float(x.profit_units.sum()), 2)))
+        out['weeks'] = wk
+        # verdict: are actual wins in line with predicted wins? (z-score of the difference)
+        exp_w = float(dec.p.sum()); var = float((dec.p * (1 - dec.p)).sum())
+        out['expected_wins'] = round(exp_w, 1)
+        out['z'] = round((out['wins'] - exp_w) / var ** 0.5, 2) if var > 0 else 0.0
         out['by_market'] = {m: {'bets': int(len(x)), 'profit_units': round(float(x.profit_units.sum()), 2),
                                 'wins': int((x.result == 'win').sum()), 'losses': int((x.result == 'loss').sum())}
                             for m, x in d.groupby('market')}
