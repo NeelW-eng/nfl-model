@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 4,
- "generated": "2026-09-28T06:45+00:00",
+ "generated": "2026-09-28T06:59+00:00",
  "has_odds": true,
  "picks": [
   {
@@ -240,53 +240,6 @@
    "rank": 5
   },
   {
-   "game": "IND @ WAS",
-   "home": "WAS",
-   "away": "IND",
-   "kickoff": "2026-10-04T13:30:00Z",
-   "n_books": 21,
-   "fair_home_spread": 3.4,
-   "fair_total": 47.9,
-   "model_home_spread": -0.5,
-   "model_total": 49.9,
-   "market": "Moneyline",
-   "pick": "IND ML",
-   "price": -174,
-   "p": 0.6033503753729029,
-   "ev": -0.0498965353323253,
-   "fair_odds": -152,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -174 vs fair -152 (21 books)"
-    },
-    {
-     "k": "model",
-     "ok": false,
-     "txt": "Stats model: IND -3.9 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge -0 days"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor IND"
-    }
-   ],
-   "point": null,
-   "team": "IND",
-   "support": 0,
-   "n_signals": 4,
-   "confidence": 60.3,
-   "tier": "Favored",
-   "units": 1.5,
-   "rank": 6
-  },
-  {
    "game": "GB @ TB",
    "home": "TB",
    "away": "GB",
@@ -327,6 +280,53 @@
    "point": null,
    "team": "GB",
    "support": 1,
+   "n_signals": 4,
+   "confidence": 60.3,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 6
+  },
+  {
+   "game": "IND @ WAS",
+   "home": "WAS",
+   "away": "IND",
+   "kickoff": "2026-10-04T13:30:00Z",
+   "n_books": 22,
+   "fair_home_spread": 3.4,
+   "fair_total": 47.9,
+   "model_home_spread": -0.5,
+   "model_total": 49.9,
+   "market": "Moneyline",
+   "pick": "IND ML",
+   "price": -174,
+   "p": 0.6032134305881665,
+   "ev": -0.050112184016335604,
+   "fair_odds": -152,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "FanDuel -174 vs fair -152 (22 books)"
+    },
+    {
+     "k": "model",
+     "ok": false,
+     "txt": "Stats model: IND -3.9 pts vs market"
+    },
+    {
+     "k": "rest",
+     "ok": false,
+     "txt": "Rest edge -0 days"
+    },
+    {
+     "k": "advanced",
+     "ok": false,
+     "txt": "Early-down EPA, explosive plays and pressure matchup favor IND"
+    }
+   ],
+   "point": null,
+   "team": "IND",
+   "support": 0,
    "n_signals": 4,
    "confidence": 60.3,
    "tier": "Favored",
@@ -999,21 +999,21 @@
    "top": true
   },
   {
-   "pick": "IND ML",
-   "game": "IND @ WAS",
-   "market": "Moneyline",
-   "price": -174,
-   "p": 0.6034,
-   "ev": -0.0499,
-   "top": true
-  },
-  {
    "pick": "GB ML",
    "game": "GB @ TB",
    "market": "Moneyline",
    "price": -166,
    "p": 0.6033,
    "ev": -0.0332,
+   "top": true
+  },
+  {
+   "pick": "IND ML",
+   "game": "IND @ WAS",
+   "market": "Moneyline",
+   "price": -174,
+   "p": 0.6032,
+   "ev": -0.0501,
    "top": true
   },
   {
@@ -1386,7 +1386,7 @@
    "top": false
   }
  ],
- "odds_pulled": "2026-09-28T06:44:53.150057+00:00",
+ "odds_pulled": "2026-09-28T06:59:27.164780+00:00",
  "props_pulled": null,
  "record": {
   "pending": 20,
@@ -1622,7 +1622,7 @@
     "units": 1.5,
     "confidence": 60.3,
     "tier": "Favored",
-    "p": 0.6033503753729029,
+    "p": 0.6032134305881665,
     "result": null,
     "profit": null
    },
@@ -1793,11 +1793,11 @@
   {
    "game": "ATL @ NO",
    "kickoff": "2026-10-05 20:15",
-   "market_home_spread": -2.5,
+   "market_home_spread": -3.0,
    "model_home_spread": -1.0,
    "market_total": 48.5,
    "model_total": 44.6,
-   "home_win_p": 0.578
+   "home_win_p": 0.594
   }
  ],
  "projections": {
@@ -1858,17 +1858,6 @@
     "hi": 306.3
    },
    {
-    "player": "Tyler Shough",
-    "team": "NO",
-    "opp": "ATL",
-    "pos": "QB",
-    "proj": 255.6,
-    "matchup": 1.09,
-    "injury": null,
-    "lo": 186.1,
-    "hi": 304.6
-   },
-   {
     "player": "Patrick Mahomes",
     "team": "KC",
     "opp": "LV",
@@ -1877,6 +1866,17 @@
     "matchup": 0.95,
     "injury": null,
     "lo": 185.9,
+    "hi": 304.2
+   },
+   {
+    "player": "Tyler Shough",
+    "team": "NO",
+    "opp": "ATL",
+    "pos": "QB",
+    "proj": 255.3,
+    "matchup": 1.09,
+    "injury": null,
+    "lo": 185.8,
     "hi": 304.2
    },
    {
@@ -2037,7 +2037,7 @@
     "team": "NO",
     "opp": "ATL",
     "pos": "QB",
-    "proj": 1.79,
+    "proj": 1.78,
     "matchup": 1.09,
     "injury": null
    },
@@ -2111,11 +2111,11 @@
     "team": "ATL",
     "opp": "NO",
     "pos": "RB",
-    "proj": 76.4,
+    "proj": 75.9,
     "matchup": 1.1,
     "injury": null,
-    "lo": 45.8,
-    "hi": 116.4
+    "lo": 45.5,
+    "hi": 115.6
    },
    {
     "player": "Derrick Henry",
@@ -2289,11 +2289,11 @@
     "team": "NO",
     "opp": "ATL",
     "pos": "WR",
-    "proj": 70.3,
+    "proj": 70.4,
     "matchup": 1.13,
     "injury": null,
-    "lo": 38.1,
-    "hi": 116.8
+    "lo": 38.2,
+    "hi": 117.1
    },
    {
     "player": "Jaxon Smith-Njigba",
@@ -2472,7 +2472,7 @@
     "team": "ATL",
     "opp": "NO",
     "pos": "WR",
-    "proj": 5.4,
+    "proj": 5.5,
     "matchup": 0.91,
     "injury": null
    },
