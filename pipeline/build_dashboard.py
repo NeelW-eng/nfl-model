@@ -8,6 +8,7 @@ g = pd.read_csv(f'{DATA}/games.csv')
 done = g[(g.season == CUR) & g.home_score.notna()]
 last = done.sort_values('gameday').iloc[-1]
 d['stats_through'] = f"Week {int(last.week)}, {last.gameday}"
+json.dump(d, open(f'{DATA}/board.json', 'w'), default=float)  # the page's live database copy
 html = open(os.path.join(HERE, 'dashboard_template.html')).read().replace('/*DATA*/null', json.dumps(d, default=float))
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(SITE, 'sunday_edge.html')
 open(out, 'w').write(html)

@@ -74,6 +74,12 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
 .chip{font-size:12px;line-height:1.3;padding:4px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted);background:var(--bg)}
 .chip.ok{border-color:transparent;background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--ink)}
 .chip.ok::before{content:"✓ ";color:var(--accent);font-weight:700}
+.reload{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.reload button{font:600 14px var(--body);padding:9px 16px;border-radius:5px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.reload button:hover{filter:brightness(1.08)}
+.reload button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.reload button:disabled{opacity:.6;cursor:progress}
+.reload span{font-size:13px}
 .tag{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .rec{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline}
 .rec .big{font:800 44px/1 var(--display)}
@@ -88,6 +94,7 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
     <span class="eyebrow">NFL · FanDuel vs the market · updates itself</span>
     <h1>Sunday Edge</h1>
     <div class="status" id="status"></div>
+    <div class="reload"><button type="button" id="reload">↻ Reload bets</button><span id="reload-note" class="muted">Connecting…</span></div>
   </header>
 
   <section>
@@ -160,7 +167,8 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
 </div>
 
 <script>
-const D = /*DATA*/null;
+const EMBEDDED = /*DATA*/null;
+let D = EMBEDDED;
 const $ = id => document.getElementById(id);
 const fmtOdds = o => (o > 0 ? '+' : '') + o;
 const pct = x => (x * 100).toFixed(0) + '%';
@@ -168,6 +176,10 @@ const pct1 = x => (x * 100).toFixed(1) + '%';
 const sgn = x => (x > 0 ? '+' : '') + x;
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const when = iso => iso ? new Date(iso).toLocaleString([], {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) : '';
+let LAB, keys = [], cur, drawProj = () => {};
+
+function render(data) {
+D = data;
 $('yard').textContent = 'W' + D.week;
 
 const st = [`<span class="pill">Week ${D.week} · ${D.season}</span>`];
@@ -180,10 +192,11 @@ $('status').innerHTML = st.join('');
 
 // plays
 const plays = D.picks || [];
+$('plays-count').textContent = '';
 if (!D.has_odds) {
   $('plays').innerHTML = `<div class="empty"><b>Plays appear after the next scheduled FanDuel pull.</b><span class="muted">Odds are pulled Thursday and Sunday mornings. Projections and the game board below are already current.</span></div>`;
 } else if (!plays.length) {
-  $('plays').innerHTML = `<div class="empty"><b>Nothing clears the bar this week.</b><span class="muted">${D.considered} FanDuel prices checked. None had both a 2% edge and three supporting signals. Passing is a position.</span></div>`;
+  $('plays').innerHTML = `<div class="empty"><b>Nothing clears the bar this week.</b><span class="muted">${D.considered} FanDuel prices checked. None had both a 2% edge and three supporting signals. Player props are priced Thursday and Sunday mornings, so check back then.</span></div>`;
 } else {
   const total = plays.reduce((s, p) => s + p.units, 0);
   $('plays-count').textContent = `${plays.length} plays · ${total}u · from ${D.considered} prices`;
@@ -221,10 +234,10 @@ if (!R) {
 }
 
 // projections
-const LAB = {passing_yards:'Pass yds', passing_tds:'Pass TDs', rushing_yards:'Rush yds', receiving_yards:'Rec yds', receptions:'Receptions', anytime_td:'Anytime TD'};
-const keys = Object.keys(LAB).filter(k => (D.projections || {})[k]);
-let cur = keys[0];
-function drawProj() {
+LAB = {passing_yards:'Pass yds', passing_tds:'Pass TDs', rushing_yards:'Rush yds', receiving_yards:'Rec yds', receptions:'Receptions', anytime_td:'Anytime TD'};
+keys = Object.keys(LAB).filter(k => (D.projections || {})[k]);
+if (!keys.includes(cur)) cur = keys[0];
+drawProj = function () {
   $('tabs').innerHTML = keys.map(k => `<button role="tab" aria-selected="${k === cur}" data-k="${k}">${LAB[k]}</button>`).join('');
   const rows = D.projections[cur] || [];
   const td = cur === 'anytime_td', yd = ['passing_yards', 'rushing_yards', 'receiving_yards'].includes(cur);
@@ -238,7 +251,6 @@ function drawProj() {
       <td><div class="bar" style="width:${Math.max(4, v / max * 100).toFixed(0)}%"></div></td>
       <td class="num ${r.matchup > 1.05 ? 'pos' : r.matchup < .95 ? 'neg' : ''}">${Number(r.matchup).toFixed(2)}</td></tr>`}).join('')}</tbody>`;
 }
-$('tabs').addEventListener('click', e => { const k = e.target.dataset?.k; if (k) { cur = k; drawProj(); } });
 if (cur) drawProj();
 
 // board
@@ -259,4 +271,38 @@ $('bt').innerHTML = `<thead><tr><th>Market</th><th>Model's edge</th><th class="n
 $('pnote').textContent = B.props_note || '';
 $('pbt').innerHTML = `<thead><tr><th>Stat</th><th class="num">Advanced model</th><th class="num">Simple average</th><th class="num">Better by</th></tr></thead><tbody>${
   (B.props || []).map(r => `<tr><td>${LAB[r.stat]}</td><td class="num"><b>${r.new}</b></td><td class="num muted">${r.old}</td><td class="num pos">${((1 - r.new / r.old) * 100).toFixed(1)}%</td></tr>`).join('')}</tbody>`;
+}
+
+$('tabs').addEventListener('click', e => { const k = e.target.dataset?.k; if (k) { cur = k; drawProj(); } });
+render(EMBEDDED);
+
+// ---- live data: the page's own database holds the latest board; the reload button re-reads it
+const btn = $('reload'), note = $('reload-note');
+let docRef = null, shownGen = EMBEDDED.generated;
+const stamp = () => new Date().toLocaleTimeString([], {hour:'numeric', minute:'2-digit'});
+function apply(snap, manual) {
+  if (snap && snap.exists) {
+    const data = snap.data();
+    const newer = data.generated && data.generated !== shownGen;
+    if (newer || manual) { shownGen = data.generated; render(data); }
+    note.textContent = (newer ? 'New board loaded · ' : 'Up to date · ') + 'checked ' + stamp();
+  } else if (manual) {
+    note.textContent = 'Up to date · checked ' + stamp();
+  }
+}
+btn.addEventListener('click', async () => {
+  btn.disabled = true; btn.textContent = 'Checking…';
+  try {
+    if (docRef) apply(await docRef.get(), true);
+    else note.textContent = 'Live updates unavailable here · showing the last published board';
+  } catch (e) {
+    note.textContent = 'Could not reach the latest board. Try again in a moment.';
+  } finally { btn.disabled = false; btn.textContent = '↻ Reload bets'; }
+});
+(async () => {
+  const db = window.claude && window.claude.use ? await window.claude.use('db') : null;
+  if (!db) { note.textContent = 'Showing the last published board'; return; }
+  docRef = db.doc('board/current');
+  docRef.onSnapshot(s => apply(s, false), () => { note.textContent = 'Live updates paused · use Reload'; });
+})();
 </script>
