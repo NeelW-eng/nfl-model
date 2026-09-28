@@ -81,6 +81,8 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
 .reload button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .reload button:disabled{opacity:.6;cursor:progress}
 .reload span{font-size:13px}
+.reload input{font:14px var(--body);padding:9px 12px;border-radius:5px;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:min(360px,100%)}
+.reload input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .rank{font:800 26px/1 var(--display);color:var(--muted);min-width:34px}
 .lead{display:grid;gap:6px;justify-items:start}
 .conf{display:grid;gap:4px;justify-items:end;text-align:right}
@@ -120,9 +122,15 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
   </header>
 
   <section>
-    <div class="sec-head"><h2>Best supported plays</h2><span class="eyebrow" id="plays-count"></span></div>
-    <p class="note">Each play clears a 2% edge at FanDuel's price and has at least three independent signals behind it: other books' prices, the projection, role and snap trends, matchup, game script, and Next Gen Stats or PFR efficiency. Sorted by how many signals agree, then by edge.</p>
+    <div class="sec-head"><h2>Top 20 most likely</h2><span class="eyebrow" id="plays-count"></span></div>
+    <p class="note">The 20 FanDuel bets most likely to win this week, across game lines and player props. Win chance comes from other books' de-vigged prices blended with the model's projection. Edge shows whether FanDuel's payout is better or worse than that chance deserves; a very likely bet can still have a negative edge.</p>
     <div id="plays" class="picks"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Every priced bet</h2><span class="eyebrow" id="all-count"></span></div>
+    <div class="reload"><input id="all-filter" type="search" placeholder="Filter by player, team or market" aria-label="Filter bets"></div>
+    <div class="scroll tracker-table"><table id="all"></table></div>
   </section>
 
   <section>
@@ -162,30 +170,25 @@ code{font:13px var(--mono);background:var(--soft);padding:2px 6px;border-radius:
   </section>
 
   <section>
-    <h2>Confidence and unit size</h2>
+    <h2>Win chance and unit size</h2>
     <div class="grid2">
       <div class="card">
-        <h3>How confidence is scored</h3>
+        <h3>Units by win chance</h3>
         <div class="ladder">
-          <div><span>Size of the edge at FanDuel's price (full marks at 8%)</span><b>40 pts</b></div>
-          <div><span>Share of the signals that agree</span><b>40 pts</b></div>
-          <div><span>How many other books back the fair price (full marks at 8)</span><b>20 pts</b></div>
-          <div><span>Player listed Questionable</span><b>−10 pts</b></div>
+          <div><span>Very likely · 80%+</span><b>3u</b></div>
+          <div><span>Likely · 70–79%</span><b>2u</b></div>
+          <div><span>Favored · 60–69%</span><b>1.5u</b></div>
+          <div><span>Slight edge · 55–59%</span><b>1u</b></div>
+          <div><span>Coin flip · under 55%</span><b>0.5u</b></div>
+          <div><span>Player listed Questionable</span><b>max 0.5u</b></div>
         </div>
       </div>
       <div class="card">
-        <h3>Units by confidence</h3>
-        <div class="ladder">
-          <div><span>Top · 85+</span><b>3u</b></div>
-          <div><span>Strong · 75–84</span><b>2u</b></div>
-          <div><span>Solid · 60–74</span><b>1.5u</b></div>
-          <div><span>Standard · 50–59</span><b>1u</b></div>
-          <div><span>Lean · under 50</span><b>0.5u</b></div>
-          <div><span>Win chance under 35% / Questionable</span><b>max 1u / 0.5u</b></div>
-        </div>
+        <h3>Reading the numbers</h3>
+        <p class="note">Units are the amount risked. A 3u bet at −400 risks 3 units to win 0.75, so one loss erases four wins. Edge is the expected profit per unit at FanDuel's price: positive means FanDuel pays more than the win chance deserves, negative means less. The tracker shows over time whether the percentages hold up and whether the picks make money.</p>
       </div>
     </div>
-    <p class="note">At most 20 plays per NFL week, counting Thursday's. Keep 1 unit at 1–2% of your bankroll. Even a real 4% edge loses about 45% of the time, so judge the model on the tracker over a full season, not one weekend. If gambling stops being fun, 1-800-GAMBLER is free and confidential.</p>
+    <p class="note">At most 20 plays per NFL week, counting Thursday's. Keep 1 unit at 1–2% of your bankroll. If gambling stops being fun, 1-800-GAMBLER is free and confidential.</p>
   </section>
 </div>
 
@@ -294,14 +297,25 @@ function renderTracker(R) {
   const markets = R.by_market ? Object.entries(R.by_market).map(([m, v]) => `<span class="pill">${esc(m)} · ${v.wins}-${v.losses} · ${sgn(v.profit_units)}u</span>`).join('') : '';
   const charts = graded ? `<div class="grid2">
       <div class="card"><h3>Running profit</h3><p class="note">Units won or lost after each graded play, in the order the games were played.</p><div class="chart" id="cum"></div></div>
-      <div class="card"><h3>Accuracy by confidence</h3><div class="legend"><span><i class="sw" style="background:var(--series-1)"></i>Actual win rate</span><span><i class="tk" style="background:var(--series-2)"></i>Model expected</span></div><div class="chart" id="tiers"></div><p class="note">If the model is honest, bars land near their ticks, and higher tiers win more often.</p></div>
+      <div class="card"><h3>Accuracy by win chance</h3><div class="legend"><span><i class="sw" style="background:var(--series-1)"></i>Actual win rate</span><span><i class="tk" style="background:var(--series-2)"></i>Predicted chance</span></div><div class="chart" id="tiers"></div><p class="note">If the percentages are accurate, each bar lands on its tick: "Very likely" picks should win about 80%+ of the time.</p></div>
     </div>` : '';
-  const rows = R.all.map(r => `<tr><td>${r.week}</td><td>${esc(r.pick)}</td><td class="num">${fmtOdds(r.price)}</td><td class="num">${r.confidence == null ? '' : Math.round(r.confidence)}</td><td>${esc(r.tier || '')}</td><td class="num">${r.units}</td><td class="num">${pct(r.p)}</td><td class="${r.result === 'win' ? 'pos' : r.result === 'loss' ? 'neg' : 'muted'}">${esc(r.result || 'pending')}</td><td class="num">${r.profit == null ? '' : sgn(r.profit)}</td></tr>`).join('');
+  const rows = R.all.map(r => `<tr><td>${r.week}</td><td>${esc(r.pick)}</td><td class="num">${fmtOdds(r.price)}</td><td>${esc(r.tier || '')}</td><td class="num">${r.units}</td><td class="num">${pct(r.p)}</td><td class="${r.result === 'win' ? 'pos' : r.result === 'loss' ? 'neg' : 'muted'}">${esc(r.result || 'pending')}</td><td class="num">${r.profit == null ? '' : sgn(r.profit)}</td></tr>`).join('');
   box.innerHTML = `<div class="card" style="gap:18px">${hero}${markets ? `<div class="status">${markets}</div>` : ''}</div>${charts}
-    <div class="card"><h3>Every play</h3><div class="scroll tracker-table"><table><thead><tr><th>Wk</th><th>Play</th><th class="num">Price</th><th class="num">Conf.</th><th>Tier</th><th class="num">Units</th><th class="num">Win chance</th><th>Result</th><th class="num">Units won</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+    <div class="card"><h3>Every play</h3><div class="scroll tracker-table"><table><thead><tr><th>Wk</th><th>Play</th><th class="num">Price</th><th>Tier</th><th class="num">Units</th><th class="num">Win chance</th><th>Result</th><th class="num">Units won</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
   box.style.display = 'grid'; box.style.gap = '16px';
   if (graded) { cumChart($('cum'), R.series); if (R.tiers && R.tiers.length) tierChart($('tiers'), R.tiers); }
 }
+
+function drawAll() {
+  const rows = D.all_bets || [];
+  const q = ($('all-filter').value || '').trim().toLowerCase();
+  const f = q ? rows.filter(r => (r.pick + ' ' + r.game + ' ' + r.market).toLowerCase().includes(q)) : rows;
+  $('all-count').textContent = rows.length ? `${rows.length} bets · 20 picks marked` : '';
+  $('all').innerHTML = rows.length ? `<thead><tr><th class="num">#</th><th>Bet</th><th>Game</th><th>Market</th><th class="num">FanDuel</th><th class="num">Win chance</th><th class="num">Edge</th></tr></thead><tbody>${
+    f.map(r => `<tr><td class="num">${rows.indexOf(r) + 1}</td><td>${r.top ? '<b>' + esc(r.pick) + '</b> <span class="pill ok" style="padding:2px 6px">Top 20</span>' : esc(r.pick)}</td><td class="muted">${esc(r.game)}</td><td class="muted">${esc(r.market)}</td><td class="num">${fmtOdds(r.price)}</td><td class="num">${pct(r.p)}</td><td class="num ${r.ev >= 0 ? 'pos' : 'neg'}">${r.ev >= 0 ? '+' : ''}${pct1(r.ev)}</td></tr>`).join('')}</tbody>`
+    : `<tbody><tr><td class="muted">The full list appears after the next FanDuel pull.</td></tr></tbody>`;
+}
+$('all-filter').addEventListener('input', drawAll);
 
 function render(data) {
 D = data;
@@ -316,16 +330,16 @@ st.push(`<span class="pill">Updated ${esc(when(D.generated))}</span>`);
 $('status').innerHTML = st.join('');
 
 // plays
-const plays = (D.picks || []).slice().sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0));
+const plays = (D.picks || []).slice().sort((a, b) => b.p - a.p);
 $('plays-count').textContent = '';
 const locked = D.locked || [];
 if (!D.has_odds) {
   $('plays').innerHTML = `<div class="empty"><b>Plays appear after the next scheduled FanDuel pull.</b><span class="muted">Odds are pulled Thursday and Sunday mornings. Projections and the game board below are already current.</span></div>`;
 } else if (!plays.length) {
-  $('plays').innerHTML = `<div class="empty"><b>Nothing clears the bar right now.</b><span class="muted">${D.considered} FanDuel prices checked. None had both a 2% edge and three supporting signals. Player props are priced Thursday and Sunday mornings, so check back then.</span></div>`;
+  $('plays').innerHTML = `<div class="empty"><b>No open bets to rank right now.</b><span class="muted">Every game on this week's FanDuel pull has started. The next pull is Thursday or Sunday morning.</span></div>`;
 } else {
   const total = plays.reduce((s, p) => s + p.units, 0);
-  $('plays-count').textContent = `${plays.length} plays · ${total}u · ranked by confidence`;
+  $('plays-count').textContent = `${plays.length} plays · ${total}u · ranked by win chance`;
   $('plays').innerHTML = plays.map((p, i) => {
     const sigs = p.signals || [];
     const meter = sigs.map(s => `<i class="${s.ok ? 'on' : ''}"></i>`).join('');
@@ -335,13 +349,16 @@ if (!D.has_odds) {
       <div class="main">
         <span class="tag">${esc(p.market === 'Prop' ? 'Player prop' : p.market)} · ${esc(p.game)}</span>
         <span class="title">${esc(p.pick)}${p.injury ? `<span class="flag">${esc(p.injury)}</span>` : ''}</span>
-        <div class="meta"><span>FanDuel <b>${fmtOdds(p.price)}</b></span><span>Fair <b>${fmtOdds(p.fair_odds)}</b></span><span>Win chance <b>${pct(p.p)}</b></span><span>Edge <b class="pos">+${pct1(p.ev)}</b></span></div>
+        <div class="meta"><span>FanDuel <b>${fmtOdds(p.price)}</b></span><span>Fair <b>${fmtOdds(p.fair_odds)}</b></span><span>Edge <b class="${p.ev >= 0 ? 'pos' : 'neg'}">${p.ev >= 0 ? '+' : ''}${pct1(p.ev)}</b></span></div>
       </div>
-      <div class="conf"><b>${Math.round(p.confidence ?? 0)}</b><small>${esc(p.tier || '')} confidence</small><div class="meter" aria-label="${p.support} of ${sigs.length} signals">${meter}</div><small>${p.support} of ${sigs.length} signals</small></div>
+      <div class="conf"><b>${pct(p.p)}</b><small>${esc(p.tier || '')}</small><div class="meter" aria-label="${p.support} of ${sigs.length} signals">${meter}</div><small>${p.support} of ${sigs.length} signals</small></div>
       <div class="chips">${chips}</div>
     </article>`;
   }).join('') + (locked.length ? `<p class="note">Already locked in this week (game started): ${locked.map(l => esc(l.pick) + ' ' + l.units + 'u').join(' · ')}</p>` : '');
 }
+
+// every priced bet
+drawAll();
 
 // tracker
 renderTracker(D.record);

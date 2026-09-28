@@ -85,7 +85,7 @@ def locked_count(season, week):
     return len(d), d[['pick', 'price', 'units', 'confidence', 'tier', 'result']].to_dict('records')
 
 
-TIER_ORDER = ['Top', 'Strong', 'Solid', 'Standard', 'Lean']
+TIER_ORDER = ['Very likely', 'Likely', 'Favored', 'Slight edge', 'Coin flip']
 
 
 def record(log):

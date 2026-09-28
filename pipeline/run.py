@@ -77,6 +77,7 @@ def main():
             n_locked, locked = track.locked_count(CUR, week)
             sel = picks.select(cands, max_n=max(picks.MAX_PICKS - n_locked, 0))
             out['locked'] = locked
+            out['all_bets'] = picks.all_bets(cands, {(c['game'], c['market'], c['pick']) for c in sel})
             out.update(has_odds=True, odds_pulled=odds['pulled_at'], props_pulled=odds.get('props_pulled_at'),
                        picks=sel, considered=len(cands))
             track.log_picks(CUR, week, sel, odds['pulled_at'])
