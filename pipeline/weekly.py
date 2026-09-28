@@ -156,7 +156,8 @@ def upcoming_projections(week):
     opp = {**dict(zip(sch.home_team, sch.away_team)), **dict(zip(sch.away_team, sch.home_team))}
     cur = ps[ps.season == CUR]
     last = cur.sort_values('t').groupby('player_id').tail(1)
-    last = last[last.team.isin(opp)]
+    played = set(cur[cur.week == week].team)
+    last = last[last.team.isin(opp) & ~last.team.isin(played)]
     fut = last.copy()
     fut['week'] = week; fut['t'] = CUR * 100 + week
     fut['opponent_team'] = fut.team.map(opp)

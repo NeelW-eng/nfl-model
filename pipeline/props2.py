@@ -143,14 +143,15 @@ TEAM = ['team_plays', 'team_pass_att', 'team_rush_att', 'team_proe', 'team_neutr
 DEF = ['d_pass_epa', 'd_rush_epa', 'd_sack_rate', 'd_pressure_pct']
 
 
-def build(future_week=None):
+def build(future_week=None, teams=None):
     ps = base_players()
     if future_week:  # add rows for the upcoming games (stats unknown)
         g = pd.read_csv(f'{DATA}/games.csv')
         sch = g[(g.season == CUR) & (g.week == future_week)]
         opp = {**dict(zip(sch.home_team, sch.away_team)), **dict(zip(sch.away_team, sch.home_team))}
         cur = ps[ps.season == CUR].sort_values('t').groupby('player_id').tail(1)
-        cur = cur[cur.team.isin(opp)].copy()
+        played = set(ps[(ps.season == CUR) & (ps.week == future_week)].team)
+        cur = cur[cur.team.isin(opp) & ~cur.team.isin(played) & (cur.team.isin(teams) if teams else True)].copy()
         stat_cols = [c for c in ps.columns if c not in ('player_id', 'player_name', 'player_display_name', 'position',
                                                          'position_group', 'headshot_url', 'team')]
         cur[stat_cols] = np.nan
@@ -189,7 +190,7 @@ def build(future_week=None):
         last = tt.sort_values('t').groupby('team').tail(1).copy()
         full = tm.sort_values('t').groupby('team')[TEAM].apply(lambda d: d.ewm(halflife=6).mean().iloc[-1])
         last = full.add_prefix('tm_').reset_index(); last['t'] = CUR * 100 + future_week
-        tt = pd.concat([tt, last])
+        tt = pd.concat([tt, last]).drop_duplicates(['team', 't'], keep='first')  # real rows win
     ps = ps.merge(tt, on=['team', 't'], how='left')
     # defense faced
     dd = df.merge(pressure_by_defense(), on=['opp', 't'], how='outer').sort_values('t')
@@ -197,7 +198,7 @@ def build(future_week=None):
     if future_week:
         full = dd.sort_values('t').groupby('opp')[DEF].apply(lambda d: d.ewm(halflife=8).mean().iloc[-1])
         last = full.add_prefix('df_').reset_index(); last['t'] = CUR * 100 + future_week
-        ddp = pd.concat([ddp, last])
+        ddp = pd.concat([ddp, last]).drop_duplicates(['opp', 't'], keep='first')
     ps = ps.merge(ddp.rename(columns={'opp': 'opponent_team'}), on=['opponent_team', 't'], how='left')
     # position-level yards allowed by this defense (prior)
     for stat in ['receiving_yards', 'rushing_yards', 'passing_yards', 'receptions', 'tds']:
@@ -210,7 +211,7 @@ def build(future_week=None):
         if future_week:
             lastv = a.groupby(['opponent_team', 'position']).r.apply(lambda s: s.ewm(halflife=8).mean().iloc[-1])
             lastv = lastv.rename('df_allow_' + stat).reset_index(); lastv['t'] = CUR * 100 + future_week
-            a = pd.concat([a, lastv])
+            a = pd.concat([a, lastv]).drop_duplicates(['opponent_team', 'position', 't'], keep='first')
         ps = ps.merge(a[['opponent_team', 'position', 't', 'df_allow_' + stat]],
                       on=['opponent_team', 'position', 't'], how='left')
     # game environment from the market line + weather
@@ -360,10 +361,10 @@ SIGNAL_COLS = ['u_offense_pct', 'last_offense_pct', 'u_target_share', 'last_targ
                'u_carries', 'n_prior']
 
 
-def project_week(week):
+def project_week(week, teams=None):
     """Train on all completed games, project the upcoming week. Returns {stat: DataFrame}."""
     import props as simple
-    ps = build(future_week=week)
+    ps = build(future_week=week, teams=teams)
     cols = feature_cols(ps)
     fut = ps[ps.future].copy()
     import weekly as wk
