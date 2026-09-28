@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 4,
- "generated": "2026-09-28T06:59+00:00",
+ "generated": "2026-09-28T07:07+00:00",
  "has_odds": true,
  "picks": [
   {
@@ -193,6 +193,243 @@
    "rank": 4
   },
   {
+   "market": "Prop",
+   "stat": "receptions",
+   "pick": "Saquon Barkley Under 2.5 receptions",
+   "player": "Saquon Barkley",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -154,
+   "p": 0.6809980316568476,
+   "ev": 0.1232045457197356,
+   "fair_odds": -213,
+   "proj": 1.42,
+   "line": 2.5,
+   "side": "Under",
+   "n_books": 4,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "4 other books price this at -142"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 1.4 vs line 2.5 (82% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 6% vs 9% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": true,
+     "txt": "Snap share 16% last game vs 66% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows +20% receptions to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    }
+   ],
+   "player_id": "00-0034844",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 3,
+   "n_signals": 6,
+   "confidence": 68.1,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 5
+  },
+  {
+   "market": "Prop",
+   "stat": "receiving_yards",
+   "pick": "Saquon Barkley Under 13.5 rec yds",
+   "player": "Saquon Barkley",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -113,
+   "p": 0.6616688476526874,
+   "ev": 0.2472165004426763,
+   "fair_odds": -196,
+   "proj": 6.43,
+   "line": 13.5,
+   "side": "Under",
+   "n_books": 5,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "5 other books price this at -104"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 6.4 vs line 13.5 (89% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 6% vs 9% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": true,
+     "txt": "Snap share 16% last game vs 66% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows +24% rec yds to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    }
+   ],
+   "player_id": "00-0034844",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 3,
+   "n_signals": 6,
+   "confidence": 66.2,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 6
+  },
+  {
+   "market": "Prop",
+   "stat": "receiving_yards",
+   "pick": "Makai Lemon Under 26.5 rec yds",
+   "player": "Makai Lemon",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -113,
+   "p": 0.6608705908372503,
+   "ev": 0.24571182166667538,
+   "fair_odds": -195,
+   "proj": 10.47,
+   "line": 26.5,
+   "side": "Under",
+   "n_books": 5,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "5 other books price this at +121"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 10.5 vs line 26.5 (97% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 3% vs 10% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 63% last game vs 63% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows -3% rec yds to WRs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    }
+   ],
+   "player_id": "00-0040867",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 2,
+   "n_signals": 6,
+   "confidence": 66.1,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 7
+  },
+  {
+   "market": "Prop",
+   "stat": "rushing_yards",
+   "pick": "Saquon Barkley Under 71.5 rush yds",
+   "player": "Saquon Barkley",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -113,
+   "p": 0.6596102057008884,
+   "ev": 0.24333605145388693,
+   "fair_odds": -194,
+   "proj": 36.7,
+   "line": 71.5,
+   "side": "Under",
+   "n_books": 5,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "5 other books price this at +102"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 36.7 vs line 71.5 (91% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Carry Share last game 12% vs 57% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": true,
+     "txt": "Snap share 16% last game vs 66% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows -5% rush yds to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI underdog by 2.5"
+    },
+    {
+     "k": "ngs",
+     "ok": false,
+     "txt": "NGS rush yds over expected +0.71/carry"
+    }
+   ],
+   "player_id": "00-0034844",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 3,
+   "n_signals": 7,
+   "confidence": 66.0,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 8
+  },
+  {
    "game": "KC @ LV",
    "home": "LV",
    "away": "KC",
@@ -237,7 +474,191 @@
    "confidence": 65.8,
    "tier": "Favored",
    "units": 1.5,
-   "rank": 5
+   "rank": 9
+  },
+  {
+   "market": "Prop",
+   "stat": "rushing_yards",
+   "pick": "Tank Bigsby Over 11.5 rush yds",
+   "player": "Tank Bigsby",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -113,
+   "p": 0.6345831618188861,
+   "ev": 0.1961611811276348,
+   "fair_odds": -174,
+   "proj": 25.89,
+   "line": 11.5,
+   "side": "Over",
+   "n_books": 2,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "2 other books price this at +100"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 25.9 vs line 11.5 (84% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Carry Share last game 41% vs 25% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": true,
+     "txt": "Snap share 34% last game vs 23% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows -5% rush yds to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI underdog by 2.5"
+    },
+    {
+     "k": "ngs",
+     "ok": false,
+     "txt": "NGS rush yds over expected +0.07/carry"
+    }
+   ],
+   "player_id": "00-0038555",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 3,
+   "n_signals": 7,
+   "confidence": 63.5,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 10
+  },
+  {
+   "market": "Prop",
+   "stat": "receptions",
+   "pick": "Dontayvion Wicks Under 3.5 receptions",
+   "player": "Dontayvion Wicks",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -180,
+   "p": 0.6326196478429876,
+   "ev": -0.01592499224424143,
+   "fair_odds": -172,
+   "proj": 2.65,
+   "line": 3.5,
+   "side": "Under",
+   "n_books": 4,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "4 other books price this at -135"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 2.6 vs line 3.5 (72% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": false,
+     "txt": "Target Share last game 18% vs 14% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 62% last game vs 52% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows -5% receptions to WRs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    },
+    {
+     "k": "ngs",
+     "ok": true,
+     "txt": "NGS separation 2.5 yds vs 2.9 WR median"
+    }
+   ],
+   "player_id": "00-0038393",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 2,
+   "n_signals": 7,
+   "confidence": 63.3,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 11
+  },
+  {
+   "market": "Prop",
+   "stat": "receptions",
+   "pick": "D'Andre Swift Over 1.5 receptions",
+   "player": "D'Andre Swift",
+   "team": "CHI",
+   "opp": "NYJ",
+   "game": "CHI vs NYJ",
+   "price": -148,
+   "p": 0.608917001885022,
+   "ev": 0.02034740856409084,
+   "fair_odds": -156,
+   "proj": 2.32,
+   "line": 1.5,
+   "side": "Over",
+   "n_books": 4,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "4 other books price this at -140"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 2.3 vs line 1.5 (65% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 17% vs 9% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": true,
+     "txt": "Snap share 68% last game vs 59% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "NYJ allows -4% receptions to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "CHI implied team total 22.8"
+    }
+   ],
+   "player_id": "00-0036275",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 3,
+   "n_signals": 6,
+   "confidence": 60.9,
+   "tier": "Favored",
+   "units": 1.5,
+   "rank": 12
   },
   {
    "game": "GB @ TB",
@@ -284,7 +705,7 @@
    "confidence": 60.3,
    "tier": "Favored",
    "units": 1.5,
-   "rank": 6
+   "rank": 13
   },
   {
    "game": "IND @ WAS",
@@ -331,7 +752,7 @@
    "confidence": 60.3,
    "tier": "Favored",
    "units": 1.5,
-   "rank": 7
+   "rank": 14
   },
   {
    "game": "DET @ CAR",
@@ -378,7 +799,128 @@
    "confidence": 59.9,
    "tier": "Slight edge",
    "units": 1.0,
-   "rank": 8
+   "rank": 15
+  },
+  {
+   "market": "Prop",
+   "stat": "receptions",
+   "pick": "Makai Lemon Under 2.5 receptions",
+   "player": "Makai Lemon",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -114,
+   "p": 0.5964172847919404,
+   "ev": 0.1195903416269759,
+   "fair_odds": -148,
+   "proj": 1.64,
+   "line": 2.5,
+   "side": "Under",
+   "n_books": 4,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "4 other books price this at +107"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 1.6 vs line 2.5 (77% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 3% vs 10% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 63% last game vs 63% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows -5% receptions to WRs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    }
+   ],
+   "player_id": "00-0040867",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 2,
+   "n_signals": 6,
+   "confidence": 59.6,
+   "tier": "Slight edge",
+   "units": 1.0,
+   "rank": 16
+  },
+  {
+   "market": "Prop",
+   "stat": "receiving_yards",
+   "pick": "Rome Odunze Over 25.5 rec yds",
+   "player": "Rome Odunze",
+   "team": "CHI",
+   "opp": "NYJ",
+   "game": "CHI vs NYJ",
+   "price": -113,
+   "p": 0.5885901738057908,
+   "ev": 0.10946643381091548,
+   "fair_odds": -143,
+   "proj": 39.92,
+   "line": 25.5,
+   "side": "Over",
+   "n_books": 5,
+   "injury": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": false,
+     "txt": "5 other books price this at -100"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 39.9 vs line 25.5 (72% to hit)"
+    },
+    {
+     "k": "role",
+     "ok": false,
+     "txt": "Target Share last game 13% vs 19% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 84% last game vs 80% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "NYJ allows -8% rec yds to WRs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "CHI implied team total 22.8"
+    },
+    {
+     "k": "ngs",
+     "ok": false,
+     "txt": "NGS separation 2.9 yds vs 2.9 WR median"
+    }
+   ],
+   "player_id": "00-0039919",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 1,
+   "n_signals": 7,
+   "confidence": 58.9,
+   "tier": "Slight edge",
+   "units": 1.0,
+   "rank": 17
   },
   {
    "game": "NYJ @ CHI",
@@ -425,532 +967,131 @@
    "confidence": 58.5,
    "tier": "Slight edge",
    "units": 1.0,
-   "rank": 9
-  },
-  {
-   "game": "DEN @ SF",
-   "home": "SF",
-   "away": "DEN",
-   "kickoff": "2026-10-04T20:25:00Z",
-   "n_books": 13,
-   "fair_home_spread": -3.0,
-   "fair_total": 47.0,
-   "model_home_spread": -2.2,
-   "model_total": 47.0,
-   "market": "Moneyline",
-   "pick": "SF ML",
-   "price": -146,
-   "p": 0.5794156518057519,
-   "ev": -0.023724312710856343,
-   "fair_odds": -138,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -146 vs fair -138 (13 books)"
-    },
-    {
-     "k": "model",
-     "ok": false,
-     "txt": "Stats model: SF -0.8 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge +0 days"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor SF"
-    }
-   ],
-   "point": null,
-   "team": "SF",
-   "support": 0,
-   "n_signals": 4,
-   "confidence": 57.9,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 10
-  },
-  {
-   "game": "ATL @ NO",
-   "home": "NO",
-   "away": "ATL",
-   "kickoff": "2026-10-06T00:15:00Z",
-   "n_books": 21,
-   "fair_home_spread": -2.8,
-   "fair_total": 48.0,
-   "model_home_spread": -1.0,
-   "model_total": 44.6,
-   "market": "Moneyline",
-   "pick": "NO ML",
-   "price": -146,
-   "p": 0.5778389935814885,
-   "ev": -0.026380873828450946,
-   "fair_odds": -137,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -146 vs fair -137 (21 books)"
-    },
-    {
-     "k": "model",
-     "ok": false,
-     "txt": "Stats model: NO -1.7 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge -3 days"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor NO"
-    }
-   ],
-   "point": null,
-   "team": "NO",
-   "support": 0,
-   "n_signals": 4,
-   "confidence": 57.8,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 11
-  },
-  {
-   "game": "PIT @ CLE",
-   "home": "CLE",
-   "away": "PIT",
-   "kickoff": "2026-10-02T00:15:00Z",
-   "n_books": 22,
-   "fair_home_spread": 2.7,
-   "fair_total": 38.8,
-   "model_home_spread": 1.7,
-   "model_total": 41.2,
-   "market": "Moneyline",
-   "pick": "PIT ML",
-   "price": -136,
-   "p": 0.5612281359308717,
-   "ev": -0.026104117061134302,
-   "fair_odds": -128,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -136 vs fair -128 (22 books)"
-    },
-    {
-     "k": "model",
-     "ok": false,
-     "txt": "Stats model: PIT -1.1 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge -0 days"
-    },
-    {
-     "k": "advanced",
-     "ok": true,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor PIT"
-    }
-   ],
-   "point": null,
-   "team": "PIT",
-   "support": 1,
-   "n_signals": 4,
-   "confidence": 56.1,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 12
-  },
-  {
-   "game": "GB @ TB",
-   "home": "TB",
-   "away": "GB",
-   "kickoff": "2026-10-04T17:00:00Z",
-   "n_books": 18,
-   "fair_home_spread": 3.2,
-   "fair_total": 41.3,
-   "model_home_spread": -1.0,
-   "model_total": 46.8,
-   "market": "Total",
-   "pick": "Over 39.5",
-   "price": -114,
-   "p": 0.5557902096373324,
-   "ev": 0.043325481249027464,
-   "fair_odds": -125,
-   "signals": [
-    {
-     "k": "market",
-     "ok": true,
-     "txt": "FanDuel -114 vs fair -125 (18 books)"
-    },
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Stats model total 46.8 vs market 41.3"
-    },
-    {
-     "k": "weather",
-     "ok": false,
-     "txt": "Wind 0 mph"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Pace, explosive-play and pressure rates point over"
-    }
-   ],
-   "point": 39.5,
-   "team": null,
-   "support": 2,
-   "n_signals": 4,
-   "confidence": 55.6,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 13
-  },
-  {
-   "game": "DAL @ HOU",
-   "home": "HOU",
-   "away": "DAL",
-   "kickoff": "2026-10-04T17:00:00Z",
-   "n_books": 21,
-   "fair_home_spread": -2.9,
-   "fair_total": 48.2,
-   "model_home_spread": -5.8,
-   "model_total": 48.2,
-   "market": "Moneyline",
-   "pick": "HOU ML",
-   "price": -136,
-   "p": 0.5541511269351539,
-   "ev": -0.038384809141938814,
-   "fair_odds": -124,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -136 vs fair -124 (21 books)"
-    },
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Stats model: HOU +2.9 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge +0 days"
-    },
-    {
-     "k": "advanced",
-     "ok": true,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor HOU"
-    }
-   ],
-   "point": null,
-   "team": "HOU",
-   "support": 2,
-   "n_signals": 4,
-   "confidence": 55.4,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 14
-  },
-  {
-   "game": "TEN @ BAL",
-   "home": "BAL",
-   "away": "TEN",
-   "kickoff": "2026-10-04T17:00:00Z",
-   "n_books": 19,
-   "fair_home_spread": -12.2,
-   "fair_total": 44.2,
-   "model_home_spread": -12.8,
-   "model_total": 46.1,
-   "market": "Total",
-   "pick": "Over 42.5",
-   "price": -118,
-   "p": 0.5516754196900624,
-   "ev": 0.01919696180028474,
-   "fair_odds": -123,
-   "signals": [
-    {
-     "k": "market",
-     "ok": true,
-     "txt": "FanDuel -118 vs fair -123 (19 books)"
-    },
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Stats model total 46.1 vs market 44.2"
-    },
-    {
-     "k": "weather",
-     "ok": false,
-     "txt": "Wind 0 mph"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Pace, explosive-play and pressure rates point over"
-    }
-   ],
-   "point": 42.5,
-   "team": null,
-   "support": 2,
-   "n_signals": 4,
-   "confidence": 55.2,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 15
-  },
-  {
-   "game": "JAX @ CIN",
-   "home": "CIN",
-   "away": "JAX",
-   "kickoff": "2026-10-04T17:00:00Z",
-   "n_books": 22,
-   "fair_home_spread": -2.2,
-   "fair_total": 51.3,
-   "model_home_spread": 3.6,
-   "model_total": 48.9,
-   "market": "Moneyline",
-   "pick": "CIN ML",
-   "price": -130,
-   "p": 0.5501343739670469,
-   "ev": -0.026685338365993905,
-   "fair_odds": -122,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -130 vs fair -122 (22 books)"
-    },
-    {
-     "k": "model",
-     "ok": false,
-     "txt": "Stats model: CIN -5.8 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge +0 days"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor CIN"
-    }
-   ],
-   "point": null,
-   "team": "CIN",
-   "support": 0,
-   "n_signals": 4,
-   "confidence": 55.0,
-   "tier": "Slight edge",
-   "units": 1.0,
-   "rank": 16
-  },
-  {
-   "game": "ARI @ NYG",
-   "home": "NYG",
-   "away": "ARI",
-   "kickoff": "2026-10-04T17:00:00Z",
-   "n_books": 22,
-   "fair_home_spread": -0.6,
-   "fair_total": 45.0,
-   "model_home_spread": -5.1,
-   "model_total": 46.9,
-   "market": "Total",
-   "pick": "Over 43.5",
-   "price": -118,
-   "p": 0.5469803969191207,
-   "ev": 0.010523106172612817,
-   "fair_odds": -121,
-   "signals": [
-    {
-     "k": "market",
-     "ok": true,
-     "txt": "FanDuel -118 vs fair -121 (22 books)"
-    },
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Stats model total 46.9 vs market 45.0"
-    },
-    {
-     "k": "weather",
-     "ok": false,
-     "txt": "Wind 0 mph"
-    },
-    {
-     "k": "advanced",
-     "ok": false,
-     "txt": "Pace, explosive-play and pressure rates point over"
-    }
-   ],
-   "point": 43.5,
-   "team": null,
-   "support": 2,
-   "n_signals": 4,
-   "confidence": 54.7,
-   "tier": "Coin flip",
-   "units": 0.5,
-   "rank": 17
-  },
-  {
-   "game": "LA @ PHI",
-   "home": "PHI",
-   "away": "LA",
-   "kickoff": "2026-10-04T17:00:00Z",
-   "n_books": 12,
-   "fair_home_spread": 2.4,
-   "fair_total": 47.0,
-   "model_home_spread": -0.3,
-   "model_total": 46.6,
-   "market": "Moneyline",
-   "pick": "LA ML",
-   "price": -136,
-   "p": 0.5468821058492956,
-   "ev": -0.05099869867328105,
-   "fair_odds": -121,
-   "signals": [
-    {
-     "k": "market",
-     "ok": false,
-     "txt": "FanDuel -136 vs fair -121 (12 books)"
-    },
-    {
-     "k": "model",
-     "ok": false,
-     "txt": "Stats model: LA -2.7 pts vs market"
-    },
-    {
-     "k": "rest",
-     "ok": false,
-     "txt": "Rest edge +1 days"
-    },
-    {
-     "k": "advanced",
-     "ok": true,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor LA"
-    }
-   ],
-   "point": null,
-   "team": "LA",
-   "support": 1,
-   "n_signals": 4,
-   "confidence": 54.7,
-   "tier": "Coin flip",
-   "units": 0.5,
    "rank": 18
   },
   {
-   "game": "PIT @ CLE",
-   "home": "CLE",
-   "away": "PIT",
-   "kickoff": "2026-10-02T00:15:00Z",
-   "n_books": 22,
-   "fair_home_spread": 2.7,
-   "fair_total": 38.8,
-   "model_home_spread": 1.7,
-   "model_total": 41.2,
-   "market": "Total",
-   "pick": "Over 37.5",
-   "price": -115,
-   "p": 0.541058310703362,
-   "ev": 0.011543798271502814,
-   "fair_odds": -118,
+   "market": "Prop",
+   "stat": "receptions",
+   "pick": "DeVonta Smith Under 5.5 receptions",
+   "player": "DeVonta Smith",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -108,
+   "p": 0.5846061205501253,
+   "ev": 0.12590808402246356,
+   "fair_odds": -141,
+   "proj": 4.32,
+   "line": 5.5,
+   "side": "Under",
+   "n_books": 4,
+   "injury": null,
    "signals": [
     {
      "k": "market",
-     "ok": true,
-     "txt": "FanDuel -115 vs fair -118 (22 books)"
+     "ok": false,
+     "txt": "4 other books price this at +102"
     },
     {
      "k": "model",
      "ok": true,
-     "txt": "Stats model total 41.2 vs market 38.8"
+     "txt": "Projection 4.3 vs line 5.5 (72% to hit)"
     },
     {
-     "k": "weather",
+     "k": "role",
      "ok": false,
-     "txt": "Wind 0 mph"
+     "txt": "Target Share last game 38% vs 26% avg"
     },
     {
-     "k": "advanced",
+     "k": "snaps",
      "ok": false,
-     "txt": "Pace, explosive-play and pressure rates point over"
+     "txt": "Snap share 88% last game vs 80% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "LA allows -5% receptions to WRs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    },
+    {
+     "k": "ngs",
+     "ok": false,
+     "txt": "NGS separation 2.8 yds vs 2.9 WR median"
     }
    ],
-   "point": 37.5,
-   "team": null,
-   "support": 2,
-   "n_signals": 4,
-   "confidence": 54.1,
-   "tier": "Coin flip",
-   "units": 0.5,
+   "player_id": "00-0036912",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 1,
+   "n_signals": 7,
+   "confidence": 58.5,
+   "tier": "Slight edge",
+   "units": 1.0,
    "rank": 19
   },
   {
-   "game": "MIA @ MIN",
-   "home": "MIN",
-   "away": "MIA",
-   "kickoff": "2026-10-04T20:05:00Z",
-   "n_books": 19,
-   "fair_home_spread": -10.7,
-   "fair_total": 40.5,
-   "model_home_spread": -7.6,
-   "model_total": 43.5,
-   "market": "Spread",
-   "pick": "MIN -9.5",
-   "price": -120,
-   "p": 0.5371409196209422,
-   "ev": -0.015241647361605881,
-   "fair_odds": -116,
+   "market": "Prop",
+   "stat": "passing_tds",
+   "pick": "Jalen Hurts Under 1.5 pass TDs",
+   "player": "Jalen Hurts",
+   "team": "PHI",
+   "opp": "LA",
+   "game": "PHI vs LA",
+   "price": -178,
+   "p": 0.5829997860161806,
+   "ev": -0.08947224431180778,
+   "fair_odds": -140,
+   "proj": 1.41,
+   "line": 1.5,
+   "side": "Under",
+   "n_books": 5,
+   "injury": null,
    "signals": [
     {
      "k": "market",
      "ok": false,
-     "txt": "FanDuel -120 vs fair -116 (19 books)"
+     "txt": "5 other books price this at -137"
     },
     {
      "k": "model",
      "ok": false,
-     "txt": "Stats model: MIN -3.1 pts vs market"
+     "txt": "Projection 1.4 vs line 1.5 (59% to hit)"
     },
     {
-     "k": "keynum",
+     "k": "snaps",
      "ok": false,
-     "txt": "FanDuel -9.5 crosses a key number vs consensus -10"
+     "txt": "Snap share 100% last game vs 97% avg"
     },
     {
-     "k": "rest",
+     "k": "matchup",
      "ok": false,
-     "txt": "Rest edge +0 days"
+     "txt": "LA allows -2% pass TDs to QBs vs avg"
     },
     {
-     "k": "advanced",
-     "ok": true,
-     "txt": "Early-down EPA, explosive plays and pressure matchup favor MIN"
+     "k": "script",
+     "ok": false,
+     "txt": "PHI implied team total 22.0"
+    },
+    {
+     "k": "ngs",
+     "ok": false,
+     "txt": "NGS CPOE +2.9%"
     }
    ],
-   "point": -9.5,
-   "team": "MIN",
-   "support": 1,
-   "n_signals": 5,
-   "confidence": 53.7,
-   "tier": "Coin flip",
-   "units": 0.5,
+   "player_id": "00-0036389",
+   "kickoff": "2026-09-29T00:15:00Z",
+   "support": 0,
+   "n_signals": 6,
+   "confidence": 58.3,
+   "tier": "Slight edge",
+   "units": 1.0,
    "rank": 20
   }
  ],
- "considered": 96,
+ "considered": 167,
  "locked": [],
  "all_bets": [
   {
@@ -990,12 +1131,75 @@
    "top": true
   },
   {
+   "pick": "Saquon Barkley Under 2.5 receptions",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -154,
+   "p": 0.681,
+   "ev": 0.1232,
+   "top": true
+  },
+  {
+   "pick": "Saquon Barkley Under 13.5 rec yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.6617,
+   "ev": 0.2472,
+   "top": true
+  },
+  {
+   "pick": "Makai Lemon Under 26.5 rec yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.6609,
+   "ev": 0.2457,
+   "top": true
+  },
+  {
+   "pick": "Saquon Barkley Under 71.5 rush yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.6596,
+   "ev": 0.2433,
+   "top": true
+  },
+  {
    "pick": "KC ML",
    "game": "KC @ LV",
    "market": "Moneyline",
    "price": -230,
    "p": 0.6583,
    "ev": -0.0554,
+   "top": true
+  },
+  {
+   "pick": "Tank Bigsby Over 11.5 rush yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.6346,
+   "ev": 0.1962,
+   "top": true
+  },
+  {
+   "pick": "Dontayvion Wicks Under 3.5 receptions",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -180,
+   "p": 0.6326,
+   "ev": -0.0159,
+   "top": true
+  },
+  {
+   "pick": "D'Andre Swift Over 1.5 receptions",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -148,
+   "p": 0.6089,
+   "ev": 0.0203,
    "top": true
   },
   {
@@ -1026,6 +1230,24 @@
    "top": true
   },
   {
+   "pick": "Makai Lemon Under 2.5 receptions",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -114,
+   "p": 0.5964,
+   "ev": 0.1196,
+   "top": true
+  },
+  {
+   "pick": "Rome Odunze Over 25.5 rec yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5886,
+   "ev": 0.1095,
+   "top": true
+  },
+  {
    "pick": "CHI ML",
    "game": "NYJ @ CHI",
    "market": "Moneyline",
@@ -1035,13 +1257,40 @@
    "top": true
   },
   {
+   "pick": "DeVonta Smith Under 5.5 receptions",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -108,
+   "p": 0.5846,
+   "ev": 0.1259,
+   "top": true
+  },
+  {
+   "pick": "Jalen Hurts Under 1.5 pass TDs",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -178,
+   "p": 0.583,
+   "ev": -0.0895,
+   "top": true
+  },
+  {
+   "pick": "Dontayvion Wicks Under 43.5 rec yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5799,
+   "ev": 0.0932,
+   "top": false
+  },
+  {
    "pick": "SF ML",
    "game": "DEN @ SF",
    "market": "Moneyline",
    "price": -146,
    "p": 0.5794,
    "ev": -0.0237,
-   "top": true
+   "top": false
   },
   {
    "pick": "NO ML",
@@ -1050,7 +1299,25 @@
    "price": -146,
    "p": 0.5778,
    "ev": -0.0264,
-   "top": true
+   "top": false
+  },
+  {
+   "pick": "Cole Kmet Over 9.5 rec yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5765,
+   "ev": 0.0866,
+   "top": false
+  },
+  {
+   "pick": "D'Andre Swift Over 10.5 rec yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5753,
+   "ev": 0.0845,
+   "top": false
   },
   {
    "pick": "PIT ML",
@@ -1059,7 +1326,7 @@
    "price": -136,
    "p": 0.5612,
    "ev": -0.0261,
-   "top": true
+   "top": false
   },
   {
    "pick": "Over 39.5",
@@ -1068,7 +1335,7 @@
    "price": -114,
    "p": 0.5558,
    "ev": 0.0433,
-   "top": true
+   "top": false
   },
   {
    "pick": "HOU ML",
@@ -1077,7 +1344,7 @@
    "price": -136,
    "p": 0.5542,
    "ev": -0.0384,
-   "top": true
+   "top": false
   },
   {
    "pick": "Over 42.5",
@@ -1086,7 +1353,7 @@
    "price": -118,
    "p": 0.5517,
    "ev": 0.0192,
-   "top": true
+   "top": false
   },
   {
    "pick": "CIN ML",
@@ -1095,7 +1362,7 @@
    "price": -130,
    "p": 0.5501,
    "ev": -0.0267,
-   "top": true
+   "top": false
   },
   {
    "pick": "Over 43.5",
@@ -1104,7 +1371,7 @@
    "price": -118,
    "p": 0.547,
    "ev": 0.0105,
-   "top": true
+   "top": false
   },
   {
    "pick": "LA ML",
@@ -1113,7 +1380,16 @@
    "price": -136,
    "p": 0.5469,
    "ev": -0.051,
-   "top": true
+   "top": false
+  },
+  {
+   "pick": "Kyle Monangai Over 37.5 rush yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.543,
+   "ev": 0.0236,
+   "top": false
   },
   {
    "pick": "Over 37.5",
@@ -1122,7 +1398,16 @@
    "price": -115,
    "p": 0.5411,
    "ev": 0.0115,
-   "top": true
+   "top": false
+  },
+  {
+   "pick": "Kalif Raymond Under 24.5 rec yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5402,
+   "ev": 0.0182,
+   "top": false
   },
   {
    "pick": "MIN -9.5",
@@ -1131,7 +1416,16 @@
    "price": -120,
    "p": 0.5371,
    "ev": -0.0152,
-   "top": true
+   "top": false
+  },
+  {
+   "pick": "DeVonta Smith Under 72.5 rec yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5368,
+   "ev": 0.0118,
+   "top": false
   },
   {
    "pick": "SEA -6.5",
@@ -1140,6 +1434,24 @@
    "price": -118,
    "p": 0.5353,
    "ev": -0.011,
+   "top": false
+  },
+  {
+   "pick": "Luther Burden III Over 35.5 rec yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5317,
+   "ev": 0.0023,
+   "top": false
+  },
+  {
+   "pick": "Jalen Hurts Under 24.5 rush yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5313,
+   "ev": 0.0015,
    "top": false
   },
   {
@@ -1179,6 +1491,15 @@
    "top": false
   },
   {
+   "pick": "Colston Loveland Over 35.5 rec yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5223,
+   "ev": -0.0155,
+   "top": false
+  },
+  {
    "pick": "Over 47.5",
    "game": "DAL @ HOU",
    "market": "Total",
@@ -1194,6 +1515,15 @@
    "price": -110,
    "p": 0.5212,
    "ev": -0.005,
+   "top": false
+  },
+  {
+   "pick": "Colston Loveland Under 3.5 receptions",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -130,
+   "p": 0.52,
+   "ev": -0.0801,
    "top": false
   },
   {
@@ -1305,6 +1635,15 @@
    "top": false
   },
   {
+   "pick": "Jalen Hurts Over 218.5 pass yds",
+   "game": "PHI vs LA",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.5092,
+   "ev": -0.0402,
+   "top": false
+  },
+  {
    "pick": "DET -3",
    "game": "DET @ CAR",
    "market": "Spread",
@@ -1332,12 +1671,21 @@
    "top": false
   },
   {
+   "pick": "Rome Odunze Over 2.5 receptions",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": 108,
+   "p": 0.5074,
+   "ev": 0.0554,
+   "top": false
+  },
+  {
    "pick": "PIT -2.5",
    "game": "PIT @ CLE",
    "market": "Spread",
    "price": -114,
-   "p": 0.5074,
-   "ev": -0.0475,
+   "p": 0.5052,
+   "ev": -0.0517,
    "top": false
   },
   {
@@ -1359,6 +1707,24 @@
    "top": false
   },
   {
+   "pick": "Cole Kmet Over 1.5 receptions",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -108,
+   "p": 0.5043,
+   "ev": -0.0288,
+   "top": false
+  },
+  {
+   "pick": "Luther Burden III Over 3.5 receptions",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -118,
+   "p": 0.5043,
+   "ev": -0.0684,
+   "top": false
+  },
+  {
    "pick": "Over 43.5",
    "game": "LAC @ SEA",
    "market": "Total",
@@ -1377,6 +1743,24 @@
    "top": false
   },
   {
+   "pick": "D'Andre Swift Over 60.5 rush yds",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -113,
+   "p": 0.502,
+   "ev": -0.0537,
+   "top": false
+  },
+  {
+   "pick": "Kalif Raymond Over 2.5 receptions",
+   "game": "CHI vs NYJ",
+   "market": "Prop",
+   "price": -130,
+   "p": 0.502,
+   "ev": -0.1119,
+   "top": false
+  },
+  {
    "pick": "PHI +2.5",
    "game": "LA @ PHI",
    "market": "Spread",
@@ -1386,25 +1770,12 @@
    "top": false
   }
  ],
- "odds_pulled": "2026-09-28T06:59:27.164780+00:00",
- "props_pulled": null,
+ "odds_pulled": "2026-09-28T07:07:04.054835+00:00",
+ "props_pulled": "2026-09-28T07:07:04.054835+00:00",
  "record": {
   "pending": 20,
   "bets": 0,
   "all": [
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "NO ML",
-    "market": "Moneyline",
-    "price": -146,
-    "units": 1.0,
-    "confidence": 57.8,
-    "tier": "Slight edge",
-    "p": 0.5778389935814885,
-    "result": null,
-    "profit": null
-   },
    {
     "season": 2026,
     "week": 4,
@@ -1415,19 +1786,6 @@
     "confidence": 59.9,
     "tier": "Slight edge",
     "p": 0.599061423080504,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "SF ML",
-    "market": "Moneyline",
-    "price": -146,
-    "units": 1.0,
-    "confidence": 57.9,
-    "tier": "Slight edge",
-    "p": 0.5794156518057519,
     "result": null,
     "profit": null
    },
@@ -1460,19 +1818,6 @@
    {
     "season": 2026,
     "week": 4,
-    "pick": "MIN -9.5",
-    "market": "Spread",
-    "price": -120,
-    "units": 0.5,
-    "confidence": 53.7,
-    "tier": "Coin flip",
-    "p": 0.5371409196209422,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
     "pick": "MIN ML",
     "market": "Moneyline",
     "price": -560,
@@ -1480,84 +1825,6 @@
     "confidence": 81.3,
     "tier": "Very likely",
     "p": 0.8131682030531326,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "LA ML",
-    "market": "Moneyline",
-    "price": -136,
-    "units": 0.5,
-    "confidence": 54.7,
-    "tier": "Coin flip",
-    "p": 0.5468821058492956,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "Over 43.5",
-    "market": "Total",
-    "price": -118,
-    "units": 0.5,
-    "confidence": 54.7,
-    "tier": "Coin flip",
-    "p": 0.5469803969191207,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "CIN ML",
-    "market": "Moneyline",
-    "price": -130,
-    "units": 1.0,
-    "confidence": 55.0,
-    "tier": "Slight edge",
-    "p": 0.5501343739670469,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "Over 42.5",
-    "market": "Total",
-    "price": -118,
-    "units": 1.0,
-    "confidence": 55.2,
-    "tier": "Slight edge",
-    "p": 0.5516754196900624,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "HOU ML",
-    "market": "Moneyline",
-    "price": -136,
-    "units": 1.0,
-    "confidence": 55.4,
-    "tier": "Slight edge",
-    "p": 0.5541511269351539,
-    "result": null,
-    "profit": null
-   },
-   {
-    "season": 2026,
-    "week": 4,
-    "pick": "Over 39.5",
-    "market": "Total",
-    "price": -114,
-    "units": 1.0,
-    "confidence": 55.6,
-    "tier": "Slight edge",
-    "p": 0.5557902096373324,
     "result": null,
     "profit": null
    },
@@ -1629,26 +1896,143 @@
    {
     "season": 2026,
     "week": 4,
-    "pick": "Over 37.5",
-    "market": "Total",
-    "price": -115,
-    "units": 0.5,
-    "confidence": 54.1,
-    "tier": "Coin flip",
-    "p": 0.541058310703362,
+    "pick": "Jalen Hurts Under 1.5 pass TDs",
+    "market": "Prop",
+    "price": -178,
+    "units": 1.0,
+    "confidence": 58.3,
+    "tier": "Slight edge",
+    "p": 0.5829997860161806,
     "result": null,
     "profit": null
    },
    {
     "season": 2026,
     "week": 4,
-    "pick": "PIT ML",
-    "market": "Moneyline",
-    "price": -136,
+    "pick": "DeVonta Smith Under 5.5 receptions",
+    "market": "Prop",
+    "price": -108,
     "units": 1.0,
-    "confidence": 56.1,
+    "confidence": 58.5,
     "tier": "Slight edge",
-    "p": 0.5612281359308717,
+    "p": 0.5846061205501253,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Rome Odunze Over 25.5 rec yds",
+    "market": "Prop",
+    "price": -113,
+    "units": 1.0,
+    "confidence": 58.9,
+    "tier": "Slight edge",
+    "p": 0.5885901738057908,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Makai Lemon Under 2.5 receptions",
+    "market": "Prop",
+    "price": -114,
+    "units": 1.0,
+    "confidence": 59.6,
+    "tier": "Slight edge",
+    "p": 0.5964172847919404,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "D'Andre Swift Over 1.5 receptions",
+    "market": "Prop",
+    "price": -148,
+    "units": 1.5,
+    "confidence": 60.9,
+    "tier": "Favored",
+    "p": 0.608917001885022,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Dontayvion Wicks Under 3.5 receptions",
+    "market": "Prop",
+    "price": -180,
+    "units": 1.5,
+    "confidence": 63.3,
+    "tier": "Favored",
+    "p": 0.6326196478429876,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Tank Bigsby Over 11.5 rush yds",
+    "market": "Prop",
+    "price": -113,
+    "units": 1.5,
+    "confidence": 63.5,
+    "tier": "Favored",
+    "p": 0.6345831618188861,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Saquon Barkley Under 71.5 rush yds",
+    "market": "Prop",
+    "price": -113,
+    "units": 1.5,
+    "confidence": 66.0,
+    "tier": "Favored",
+    "p": 0.6596102057008884,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Makai Lemon Under 26.5 rec yds",
+    "market": "Prop",
+    "price": -113,
+    "units": 1.5,
+    "confidence": 66.1,
+    "tier": "Favored",
+    "p": 0.6608705908372503,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Saquon Barkley Under 13.5 rec yds",
+    "market": "Prop",
+    "price": -113,
+    "units": 1.5,
+    "confidence": 66.2,
+    "tier": "Favored",
+    "p": 0.6616688476526874,
+    "result": null,
+    "profit": null
+   },
+   {
+    "season": 2026,
+    "week": 4,
+    "pick": "Saquon Barkley Under 2.5 receptions",
+    "market": "Prop",
+    "price": -154,
+    "units": 1.5,
+    "confidence": 68.1,
+    "tier": "Favored",
+    "p": 0.6809980316568476,
     "result": null,
     "profit": null
    }
