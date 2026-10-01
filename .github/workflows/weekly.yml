@@ -68,6 +68,12 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python pipeline/fetch_odds.py ${{ steps.mode.outputs.args }}
 
+      - name: Probe Underdog price format (one-off, when requests/probe exists)
+        if: hashFiles('requests/probe') != ''
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python pipeline/probe_underdog.py
+
       - name: Download nflverse data (PFR, Next Gen Stats, FTN, play-by-play)
         run: python pipeline/download_data.py
 
@@ -78,7 +84,7 @@ jobs:
         run: |
           git config user.name "sunday-edge-bot"
           git config user.email "sunday-edge-bot@users.noreply.github.com"
-          rm -f requests/props
+          rm -f requests/props requests/probe
           git add -A data site requests
           git diff --cached --quiet || git commit -m "Weekly update $(date -u +'%Y-%m-%d %H:%M') UTC"
           git pull --rebase origin main && git push origin HEAD:main

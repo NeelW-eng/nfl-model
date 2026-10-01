@@ -28,7 +28,9 @@ def log_picks(season, week, picks, pulled_at):
 def grade():
     if not os.path.exists(LOG):
         return pd.DataFrame(columns=COLS)
-    log = pd.read_csv(LOG)
+    log = pd.read_csv(LOG).reindex(columns=COLS)
+    log['result'] = log['result'].astype(object)
+    log['profit_units'] = pd.to_numeric(log['profit_units'], errors='coerce').astype(float)
     g = pd.read_csv(f'{DATA}/games.csv')
     g = g[g.home_score.notna()]
     ps = pd.read_parquet(f'{DATA}/ps_{CUR}.parquet')
