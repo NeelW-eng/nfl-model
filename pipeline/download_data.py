@@ -29,9 +29,25 @@ def get(job, force):
     return dst, 'ok'
 
 
+def espn_injuries():
+    """ESPN's league-wide injury feed (credible, updated through the week). Failure is non-fatal."""
+    try:
+        req = urllib.request.Request('https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries',
+                                     headers={'User-Agent': 'Mozilla/5.0 (sunday-edge)'})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = r.read()
+        import json
+        n = sum(len(t.get('injuries', [])) for t in json.loads(d).get('injuries', []))
+        open(os.path.join(DATA, 'injuries_espn.json'), 'wb').write(d)
+        return f'ok injuries_espn.json ({n} listings)'
+    except Exception as e:
+        return f'ESPN injury feed unavailable: {e}'
+
+
 if __name__ == '__main__':
     os.makedirs(DATA, exist_ok=True)
     force = '--force' in sys.argv
     with cf.ThreadPoolExecutor(6) as ex:
         for dst, st in ex.map(lambda j: get(j, force), jobs()):
             print(st, dst)
+    print(espn_injuries())

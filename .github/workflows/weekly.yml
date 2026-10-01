@@ -1,16 +1,25 @@
-name: Sunday Edge weekly run
+name: Sunday Edge run
 
-# Times are UTC. 11:00 UTC = 6:00 AM Central (5:00 AM after daylight saving ends).
+# Primary clock: a Claude scheduled task pushes requests/run (containing the mode), which starts this
+# workflow immediately. The cron entries below are backups (GitHub can start them hours late); odds are
+# never pulled twice for a game within 3 hours, so a late backup run costs no extra credits.
+#   grade    Tuesday     grade last week, refresh data and projections (no odds credits)
+#   thu      Thursday    Underdog + sportsbook props for Thursday's game, game lines
+#   sun      Sunday      props for every remaining game this week (Sunday + Monday)
+#   rescore  Sunday      re-run with updated injuries/inactives using the morning's lines (no credits)
+#   week     any time    props for every game this week (full preview)
+#   game:N   any time    props for games starting in the next N hours
 on:
   schedule:
-    - cron: '0 11 * * 2'   # Tuesday:  grade last week, refresh projections (no odds credits)
-    - cron: '0 11 * * 4'   # Thursday: game lines + props for Thursday night
-    - cron: '0 11 * * 0'   # Sunday:   game lines + props for Sunday and Monday games
+    - cron: '17 12 * * 2'   # Tue ~7:17 AM Central (backup)
+    - cron: '47 12 * * 4'   # Thu ~7:47 AM Central (backup)
+    - cron: '47 14 * * 0'   # Sun ~9:47 AM Central (backup)
+    - cron: '7 16 * * 0'    # Sun ~11:07 AM Central (backup)
   workflow_dispatch:
     inputs:
-      odds:
-        description: 'Odds pull: none, games, or full'
-        default: 'games'
+      mode:
+        description: 'grade, thu, sun, rescore, week, or game:N'
+        default: 'rescore'
   push:
     branches: [main]
     paths: ['pipeline/**', '.github/workflows/**', 'requirements.txt', 'requests/**']
@@ -19,7 +28,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: weekly
+  group: sunday-edge
   cancel-in-progress: false
 
 jobs:
@@ -43,38 +52,35 @@ jobs:
           key: nflverse-${{ github.run_id }}
           restore-keys: nflverse-
 
-      - name: Decide odds pull
+      - name: Decide mode
         id: mode
         run: |
           case "${{ github.event_name }}:${{ github.event.schedule }}" in
-            "schedule:0 11 * * 2") echo "args=skip" >> $GITHUB_OUTPUT ;;
-            "schedule:0 11 * * 4") echo "args=--props-hours 20" >> $GITHUB_OUTPUT ;;
-            "schedule:0 11 * * 0") echo "args=--props-hours 40" >> $GITHUB_OUTPUT ;;
-            "workflow_dispatch:"*)
-              case "${{ github.event.inputs.odds }}" in
-                none) echo "args=skip" >> $GITHUB_OUTPUT ;;
-                full) echo "args=--props-hours 170" >> $GITHUB_OUTPUT ;;
-                *)    echo "args=--no-props" >> $GITHUB_OUTPUT ;;
-              esac ;;
-            *)
-              # a pushed requests/props file (containing N) asks for props for games in the next N hours
-              if [ -f requests/props ]; then echo "args=--props-hours $(tr -dc '0-9' < requests/props)" >> $GITHUB_OUTPUT;
-              else echo "args=--no-props" >> $GITHUB_OUTPUT; fi ;;
+            "schedule:17 12 * * 2") MODE=grade ;;
+            "schedule:47 12 * * 4") MODE=thu ;;
+            "schedule:47 14 * * 0") MODE=sun ;;
+            "schedule:7 16 * * 0")  MODE=rescore ;;
+            "workflow_dispatch:"*)  MODE="${{ github.event.inputs.mode }}" ;;
+            *) if [ -f requests/run ]; then MODE=$(tr -d '[:space:]' < requests/run); else MODE=code; fi ;;
           esac
+          case "$MODE" in
+            thu)     ARGS="--props-hours 20" ;;
+            sun)     ARGS="--props-week" ;;
+            week)    ARGS="--props-week" ;;
+            game:*)  ARGS="--props-hours ${MODE#game:}" ;;
+            *)       ARGS="skip" ;;
+          esac
+          echo "mode=$MODE" >> $GITHUB_OUTPUT
+          echo "args=$ARGS" >> $GITHUB_OUTPUT
+          echo "Mode: $MODE  Odds: $ARGS"
 
-      - name: Pull FanDuel and market odds
+      - name: Pull Underdog and sportsbook odds
         if: steps.mode.outputs.args != 'skip'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python pipeline/fetch_odds.py ${{ steps.mode.outputs.args }}
 
-      - name: Probe Underdog price format (one-off, when requests/probe exists)
-        if: hashFiles('requests/probe') != ''
-        env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python pipeline/probe_underdog.py
-
-      - name: Download nflverse data (PFR, Next Gen Stats, FTN, play-by-play)
+      - name: Download nflverse data and injury feeds
         run: python pipeline/download_data.py
 
       - name: Run models and build dashboard
@@ -84,7 +90,7 @@ jobs:
         run: |
           git config user.name "sunday-edge-bot"
           git config user.email "sunday-edge-bot@users.noreply.github.com"
-          rm -f requests/props requests/probe
+          rm -f requests/run requests/props requests/probe
           git add -A data site requests
-          git diff --cached --quiet || git commit -m "Weekly update $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase origin main && git push origin HEAD:main
+          git diff --cached --quiet || git commit -m "Update (${{ steps.mode.outputs.mode }}) $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase -X ours origin main && git push origin HEAD:main
