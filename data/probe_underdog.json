@@ -1,0 +1,2369 @@
+{
+ "event": {
+  "id": "d55cb69fed50a09170560b5b75d8de86",
+  "sport_key": "americanfootball_nfl",
+  "sport_title": "NFL",
+  "commence_time": "2026-10-02T00:15:00Z",
+  "home_team": "Cleveland Browns",
+  "away_team": "Pittsburgh Steelers"
+ },
+ "response": {
+  "id": "d55cb69fed50a09170560b5b75d8de86",
+  "sport_key": "americanfootball_nfl",
+  "sport_title": "NFL",
+  "commence_time": "2026-10-02T00:15:00Z",
+  "home_team": "Cleveland Browns",
+  "away_team": "Pittsburgh Steelers",
+  "bookmakers": [
+   {
+    "key": "underdog",
+    "title": "Underdog",
+    "markets": [
+     {
+      "key": "player_reception_yds",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 12.5
+       },
+       {
+        "name": "Under",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 12.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 25.5
+       },
+       {
+        "name": "Under",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 25.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Under",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 13.5
+       },
+       {
+        "name": "Under",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 13.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Under",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 11.5
+       },
+       {
+        "name": "Under",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 11.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 28.5
+       },
+       {
+        "name": "Under",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 28.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Under",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Under",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 16.5
+       },
+       {
+        "name": "Under",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 16.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": -137,
+        "point": 10.5
+       },
+       {
+        "name": "Under",
+        "description": "Germie Bernard",
+        "price": -137,
+        "point": 10.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 35.5
+       },
+       {
+        "name": "Under",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 35.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 37.5
+       },
+       {
+        "name": "Under",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 37.5
+       }
+      ]
+     },
+     {
+      "key": "player_reception_yds_alternate",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Blake Whiteheart",
+        "price": -125,
+        "point": 0.5
+       },
+       {
+        "name": "Under",
+        "description": "Blake Whiteheart",
+        "price": -169,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "player_rush_yds",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 55.5
+       },
+       {
+        "name": "Under",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 55.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 73.5
+       },
+       {
+        "name": "Under",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 73.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 5.5
+       },
+       {
+        "name": "Under",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 5.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Under",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 29.5
+       }
+      ]
+     },
+     {
+      "key": "player_rush_yds_alternate",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -191,
+        "point": 0.5
+       },
+       {
+        "name": "Under",
+        "description": "Aaron Rodgers",
+        "price": -113,
+        "point": 0.5
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "prizepicks",
+    "title": "PrizePicks",
+    "markets": [
+     {
+      "key": "player_reception_yds",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Under",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Under",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 37.5
+       },
+       {
+        "name": "Under",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 37.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Under",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Under",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 28.5
+       },
+       {
+        "name": "Under",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 28.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 23.5
+       },
+       {
+        "name": "Under",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 23.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Under",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 16.5
+       },
+       {
+        "name": "Under",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 16.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 13.5
+       },
+       {
+        "name": "Under",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 13.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 12.5
+       },
+       {
+        "name": "Under",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 12.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 11.5
+       },
+       {
+        "name": "Under",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 11.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": -137,
+        "point": 10.5
+       },
+       {
+        "name": "Under",
+        "description": "Germie Bernard",
+        "price": -137,
+        "point": 10.5
+       },
+       {
+        "name": "Over",
+        "description": "Blake Whiteheart",
+        "price": -137,
+        "point": 0.5
+       },
+       {
+        "name": "Under",
+        "description": "Blake Whiteheart",
+        "price": -137,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "player_reception_yds_alternate",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": 100,
+        "point": 124.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": 100,
+        "point": 120.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": 100,
+        "point": 117.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": 100,
+        "point": 114.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 114.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": 100,
+        "point": 98.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": 100,
+        "point": 83.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": 100,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": 100,
+        "point": 76.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 72.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 71.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": 100,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": 100,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": 100,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": 100,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": 100,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": 100,
+        "point": 54.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": 100,
+        "point": 38.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 38.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 30.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": 100,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Blake Whiteheart",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 15.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": 100,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 4.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 4.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 4.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 4.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 4.5
+       },
+       {
+        "name": "Over",
+        "description": "Germie Bernard",
+        "price": -137,
+        "point": 4.5
+       }
+      ]
+     },
+     {
+      "key": "player_rush_yds",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 73.5
+       },
+       {
+        "name": "Under",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 73.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 55.5
+       },
+       {
+        "name": "Under",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 55.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Under",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 5.5
+       },
+       {
+        "name": "Under",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 5.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 1.5
+       },
+       {
+        "name": "Under",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 1.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 0.5
+       },
+       {
+        "name": "Under",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 0.5
+       }
+      ]
+     },
+     {
+      "key": "player_rush_yds_alternate",
+      "last_update": "2026-10-01T06:02:46Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 149.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 129.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": 100,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": 100,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": 100,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": 100,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": 100,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 35.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": 100,
+        "point": 34.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": 100,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": 100,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": 100,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": 100,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": 100,
+        "point": 4.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 4.5
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "pick6",
+    "title": "DraftKings Pick6",
+    "markets": [
+     {
+      "key": "player_reception_yds",
+      "last_update": "2026-10-01T06:02:51Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 16.5
+       },
+       {
+        "name": "Under",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 16.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Under",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 25.5
+       },
+       {
+        "name": "Under",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 25.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 11.5
+       },
+       {
+        "name": "Under",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 11.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 12.5
+       },
+       {
+        "name": "Under",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 12.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 13.5
+       },
+       {
+        "name": "Under",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 13.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Under",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 40.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Under",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 44.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Under",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 34.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 37.5
+       },
+       {
+        "name": "Under",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 37.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 32.5
+       },
+       {
+        "name": "Under",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 32.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 28.5
+       },
+       {
+        "name": "Under",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 28.5
+       }
+      ]
+     },
+     {
+      "key": "player_reception_yds_alternate",
+      "last_update": "2026-10-01T06:02:51Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Darnell Washington",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Roman Wilson",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Jerry Jeudy",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "Harold Fannin Jr.",
+        "price": -137,
+        "point": 119.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 119.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 129.5
+       },
+       {
+        "name": "Over",
+        "description": "DK Metcalf",
+        "price": -137,
+        "point": 139.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "KC Concepcion",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 119.5
+       },
+       {
+        "name": "Over",
+        "description": "Denzel Boston",
+        "price": -137,
+        "point": 129.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "Michael Pittman Jr.",
+        "price": -137,
+        "point": 119.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Pat Freiermuth",
+        "price": -137,
+        "point": 99.5
+       }
+      ]
+     },
+     {
+      "key": "player_rush_yds",
+      "last_update": "2026-10-01T06:02:51Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Under",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 5.5
+       },
+       {
+        "name": "Under",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 5.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 72.5
+       },
+       {
+        "name": "Under",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 72.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 55.5
+       },
+       {
+        "name": "Under",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 55.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 1.5
+       },
+       {
+        "name": "Under",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 1.5
+       }
+      ]
+     },
+     {
+      "key": "player_rush_yds_alternate",
+      "last_update": "2026-10-01T06:02:51Z",
+      "outcomes": [
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Deshaun Watson",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 29.5
+       },
+       {
+        "name": "Over",
+        "description": "Raheim Sanders",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 59.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 119.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 129.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 139.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 149.5
+       },
+       {
+        "name": "Over",
+        "description": "Jaylen Warren",
+        "price": -137,
+        "point": 159.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 39.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 49.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 69.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 79.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 89.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 99.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 109.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 119.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 129.5
+       },
+       {
+        "name": "Over",
+        "description": "Quinshon Judkins",
+        "price": -137,
+        "point": 139.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 9.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 14.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 19.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 24.5
+       },
+       {
+        "name": "Over",
+        "description": "Aaron Rodgers",
+        "price": -137,
+        "point": 29.5
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "credits_left": "490",
+ "credits_used": "10",
+ "last_cost": "4"
+}
