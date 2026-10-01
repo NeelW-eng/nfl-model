@@ -99,8 +99,8 @@ def candidates(odds, proj, status, inj_notes):
                     pc = p_cons if s == 1 else 1 - p_cons
                     lines_ = sorted({pt for pt, _ in others})
                     rng = f"{lines_[0]:g}" if len(lines_) == 1 else f"{lines_[0]:g}–{lines_[-1]:g}"
-                    sig.append(dict(k='market', ok=pc > 0.53, txt=f"{len(cons)} sportsbooks (lines {rng}) put this at {pc:.0%}"))
-                sig.append(dict(k='model', ok=pm > 0.53, txt=f"Projection {r['proj']:.1f} vs line {line:g} ({pm:.0%})"))
+                    sig.append(dict(k='market', ok=pc >= 0.51, txt=f"{len(cons)} sportsbooks (lines {rng}) put this at {pc:.0%}"))
+                sig.append(dict(k='model', ok=pm >= 0.52, txt=f"Projection {r['proj']:.1f} vs line {line:g} ({pm:.0%})"))
                 sig += prop_signals(stat, r, s)
                 boost = float(r.get('inj_boost', 1.0) or 1.0)
                 team_notes = inj_notes.get(r['team'], [])

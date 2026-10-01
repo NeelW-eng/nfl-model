@@ -42,8 +42,20 @@ def espn_injuries():
                                                        'Accept': 'application/json'})
             with urllib.request.urlopen(req, timeout=30) as r:
                 d = r.read()
-            n = sum(len(t.get('injuries', [])) for t in json.loads(d).get('injuries', []))
-            open(os.path.join(DATA, 'injuries_espn.json'), 'wb').write(d)
+            full = json.loads(d)
+            slim = {'timestamp': full.get('timestamp'), 'injuries': []}
+            for t in full.get('injuries', []):
+                rows = []
+                for e in t.get('injuries', []):
+                    a = e.get('athlete') or {}
+                    href = ((a.get('links') or [{}])[0] or {}).get('href', '')
+                    aid = a.get('id') or (href.split('/id/')[1].split('/')[0] if '/id/' in href else None)
+                    rows.append({'athlete': {'id': aid, 'displayName': a.get('displayName')},
+                                 'status': e.get('status'), 'shortComment': (e.get('shortComment') or '')[:240],
+                                 'date': e.get('date')})
+                slim['injuries'].append({'displayName': t.get('displayName'), 'injuries': rows})
+            n = sum(len(t['injuries']) for t in slim['injuries'])
+            json.dump(slim, open(os.path.join(DATA, 'injuries_espn.json'), 'w'))
             tried.append(dict(url=url, ok=True, listings=n))
             break
         except Exception as e:
