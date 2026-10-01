@@ -3,7 +3,9 @@
 Sources
   1. Official NFL injury reports (practice participation and game status), published by the teams through
      the league and mirrored by nflverse (data/inj_<season>.parquet).
-  2. ESPN's injury feed (site.api.espn.com), updated through the week with designations, injured reserve,
+  2. Official NFL weekly roster status (active, injured reserve, practice squad, released, suspended),
+     mirrored by nflverse (data/roster_weekly_<season>.parquet).
+  3. ESPN's injury feed (site.api.espn.com), updated through the week with designations, injured reserve,
      and notes from team reports. Saved to data/injuries_espn.json by download_data.py.
 
 When both have a player, the more severe current designation wins, so an ESPN "Out" or injured-reserve
@@ -13,10 +15,10 @@ import json, os
 import pandas as pd
 from paths import DATA, CUR
 
-OUT_STATUSES = {'Out', 'Doubtful', 'Injured Reserve', 'Suspended', 'Physically Unable to Perform', 'PUP',
+OUT_STATUSES = {'Out', 'Doubtful', 'Injured Reserve', 'Practice squad', 'Released', 'Retired', 'Exempt', 'Suspended', 'Physically Unable to Perform', 'PUP',
                 'Non-Football Injury', 'Reserve/Commissioner Exempt', 'Inactive'}
 FLAG_STATUSES = {'Questionable', 'Day-To-Day'}
-SEVERITY = {'Inactive': 6, 'Injured Reserve': 6, 'Suspended': 6, 'Physically Unable to Perform': 6, 'PUP': 6,
+SEVERITY = {'Practice squad': 6, 'Released': 6, 'Retired': 6, 'Exempt': 6, 'Inactive': 6, 'Injured Reserve': 6, 'Suspended': 6, 'Physically Unable to Perform': 6, 'PUP': 6,
             'Non-Football Injury': 6, 'Reserve/Commissioner Exempt': 6, 'Out': 5, 'Doubtful': 4,
             'Questionable': 3, 'Day-To-Day': 2, 'Active': 0}
 
@@ -61,10 +63,25 @@ def official_report():
     return rows
 
 
+ROSTER_OUT = {'RES': 'Injured Reserve', 'DEV': 'Practice squad', 'CUT': 'Released', 'RET': 'Retired',
+              'EXE': 'Exempt', 'SUS': 'Suspended', 'PUP': 'Physically Unable to Perform', 'NON': 'Non-Football Injury'}
+
+
+def roster_status():
+    p = f'{DATA}/roster_weekly_{CUR}.parquet'
+    if not os.path.exists(p):
+        return []
+    r = pd.read_parquet(p, columns=['gsis_id', 'full_name', 'status', 'week'])
+    r = r[r.week == r.week.max()]
+    return [dict(gsis_id=x.gsis_id, name=x.full_name, status=ROSTER_OUT[x.status],
+                 note='NFL roster status', date=None, source='NFL roster')
+            for x in r.itertuples() if x.status in ROSTER_OUT and isinstance(x.gsis_id, str)]
+
+
 def statuses():
     """{gsis_id: {'status', 'note', 'source', 'out': bool, 'flag': bool}} using the most severe current listing."""
     best = {}
-    for r in official_report() + espn_feed():
+    for r in official_report() + roster_status() + espn_feed():
         s = r['status']
         if s not in SEVERITY:
             continue

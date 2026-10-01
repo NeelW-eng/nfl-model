@@ -342,7 +342,7 @@ def prob_over(stat, r, line):
         hi = max((r['q75'] - r['q50']) / 0.6745, 3) * c['s_hi']
         m = r['q50'] + (c['shift'] * (hi / c['s_hi']) if c['shift'] >= 0 else c['shift'] * (lo / c['s_lo']))
         p = 1 - norm.cdf((line - m) / hi) if line >= m else norm.cdf((m - line) / lo)
-        return float(0.5 + c['shrink'] * (p - 0.5))
+        return float(min(max(0.5 + c['shrink'] * (p - 0.5), 0.02), 0.98))
     mu = max(r['proj'], 0.01)
     if stat == 'receptions':
         k = 12.0

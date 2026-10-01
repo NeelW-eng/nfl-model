@@ -14,6 +14,7 @@ def jobs():
               (f'snap_counts/snap_counts_{y}.parquet', f'snaps_{y}.parquet')]
         j += [(f'pfr_advstats/advstats_week_{k}_{y}.parquet', f'pfr_{k}_{y}.parquet') for k in ('pass', 'rec', 'rush', 'def')]
     j.append((f'injuries/injuries_{CUR}.parquet', f'inj_{CUR}.parquet'))
+    j.append((f'weekly_rosters/roster_weekly_{CUR}.parquet', f'roster_weekly_{CUR}.parquet'))
     return j
 
 
@@ -30,18 +31,26 @@ def get(job, force):
 
 
 def espn_injuries():
-    """ESPN's league-wide injury feed (credible, updated through the week). Failure is non-fatal."""
-    try:
-        req = urllib.request.Request('https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries',
-                                     headers={'User-Agent': 'Mozilla/5.0 (sunday-edge)'})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            d = r.read()
-        import json
-        n = sum(len(t.get('injuries', [])) for t in json.loads(d).get('injuries', []))
-        open(os.path.join(DATA, 'injuries_espn.json'), 'wb').write(d)
-        return f'ok injuries_espn.json ({n} listings)'
-    except Exception as e:
-        return f'ESPN injury feed unavailable: {e}'
+    """ESPN's league-wide injury feed (credible, updated through the week). Failure is non-fatal; the
+    outcome is written to data/sources_status.json so it shows up in the repo."""
+    import json, datetime
+    tried = []
+    for url in ('https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries',
+                'https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/injuries'):
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64)',
+                                                       'Accept': 'application/json'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = r.read()
+            n = sum(len(t.get('injuries', [])) for t in json.loads(d).get('injuries', []))
+            open(os.path.join(DATA, 'injuries_espn.json'), 'wb').write(d)
+            tried.append(dict(url=url, ok=True, listings=n))
+            break
+        except Exception as e:
+            tried.append(dict(url=url, ok=False, error=str(e)[:200]))
+    json.dump({'checked': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'espn': tried},
+              open(os.path.join(DATA, 'sources_status.json'), 'w'), indent=1)
+    return tried
 
 
 if __name__ == '__main__':

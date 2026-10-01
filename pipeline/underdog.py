@@ -5,8 +5,8 @@ Win chance for each Higher/Lower pick
     Underdog's line using the player's own outcome distribution (median across books)
   * model: the advanced-stat projection (usage x efficiency, Next Gen Stats, PFR, matchup, game script,
     injury adjustments) turned into a probability at Underdog's line
-  * blended 60% consensus / 40% model; with no sportsbook pricing the line, the model alone is used and the
-    pick is not eligible for the Top 10.
+  * blended by blend(): consensus first, moved toward the model by up to 40%, less when they disagree;
+    with no sportsbook pricing the line, the model is shrunk halfway to 50% and the pick can't make the Top 10.
 Underdog's standard picks all pay the same multiplier, so ranking is by win chance alone. Lines with
 non-standard multipliers (Underdog's "_alternate" markets) are skipped.
 """
@@ -19,12 +19,28 @@ UD = 'underdog'
 UD_LABEL = {'passing_yards': 'Pass Yards', 'passing_tds': 'Pass TDs', 'rushing_yards': 'Rush Yards',
             'receiving_yards': 'Receiving Yards', 'receptions': 'Receptions'}
 TOP_N, PER_GAME_TOP10, GAME_N = 10, 2, 4
-MIN_BOOKS_TOP10, MIN_HISTORY_TOP10 = 2, 4
+MIN_BOOKS_TOP10, MIN_HISTORY_TOP10 = 3, 4
 BREAKEVEN = 0.54  # per-pick hit rate Underdog standard entries need (3.5x for 2 picks ... 120x for 8)
 
 
 def ts(s):
     return datetime.datetime.fromisoformat(s.replace('Z', '+00:00'))
+
+
+def blend(p_cons, p_model):
+    """Market-anchored probability of the Higher side.
+    With sportsbook prices, start from their consensus and move toward the model by up to 40%, less the more
+    the two disagree: a model at 95% against books at 52% almost always means the books know about a role
+    change (injury, depth chart) the model hasn't seen, so the model is nearly ignored there.
+    Without sportsbook prices the model is shrunk halfway to 50%."""
+    from scipy.stats import norm
+    pm = min(max(p_model, 0.02), 0.98)
+    if p_cons is None:
+        return 0.5 + 0.5 * (pm - 0.5)
+    pc = min(max(p_cons, 0.02), 0.98)
+    d = abs(norm.ppf(pm) - norm.ppf(pc))
+    w = 0.4 * float(np.exp(-(d / 0.8) ** 2))
+    return pc + w * (pm - pc)
 
 
 def candidates(odds, proj, status, inj_notes):
@@ -70,7 +86,7 @@ def candidates(odds, proj, status, inj_notes):
             p_model = props2.prob_over(stat, r, line)
             cons = [c for c in (consensus_at(stat, r, pt, po, line) for pt, po in others) if c is not None]
             p_cons = float(np.median(cons)) if cons else None
-            p_over = 0.6 * p_cons + 0.4 * p_model if cons else p_model
+            p_over = blend(p_cons, p_model)
             for side, s in (('Over', 1), ('Under', -1)):
                 if side not in ud:
                     continue
@@ -110,7 +126,10 @@ def candidates(odds, proj, status, inj_notes):
 
 
 def top10_eligible(c):
-    return (not c['injury'] and c['n_books'] >= MIN_BOOKS_TOP10 and c['history'] >= MIN_HISTORY_TOP10)
+    """Most confident: enough sportsbooks, enough player history, not on the injury report, and the
+    sportsbooks and the model both lean the same way as the pick."""
+    return (not c['injury'] and c['n_books'] >= MIN_BOOKS_TOP10 and c['history'] >= MIN_HISTORY_TOP10
+            and (c['p_cons'] or 0) >= 0.51 and c['p_model'] >= 0.52)
 
 
 def rank_key(c):
