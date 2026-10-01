@@ -1,18 +1,18 @@
 {
  "season": 2026,
  "week": 4,
- "generated": "2026-10-01T06:31+00:00",
+ "generated": "2026-10-01T06:37+00:00",
  "has_odds": true,
  "top10": [
   {
    "rank": 1,
+   "team": "NO",
    "game": "ATL @ NO",
    "game_id": "8bd90781e17e6d97df3941063cedae1e",
    "kickoff": "2026-10-06T00:15:00Z",
    "started": false,
    "player": "Kendre Miller",
    "player_id": "00-0038551",
-   "team": "NO",
    "opp": "ATL",
    "pos": "RB",
    "stat": "rushing_yards",
@@ -76,13 +76,13 @@
   },
   {
    "rank": 2,
+   "team": "BUF",
    "game": "NE @ BUF",
    "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
    "kickoff": "2026-10-04T17:00:00Z",
    "started": false,
    "player": "James Cook",
    "player_id": "00-0037248",
-   "team": "BUF",
    "opp": "NE",
    "pos": "RB",
    "stat": "receiving_yards",
@@ -136,13 +136,13 @@
   },
   {
    "rank": 3,
+   "team": "PIT",
    "game": "PIT @ CLE",
    "game_id": "d55cb69fed50a09170560b5b75d8de86",
    "kickoff": "2026-10-02T00:15:00Z",
    "started": false,
    "player": "Jaylen Warren",
    "player_id": "00-0037228",
-   "team": "PIT",
    "opp": "CLE",
    "pos": "RB",
    "stat": "receptions",
@@ -201,13 +201,13 @@
   },
   {
    "rank": 4,
+   "team": "GB",
    "game": "GB @ TB",
    "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
    "kickoff": "2026-10-04T17:00:00Z",
    "started": false,
    "player": "Matthew Golden",
    "player_id": "00-0040667",
-   "team": "GB",
    "opp": "TB",
    "pos": "WR",
    "stat": "receptions",
@@ -271,13 +271,13 @@
   },
   {
    "rank": 5,
+   "team": "WAS",
    "game": "IND @ WAS",
    "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
    "kickoff": "2026-10-04T13:30:00Z",
    "started": false,
    "player": "Jacory Croskey-Merritt",
    "player_id": "00-0040242",
-   "team": "WAS",
    "opp": "IND",
    "pos": "RB",
    "stat": "rushing_yards",
@@ -336,13 +336,13 @@
   },
   {
    "rank": 6,
+   "team": "JAX",
    "game": "JAX @ CIN",
    "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
    "kickoff": "2026-10-04T17:00:00Z",
    "started": false,
    "player": "Bhayshul Tuten",
    "player_id": "00-0040719",
-   "team": "JAX",
    "opp": "CIN",
    "pos": "RB",
    "stat": "rushing_yards",
@@ -401,13 +401,13 @@
   },
   {
    "rank": 7,
+   "team": "LV",
    "game": "KC @ LV",
    "game_id": "e0cbd266dcf997089203a1b33ba0333d",
    "kickoff": "2026-10-04T20:25:00Z",
    "started": false,
    "player": "Michael Mayer",
    "player_id": "00-0039066",
-   "team": "LV",
    "opp": "KC",
    "pos": "TE",
    "stat": "receptions",
@@ -471,13 +471,13 @@
   },
   {
    "rank": 8,
+   "team": "CLE",
    "game": "PIT @ CLE",
    "game_id": "d55cb69fed50a09170560b5b75d8de86",
    "kickoff": "2026-10-02T00:15:00Z",
    "started": false,
    "player": "Raheim Sanders",
    "player_id": "00-0040466",
-   "team": "CLE",
    "opp": "PIT",
    "pos": "RB",
    "stat": "rushing_yards",
@@ -541,13 +541,13 @@
   },
   {
    "rank": 9,
+   "team": "LV",
    "game": "KC @ LV",
    "game_id": "e0cbd266dcf997089203a1b33ba0333d",
    "kickoff": "2026-10-04T20:25:00Z",
    "started": false,
    "player": "Ashton Jeanty",
    "player_id": "00-0040122",
-   "team": "LV",
    "opp": "KC",
    "pos": "RB",
    "stat": "receiving_yards",
@@ -606,13 +606,13 @@
   },
   {
    "rank": 10,
+   "team": "CHI",
    "game": "NYJ @ CHI",
    "game_id": "164e6eb68f31bac190381903c3cccd31",
    "kickoff": "2026-10-04T17:00:00Z",
    "started": false,
    "player": "Cole Kmet",
    "player_id": "00-0036290",
-   "team": "CHI",
    "opp": "NYJ",
    "pos": "TE",
    "stat": "receiving_yards",
@@ -688,13 +688,13 @@
    "picks": [
     {
      "rank": 3,
+     "team": "PIT",
      "game": "PIT @ CLE",
      "game_id": "d55cb69fed50a09170560b5b75d8de86",
      "kickoff": "2026-10-02T00:15:00Z",
      "started": false,
      "player": "Jaylen Warren",
      "player_id": "00-0037228",
-     "team": "PIT",
      "opp": "CLE",
      "pos": "RB",
      "stat": "receptions",
@@ -753,13 +753,13 @@
     },
     {
      "rank": 8,
+     "team": "CLE",
      "game": "PIT @ CLE",
      "game_id": "d55cb69fed50a09170560b5b75d8de86",
      "kickoff": "2026-10-02T00:15:00Z",
      "started": false,
      "player": "Raheim Sanders",
      "player_id": "00-0040466",
-     "team": "CLE",
      "opp": "PIT",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -822,13 +822,13 @@
      "in_top10": true
     },
     {
+     "team": "PIT",
      "game": "PIT @ CLE",
      "game_id": "d55cb69fed50a09170560b5b75d8de86",
      "kickoff": "2026-10-02T00:15:00Z",
      "started": false,
      "player": "Darnell Washington",
      "player_id": "00-0038558",
-     "team": "PIT",
      "opp": "CLE",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -891,13 +891,13 @@
      "in_top10": false
     },
     {
+     "team": "CLE",
      "game": "PIT @ CLE",
      "game_id": "d55cb69fed50a09170560b5b75d8de86",
      "kickoff": "2026-10-02T00:15:00Z",
      "started": false,
      "player": "Jerry Jeudy",
      "player_id": "00-0036407",
-     "team": "CLE",
      "opp": "PIT",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -1080,13 +1080,13 @@
    "picks": [
     {
      "rank": 5,
+     "team": "WAS",
      "game": "IND @ WAS",
      "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
      "kickoff": "2026-10-04T13:30:00Z",
      "started": false,
      "player": "Jacory Croskey-Merritt",
      "player_id": "00-0040242",
-     "team": "WAS",
      "opp": "IND",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -1144,13 +1144,13 @@
      "in_top10": true
     },
     {
+     "team": "WAS",
      "game": "IND @ WAS",
      "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
      "kickoff": "2026-10-04T13:30:00Z",
      "started": false,
      "player": "Marcus Mariota",
      "player_id": "00-0032268",
-     "team": "WAS",
      "opp": "IND",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -1203,13 +1203,13 @@
      "in_top10": false
     },
     {
+     "team": "IND",
      "game": "IND @ WAS",
      "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
      "kickoff": "2026-10-04T13:30:00Z",
      "started": false,
      "player": "Jonathan Taylor",
      "player_id": "00-0036223",
-     "team": "IND",
      "opp": "WAS",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -1267,13 +1267,13 @@
      "in_top10": false
     },
     {
+     "team": "WAS",
      "game": "IND @ WAS",
      "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
      "kickoff": "2026-10-04T13:30:00Z",
      "started": false,
      "player": "Terry McLaurin",
      "player_id": "00-0035659",
-     "team": "WAS",
      "opp": "IND",
      "pos": "WR",
      "stat": "receptions",
@@ -1450,13 +1450,13 @@
    "kickoff": "2026-10-04T17:00:00Z",
    "picks": [
     {
+     "team": "ARI",
      "game": "ARI @ NYG",
      "game_id": "664e6bda5721dc63be16bcf7d962a436",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Tyler Allgeier",
      "player_id": "00-0037263",
-     "team": "ARI",
      "opp": "NYG",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -1504,13 +1504,13 @@
      "in_top10": false
     },
     {
+     "team": "NYG",
      "game": "ARI @ NYG",
      "game_id": "664e6bda5721dc63be16bcf7d962a436",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Malachi Fields",
      "player_id": "00-0041042",
-     "team": "NYG",
      "opp": "ARI",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -1578,13 +1578,13 @@
      "in_top10": false
     },
     {
+     "team": "NYG",
      "game": "ARI @ NYG",
      "game_id": "664e6bda5721dc63be16bcf7d962a436",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Jameis Winston",
      "player_id": "00-0031503",
-     "team": "NYG",
      "opp": "ARI",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -1642,13 +1642,13 @@
      "in_top10": false
     },
     {
+     "team": "ARI",
      "game": "ARI @ NYG",
      "game_id": "664e6bda5721dc63be16bcf7d962a436",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Jeremiyah Love",
      "player_id": "00-0041027",
-     "team": "ARI",
      "opp": "NYG",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -1820,13 +1820,13 @@
    "kickoff": "2026-10-04T17:00:00Z",
    "picks": [
     {
+     "team": "DAL",
      "game": "DAL @ HOU",
      "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Ryan Flournoy",
      "player_id": "00-0039410",
-     "team": "DAL",
      "opp": "HOU",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -1884,13 +1884,13 @@
      "in_top10": false
     },
     {
+     "team": "DAL",
      "game": "DAL @ HOU",
      "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Dak Prescott",
      "player_id": "00-0033077",
-     "team": "DAL",
      "opp": "HOU",
      "pos": "QB",
      "stat": "passing_yards",
@@ -1943,13 +1943,13 @@
      "in_top10": false
     },
     {
+     "team": "HOU",
      "game": "DAL @ HOU",
      "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "C.J. Stroud",
      "player_id": "00-0039163",
-     "team": "HOU",
      "opp": "DAL",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -2002,13 +2002,13 @@
      "in_top10": false
     },
     {
+     "team": "HOU",
      "game": "DAL @ HOU",
      "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Woody Marks",
      "player_id": "00-0040583",
-     "team": "HOU",
      "opp": "DAL",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -2181,13 +2181,13 @@
    "picks": [
     {
      "rank": 4,
+     "team": "GB",
      "game": "GB @ TB",
      "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Matthew Golden",
      "player_id": "00-0040667",
-     "team": "GB",
      "opp": "TB",
      "pos": "WR",
      "stat": "receptions",
@@ -2250,13 +2250,13 @@
      "in_top10": true
     },
     {
+     "team": "GB",
      "game": "GB @ TB",
      "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "MarShawn Lloyd",
      "player_id": "00-0039811",
-     "team": "GB",
      "opp": "TB",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -2314,13 +2314,13 @@
      "in_top10": false
     },
     {
+     "team": "GB",
      "game": "GB @ TB",
      "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Jordan Love",
      "player_id": "00-0036264",
-     "team": "GB",
      "opp": "TB",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -2373,13 +2373,13 @@
      "in_top10": false
     },
     {
+     "team": "GB",
      "game": "GB @ TB",
      "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Jonnu Smith",
      "player_id": "00-0033858",
-     "team": "GB",
      "opp": "TB",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -2561,13 +2561,13 @@
    "kickoff": "2026-10-04T17:00:00Z",
    "picks": [
     {
+     "team": "CIN",
      "game": "JAX @ CIN",
      "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Dohnte Meyers",
      "player_id": "00-0040785",
-     "team": "CIN",
      "opp": "JAX",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -2630,13 +2630,13 @@
      "in_top10": false
     },
     {
+     "team": "JAX",
      "game": "JAX @ CIN",
      "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Josh Cameron",
      "player_id": "00-0041100",
-     "team": "JAX",
      "opp": "CIN",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -2685,13 +2685,13 @@
     },
     {
      "rank": 6,
+     "team": "JAX",
      "game": "JAX @ CIN",
      "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Bhayshul Tuten",
      "player_id": "00-0040719",
-     "team": "JAX",
      "opp": "CIN",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -2749,13 +2749,13 @@
      "in_top10": true
     },
     {
+     "team": "CIN",
      "game": "JAX @ CIN",
      "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Drew Sample",
      "player_id": "00-0035631",
-     "team": "CIN",
      "opp": "JAX",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -2937,13 +2937,13 @@
    "kickoff": "2026-10-04T17:00:00Z",
    "picks": [
     {
+     "team": "PHI",
      "game": "LA @ PHI",
      "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Makai Lemon",
      "player_id": "00-0040867",
-     "team": "PHI",
      "opp": "LA",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -3001,13 +3001,13 @@
      "in_top10": false
     },
     {
+     "team": "LA",
      "game": "LA @ PHI",
      "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Kyren Williams",
      "player_id": "00-0037840",
-     "team": "LA",
      "opp": "PHI",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -3065,13 +3065,13 @@
      "in_top10": false
     },
     {
+     "team": "LA",
      "game": "LA @ PHI",
      "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Matthew Stafford",
      "player_id": "00-0026498",
-     "team": "LA",
      "opp": "PHI",
      "pos": "QB",
      "stat": "passing_tds",
@@ -3124,13 +3124,13 @@
      "in_top10": false
     },
     {
+     "team": "PHI",
      "game": "LA @ PHI",
      "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Saquon Barkley",
      "player_id": "00-0034844",
-     "team": "PHI",
      "opp": "LA",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -3308,13 +3308,13 @@
    "picks": [
     {
      "rank": 2,
+     "team": "BUF",
      "game": "NE @ BUF",
      "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "James Cook",
      "player_id": "00-0037248",
-     "team": "BUF",
      "opp": "NE",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -3367,13 +3367,13 @@
      "in_top10": true
     },
     {
+     "team": "BUF",
      "game": "NE @ BUF",
      "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Keon Coleman",
      "player_id": "00-0039901",
-     "team": "BUF",
      "opp": "NE",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -3431,13 +3431,13 @@
      "in_top10": false
     },
     {
+     "team": "BUF",
      "game": "NE @ BUF",
      "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "DJ Moore",
      "player_id": "00-0034827",
-     "team": "BUF",
      "opp": "NE",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -3495,13 +3495,13 @@
      "in_top10": false
     },
     {
+     "team": "NE",
      "game": "NE @ BUF",
      "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Drake Maye",
      "player_id": "00-0039851",
-     "team": "NE",
      "opp": "BUF",
      "pos": "QB",
      "stat": "passing_yards",
@@ -3673,13 +3673,13 @@
    "kickoff": "2026-10-04T17:00:00Z",
    "picks": [
     {
+     "team": "NYJ",
      "game": "NYJ @ CHI",
      "game_id": "164e6eb68f31bac190381903c3cccd31",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Isaiah Williams",
      "player_id": "00-0039451",
-     "team": "NYJ",
      "opp": "CHI",
      "pos": "WR",
      "stat": "receptions",
@@ -3743,13 +3743,13 @@
     },
     {
      "rank": 10,
+     "team": "CHI",
      "game": "NYJ @ CHI",
      "game_id": "164e6eb68f31bac190381903c3cccd31",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Cole Kmet",
      "player_id": "00-0036290",
-     "team": "CHI",
      "opp": "NYJ",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -3817,13 +3817,13 @@
      "in_top10": true
     },
     {
+     "team": "NYJ",
      "game": "NYJ @ CHI",
      "game_id": "164e6eb68f31bac190381903c3cccd31",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Kenyon Sadiq",
      "player_id": "00-0041032",
-     "team": "NYJ",
      "opp": "CHI",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -3881,13 +3881,13 @@
      "in_top10": false
     },
     {
+     "team": "NYJ",
      "game": "NYJ @ CHI",
      "game_id": "164e6eb68f31bac190381903c3cccd31",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Garrett Wilson",
      "player_id": "00-0037740",
-     "team": "NYJ",
      "opp": "CHI",
      "pos": "WR",
      "stat": "receptions",
@@ -4069,13 +4069,13 @@
    "kickoff": "2026-10-04T17:00:00Z",
    "picks": [
     {
+     "team": "TEN",
      "game": "TEN @ BAL",
      "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Daniel Bellinger",
      "player_id": "00-0038115",
-     "team": "TEN",
      "opp": "BAL",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -4128,13 +4128,13 @@
      "in_top10": false
     },
     {
+     "team": "TEN",
      "game": "TEN @ BAL",
      "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Elic Ayomanor",
      "player_id": "00-0040170",
-     "team": "TEN",
      "opp": "BAL",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -4192,13 +4192,13 @@
      "in_top10": false
     },
     {
+     "team": "TEN",
      "game": "TEN @ BAL",
      "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Wan'Dale Robinson",
      "player_id": "00-0038117",
-     "team": "TEN",
      "opp": "BAL",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -4256,13 +4256,13 @@
      "in_top10": false
     },
     {
+     "team": "TEN",
      "game": "TEN @ BAL",
      "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
      "kickoff": "2026-10-04T17:00:00Z",
      "started": false,
      "player": "Cam Ward",
      "player_id": "00-0040676",
-     "team": "TEN",
      "opp": "BAL",
      "pos": "QB",
      "stat": "passing_yards",
@@ -4434,13 +4434,13 @@
    "kickoff": "2026-10-04T20:05:00Z",
    "picks": [
     {
+     "team": "MIA",
      "game": "MIA @ MIN",
      "game_id": "c327223d76a3b7b0db8c6c104442f44b",
      "kickoff": "2026-10-04T20:05:00Z",
      "started": false,
      "player": "Jaylen Wright",
      "player_id": "00-0039874",
-     "team": "MIA",
      "opp": "MIN",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -4498,13 +4498,13 @@
      "in_top10": false
     },
     {
+     "team": "MIN",
      "game": "MIA @ MIN",
      "game_id": "c327223d76a3b7b0db8c6c104442f44b",
      "kickoff": "2026-10-04T20:05:00Z",
      "started": false,
      "player": "Aaron Jones",
      "player_id": "00-0033293",
-     "team": "MIN",
      "opp": "MIA",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -4562,13 +4562,13 @@
      "in_top10": false
     },
     {
+     "team": "MIA",
      "game": "MIA @ MIN",
      "game_id": "c327223d76a3b7b0db8c6c104442f44b",
      "kickoff": "2026-10-04T20:05:00Z",
      "started": false,
      "player": "Chris Bell",
      "player_id": "00-0041525",
-     "team": "MIA",
      "opp": "MIN",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -4631,13 +4631,13 @@
      "in_top10": false
     },
     {
+     "team": "MIA",
      "game": "MIA @ MIN",
      "game_id": "c327223d76a3b7b0db8c6c104442f44b",
      "kickoff": "2026-10-04T20:05:00Z",
      "started": false,
      "player": "Malik Willis",
      "player_id": "00-0038128",
-     "team": "MIA",
      "opp": "MIN",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -4809,13 +4809,13 @@
    "kickoff": "2026-10-04T20:25:00Z",
    "picks": [
     {
+     "team": "DEN",
      "game": "DEN @ SF",
      "game_id": "a7e7efb75a9792ac63480ae6328dca18",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "J.K. Dobbins",
      "player_id": "00-0036158",
-     "team": "DEN",
      "opp": "SF",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -4868,13 +4868,13 @@
      "in_top10": false
     },
     {
+     "team": "DEN",
      "game": "DEN @ SF",
      "game_id": "a7e7efb75a9792ac63480ae6328dca18",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "RJ Harvey",
      "player_id": "00-0040730",
-     "team": "DEN",
      "opp": "SF",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -4937,13 +4937,13 @@
      "in_top10": false
     },
     {
+     "team": "DEN",
      "game": "DEN @ SF",
      "game_id": "a7e7efb75a9792ac63480ae6328dca18",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Pat Bryant",
      "player_id": "00-0040134",
-     "team": "DEN",
      "opp": "SF",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -5006,13 +5006,13 @@
      "in_top10": false
     },
     {
+     "team": "DEN",
      "game": "DEN @ SF",
      "game_id": "a7e7efb75a9792ac63480ae6328dca18",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Bo Nix",
      "player_id": "00-0039732",
-     "team": "DEN",
      "opp": "SF",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -5185,13 +5185,13 @@
    "picks": [
     {
      "rank": 7,
+     "team": "LV",
      "game": "KC @ LV",
      "game_id": "e0cbd266dcf997089203a1b33ba0333d",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Michael Mayer",
      "player_id": "00-0039066",
-     "team": "LV",
      "opp": "KC",
      "pos": "TE",
      "stat": "receptions",
@@ -5255,13 +5255,13 @@
     },
     {
      "rank": 9,
+     "team": "LV",
      "game": "KC @ LV",
      "game_id": "e0cbd266dcf997089203a1b33ba0333d",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Ashton Jeanty",
      "player_id": "00-0040122",
-     "team": "LV",
      "opp": "KC",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -5319,13 +5319,13 @@
      "in_top10": true
     },
     {
+     "team": "KC",
      "game": "KC @ LV",
      "game_id": "e0cbd266dcf997089203a1b33ba0333d",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Noah Gray",
      "player_id": "00-0036637",
-     "team": "KC",
      "opp": "LV",
      "pos": "TE",
      "stat": "receiving_yards",
@@ -5383,13 +5383,13 @@
      "in_top10": false
     },
     {
+     "team": "LV",
      "game": "KC @ LV",
      "game_id": "e0cbd266dcf997089203a1b33ba0333d",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Kirk Cousins",
      "player_id": "00-0029604",
-     "team": "LV",
      "opp": "KC",
      "pos": "QB",
      "stat": "passing_yards",
@@ -5561,13 +5561,13 @@
    "kickoff": "2026-10-04T20:25:00Z",
    "picks": [
     {
+     "team": "SEA",
      "game": "LAC @ SEA",
      "game_id": "96d2373cda647873b971f268482bced0",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Emanuel Wilson",
      "player_id": "00-0038797",
-     "team": "SEA",
      "opp": "LAC",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -5615,13 +5615,13 @@
      "in_top10": false
     },
     {
+     "team": "LAC",
      "game": "LAC @ SEA",
      "game_id": "96d2373cda647873b971f268482bced0",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Omarion Hampton",
      "player_id": "00-0040666",
-     "team": "LAC",
      "opp": "SEA",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -5674,13 +5674,13 @@
      "in_top10": false
     },
     {
+     "team": "SEA",
      "game": "LAC @ SEA",
      "game_id": "96d2373cda647873b971f268482bced0",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Jadarian Price",
      "player_id": "00-0041512",
-     "team": "SEA",
      "opp": "LAC",
      "pos": "RB",
      "stat": "receptions",
@@ -5733,13 +5733,13 @@
      "in_top10": false
     },
     {
+     "team": "LAC",
      "game": "LAC @ SEA",
      "game_id": "96d2373cda647873b971f268482bced0",
      "kickoff": "2026-10-04T20:25:00Z",
      "started": false,
      "player": "Justin Herbert",
      "player_id": "00-0036355",
-     "team": "LAC",
      "opp": "SEA",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -5911,13 +5911,13 @@
    "kickoff": "2026-10-05T00:20:00Z",
    "picks": [
     {
+     "team": "CAR",
      "game": "DET @ CAR",
      "game_id": "a73a76599a4f3422803e57bd8f61b626",
      "kickoff": "2026-10-05T00:20:00Z",
      "started": false,
      "player": "Chuba Hubbard",
      "player_id": "00-0036555",
-     "team": "CAR",
      "opp": "DET",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -5975,13 +5975,13 @@
      "in_top10": false
     },
     {
+     "team": "CAR",
      "game": "DET @ CAR",
      "game_id": "a73a76599a4f3422803e57bd8f61b626",
      "kickoff": "2026-10-05T00:20:00Z",
      "started": false,
      "player": "Bryce Young",
      "player_id": "00-0039150",
-     "team": "CAR",
      "opp": "DET",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -6034,13 +6034,13 @@
      "in_top10": false
     },
     {
+     "team": "DET",
      "game": "DET @ CAR",
      "game_id": "a73a76599a4f3422803e57bd8f61b626",
      "kickoff": "2026-10-05T00:20:00Z",
      "started": false,
      "player": "Sam LaPorta",
      "player_id": "00-0039065",
-     "team": "DET",
      "opp": "CAR",
      "pos": "TE",
      "stat": "receptions",
@@ -6098,13 +6098,13 @@
      "in_top10": false
     },
     {
+     "team": "CAR",
      "game": "DET @ CAR",
      "game_id": "a73a76599a4f3422803e57bd8f61b626",
      "kickoff": "2026-10-05T00:20:00Z",
      "started": false,
      "player": "Tetairoa McMillan",
      "player_id": "00-0040124",
-     "team": "CAR",
      "opp": "DET",
      "pos": "WR",
      "stat": "receiving_yards",
@@ -6287,13 +6287,13 @@
    "picks": [
     {
      "rank": 1,
+     "team": "NO",
      "game": "ATL @ NO",
      "game_id": "8bd90781e17e6d97df3941063cedae1e",
      "kickoff": "2026-10-06T00:15:00Z",
      "started": false,
      "player": "Kendre Miller",
      "player_id": "00-0038551",
-     "team": "NO",
      "opp": "ATL",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -6356,13 +6356,13 @@
      "in_top10": true
     },
     {
+     "team": "ATL",
      "game": "ATL @ NO",
      "game_id": "8bd90781e17e6d97df3941063cedae1e",
      "kickoff": "2026-10-06T00:15:00Z",
      "started": false,
      "player": "Brian Robinson",
      "player_id": "00-0037746",
-     "team": "ATL",
      "opp": "NO",
      "pos": "RB",
      "stat": "rushing_yards",
@@ -6420,13 +6420,13 @@
      "in_top10": false
     },
     {
+     "team": "ATL",
      "game": "ATL @ NO",
      "game_id": "8bd90781e17e6d97df3941063cedae1e",
      "kickoff": "2026-10-06T00:15:00Z",
      "started": false,
      "player": "Michael Penix Jr.",
      "player_id": "00-0039917",
-     "team": "ATL",
      "opp": "NO",
      "pos": "QB",
      "stat": "rushing_yards",
@@ -6479,13 +6479,13 @@
      "in_top10": false
     },
     {
+     "team": "NO",
      "game": "ATL @ NO",
      "game_id": "8bd90781e17e6d97df3941063cedae1e",
      "kickoff": "2026-10-06T00:15:00Z",
      "started": false,
      "player": "Alvin Kamara",
      "player_id": "00-0033906",
-     "team": "NO",
      "opp": "ATL",
      "pos": "RB",
      "stat": "receiving_yards",
@@ -9184,6 +9184,421 @@
  "props_pulled": "2026-10-01T06:14:23.273585+00:00",
  "credits_left": 407,
  "lines_priced": 280,
+ "high_prob": [
+  {
+   "market": "Moneyline",
+   "fair_odds": -531,
+   "team": "BAL",
+   "game": "TEN @ BAL",
+   "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "BAL to win",
+   "p": 0.8415,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: BAL wins 84%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Stats model margin BAL +12.7"
+    }
+   ],
+   "support": 2,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -473,
+   "team": "MIN",
+   "game": "MIA @ MIN",
+   "game_id": "c327223d76a3b7b0db8c6c104442f44b",
+   "kickoff": "2026-10-04T20:05:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "MIN to win",
+   "p": 0.8254,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: MIN wins 83%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Stats model margin MIN +7.6"
+    }
+   ],
+   "support": 2,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -295,
+   "team": "SEA",
+   "game": "LAC @ SEA",
+   "game_id": "96d2373cda647873b971f268482bced0",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "SEA to win",
+   "p": 0.7471,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: SEA wins 75%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Stats model margin SEA +10.5"
+    }
+   ],
+   "support": 2,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -268,
+   "team": "BUF",
+   "game": "NE @ BUF",
+   "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "BUF to win",
+   "p": 0.728,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: BUF wins 73%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Stats model margin BUF +5.1"
+    }
+   ],
+   "support": 2,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Prop",
+   "team": "SEA",
+   "model_only": true,
+   "game": "LAC @ SEA",
+   "game_id": "96d2373cda647873b971f268482bced0",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "started": false,
+   "player": "Emanuel Wilson",
+   "player_id": "00-0038797",
+   "opp": "LAC",
+   "pos": "RB",
+   "stat": "receiving_yards",
+   "stat_label": "Receiving Yards",
+   "side": "Under",
+   "word": "Lower",
+   "line": 3.5,
+   "pick": "Emanuel Wilson Lower 3.5 Receiving Yards",
+   "p": 0.6775,
+   "p_model": 0.855,
+   "p_cons": null,
+   "n_books": 0,
+   "proj": 0.62,
+   "injury": null,
+   "injury_note": null,
+   "signals": [
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 0.6 vs line 3.5 (86%)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 0% vs 3% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 36% last game vs 33% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": true,
+     "txt": "LAC allows -16% rec yds to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "SEA implied team total 24.8"
+    }
+   ],
+   "support": 3,
+   "n_signals": 5,
+   "in_top10": false,
+   "fair_odds": null
+  },
+  {
+   "market": "Prop",
+   "team": "TEN",
+   "model_only": true,
+   "game": "TEN @ BAL",
+   "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "started": false,
+   "player": "Daniel Bellinger",
+   "player_id": "00-0038115",
+   "opp": "BAL",
+   "pos": "TE",
+   "stat": "receiving_yards",
+   "stat_label": "Receiving Yards",
+   "side": "Over",
+   "word": "Higher",
+   "line": 6.5,
+   "pick": "Daniel Bellinger Higher 6.5 Receiving Yards",
+   "p": 0.6574,
+   "p_model": 0.8147,
+   "p_cons": null,
+   "n_books": 0,
+   "proj": 13.27,
+   "injury": null,
+   "injury_note": null,
+   "signals": [
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 13.3 vs line 6.5 (81%)"
+    },
+    {
+     "k": "role",
+     "ok": false,
+     "txt": "Target Share last game 6% vs 6% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 40% last game vs 52% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": false,
+     "txt": "BAL allows -15% rec yds to TEs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "TEN implied team total 15.5"
+    },
+    {
+     "k": "ngs",
+     "ok": true,
+     "txt": "NGS separation 4.5 yds vs 3.5 TE median"
+    }
+   ],
+   "support": 2,
+   "n_signals": 6,
+   "in_top10": false,
+   "fair_odds": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -189,
+   "team": "KC",
+   "game": "KC @ LV",
+   "game_id": "e0cbd266dcf997089203a1b33ba0333d",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "KC to win",
+   "p": 0.6542,
+   "n_books": 7,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "7 sportsbooks: KC wins 65%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Stats model margin KC +4.1"
+    }
+   ],
+   "support": 2,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -177,
+   "team": "IND",
+   "game": "IND @ WAS",
+   "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
+   "kickoff": "2026-10-04T13:30:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "IND to win",
+   "p": 0.6384,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: IND wins 64%"
+    },
+    {
+     "k": "model",
+     "ok": false,
+     "txt": "Stats model margin IND -0.5"
+    }
+   ],
+   "support": 1,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -173,
+   "team": "DET",
+   "game": "DET @ CAR",
+   "game_id": "a73a76599a4f3422803e57bd8f61b626",
+   "kickoff": "2026-10-05T00:20:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "DET to win",
+   "p": 0.6343,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: DET wins 63%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Stats model margin DET +3.7"
+    }
+   ],
+   "support": 2,
+   "n_signals": 2,
+   "model_only": null
+  },
+  {
+   "market": "Prop",
+   "team": "DEN",
+   "model_only": true,
+   "game": "DEN @ SF",
+   "game_id": "a7e7efb75a9792ac63480ae6328dca18",
+   "kickoff": "2026-10-04T20:25:00Z",
+   "started": false,
+   "player": "J.K. Dobbins",
+   "player_id": "00-0036158",
+   "opp": "SF",
+   "pos": "RB",
+   "stat": "receiving_yards",
+   "stat_label": "Receiving Yards",
+   "side": "Over",
+   "word": "Higher",
+   "line": 4.5,
+   "pick": "J.K. Dobbins Higher 4.5 Receiving Yards",
+   "p": 0.6299,
+   "p_model": 0.7598,
+   "p_cons": null,
+   "n_books": 0,
+   "proj": 8.21,
+   "injury": null,
+   "injury_note": null,
+   "signals": [
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 8.2 vs line 4.5 (76%)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 6% vs 4% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 49% last game vs 48% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": true,
+     "txt": "SF allows +18% rec yds to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "DEN implied team total 22.2"
+    },
+    {
+     "k": "injury",
+     "ok": true,
+     "txt": "Jonah Coleman out: projection up 3%"
+    }
+   ],
+   "support": 4,
+   "n_signals": 6,
+   "in_top10": false,
+   "fair_odds": null
+  },
+  {
+   "market": "Moneyline",
+   "fair_odds": -166,
+   "team": "GB",
+   "game": "GB @ TB",
+   "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
+   "kickoff": "2026-10-04T17:00:00Z",
+   "started": false,
+   "side": "win",
+   "line": null,
+   "pick": "GB to win",
+   "p": 0.6244,
+   "n_books": 8,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "8 sportsbooks: GB wins 62%"
+    },
+    {
+     "k": "model",
+     "ok": false,
+     "txt": "Stats model margin GB -1.0"
+    }
+   ],
+   "support": 1,
+   "n_signals": 2,
+   "model_only": null
+  }
+ ],
  "tracker": {
   "breakeven": 0.54,
   "top10": {
@@ -9250,6 +9665,29 @@
      "pushes": 0,
      "voids": 0,
      "pending": 48,
+     "hit": null,
+     "expected": null
+    }
+   ]
+  },
+  "hp": {
+   "season": {
+    "wins": 0,
+    "losses": 0,
+    "pushes": 0,
+    "voids": 0,
+    "pending": 11,
+    "hit": null,
+    "expected": null
+   },
+   "weeks": [
+    {
+     "week": 4,
+     "wins": 0,
+     "losses": 0,
+     "pushes": 0,
+     "voids": 0,
+     "pending": 11,
      "hit": null,
      "expected": null
     }
