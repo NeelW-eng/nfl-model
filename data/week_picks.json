@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 4,
- "generated": "2026-10-01T06:19+00:00",
+ "generated": "2026-10-01T06:22+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -31,7 +31,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "5 sportsbooks (lines 23.5\u201327.5) put this at 53%"
     },
     {
@@ -70,7 +70,7 @@
      "txt": "Travis Etienne, Kevin Austin Jr. out: projection up 52%"
     }
    ],
-   "support": 3,
+   "support": 4,
    "n_signals": 8,
    "in_top10": true
   },
@@ -101,7 +101,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "6 sportsbooks (lines 6.5\u20137.5) put this at 52%"
     },
     {
@@ -130,7 +130,7 @@
      "txt": "BUF implied team total 27.5"
     }
    ],
-   "support": 3,
+   "support": 4,
    "n_signals": 6,
    "in_top10": true
   },
@@ -161,7 +161,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "6 sportsbooks (lines 3.5) put this at 52%"
     },
     {
@@ -195,7 +195,7 @@
      "txt": "Rico Dowdle out: projection up 8%"
     }
    ],
-   "support": 1,
+   "support": 2,
    "n_signals": 7,
    "in_top10": true
   },
@@ -226,7 +226,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "4 sportsbooks (lines 4.5) put this at 51%"
     },
     {
@@ -265,7 +265,7 @@
      "txt": "Jayden Reed out: projection up 13%"
     }
    ],
-   "support": 1,
+   "support": 2,
    "n_signals": 8,
    "in_top10": true
   },
@@ -296,7 +296,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "6 sportsbooks (lines 54.5\u201359.5) put this at 52%"
     },
     {
@@ -330,7 +330,7 @@
      "txt": "NGS rush yds over expected +0.19/carry"
     }
    ],
-   "support": 2,
+   "support": 3,
    "n_signals": 7,
    "in_top10": true
   },
@@ -361,7 +361,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "6 sportsbooks (lines 54.5\u201355.5) put this at 51%"
     },
     {
@@ -395,7 +395,7 @@
      "txt": "NGS rush yds over expected +0.59/carry"
     }
    ],
-   "support": 1,
+   "support": 2,
    "n_signals": 7,
    "in_top10": true
   },
@@ -426,7 +426,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "4 sportsbooks (lines 2.5) put this at 52%"
     },
     {
@@ -465,7 +465,7 @@
      "txt": "Jack Bech out: projection up 7%"
     }
    ],
-   "support": 3,
+   "support": 4,
    "n_signals": 8,
    "in_top10": true
   },
@@ -496,7 +496,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "5 sportsbooks (lines 5.5\u20136.5) put this at 51%"
     },
     {
@@ -535,7 +535,7 @@
      "txt": "Dylan Sampson out: projection up 14%"
     }
    ],
-   "support": 4,
+   "support": 5,
    "n_signals": 8,
    "in_top10": true
   },
@@ -566,7 +566,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "5 sportsbooks (lines 18.5\u201321.5) put this at 51%"
     },
     {
@@ -600,7 +600,7 @@
      "txt": "Jack Bech out: projection up 7%"
     }
    ],
-   "support": 2,
+   "support": 3,
    "n_signals": 7,
    "in_top10": true
   },
@@ -631,7 +631,7 @@
    "signals": [
     {
      "k": "market",
-     "ok": false,
+     "ok": true,
      "txt": "5 sportsbooks (lines 8.5\u201311.5) put this at 51%"
     },
     {
@@ -675,7 +675,7 @@
      "txt": "CHI starting QB out"
     }
    ],
-   "support": 2,
+   "support": 3,
    "n_signals": 9,
    "in_top10": true
   }
@@ -713,7 +713,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 3.5) put this at 52%"
       },
       {
@@ -747,7 +747,7 @@
        "txt": "Rico Dowdle out: projection up 8%"
       }
      ],
-     "support": 1,
+     "support": 2,
      "n_signals": 7,
      "in_top10": true
     },
@@ -778,7 +778,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "5 sportsbooks (lines 5.5\u20136.5) put this at 51%"
       },
       {
@@ -817,7 +817,7 @@
        "txt": "Dylan Sampson out: projection up 14%"
       }
      ],
-     "support": 4,
+     "support": 5,
      "n_signals": 8,
      "in_top10": true
     },
@@ -993,7 +993,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 54.5\u201359.5) put this at 52%"
       },
       {
@@ -1027,7 +1027,7 @@
        "txt": "NGS rush yds over expected +0.19/carry"
       }
      ],
-     "support": 2,
+     "support": 3,
      "n_signals": 7,
      "in_top10": true
     },
@@ -1180,7 +1180,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 4.5) put this at 52%"
       },
       {
@@ -1214,7 +1214,7 @@
        "txt": "NGS separation 2.7 yds vs 2.9 WR median"
       }
      ],
-     "support": 1,
+     "support": 2,
      "n_signals": 7,
      "in_top10": false
     }
@@ -1573,7 +1573,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "7 sportsbooks (lines 265.5\u2013274.5) put this at 52%"
       },
       {
@@ -1602,7 +1602,7 @@
        "txt": "NGS CPOE +4.2%"
       }
      ],
-     "support": 1,
+     "support": 2,
      "n_signals": 6,
      "in_top10": false
     },
@@ -1758,7 +1758,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "4 sportsbooks (lines 4.5) put this at 51%"
       },
       {
@@ -1797,7 +1797,7 @@
        "txt": "Jayden Reed out: projection up 13%"
       }
      ],
-     "support": 1,
+     "support": 2,
      "n_signals": 8,
      "in_top10": true
     },
@@ -2150,7 +2150,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 54.5\u201355.5) put this at 51%"
       },
       {
@@ -2184,7 +2184,7 @@
        "txt": "NGS rush yds over expected +0.59/carry"
       }
      ],
-     "support": 1,
+     "support": 2,
      "n_signals": 7,
      "in_top10": true
     },
@@ -2418,7 +2418,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "5 sportsbooks (lines 1.5) put this at 52%"
       },
       {
@@ -2447,7 +2447,7 @@
        "txt": "NGS CPOE +1.3%"
       }
      ],
-     "support": 1,
+     "support": 2,
      "n_signals": 6,
      "in_top10": false
     },
@@ -2549,7 +2549,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 6.5\u20137.5) put this at 52%"
       },
       {
@@ -2578,7 +2578,7 @@
        "txt": "BUF implied team total 27.5"
       }
      ],
-     "support": 3,
+     "support": 4,
      "n_signals": 6,
      "in_top10": true
     },
@@ -2608,7 +2608,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 12.5\u201314.5) put this at 52%"
       },
       {
@@ -2642,7 +2642,7 @@
        "txt": "NGS separation 2.4 yds vs 2.9 WR median"
       }
      ],
-     "support": 2,
+     "support": 3,
      "n_signals": 7,
      "in_top10": false
     },
@@ -2672,7 +2672,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 46.5\u201349.5) put this at 51%"
       },
       {
@@ -2706,7 +2706,7 @@
        "txt": "NGS separation 3.3 yds vs 2.9 WR median"
       }
      ],
-     "support": 3,
+     "support": 4,
      "n_signals": 7,
      "in_top10": false
     },
@@ -2872,7 +2872,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "5 sportsbooks (lines 8.5\u201311.5) put this at 51%"
       },
       {
@@ -2916,7 +2916,7 @@
        "txt": "CHI starting QB out"
       }
      ],
-     "support": 2,
+     "support": 3,
      "n_signals": 9,
      "in_top10": true
     },
@@ -3273,7 +3273,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "6 sportsbooks (lines 183.5\u2013189.5) put this at 51%"
       },
       {
@@ -3302,7 +3302,7 @@
        "txt": "NGS CPOE -2.9%"
       }
      ],
-     "support": 3,
+     "support": 4,
      "n_signals": 6,
      "in_top10": false
     }
@@ -3866,7 +3866,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "4 sportsbooks (lines 2.5) put this at 52%"
       },
       {
@@ -3905,7 +3905,7 @@
        "txt": "Jack Bech out: projection up 7%"
       }
      ],
-     "support": 3,
+     "support": 4,
      "n_signals": 8,
      "in_top10": true
     },
@@ -3936,7 +3936,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "5 sportsbooks (lines 18.5\u201321.5) put this at 51%"
       },
       {
@@ -3970,7 +3970,7 @@
        "txt": "Jack Bech out: projection up 7%"
       }
      ],
-     "support": 2,
+     "support": 3,
      "n_signals": 7,
      "in_top10": true
     },
@@ -4632,7 +4632,7 @@
      "signals": [
       {
        "k": "market",
-       "ok": false,
+       "ok": true,
        "txt": "5 sportsbooks (lines 23.5\u201327.5) put this at 53%"
       },
       {
@@ -4671,7 +4671,7 @@
        "txt": "Travis Etienne, Kevin Austin Jr. out: projection up 52%"
       }
      ],
-     "support": 3,
+     "support": 4,
      "n_signals": 8,
      "in_top10": true
     },
@@ -6955,7 +6955,7 @@
    "started": false
   },
   {
-   "pick": "Amon-Ra St. Brown Higher 75.5 Receiving Yards",
+   "pick": "Sam LaPorta Higher 48.5 Receiving Yards",
    "game": "DET @ CAR",
    "stat": "Receiving Yards",
    "p": 0.5092,
@@ -6964,7 +6964,7 @@
    "started": false
   },
   {
-   "pick": "Sam LaPorta Higher 48.5 Receiving Yards",
+   "pick": "Amon-Ra St. Brown Higher 75.5 Receiving Yards",
    "game": "DET @ CAR",
    "stat": "Receiving Yards",
    "p": 0.5092,
@@ -7054,20 +7054,20 @@
    "started": false
   },
   {
-   "pick": "Jahan Dotson Lower 17.5 Receiving Yards",
-   "game": "ATL @ NO",
-   "stat": "Receiving Yards",
-   "p": 0.5068,
-   "n_books": 4,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Jameis Winston Higher 208.5 Pass Yards",
    "game": "ARI @ NYG",
    "stat": "Pass Yards",
    "p": 0.5068,
    "n_books": 5,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Jahan Dotson Lower 17.5 Receiving Yards",
+   "game": "ATL @ NO",
+   "stat": "Receiving Yards",
+   "p": 0.5068,
+   "n_books": 4,
    "injury": null,
    "started": false
   },
@@ -7162,20 +7162,20 @@
    "started": false
   },
   {
-   "pick": "Matthew Stafford Higher 251.5 Pass Yards",
-   "game": "LA @ PHI",
-   "stat": "Pass Yards",
-   "p": 0.5039,
-   "n_books": 5,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Jaylin Noel Lower 11.5 Receiving Yards",
    "game": "DAL @ HOU",
    "stat": "Receiving Yards",
    "p": 0.5039,
    "n_books": 4,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Matthew Stafford Higher 251.5 Pass Yards",
+   "game": "LA @ PHI",
+   "stat": "Pass Yards",
+   "p": 0.5039,
+   "n_books": 5,
    "injury": null,
    "started": false
   },
@@ -7189,18 +7189,18 @@
    "started": false
   },
   {
-   "pick": "Jake Ferguson Higher 23.5 Receiving Yards",
-   "game": "DAL @ HOU",
-   "stat": "Receiving Yards",
+   "pick": "Aaron Rodgers Higher 212.5 Pass Yards",
+   "game": "PIT @ CLE",
+   "stat": "Pass Yards",
    "p": 0.5037,
    "n_books": 7,
    "injury": null,
    "started": false
   },
   {
-   "pick": "Aaron Rodgers Higher 212.5 Pass Yards",
-   "game": "PIT @ CLE",
-   "stat": "Pass Yards",
+   "pick": "Jake Ferguson Higher 23.5 Receiving Yards",
+   "game": "DAL @ HOU",
+   "stat": "Receiving Yards",
    "p": 0.5037,
    "n_books": 7,
    "injury": null,
