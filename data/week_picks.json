@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 4,
- "generated": "2026-10-01T06:22+00:00",
+ "generated": "2026-10-01T06:31+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -959,6 +959,118 @@
      "n_signals": 8,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "PIT @ CLE",
+     "game_id": "d55cb69fed50a09170560b5b75d8de86",
+     "kickoff": "2026-10-02T00:15:00Z",
+     "started": false,
+     "home": "CLE",
+     "away": "PIT",
+     "team": "CLE",
+     "side": "cover",
+     "line": 3.0,
+     "p": 0.5146,
+     "fair_odds": -106,
+     "pick": "CLE +3",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line CLE +2.3"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans CLE by +0.7 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "PIT starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "PIT @ CLE",
+     "game_id": "d55cb69fed50a09170560b5b75d8de86",
+     "kickoff": "2026-10-02T00:15:00Z",
+     "started": false,
+     "home": "CLE",
+     "away": "PIT",
+     "team": null,
+     "side": "Over",
+     "line": 38.5,
+     "p": 0.5238,
+     "fair_odds": -110,
+     "pick": "Over 38.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 38.5"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 41.2"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "PIT @ CLE",
+     "game_id": "d55cb69fed50a09170560b5b75d8de86",
+     "kickoff": "2026-10-02T00:15:00Z",
+     "started": false,
+     "home": "CLE",
+     "away": "PIT",
+     "team": "PIT",
+     "side": "win",
+     "line": null,
+     "p": 0.579,
+     "fair_odds": -138,
+     "pick": "PIT to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: PIT wins 58%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin PIT +1.6"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -1218,6 +1330,118 @@
      "n_signals": 7,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "IND @ WAS",
+     "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
+     "kickoff": "2026-10-04T13:30:00Z",
+     "started": false,
+     "home": "WAS",
+     "away": "IND",
+     "team": "IND",
+     "side": "cover",
+     "line": -3.5,
+     "p": 0.5176,
+     "fair_odds": -107,
+     "pick": "IND -3.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line IND -4.0"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans IND by -4.5 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge -0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "WAS starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "IND @ WAS",
+     "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
+     "kickoff": "2026-10-04T13:30:00Z",
+     "started": false,
+     "home": "WAS",
+     "away": "IND",
+     "team": null,
+     "side": "Over",
+     "line": 47.5,
+     "p": 0.5279,
+     "fair_odds": -112,
+     "pick": "Over 47.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 47.6"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 49.7"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "IND @ WAS",
+     "game_id": "c9d8ed8aa4889486eaf10a630138ede0",
+     "kickoff": "2026-10-04T13:30:00Z",
+     "started": false,
+     "home": "WAS",
+     "away": "IND",
+     "team": "IND",
+     "side": "win",
+     "line": null,
+     "p": 0.6384,
+     "fair_odds": -177,
+     "pick": "IND to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: IND wins 64%"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model margin IND -0.5"
+      }
+     ],
+     "support": 1,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -1476,6 +1700,118 @@
      "n_signals": 6,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "ARI @ NYG",
+     "game_id": "664e6bda5721dc63be16bcf7d962a436",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "NYG",
+     "away": "ARI",
+     "team": "NYG",
+     "side": "cover",
+     "line": 2.5,
+     "p": 0.5022,
+     "fair_odds": -101,
+     "pick": "NYG +2.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line NYG +2.6"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model leans NYG by +7.7 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "ARI starting QB out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "ARI @ NYG",
+     "game_id": "664e6bda5721dc63be16bcf7d962a436",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "NYG",
+     "away": "ARI",
+     "team": null,
+     "side": "Over",
+     "line": 44.5,
+     "p": 0.5207,
+     "fair_odds": -109,
+     "pick": "Over 44.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 44.4"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 47.0"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "ARI @ NYG",
+     "game_id": "664e6bda5721dc63be16bcf7d962a436",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "NYG",
+     "away": "ARI",
+     "team": "ARI",
+     "side": "win",
+     "line": null,
+     "p": 0.5587,
+     "fair_odds": -127,
+     "pick": "ARI to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: ARI wins 56%"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model margin ARI -5.1"
+      }
+     ],
+     "support": 1,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -1723,6 +2059,118 @@
      "support": 4,
      "n_signals": 6,
      "in_top10": false
+    }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "DAL @ HOU",
+     "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "HOU",
+     "away": "DAL",
+     "team": "HOU",
+     "side": "cover",
+     "line": -3.0,
+     "p": 0.5128,
+     "fair_odds": -105,
+     "pick": "HOU -3",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line HOU -3.0"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model leans HOU by +2.8 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "DAL starting QB out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "DAL @ HOU",
+     "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "HOU",
+     "away": "DAL",
+     "team": null,
+     "side": "Over",
+     "line": 48.0,
+     "p": 0.5194,
+     "fair_odds": -108,
+     "pick": "Over 48",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 48.1"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model total 48.2"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "DAL @ HOU",
+     "game_id": "daf55e2df5341c007fee5a0fc5bbc2d4",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "HOU",
+     "away": "DAL",
+     "team": "HOU",
+     "side": "win",
+     "line": null,
+     "p": 0.5932,
+     "fair_odds": -146,
+     "pick": "HOU to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: HOU wins 59%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin HOU +5.8"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
     }
    ]
   },
@@ -1993,6 +2441,118 @@
      "n_signals": 8,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "GB @ TB",
+     "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "TB",
+     "away": "GB",
+     "team": "TB",
+     "side": "cover",
+     "line": 3.5,
+     "p": 0.5081,
+     "fair_odds": -103,
+     "pick": "TB +3.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line TB +3.2"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model leans TB by +4.2 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge -3 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "GB starting QB out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "GB @ TB",
+     "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "TB",
+     "away": "GB",
+     "team": null,
+     "side": "Over",
+     "line": 38.5,
+     "p": 0.5485,
+     "fair_odds": -122,
+     "pick": "Over 38.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 38.5"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 46.8"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "GB @ TB",
+     "game_id": "99a9bae4dc0dc2590496bd3102b211f2",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "TB",
+     "away": "GB",
+     "team": "GB",
+     "side": "win",
+     "line": null,
+     "p": 0.6244,
+     "fair_odds": -166,
+     "pick": "GB to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: GB wins 62%"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model margin GB -1.0"
+      }
+     ],
+     "support": 1,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -2257,6 +2817,118 @@
      "n_signals": 8,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "JAX @ CIN",
+     "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "CIN",
+     "away": "JAX",
+     "team": "CIN",
+     "side": "cover",
+     "line": -2.5,
+     "p": 0.5107,
+     "fair_odds": -104,
+     "pick": "CIN -2.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line CIN -3.0"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans CIN by -6.6 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "JAX starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "JAX @ CIN",
+     "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "CIN",
+     "away": "JAX",
+     "team": null,
+     "side": "Under",
+     "line": 51.5,
+     "p": 0.5056,
+     "fair_odds": -102,
+     "pick": "Under 51.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 51.1"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 48.8"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "JAX @ CIN",
+     "game_id": "2ea94ddf20f66432b9024fe2e2eaba5f",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "CIN",
+     "away": "JAX",
+     "team": "CIN",
+     "side": "win",
+     "line": null,
+     "p": 0.5704,
+     "fair_odds": -133,
+     "pick": "CIN to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: CIN wins 57%"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model margin CIN -3.6"
+      }
+     ],
+     "support": 1,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -2515,6 +3187,118 @@
      "n_signals": 7,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "LA @ PHI",
+     "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "PHI",
+     "away": "LA",
+     "team": "LA",
+     "side": "cover",
+     "line": -3.0,
+     "p": 0.5151,
+     "fair_odds": -106,
+     "pick": "LA -3",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line LA -3.4"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans LA by -2.6 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +1 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "PHI starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "LA @ PHI",
+     "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "PHI",
+     "away": "LA",
+     "team": null,
+     "side": "Over",
+     "line": 43.5,
+     "p": 0.5299,
+     "fair_odds": -113,
+     "pick": "Over 43.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 43.6"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 46.3"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "LA @ PHI",
+     "game_id": "1b4f2e60ce83fa1d63a5dff83769d27c",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "PHI",
+     "away": "LA",
+     "team": "LA",
+     "side": "win",
+     "line": null,
+     "p": 0.6052,
+     "fair_odds": -153,
+     "pick": "LA to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: LA wins 61%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin LA +0.8"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -2768,6 +3552,118 @@
      "support": 3,
      "n_signals": 6,
      "in_top10": false
+    }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "NE @ BUF",
+     "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "BUF",
+     "away": "NE",
+     "team": "BUF",
+     "side": "cover",
+     "line": -7.0,
+     "p": 0.5039,
+     "fair_odds": -102,
+     "pick": "BUF -7",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line BUF -6.6"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans BUF by -1.6 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "NE starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "NE @ BUF",
+     "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "BUF",
+     "away": "NE",
+     "team": null,
+     "side": "Over",
+     "line": 48.5,
+     "p": 0.5138,
+     "fair_odds": -106,
+     "pick": "Over 48.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 48.7"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model total 47.0"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "NE @ BUF",
+     "game_id": "573cc0ef39631a4f6673ec843a8bedd4",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "BUF",
+     "away": "NE",
+     "team": "BUF",
+     "side": "win",
+     "line": null,
+     "p": 0.728,
+     "fair_odds": -268,
+     "pick": "BUF to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: BUF wins 73%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin BUF +5.1"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
     }
    ]
   },
@@ -3053,6 +3949,118 @@
      "n_signals": 8,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "NYJ @ CHI",
+     "game_id": "164e6eb68f31bac190381903c3cccd31",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "CHI",
+     "away": "NYJ",
+     "team": "CHI",
+     "side": "cover",
+     "line": -3.5,
+     "p": 0.5288,
+     "fair_odds": -112,
+     "pick": "CHI -3.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line CHI -3.7"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model leans CHI by +7.0 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge -1 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "NYJ starting QB out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "NYJ @ CHI",
+     "game_id": "164e6eb68f31bac190381903c3cccd31",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "CHI",
+     "away": "NYJ",
+     "team": null,
+     "side": "Over",
+     "line": 43.0,
+     "p": 0.526,
+     "fair_odds": -111,
+     "pick": "Over 43",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 43.0"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 45.9"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "NYJ @ CHI",
+     "game_id": "164e6eb68f31bac190381903c3cccd31",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "CHI",
+     "away": "NYJ",
+     "team": "CHI",
+     "side": "win",
+     "line": null,
+     "p": 0.6175,
+     "fair_odds": -161,
+     "pick": "CHI to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: CHI wins 62%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin CHI +10.8"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -3305,6 +4313,118 @@
      "support": 4,
      "n_signals": 6,
      "in_top10": false
+    }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "TEN @ BAL",
+     "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "BAL",
+     "away": "TEN",
+     "team": "BAL",
+     "side": "cover",
+     "line": -11.5,
+     "p": 0.5324,
+     "fair_odds": -114,
+     "pick": "BAL -11.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line BAL -11.5"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model leans BAL by +1.2 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "TEN starting QB out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "TEN @ BAL",
+     "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "BAL",
+     "away": "TEN",
+     "team": null,
+     "side": "Over",
+     "line": 42.5,
+     "p": 0.529,
+     "fair_odds": -112,
+     "pick": "Over 42.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 42.5"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 46.1"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "TEN @ BAL",
+     "game_id": "f01589b0e7e6dd4f4ac1220a1db81f53",
+     "kickoff": "2026-10-04T17:00:00Z",
+     "started": false,
+     "home": "BAL",
+     "away": "TEN",
+     "team": "BAL",
+     "side": "win",
+     "line": null,
+     "p": 0.8415,
+     "fair_odds": -531,
+     "pick": "BAL to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: BAL wins 84%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin BAL +12.7"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
     }
    ]
   },
@@ -3569,6 +4689,118 @@
      "n_signals": 6,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "MIA @ MIN",
+     "game_id": "c327223d76a3b7b0db8c6c104442f44b",
+     "kickoff": "2026-10-04T20:05:00Z",
+     "started": false,
+     "home": "MIN",
+     "away": "MIA",
+     "team": "MIN",
+     "side": "cover",
+     "line": -10.5,
+     "p": 0.5192,
+     "fair_odds": -108,
+     "pick": "MIN -10.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line MIN -10.4"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans MIN by -2.8 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "MIA starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "MIA @ MIN",
+     "game_id": "c327223d76a3b7b0db8c6c104442f44b",
+     "kickoff": "2026-10-04T20:05:00Z",
+     "started": false,
+     "home": "MIN",
+     "away": "MIA",
+     "team": null,
+     "side": "Over",
+     "line": 38.5,
+     "p": 0.5417,
+     "fair_odds": -118,
+     "pick": "Over 38.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 38.8"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 43.5"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "MIA @ MIN",
+     "game_id": "c327223d76a3b7b0db8c6c104442f44b",
+     "kickoff": "2026-10-04T20:05:00Z",
+     "started": false,
+     "home": "MIN",
+     "away": "MIA",
+     "team": "MIN",
+     "side": "win",
+     "line": null,
+     "p": 0.8254,
+     "fair_odds": -473,
+     "pick": "MIN to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: MIN wins 83%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin MIN +7.6"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -3831,6 +5063,118 @@
      "support": 3,
      "n_signals": 6,
      "in_top10": false
+    }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "DEN @ SF",
+     "game_id": "a7e7efb75a9792ac63480ae6328dca18",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "SF",
+     "away": "DEN",
+     "team": "SF",
+     "side": "cover",
+     "line": -2.5,
+     "p": 0.5178,
+     "fair_odds": -107,
+     "pick": "SF -2.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line SF -2.9"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans SF by -0.7 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "DEN starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "DEN @ SF",
+     "game_id": "a7e7efb75a9792ac63480ae6328dca18",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "SF",
+     "away": "DEN",
+     "team": null,
+     "side": "Over",
+     "line": 48.5,
+     "p": 0.5041,
+     "fair_odds": -102,
+     "pick": "Over 48.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 48.4"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model total 47.0"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "DEN @ SF",
+     "game_id": "a7e7efb75a9792ac63480ae6328dca18",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "SF",
+     "away": "DEN",
+     "team": "SF",
+     "side": "win",
+     "line": null,
+     "p": 0.5676,
+     "fair_odds": -131,
+     "pick": "SF to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: SF wins 57%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin SF +2.2"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
     }
    ]
   },
@@ -4097,6 +5441,118 @@
      "n_signals": 6,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "KC @ LV",
+     "game_id": "e0cbd266dcf997089203a1b33ba0333d",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "LV",
+     "away": "KC",
+     "team": "KC",
+     "side": "cover",
+     "line": -4.5,
+     "p": 0.5068,
+     "fair_odds": -103,
+     "pick": "KC -4.5",
+     "n_books": 7,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "7 sportsbooks: fair line KC -4.4"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans KC by -0.3 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge -0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "LV starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "KC @ LV",
+     "game_id": "e0cbd266dcf997089203a1b33ba0333d",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "LV",
+     "away": "KC",
+     "team": null,
+     "side": "Under",
+     "line": 47.5,
+     "p": 0.5007,
+     "fair_odds": -100,
+     "pick": "Under 47.5",
+     "n_books": 7,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "7 sportsbooks: fair total 47.6"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 43.8"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "KC @ LV",
+     "game_id": "e0cbd266dcf997089203a1b33ba0333d",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "LV",
+     "away": "KC",
+     "team": "KC",
+     "side": "win",
+     "line": null,
+     "p": 0.6542,
+     "fair_odds": -189,
+     "pick": "KC to win",
+     "n_books": 7,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "7 sportsbooks: KC wins 65%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin KC +4.1"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -4334,6 +5790,118 @@
      "support": 3,
      "n_signals": 6,
      "in_top10": false
+    }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "LAC @ SEA",
+     "game_id": "96d2373cda647873b971f268482bced0",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "SEA",
+     "away": "LAC",
+     "team": "SEA",
+     "side": "cover",
+     "line": -7.0,
+     "p": 0.5357,
+     "fair_odds": -115,
+     "pick": "SEA -7",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line SEA -7.4"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model leans SEA by +3.2 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge +0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "LAC starting QB out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "LAC @ SEA",
+     "game_id": "96d2373cda647873b971f268482bced0",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "SEA",
+     "away": "LAC",
+     "team": null,
+     "side": "Over",
+     "line": 42.5,
+     "p": 0.5129,
+     "fair_odds": -105,
+     "pick": "Over 42.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 42.6"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model total 41.6"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "LAC @ SEA",
+     "game_id": "96d2373cda647873b971f268482bced0",
+     "kickoff": "2026-10-04T20:25:00Z",
+     "started": false,
+     "home": "SEA",
+     "away": "LAC",
+     "team": "SEA",
+     "side": "win",
+     "line": null,
+     "p": 0.7471,
+     "fair_odds": -295,
+     "pick": "SEA to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: SEA wins 75%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin SEA +10.5"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
     }
    ]
   },
@@ -4598,6 +6166,118 @@
      "n_signals": 8,
      "in_top10": false
     }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "DET @ CAR",
+     "game_id": "a73a76599a4f3422803e57bd8f61b626",
+     "kickoff": "2026-10-05T00:20:00Z",
+     "started": false,
+     "home": "CAR",
+     "away": "DET",
+     "team": "DET",
+     "side": "cover",
+     "line": -3.5,
+     "p": 0.5167,
+     "fair_odds": -107,
+     "pick": "DET -3.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line DET -3.7"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans DET by -0.0 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge -0 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "CAR starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "DET @ CAR",
+     "game_id": "a73a76599a4f3422803e57bd8f61b626",
+     "kickoff": "2026-10-05T00:20:00Z",
+     "started": false,
+     "home": "CAR",
+     "away": "DET",
+     "team": null,
+     "side": "Under",
+     "line": 51.5,
+     "p": 0.5089,
+     "fair_odds": -104,
+     "pick": "Under 51.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 50.9"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model total 49.4"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 2,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "DET @ CAR",
+     "game_id": "a73a76599a4f3422803e57bd8f61b626",
+     "kickoff": "2026-10-05T00:20:00Z",
+     "started": false,
+     "home": "CAR",
+     "away": "DET",
+     "team": "DET",
+     "side": "win",
+     "line": null,
+     "p": 0.6343,
+     "fair_odds": -173,
+     "pick": "DET to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: DET wins 63%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin DET +3.7"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
+    }
    ]
   },
   {
@@ -4861,6 +6541,118 @@
      "support": 3,
      "n_signals": 7,
      "in_top10": false
+    }
+   ],
+   "lines": [
+    {
+     "market": "Spread",
+     "game": "ATL @ NO",
+     "game_id": "8bd90781e17e6d97df3941063cedae1e",
+     "kickoff": "2026-10-06T00:15:00Z",
+     "started": false,
+     "home": "NO",
+     "away": "ATL",
+     "team": "NO",
+     "side": "cover",
+     "line": -2.5,
+     "p": 0.5151,
+     "fair_odds": -106,
+     "pick": "NO -2.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair line NO -2.9"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model leans NO by -1.8 pts"
+      },
+      {
+       "k": "rest",
+       "ok": false,
+       "txt": "Rest edge -3 days"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "ATL starting QB out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Total",
+     "game": "ATL @ NO",
+     "game_id": "8bd90781e17e6d97df3941063cedae1e",
+     "kickoff": "2026-10-06T00:15:00Z",
+     "started": false,
+     "home": "NO",
+     "away": "ATL",
+     "team": null,
+     "side": "Over",
+     "line": 47.5,
+     "p": 0.5051,
+     "fair_odds": -102,
+     "pick": "Over 47.5",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: fair total 47.6"
+      },
+      {
+       "k": "model",
+       "ok": false,
+       "txt": "Stats model total 44.5"
+      },
+      {
+       "k": "weather",
+       "ok": false,
+       "txt": "Wind 0 mph"
+      },
+      {
+       "k": "injury",
+       "ok": false,
+       "txt": "A starting QB is out"
+      }
+     ],
+     "support": 1,
+     "n_signals": 4
+    },
+    {
+     "market": "Moneyline",
+     "game": "ATL @ NO",
+     "game_id": "8bd90781e17e6d97df3941063cedae1e",
+     "kickoff": "2026-10-06T00:15:00Z",
+     "started": false,
+     "home": "NO",
+     "away": "ATL",
+     "team": "NO",
+     "side": "win",
+     "line": null,
+     "p": 0.5669,
+     "fair_odds": -131,
+     "pick": "NO to win",
+     "n_books": 8,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "8 sportsbooks: NO wins 57%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Stats model margin NO +1.0"
+      }
+     ],
+     "support": 2,
+     "n_signals": 2
     }
    ]
   }
@@ -7440,8 +9232,58 @@
     }
    ]
   },
+  "gl": {
+   "season": {
+    "wins": 0,
+    "losses": 0,
+    "pushes": 0,
+    "voids": 0,
+    "pending": 48,
+    "hit": null,
+    "expected": null
+   },
+   "weeks": [
+    {
+     "week": 4,
+     "wins": 0,
+     "losses": 0,
+     "pushes": 0,
+     "voids": 0,
+     "pending": 48,
+     "hit": null,
+     "expected": null
+    }
+   ]
+  },
   "results": {},
   "history": [
+   {
+    "week": 4,
+    "pick": "NO to win",
+    "game": "ATL @ NO",
+    "p": 0.5669,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 47.5",
+    "game": "ATL @ NO",
+    "p": 0.5051,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "NO -2.5",
+    "game": "ATL @ NO",
+    "p": 0.5151,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
    {
     "week": 4,
     "pick": "Alvin Kamara Lower 16.5 Receiving Yards",
@@ -7480,6 +9322,33 @@
    },
    {
     "week": 4,
+    "pick": "DET to win",
+    "game": "DET @ CAR",
+    "p": 0.6343,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Under 51.5",
+    "game": "DET @ CAR",
+    "p": 0.5089,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "DET -3.5",
+    "game": "DET @ CAR",
+    "p": 0.5167,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
     "pick": "Tetairoa McMillan Lower 70.5 Receiving Yards",
     "game": "DET @ CAR",
     "p": 0.5355,
@@ -7510,6 +9379,87 @@
     "pick": "Chuba Hubbard Lower 66.5 Rush Yards",
     "game": "DET @ CAR",
     "p": 0.5512,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "SEA to win",
+    "game": "LAC @ SEA",
+    "p": 0.7471,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 42.5",
+    "game": "LAC @ SEA",
+    "p": 0.5129,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "SEA -7",
+    "game": "LAC @ SEA",
+    "p": 0.5357,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "KC to win",
+    "game": "KC @ LV",
+    "p": 0.6542,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Under 47.5",
+    "game": "KC @ LV",
+    "p": 0.5007,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "KC -4.5",
+    "game": "KC @ LV",
+    "p": 0.5068,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "SF to win",
+    "game": "DEN @ SF",
+    "p": 0.5676,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 48.5",
+    "game": "DEN @ SF",
+    "p": 0.5041,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "SF -2.5",
+    "game": "DEN @ SF",
+    "p": 0.5178,
     "top10": false,
     "result": null,
     "actual": null
@@ -7624,6 +9574,33 @@
    },
    {
     "week": 4,
+    "pick": "MIN to win",
+    "game": "MIA @ MIN",
+    "p": 0.8254,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 38.5",
+    "game": "MIA @ MIN",
+    "p": 0.5417,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "MIN -10.5",
+    "game": "MIA @ MIN",
+    "p": 0.5192,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
     "pick": "Malik Willis Lower 28.5 Rush Yards",
     "game": "MIA @ MIN",
     "p": 0.5418,
@@ -7654,6 +9631,222 @@
     "pick": "Jaylen Wright Higher 4.5 Receiving Yards",
     "game": "MIA @ MIN",
     "p": 0.6199,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "LA to win",
+    "game": "LA @ PHI",
+    "p": 0.6052,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 43.5",
+    "game": "LA @ PHI",
+    "p": 0.5299,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "LA -3",
+    "game": "LA @ PHI",
+    "p": 0.5151,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "GB to win",
+    "game": "GB @ TB",
+    "p": 0.6244,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 38.5",
+    "game": "GB @ TB",
+    "p": 0.5485,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "TB +3.5",
+    "game": "GB @ TB",
+    "p": 0.5081,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "HOU to win",
+    "game": "DAL @ HOU",
+    "p": 0.5932,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 48",
+    "game": "DAL @ HOU",
+    "p": 0.5194,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "HOU -3",
+    "game": "DAL @ HOU",
+    "p": 0.5128,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "CIN to win",
+    "game": "JAX @ CIN",
+    "p": 0.5704,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Under 51.5",
+    "game": "JAX @ CIN",
+    "p": 0.5056,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "CIN -2.5",
+    "game": "JAX @ CIN",
+    "p": 0.5107,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "CHI to win",
+    "game": "NYJ @ CHI",
+    "p": 0.6175,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 43",
+    "game": "NYJ @ CHI",
+    "p": 0.526,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "CHI -3.5",
+    "game": "NYJ @ CHI",
+    "p": 0.5288,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "BUF to win",
+    "game": "NE @ BUF",
+    "p": 0.728,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 48.5",
+    "game": "NE @ BUF",
+    "p": 0.5138,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "BUF -7",
+    "game": "NE @ BUF",
+    "p": 0.5039,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "BAL to win",
+    "game": "TEN @ BAL",
+    "p": 0.8415,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 42.5",
+    "game": "TEN @ BAL",
+    "p": 0.529,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "BAL -11.5",
+    "game": "TEN @ BAL",
+    "p": 0.5324,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "ARI to win",
+    "game": "ARI @ NYG",
+    "p": 0.5587,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 44.5",
+    "game": "ARI @ NYG",
+    "p": 0.5207,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "NYG +2.5",
+    "game": "ARI @ NYG",
+    "p": 0.5022,
     "top10": false,
     "result": null,
     "actual": null
@@ -7948,6 +10141,33 @@
    },
    {
     "week": 4,
+    "pick": "IND to win",
+    "game": "IND @ WAS",
+    "p": 0.6384,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 47.5",
+    "game": "IND @ WAS",
+    "p": 0.5279,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "IND -3.5",
+    "game": "IND @ WAS",
+    "p": 0.5176,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
     "pick": "Terry McLaurin Lower 4.5 Receptions",
     "game": "IND @ WAS",
     "p": 0.5457,
@@ -7979,6 +10199,33 @@
     "game": "IND @ WAS",
     "p": 0.5638,
     "top10": true,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "PIT to win",
+    "game": "PIT @ CLE",
+    "p": 0.579,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "Over 38.5",
+    "game": "PIT @ CLE",
+    "p": 0.5238,
+    "top10": false,
+    "result": null,
+    "actual": null
+   },
+   {
+    "week": 4,
+    "pick": "CLE +3",
+    "game": "PIT @ CLE",
+    "p": 0.5146,
+    "top10": false,
     "result": null,
     "actual": null
    },
