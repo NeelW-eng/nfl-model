@@ -56,8 +56,30 @@ def injury_report(notes, status, teams):
     return sorted(rows, key=lambda r: (r['team'], r['player']))
 
 
+HP_MIN, HP_MAX = 0.62, 15
+
+
+def high_probability(cands, gl_flat, locked=()):
+    """Every pick with at least a 62% win chance: moneyline favorites and Underdog player picks.
+    Player picks need 4+ games of history and no injury tag; ones no sportsbook prices are marked model-only.
+    Picks from games that have started stay as logged."""
+    out = list(locked)
+    keys = {track_ud._key(c) for c in out}
+    pool = [c for c in gl_flat if c['market'] == 'Moneyline' and not c['started']]
+    pool += [dict(c, market='Prop', model_only=not c['n_books']) for c in cands
+             if not c['started'] and not c['injury'] and c['history'] >= 4]
+    for c in sorted(pool, key=lambda c: -c['p']):
+        if c['p'] < HP_MIN or len(out) >= HP_MAX:
+            break
+        k = track_ud._key(c)
+        if k in keys:
+            continue
+        keys.add(k); out.append(c)
+    return sorted(out, key=lambda c: -c['p'])
+
+
 def slim(c):
-    keep = ['rank', 'game', 'game_id', 'kickoff', 'started', 'player', 'player_id', 'team', 'opp', 'pos', 'stat',
+    keep = ['rank', 'market', 'fair_odds', 'team', 'model_only', 'game', 'game_id', 'kickoff', 'started', 'player', 'player_id', 'team', 'opp', 'pos', 'stat',
             'stat_label', 'side', 'word', 'line', 'pick', 'p', 'p_model', 'p_cons', 'n_books', 'proj', 'injury',
             'injury_note', 'signals', 'support', 'n_signals', 'in_top10']
     return {k: c.get(k) for k in keep if k in c}
@@ -84,7 +106,7 @@ def main():
         out.update(odds_pulled=odds.get('pulled_at'), props_pulled=odds.get('props_pulled_at'),
                    credits_left=odds.get('credits_left'))
         cands = underdog.candidates(odds, proj, status, notes)
-        lock_top, lock_game, lock_gl = track_ud.locked(CUR, week)
+        lock_top, lock_game, lock_gl, lock_hp = track_ud.locked(CUR, week)
         top, glist = underdog.select(cands, lock_top, lock_game)
         gl = gamelines.picks(odds, X, CUR, week, notes)
         # started games keep the game-line picks that were logged before kickoff
@@ -107,8 +129,10 @@ def main():
         out.update(has_odds=bool(cands), lines_priced=len(cands), top10=[slim(c) for c in top], games=games_out,
                    all_lines=underdog.all_lines(cands))
         gl_flat = [c for x in gl.values() for c in x['picks']]
+        hp = high_probability(cands, gl_flat, lock_hp)
+        out['high_prob'] = [slim(c) | {k: c.get(k) for k in ('market', 'fair_odds', 'game_id', 'model_only')} for c in hp]
         if cands or gl_flat:
-            track_ud.log_picks(CUR, week, top, glist, odds.get('props_pulled_at') or odds.get('pulled_at'), gl_flat)
+            track_ud.log_picks(CUR, week, top, glist, odds.get('props_pulled_at') or odds.get('pulled_at'), gl_flat, hp)
     track_ud.grade()
     out['tracker'] = track_ud.record(CUR)
 

@@ -144,6 +144,13 @@ input[type=search]{font:14px var(--body);padding:9px 12px;border-radius:5px;bord
   </section>
 
   <section>
+    <div class="sec-head"><h2>High-probability picks</h2><span class="eyebrow">62%+ win chance · lower payouts</span></div>
+    <p class="note">Every pick this week with at least a 62% chance to hit, from moneyline favorites and Underdog player lines. These win more often but pay less: a moneyline favorite risks more than it wins, so check the price before betting. "Model only" means no sportsbook prices that line, so its estimate is less certain.</p>
+    <div class="card tracker" id="hp-tracker"></div>
+    <div class="list" id="hp"></div>
+  </section>
+
+  <section>
     <div class="sec-head"><h2>Game by game</h2><span class="eyebrow" id="g4-record"></span></div>
     <p class="note">Each game shows its spread, total and moneyline pick, then the four most likely Underdog player picks (one per player; ★ = also in the Top 10). Underdog's sportsbook lines aren't in any odds feed, so game lines are priced from 10 sportsbooks: check Underdog's number matches and take the pick only at the price shown or better. Picks lock at kickoff.</p>
     <div class="games" id="games"></div>
@@ -280,6 +287,26 @@ function drawTop10() {
   }).join('');
 }
 
+function riskText(o) { if (o == null) return ''; return o < 0 ? `risk $${(-o / 100).toFixed(2)} to win $1` : `risk $1 to win $${(o / 100).toFixed(2)}`; }
+
+function drawHP() {
+  const H = D.high_prob || [], S = ((D.tracker || {}).hp || {}).season || {};
+  const w = S.wins || 0, l = S.losses || 0;
+  $('hp-tracker').innerHTML = `<div class="season"><div><div class="big" style="font-size:36px"><span class="pos">${w}</span>–<span class="neg">${l}</span></div><div class="lbl">High-probability record</div></div>
+    <div style="display:grid;gap:6px">${ratioBar(w, l, 0, true)}<div style="font-size:13px;color:var(--muted)">Hit rate <b style="color:var(--ink)">${S.hit != null ? pct(S.hit) : '–'}</b>${S.expected != null ? ` · predicted ${pct(S.expected)}` : ''}${S.pending ? ` · ${S.pending} pending` : ''}</div></div></div>`;
+  if (!H.length) { $('hp').innerHTML = `<div class="empty"><span class="muted">No picks at 62% or better yet this week. They appear when lines are pulled.</span></div>`; return; }
+  $('hp').innerHTML = H.map((c, i) => {
+    const r = resultOf(c), ml = c.market === 'Moneyline';
+    const title = ml ? `<span class="dir Higher" style="background:var(--ink);color:var(--bg)">Moneyline</span>${esc(c.team)} to win`
+                     : `<span class="dir ${c.word}">${c.word}</span>${esc(c.line)} ${esc(c.stat_label)} <span>· ${esc(c.player)}</span>`;
+    const sub = ml ? `${esc(c.game)} · ${esc(kick(c.kickoff))} · bet at ${odds(c.fair_odds)} or better (${riskText(c.fair_odds)}) · ${c.n_books} books`
+                   : `${esc(c.pos || '')} ${esc(c.team)} · ${esc(c.game)} · ${esc(kick(c.kickoff))} · projection ${(+c.proj).toFixed(1)} · ${c.model_only ? 'model only' : c.n_books + ' books'} · Underdog standard payout`;
+    return `<article class="pk ${r ? r.result : ''}"><span class="rank">${i + 1}</span>
+      <div class="who"><span class="line">${title}${resTag(c)}</span><span class="sub">${sub}</span></div>
+      <div class="chance"><b>${pct(c.p)}</b><small>Win chance</small></div>${chips(c)}</article>`;
+  }).join('');
+}
+
 function drawGames() {
   const G = D.games || [], sched = D.schedule || [];
   const S4 = ((D.tracker || {}).game4 || {}).season || {};
@@ -355,7 +382,7 @@ function render(data) {
   if (D.stats_through) st.push(`<span class="pill">Stats through ${esc(D.stats_through)}</span>`);
   st.push(`<span class="pill">Updated ${esc(when(D.generated))}</span>`);
   $('status').innerHTML = st.join('');
-  drawTracker(); drawTop10(); drawGames(); drawInjuries(); drawAll(); drawProj(); drawBoard();
+  drawTracker(); drawTop10(); drawHP(); drawGames(); drawInjuries(); drawAll(); drawProj(); drawBoard();
 }
 $('tabs').addEventListener('click', e => { const k = e.target.dataset?.k; if (k) { cur = k; drawProj(); } });
 $('all-filter').addEventListener('input', drawAll);

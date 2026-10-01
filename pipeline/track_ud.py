@@ -7,7 +7,7 @@ from paths import DATA, CUR
 LOG = os.path.join(DATA, 'picks_underdog.csv')
 COLS = ['season', 'week', 'logged', 'kickoff', 'game_id', 'game', 'player', 'player_id', 'team', 'opp', 'pos',
         'stat', 'stat_label', 'side', 'word', 'line', 'pick', 'p', 'n_books', 'support', 'n_signals',
-        'top10', 'rank', 'game4', 'result', 'actual', 'market', 'home', 'away', 'fair_odds', 'gl']
+        'top10', 'rank', 'game4', 'result', 'actual', 'market', 'home', 'away', 'fair_odds', 'gl', 'hp']
 
 
 def _load():
@@ -18,6 +18,7 @@ def _load():
     d['top10'] = d.top10.fillna(False).astype(bool)
     d['game4'] = d.game4.fillna(False).astype(bool)
     d['gl'] = d.gl.fillna(False).astype(bool)
+    d['hp'] = d.hp.fillna(False).astype(bool)
     d['market'] = d.market.fillna('Prop')
     return d
 
@@ -34,17 +35,18 @@ def locked(season, week):
     """Picks of this week whose game has kicked off: they stay on the board as logged."""
     d = _load()
     if d.empty:
-        return [], [], []
+        return [], [], [], []
     kick = pd.to_datetime(d.kickoff, utc=True, errors='coerce')
     d = d[(d.season == season) & (d.week == week) & (kick <= pd.Timestamp.now(tz='UTC'))]
     rows = [dict(r, started=True, signals=[], injury=None) for r in d.to_dict('records')]
     for r in rows:
         r['line'] = None if pd.isna(r['line']) else float(r['line'])
         r['history'] = 99
-    return [r for r in rows if r['top10']], [r for r in rows if r['game4']], [r for r in rows if r['gl']]
+    return ([r for r in rows if r['top10']], [r for r in rows if r['game4']], [r for r in rows if r['gl']],
+            [r for r in rows if r['hp']])
 
 
-def log_picks(season, week, top, games, pulled_at, gl=()):
+def log_picks(season, week, top, games, pulled_at, gl=(), hp=()):
     d = _load()
     kick = pd.to_datetime(d.kickoff, utc=True, errors='coerce')
     now = pd.Timestamp.now(tz='UTC')
@@ -70,6 +72,20 @@ def log_picks(season, week, top, games, pulled_at, gl=()):
             continue
         rows[_key(c)] = dict({k2: c.get(k2) for k2 in COLS}, top10=False, rank=None, game4=False, gl=True,
                              stat=c['market'], stat_label=c['market'])
+    for c in hp:
+        if c.get('started'):
+            continue
+        k = _key(c)
+        if k in rows:
+            rows[k]['hp'] = True
+        else:
+            is_gl = c.get('market') in ('Spread', 'Total', 'Moneyline')
+            rows[k] = dict({k2: c.get(k2) for k2 in COLS}, top10=False, rank=None, game4=False, gl=False, hp=True,
+                           market=c.get('market') or 'Prop',
+                           **({'stat': c['market'], 'stat_label': c['market']} if is_gl else {}))
+    for r in rows.values():
+        r.setdefault('hp', False)
+        r['hp'] = bool(r.get('hp'))
     new = [dict(r, season=season, week=week, logged=pulled_at, result=None, actual=None)
            for k, r in rows.items() if k not in have]
     if new:
@@ -130,7 +146,7 @@ def record(season):
     d = _load()
     d = d[d.season == season]
     out = {'breakeven': 0.54}
-    for name, sub in (('top10', d[d.top10]), ('game4', d[d.game4]), ('gl', d[d.gl])):
+    for name, sub in (('top10', d[d.top10]), ('game4', d[d.game4]), ('gl', d[d.gl]), ('hp', d[d.hp])):
         weeks = [dict(week=int(w), **_wl(x)) for w, x in sub.groupby('week')]
         out[name] = dict(season=_wl(sub), weeks=weeks)
     # results keyed for marking cards
