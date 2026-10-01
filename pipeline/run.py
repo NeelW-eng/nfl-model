@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 import pandas as pd, numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import DATA, CUR, SITE
-import features, model, props2, injuries, underdog, track_ud
+import features, model, props2, injuries, underdog, track_ud, gamelines
 
 ODDS = os.path.join(DATA, 'odds.json')
 
@@ -84,18 +84,36 @@ def main():
         out.update(odds_pulled=odds.get('pulled_at'), props_pulled=odds.get('props_pulled_at'),
                    credits_left=odds.get('credits_left'))
         cands = underdog.candidates(odds, proj, status, notes)
-        lock_top, lock_game = track_ud.locked(CUR, week)
+        lock_top, lock_game, lock_gl = track_ud.locked(CUR, week)
         top, glist = underdog.select(cands, lock_top, lock_game)
-        out.update(has_odds=bool(cands), lines_priced=len(cands), top10=[slim(c) for c in top],
-                   games=[dict(g, picks=[slim(c) for c in g['picks']]) for g in glist],
+        gl = gamelines.picks(odds, X, CUR, week, notes)
+        # started games keep the game-line picks that were logged before kickoff
+        locked_by_game = {}
+        for c in lock_gl:
+            locked_by_game.setdefault(c['game_id'], []).append(c)
+        for gid, cs in locked_by_game.items():
+            if gid in gl:
+                gl[gid]['picks'] = cs
+        games_out = []
+        seen = set()
+        for g in glist:
+            gg = dict(g, picks=[slim(c) for c in g['picks']])
+            gg['lines'] = gl.get(g['game_id'], {}).get('picks', [])
+            games_out.append(gg); seen.add(g['game_id'])
+        for gid, x in gl.items():
+            if gid not in seen:
+                games_out.append(dict(game_id=gid, game=x['game'], kickoff=x['kickoff'], picks=[], lines=x['picks']))
+        games_out.sort(key=lambda g: (g['kickoff'], g['game']))
+        out.update(has_odds=bool(cands), lines_priced=len(cands), top10=[slim(c) for c in top], games=games_out,
                    all_lines=underdog.all_lines(cands))
-        if cands:
-            track_ud.log_picks(CUR, week, top, glist, odds.get('props_pulled_at') or odds.get('pulled_at'))
+        gl_flat = [c for x in gl.values() for c in x['picks']]
+        if cands or gl_flat:
+            track_ud.log_picks(CUR, week, top, glist, odds.get('props_pulled_at') or odds.get('pulled_at'), gl_flat)
     track_ud.grade()
     out['tracker'] = track_ud.record(CUR)
 
     # games this week without Underdog lines yet (shown as "lines not posted")
-    have = {g['game'] for g in out['games']}
+    have = {g['game'] for g in out['games'] if g['picks'] or g.get('lines')}
     out['schedule'] = [dict(game=f"{r.away_team} @ {r.home_team}", kickoff=f"{r.gameday} {r.gametime}",
                             has_lines=f"{r.away_team} @ {r.home_team}" in have)
                        for r in wk_games.sort_values(['gameday', 'gametime']).itertuples()]

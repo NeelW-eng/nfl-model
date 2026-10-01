@@ -51,7 +51,7 @@ section{display:grid;gap:16px}
 .ratio.big{height:22px}
 .be{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
 .weeks{display:grid;gap:6px}
-.wk{display:grid;grid-template-columns:52px 1fr 64px 52px;gap:12px;align-items:center;font-size:13px;font-variant-numeric:tabular-nums}
+.wk{display:grid;grid-template-columns:84px 1fr 64px 52px;gap:12px;align-items:center;font-size:13px;font-variant-numeric:tabular-nums}
 .wk .n{font:500 12px var(--mono);color:var(--muted)}
 .wk b{font-weight:600}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted)}
@@ -92,6 +92,14 @@ details.why summary::before{content:"▸ "} details.why[open] summary::before{co
 .gp .s{font-size:12px;color:var(--muted);grid-column:1}
 .gp .c{font:600 17px var(--body);font-variant-numeric:tabular-nums;grid-row:1 / span 2;grid-column:2;text-align:right}
 .star{font:600 10px var(--mono);color:var(--accent);letter-spacing:.06em}
+.glines{display:grid;gap:0;background:var(--soft);border-radius:6px;padding:8px 10px}
+.gl{display:grid;grid-template-columns:76px 1fr auto;gap:0 10px;align-items:center;padding:5px 0}
+.gl+.gl{border-top:1px solid var(--line)}
+.gl .m{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);grid-row:1 / span 2}
+.gl .t{font-weight:600;font-size:14px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.gl .f{font-size:12px;color:var(--muted);grid-column:2}
+.gl .c{font:600 17px var(--body);font-variant-numeric:tabular-nums;grid-row:1 / span 2;grid-column:3;text-align:right}
+.gl.win .c{color:var(--win-ink)} .gl.loss .c{color:var(--loss-ink)}
 .gp.win .c{color:var(--win-ink)} .gp.loss .c{color:var(--loss-ink)}
 .empty{border:1.5px dashed var(--line);border-radius:8px;padding:20px;display:grid;gap:8px;background:var(--surface)}
 
@@ -116,7 +124,7 @@ input[type=search]{font:14px var(--body);padding:9px 12px;border-radius:5px;bord
 .ladder{display:grid;gap:6px;font-size:14px}
 .ladder div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dotted var(--line);padding-bottom:5px}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
-@media (max-width:620px){.season{grid-template-columns:1fr}header .yard{font-size:64px}.pk{grid-template-columns:30px 1fr auto;padding:10px}.chance b{font-size:20px}.wk{grid-template-columns:44px 1fr 56px 44px;gap:8px}.season .big{font-size:38px}}
+@media (max-width:620px){.season{grid-template-columns:1fr}header .yard{font-size:64px}.pk{grid-template-columns:30px 1fr auto;padding:10px}.chance b{font-size:20px}.wk{grid-template-columns:72px 1fr 56px 40px;gap:8px}.season .big{font-size:38px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -137,7 +145,7 @@ input[type=search]{font:14px var(--body);padding:9px 12px;border-radius:5px;bord
 
   <section>
     <div class="sec-head"><h2>Game by game</h2><span class="eyebrow" id="g4-record"></span></div>
-    <p class="note">The four most likely Underdog picks in every game, one per player. ★ marks picks that are also in the Top 10. Picks lock at kickoff.</p>
+    <p class="note">Each game shows its spread, total and moneyline pick, then the four most likely Underdog player picks (one per player; ★ = also in the Top 10). Underdog's sportsbook lines aren't in any odds feed, so game lines are priced from 10 sportsbooks: check Underdog's number matches and take the pick only at the price shown or better. Picks lock at kickoff.</p>
     <div class="games" id="games"></div>
   </section>
 
@@ -199,7 +207,9 @@ const kick = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocale
 const etKick = s => { const [d, t] = String(s).split(' '); const dt = new Date(d + 'T12:00:00'); const [h, m] = (t || '13:00').split(':').map(Number);
   return (isNaN(dt) ? '' : dt.toLocaleDateString([], {weekday:'short'})) + ' ' + ((h % 12) || 12) + ':' + String(m).padStart(2, '0') + (h < 12 ? ' AM' : ' PM') + ' ET'; };
 const key = c => `${c.player_id}|${c.stat}|${c.side}|${Number(c.line)}`;
-const resultOf = c => ((D.tracker || {}).results || {})[key(c)];
+const glKey = c => `${c.game_id}|${c.market}|${c.market === 'Total' ? c.side : c.team}`;
+const resultOf = c => ((D.tracker || {}).results || {})[c.market && c.market !== 'Prop' ? glKey(c) : key(c)];
+const odds = o => (o > 0 ? '+' : '') + o;
 
 function ratioBar(w, l, pend, big) {
   const n = w + l + (pend || 0);
@@ -222,7 +232,15 @@ function drawTracker() {
       <div style="display:grid;gap:6px">${ratioBar(w, l, 0, true)}
         <div class="legend"><span><i class="sw" style="background:var(--win)"></i>Wins</span><span><i class="sw" style="background:var(--loss)"></i>Losses</span><span><i class="sw" style="background:var(--ink);width:3px"></i>54% break-even</span></div><div style="font-size:13px;color:var(--muted)">Hit rate <b style="color:var(--ink)">${hit}</b>${S.expected != null ? ` · predicted ${pct(S.expected)}` : ''}${pend ? ` · ${pend} pending` : ''}${S.voids ? ` · ${S.voids} void` : ''}</div></div>
     </div>
+    ${glLine()}
     ${weeks.length ? `<div class="weeks">${weeks.map(x => `<div class="wk"><span class="n">Wk ${x.week}</span>${ratioBar(x.wins, x.losses, x.pending)}<b>${x.wins}–${x.losses}${x.pushes ? '–' + x.pushes : ''}</b><span class="muted">${x.hit != null ? pct(x.hit) : (x.pending ? 'live' : '')}</span></div>`).join('')}</div>` : ''}`;
+}
+
+function glLine() {
+  const G = ((D.tracker || {}).gl || {}).season || {}, P = ((D.tracker || {}).game4 || {}).season || {};
+  const seg = (lbl, x) => (x.wins || x.losses) ? `<div class="wk"><span class="n" style="white-space:nowrap">${lbl}</span>${ratioBar(x.wins, x.losses, 0)}<b>${x.wins}–${x.losses}</b><span class="muted">${pct(x.hit)}</span></div>` : '';
+  const h = seg('Game lines', G) + seg('Game picks', P);
+  return h ? `<div class="weeks" style="border-top:1px solid var(--line);padding-top:10px">${h}</div>` : '';
 }
 
 function resTag(c) {
@@ -265,7 +283,11 @@ function drawTop10() {
 function drawGames() {
   const G = D.games || [], sched = D.schedule || [];
   const S4 = ((D.tracker || {}).game4 || {}).season || {};
-  $('g4-record').textContent = (S4.wins || S4.losses) ? `Season ${S4.wins}–${S4.losses} · ${pct(S4.hit)} hit rate` : '';
+  const SG = ((D.tracker || {}).gl || {}).season || {};
+  const parts = [];
+  if (S4.wins || S4.losses) parts.push(`Player picks ${S4.wins}–${S4.losses}`);
+  if (SG.wins || SG.losses) parts.push(`Game lines ${SG.wins}–${SG.losses}`);
+  $('g4-record').textContent = parts.length ? 'Season · ' + parts.join(' · ') : '';
   const byName = Object.fromEntries(G.map(g => [g.game, g]));
   const order = sched.length ? sched.map(s => s.game) : G.map(g => g.game);
   $('games').innerHTML = order.map(name => {
@@ -275,7 +297,11 @@ function drawGames() {
     const rows = g.picks.map(c => { const r = resultOf(c); if (r && r.result === 'win') w++; if (r && r.result === 'loss') l++;
       return `<div class="gp ${r ? r.result : ''}"><span class="t"><span class="dir ${c.word}">${c.word}</span>${esc(c.line)} ${esc(c.stat_label)} · ${esc(c.player)}${c.in_top10 ? ' <span class="star">★ TOP 10</span>' : ''}${c.injury ? `<span class="flag">${esc(c.injury)}</span>` : ''}${resTag(c)}</span>
         <span class="s">${esc(c.team)}${c.proj != null ? ` · projection ${(+c.proj).toFixed(1)}` : ''}${c.n_books ? ` · ${c.n_books} books` : ' · model only'}</span><span class="c">${pct(c.p)}</span></div>`; }).join('');
-    return `<div class="card game"><div class="gh"><h3>${esc(g.game)}</h3><span class="eyebrow">${esc(kick(g.kickoff))}${w + l ? ` · ${w}–${l}` : ''}</span></div>${rows}</div>`;
+    const lines = (g.lines || []).map(c => { const r = resultOf(c); const lbl = c.market === 'Moneyline' ? `${esc(c.team)} to win` : esc(c.pick);
+      return `<div class="gl ${r ? r.result : ''}"><span class="m">${esc(c.market)}</span><span class="t">${lbl}${resTag(c)}</span><span class="f">bet at ${odds(c.fair_odds)} or better</span><span class="c">${pct(c.p)}</span></div>`; }).join('');
+    const linesBlock = lines ? `<div class="glines"><span class="eyebrow">Game lines · sportsbook consensus</span>${lines}</div>` : '';
+    const props = rows || '<span class="muted" style="font-size:13px">Underdog player lines not pulled yet for this game.</span>';
+    return `<div class="card game"><div class="gh"><h3>${esc(g.game)}</h3><span class="eyebrow">${esc(kick(g.kickoff))}${w + l ? ` · props ${w}–${l}` : ''}</span></div>${linesBlock}<span class="eyebrow" style="margin-top:4px">Top 4 player picks · Underdog</span>${props}</div>`;
   }).join('');
 }
 

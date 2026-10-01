@@ -7,7 +7,7 @@ from paths import DATA, CUR
 LOG = os.path.join(DATA, 'picks_underdog.csv')
 COLS = ['season', 'week', 'logged', 'kickoff', 'game_id', 'game', 'player', 'player_id', 'team', 'opp', 'pos',
         'stat', 'stat_label', 'side', 'word', 'line', 'pick', 'p', 'n_books', 'support', 'n_signals',
-        'top10', 'rank', 'game4', 'result', 'actual']
+        'top10', 'rank', 'game4', 'result', 'actual', 'market', 'home', 'away', 'fair_odds', 'gl']
 
 
 def _load():
@@ -17,10 +17,16 @@ def _load():
     d['result'] = d['result'].astype(object)
     d['top10'] = d.top10.fillna(False).astype(bool)
     d['game4'] = d.game4.fillna(False).astype(bool)
+    d['gl'] = d.gl.fillna(False).astype(bool)
+    d['market'] = d.market.fillna('Prop')
     return d
 
 
 def _key(r):
+    if r.get('market') in ('Spread', 'Total', 'Moneyline'):
+        ln = r.get('line')
+        return (r['game_id'], r['market'], r.get('team') if r['market'] != 'Total' else r['side'],
+                None if ln is None or (isinstance(ln, float) and np.isnan(ln)) else float(ln))
     return (r['player_id'], r['stat'], r['side'], float(r['line']))
 
 
@@ -28,17 +34,17 @@ def locked(season, week):
     """Picks of this week whose game has kicked off: they stay on the board as logged."""
     d = _load()
     if d.empty:
-        return [], []
+        return [], [], []
     kick = pd.to_datetime(d.kickoff, utc=True, errors='coerce')
     d = d[(d.season == season) & (d.week == week) & (kick <= pd.Timestamp.now(tz='UTC'))]
     rows = [dict(r, started=True, signals=[], injury=None) for r in d.to_dict('records')]
     for r in rows:
-        r['line'] = float(r['line'])
+        r['line'] = None if pd.isna(r['line']) else float(r['line'])
         r['history'] = 99
-    return [r for r in rows if r['top10']], [r for r in rows if r['game4']]
+    return [r for r in rows if r['top10']], [r for r in rows if r['game4']], [r for r in rows if r['gl']]
 
 
-def log_picks(season, week, top, games, pulled_at):
+def log_picks(season, week, top, games, pulled_at, gl=()):
     d = _load()
     kick = pd.to_datetime(d.kickoff, utc=True, errors='coerce')
     now = pd.Timestamp.now(tz='UTC')
@@ -49,7 +55,7 @@ def log_picks(season, week, top, games, pulled_at):
     for c in top:
         if c.get('started'):
             continue
-        rows[_key(c)] = dict({k: c.get(k) for k in COLS}, top10=True, rank=c['rank'], game4=False)
+        rows[_key(c)] = dict({k: c.get(k) for k in COLS}, top10=True, rank=c['rank'], game4=False, gl=False, market='Prop')
     for g in games:
         for c in g['picks']:
             if c.get('started'):
@@ -58,7 +64,12 @@ def log_picks(season, week, top, games, pulled_at):
             if k in rows:
                 rows[k]['game4'] = True
             else:
-                rows[k] = dict({k2: c.get(k2) for k2 in COLS}, top10=False, rank=None, game4=True)
+                rows[k] = dict({k2: c.get(k2) for k2 in COLS}, top10=False, rank=None, game4=True, gl=False, market='Prop')
+    for c in gl:
+        if c.get('started'):
+            continue
+        rows[_key(c)] = dict({k2: c.get(k2) for k2 in COLS}, top10=False, rank=None, game4=False, gl=True,
+                             stat=c['market'], stat_label=c['market'])
     new = [dict(r, season=season, week=week, logged=pulled_at, result=None, actual=None)
            for k, r in rows.items() if k not in have]
     if new:
@@ -74,7 +85,21 @@ def grade():
     done = g[g.home_score.notna()]
     finals = {(r.season, r.week, t) for r in done.itertuples() for t in (r.home_team, r.away_team)}
     stats = {}
-    for i, r in d[d.result.isna()].iterrows():
+    score = {(int(x.season), int(x.week), x.home_team, x.away_team): (x.home_score, x.away_score) for x in done.itertuples()}
+    for i, r in d[d.result.isna() & d.gl].iterrows():
+        sc = score.get((int(r.season), int(r.week), r.home, r.away))
+        if sc is None:
+            continue
+        margin = sc[0] - sc[1]
+        if r.market == 'Spread':
+            v = (margin if r.team == r.home else -margin) + float(r.line)
+        elif r.market == 'Total':
+            v = (sc[0] + sc[1] - float(r.line)) * (1 if r.side == 'Over' else -1)
+        else:
+            v = margin if r.team == r.home else -margin
+        d.at[i, 'result'] = 'push' if v == 0 else 'win' if v > 0 else 'loss'
+        d.at[i, 'actual'] = f"{r.away} {int(sc[1])}-{int(sc[0])} {r.home}"
+    for i, r in d[d.result.isna() & ~d.gl].iterrows():
         s = int(r.season)
         if (s, int(r.week), r.team) not in finals:
             continue
@@ -86,7 +111,7 @@ def grade():
         if row.empty:
             d.at[i, 'result'] = 'void'
             continue
-        val = float(row.iloc[0][r.stat]) if pd.notna(row.iloc[0][r.stat]) else 0.0
+        val = float(row.iloc[0][r.stat]) if pd.notna(row.iloc[0][r.stat]) else 0.0  # noqa
         v = (val - float(r.line)) * (1 if r.side == 'Over' else -1)
         d.at[i, 'result'] = 'push' if v == 0 else 'win' if v > 0 else 'loss'
         d.at[i, 'actual'] = val
@@ -105,12 +130,19 @@ def record(season):
     d = _load()
     d = d[d.season == season]
     out = {'breakeven': 0.54}
-    for name, sub in (('top10', d[d.top10]), ('game4', d[d.game4])):
+    for name, sub in (('top10', d[d.top10]), ('game4', d[d.game4]), ('gl', d[d.gl])):
         weeks = [dict(week=int(w), **_wl(x)) for w, x in sub.groupby('week')]
         out[name] = dict(season=_wl(sub), weeks=weeks)
     # results keyed for marking cards
-    out['results'] = {f"{r.player_id}|{r.stat}|{r.side}|{float(r.line):g}": dict(result=r.result, actual=r.actual)
-                      for r in d.itertuples() if isinstance(r.result, str)}
+    out['results'] = {}
+    for r in d.itertuples():
+        if not isinstance(r.result, str):
+            continue
+        if r.gl:
+            k = f"{r.game_id}|{r.market}|{r.team if r.market != 'Total' else r.side}"
+        else:
+            k = f"{r.player_id}|{r.stat}|{r.side}|{float(r.line):g}"
+        out['results'][k] = dict(result=r.result, actual=r.actual)
     out['history'] = [dict(week=int(r.week), pick=r.pick, game=r.game, p=float(r.p), top10=bool(r.top10),
                            result=r.result if isinstance(r.result, str) else None,
                            actual=None if pd.isna(r.actual) else float(r.actual))
