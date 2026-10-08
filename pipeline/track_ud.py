@@ -15,6 +15,7 @@ def _load():
         return pd.DataFrame(columns=COLS)
     d = pd.read_csv(LOG).reindex(columns=COLS)
     d['result'] = d['result'].astype(object)
+    d['actual'] = d['actual'].astype(object)   # numbers for player picks, final score text for game lines
     d['top10'] = d.top10.fillna(False).astype(bool)
     d['game4'] = d.game4.fillna(False).astype(bool)
     d['gl'] = d.gl.fillna(False).astype(bool)
@@ -161,6 +162,6 @@ def record(season):
         out['results'][k] = dict(result=r.result, actual=r.actual)
     out['history'] = [dict(week=int(r.week), pick=r.pick, game=r.game, p=float(r.p), top10=bool(r.top10),
                            result=r.result if isinstance(r.result, str) else None,
-                           actual=None if pd.isna(r.actual) else float(r.actual))
+                           actual=None if pd.isna(r.actual) else (r.actual if isinstance(r.actual, str) else float(r.actual)))
                       for r in d.sort_values(['week', 'kickoff', 'rank']).itertuples()][::-1]
     return out

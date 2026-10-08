@@ -253,7 +253,7 @@ function glLine() {
 function resTag(c) {
   const r = resultOf(c);
   if (r) {
-    const a = r.actual != null ? ` · ${(+r.actual).toFixed(r.actual % 1 ? 1 : 0)}` : '';
+    const a = r.actual == null ? '' : typeof r.actual === 'string' ? ` · ${esc(r.actual)}` : ` · ${(+r.actual).toFixed(r.actual % 1 ? 1 : 0)}`;
     return `<span class="res ${r.result}">${r.result === 'win' ? 'W' : r.result === 'loss' ? 'L' : r.result}${a}</span>`;
   }
   if (c.started) return `<span class="res">Locked</span>`;
@@ -381,6 +381,9 @@ function render(data) {
   st.push(`<span class="pill">Injuries: ${esc((D.injury_sources || []).length > 1 ? 'NFL + ESPN' : 'NFL reports')}</span>`);
   if (D.stats_through) st.push(`<span class="pill">Stats through ${esc(D.stats_through)}</span>`);
   st.push(`<span class="pill">Updated ${esc(when(D.generated))}</span>`);
+  const ageH = (Date.now() - new Date(D.generated)) / 36e5;
+  if (ageH > 72) st.push(`<span class="pill warn">Last update ${Math.round(ageH / 24)} days ago · picks may be stale</span>`);
+  (D.warnings || []).forEach(w => st.push(`<span class="pill warn">${esc(w)}</span>`));
   $('status').innerHTML = st.join('');
   drawTracker(); drawTop10(); drawHP(); drawGames(); drawInjuries(); drawAll(); drawProj(); drawBoard();
 }

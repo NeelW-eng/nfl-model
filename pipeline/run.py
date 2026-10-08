@@ -133,8 +133,18 @@ def main():
         out['high_prob'] = [slim(c) | {k: c.get(k) for k in ('market', 'fair_odds', 'game_id', 'model_only')} for c in hp]
         if cands or gl_flat:
             track_ud.log_picks(CUR, week, top, glist, odds.get('props_pulled_at') or odds.get('pulled_at'), gl_flat, hp)
-    track_ud.grade()
-    out['tracker'] = track_ud.record(CUR)
+    out['warnings'] = []
+    try:
+        track_ud.grade()
+    except Exception as e:  # grading must never stop new picks from publishing
+        import traceback; traceback.print_exc()
+        out['warnings'].append(f'Grading failed this run: {e}')
+    try:
+        out['tracker'] = track_ud.record(CUR)
+    except Exception as e:
+        import traceback; traceback.print_exc()
+        out['tracker'] = {}
+        out['warnings'].append(f'Tracker unavailable this run: {e}')
 
     # games this week without Underdog lines yet (shown as "lines not posted")
     have = {g['game'] for g in out['games'] if g['picks'] or g.get('lines')}
