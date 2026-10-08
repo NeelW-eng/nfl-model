@@ -91,6 +91,7 @@ jobs:
           git config user.name "sunday-edge-bot"
           git config user.email "sunday-edge-bot@users.noreply.github.com"
           rm -f requests/run requests/props requests/probe
-          git add -A data site requests
+          git add -A data site
+          git add -A requests 2>/dev/null || true
           git diff --cached --quiet || git commit -m "Update (${{ steps.mode.outputs.mode }}) $(date -u +'%Y-%m-%d %H:%M') UTC"
           git pull --rebase -X ours origin main && git push origin HEAD:main
