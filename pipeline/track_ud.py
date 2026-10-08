@@ -159,7 +159,7 @@ def record(season):
             k = f"{r.game_id}|{r.market}|{r.team if r.market != 'Total' else r.side}"
         else:
             k = f"{r.player_id}|{r.stat}|{r.side}|{float(r.line):g}"
-        out['results'][k] = dict(result=r.result, actual=r.actual)
+        out['results'][k] = dict(result=r.result, actual=None if pd.isna(r.actual) else r.actual)
     out['history'] = [dict(week=int(r.week), pick=r.pick, game=r.game, p=float(r.p), top10=bool(r.top10),
                            result=r.result if isinstance(r.result, str) else None,
                            actual=None if pd.isna(r.actual) else (r.actual if isinstance(r.actual, str) else float(r.actual)))
