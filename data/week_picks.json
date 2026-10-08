@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 5,
- "generated": "2026-10-08T15:36+00:00",
+ "generated": "2026-10-08T15:41+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -9465,7 +9465,7 @@
    },
    "00-0035659|receptions|Under|4.5": {
     "result": "void",
-    "actual": NaN
+    "actual": null
    },
    "00-0037263|receiving_yards|Under|7.5": {
     "result": "win",
@@ -9521,7 +9521,7 @@
    },
    "00-0035631|receiving_yards|Over|6.5": {
     "result": "void",
-    "actual": NaN
+    "actual": null
    },
    "00-0040867|receiving_yards|Under|26.5": {
     "result": "loss",
@@ -9629,7 +9629,7 @@
    },
    "00-0041512|receptions|Under|1.5": {
     "result": "void",
-    "actual": NaN
+    "actual": null
    },
    "00-0036355|rushing_yards|Under|21.5": {
     "result": "loss",
