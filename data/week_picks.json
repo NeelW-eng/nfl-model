@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 6,
- "generated": "2026-10-18T01:53+00:00",
+ "generated": "2026-10-18T06:38+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -122,7 +122,7 @@
     {
      "k": "script",
      "ok": false,
-     "txt": "HOU implied team total 20.0"
+     "txt": "HOU implied team total 19.5"
     },
     {
      "k": "ngs",
@@ -156,11 +156,11 @@
    "word": "Higher",
    "line": 1.5,
    "pick": "Brian Thomas Jr. Higher 1.5 Receptions",
-   "p": 0.5709,
-   "p_model": 0.6987,
+   "p": 0.5703,
+   "p_model": 0.6921,
    "p_cons": 0.5203,
    "n_books": 6,
-   "proj": 2.58,
+   "proj": 2.55,
    "injury": null,
    "injury_note": null,
    "signals": [
@@ -172,7 +172,7 @@
     {
      "k": "model",
      "ok": true,
-     "txt": "Projection 2.6 vs line 1.5 (70%)"
+     "txt": "Projection 2.5 vs line 1.5 (69%)"
     },
     {
      "k": "role",
@@ -192,7 +192,7 @@
     {
      "k": "script",
      "ok": false,
-     "txt": "JAX implied team total 22.5"
+     "txt": "JAX implied team total 22.0"
     },
     {
      "k": "ngs",
@@ -764,7 +764,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "HOU implied team total 20.0"
+       "txt": "HOU implied team total 19.5"
       },
       {
        "k": "ngs",
@@ -798,11 +798,11 @@
      "word": "Higher",
      "line": 1.5,
      "pick": "Brian Thomas Jr. Higher 1.5 Receptions",
-     "p": 0.5709,
-     "p_model": 0.6987,
+     "p": 0.5703,
+     "p_model": 0.6921,
      "p_cons": 0.5203,
      "n_books": 6,
-     "proj": 2.58,
+     "proj": 2.55,
      "injury": null,
      "injury_note": null,
      "signals": [
@@ -814,7 +814,7 @@
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 2.6 vs line 1.5 (70%)"
+       "txt": "Projection 2.5 vs line 1.5 (69%)"
       },
       {
        "k": "role",
@@ -834,7 +834,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "JAX implied team total 22.5"
+       "txt": "JAX implied team total 22.0"
       },
       {
        "k": "ngs",
@@ -926,11 +926,11 @@
      "word": "Higher",
      "line": 14.5,
      "pick": "Xavier Hutchinson Higher 14.5 Receiving Yards",
-     "p": 0.5414,
-     "p_model": 0.7927,
+     "p": 0.5432,
+     "p_model": 0.7845,
      "p_cons": 0.5,
      "n_books": 7,
-     "proj": 29.47,
+     "proj": 28.43,
      "injury": null,
      "injury_note": null,
      "signals": [
@@ -942,7 +942,7 @@
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 29.5 vs line 14.5 (79%)"
+       "txt": "Projection 28.4 vs line 14.5 (78%)"
       },
       {
        "k": "role",
@@ -962,7 +962,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "HOU implied team total 20.0"
+       "txt": "HOU implied team total 19.5"
       },
       {
        "k": "ngs",
@@ -2632,18 +2632,18 @@
      "word": "Higher",
      "line": 4.5,
      "pick": "Kyle Williams Higher 4.5 Receiving Yards",
-     "p": 0.6986,
-     "p_model": 0.8971,
+     "p": 0.6898,
+     "p_model": 0.8797,
      "p_cons": null,
      "n_books": 0,
-     "proj": 20.54,
+     "proj": 16.51,
      "injury": null,
      "injury_note": null,
      "signals": [
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 20.5 vs line 4.5 (90%)"
+       "txt": "Projection 16.5 vs line 4.5 (88%)"
       },
       {
        "k": "role",
@@ -2673,7 +2673,7 @@
       {
        "k": "injury",
        "ok": true,
-       "txt": "Mack Hollins, A.J. Brown out: projection up 39%"
+       "txt": "Mack Hollins out: projection up 11%"
       }
      ],
      "support": 4,
@@ -2750,48 +2750,48 @@
      "game_id": "0b0b582b32b09ab6ff6664ffae0c9653",
      "kickoff": "2026-10-18T17:00:00Z",
      "started": false,
-     "player": "Romeo Doubs",
-     "player_id": "00-0037816",
+     "player": "A.J. Brown",
+     "player_id": "00-0035676",
      "opp": "NYJ",
      "pos": "WR",
-     "stat": "receptions",
-     "stat_label": "Receptions",
+     "stat": "receiving_yards",
+     "stat_label": "Receiving Yards",
      "side": "Over",
      "word": "Higher",
-     "line": 2.5,
-     "pick": "Romeo Doubs Higher 2.5 Receptions",
-     "p": 0.5455,
-     "p_model": 0.739,
-     "p_cons": 0.4953,
-     "n_books": 6,
-     "proj": 4.15,
-     "injury": null,
-     "injury_note": null,
+     "line": 49.5,
+     "pick": "A.J. Brown Higher 49.5 Receiving Yards",
+     "p": 0.5787,
+     "p_model": 0.6993,
+     "p_cons": 0.529,
+     "n_books": 7,
+     "proj": 72.68,
+     "injury": "Questionable",
+     "injury_note": "Ankle - NFL injury report",
      "signals": [
       {
        "k": "market",
-       "ok": false,
-       "txt": "6 sportsbooks (lines 2.5) put this at 50%"
+       "ok": true,
+       "txt": "7 sportsbooks (lines 50.5\u201354.5) put this at 53%"
       },
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 4.2 vs line 2.5 (74%)"
+       "txt": "Projection 72.7 vs line 49.5 (70%)"
       },
       {
        "k": "role",
        "ok": false,
-       "txt": "Target Share last game 10% vs 16% avg"
+       "txt": "Target Share last game 13% vs 28% avg"
       },
       {
        "k": "snaps",
-       "ok": true,
-       "txt": "Snap share 83% last game vs 71% avg"
+       "ok": false,
+       "txt": "Snap share 44% last game vs 82% avg"
       },
       {
        "k": "matchup",
        "ok": false,
-       "txt": "NYJ allows -3% receptions to WRs vs avg"
+       "txt": "NYJ allows -7% rec yds to WRs vs avg"
       },
       {
        "k": "script",
@@ -2801,12 +2801,12 @@
       {
        "k": "ngs",
        "ok": false,
-       "txt": "NGS separation 2.6 yds vs 2.9 WR median"
+       "txt": "NGS separation 2.3 yds vs 2.9 WR median"
       },
       {
        "k": "injury",
        "ok": true,
-       "txt": "Mack Hollins, A.J. Brown out: projection up 39%"
+       "txt": "Mack Hollins out: projection up 11%"
       }
      ],
      "support": 4,
@@ -3022,8 +3022,8 @@
      "p_cons": 0.5271,
      "n_books": 7,
      "proj": 55.02,
-     "injury": "Questionable",
-     "injury_note": "Illness - NFL injury report",
+     "injury": null,
+     "injury_note": null,
      "signals": [
       {
        "k": "market",
@@ -3428,7 +3428,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "IND favored by 7"
+       "txt": "IND favored by 6.5"
       },
       {
        "k": "ngs",
@@ -3492,7 +3492,7 @@
       {
        "k": "script",
        "ok": true,
-       "txt": "IND implied team total 25.8"
+       "txt": "IND implied team total 25.5"
       },
       {
        "k": "ngs",
@@ -3561,7 +3561,7 @@
       {
        "k": "script",
        "ok": true,
-       "txt": "TEN implied team total 18.8"
+       "txt": "TEN implied team total 19.0"
       },
       {
        "k": "ngs",
@@ -3625,7 +3625,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "IND implied team total 25.8"
+       "txt": "IND implied team total 25.5"
       },
       {
        "k": "ngs",
@@ -5639,7 +5639,7 @@
    "pick": "Kyle Williams Higher 4.5 Receiving Yards",
    "game": "NYJ @ NE",
    "stat": "Receiving Yards",
-   "p": 0.6986,
+   "p": 0.6898,
    "n_books": 0,
    "injury": null,
    "started": false
@@ -5672,15 +5672,6 @@
    "started": false
   },
   {
-   "pick": "Kyle Williams Higher 0.5 Receptions",
-   "game": "NYJ @ NE",
-   "stat": "Receptions",
-   "p": 0.6139,
-   "n_books": 0,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Isaiah Williams Higher 14.5 Receiving Yards",
    "game": "NYJ @ NE",
    "stat": "Receiving Yards",
@@ -5699,11 +5690,29 @@
    "started": false
   },
   {
+   "pick": "A.J. Brown Higher 49.5 Receiving Yards",
+   "game": "NYJ @ NE",
+   "stat": "Receiving Yards",
+   "p": 0.5787,
+   "n_books": 7,
+   "injury": "Questionable",
+   "started": false
+  },
+  {
    "pick": "Jameis Winston Higher 4.5 Rush Yards",
    "game": "NO @ NYG",
    "stat": "Rush Yards",
    "p": 0.5771,
    "n_books": 6,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Kyle Williams Higher 0.5 Receptions",
+   "game": "NYJ @ NE",
+   "stat": "Receptions",
+   "p": 0.5762,
+   "n_books": 0,
    "injury": null,
    "started": false
   },
@@ -5720,7 +5729,7 @@
    "pick": "Brian Thomas Jr. Higher 1.5 Receptions",
    "game": "HOU @ JAX",
    "stat": "Receptions",
-   "p": 0.5709,
+   "p": 0.5703,
    "n_books": 6,
    "injury": null,
    "started": false
@@ -5848,7 +5857,7 @@
    "stat": "Receiving Yards",
    "p": 0.546,
    "n_books": 7,
-   "injury": "Questionable",
+   "injury": null,
    "started": false
   },
   {
@@ -5856,15 +5865,6 @@
    "game": "BAL @ CLE",
    "stat": "Rush Yards",
    "p": 0.5457,
-   "n_books": 6,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Romeo Doubs Higher 2.5 Receptions",
-   "game": "NYJ @ NE",
-   "stat": "Receptions",
-   "p": 0.5455,
    "n_books": 6,
    "injury": null,
    "started": false
@@ -5915,6 +5915,15 @@
    "started": false
   },
   {
+   "pick": "Xavier Hutchinson Higher 14.5 Receiving Yards",
+   "game": "HOU @ JAX",
+   "stat": "Receiving Yards",
+   "p": 0.5432,
+   "n_books": 7,
+   "injury": null,
+   "started": false
+  },
+  {
    "pick": "Kaelon Black Lower 24.5 Rush Yards",
    "game": "WAS @ SF",
    "stat": "Rush Yards",
@@ -5929,15 +5938,6 @@
    "stat": "Receptions",
    "p": 0.5426,
    "n_books": 4,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Xavier Hutchinson Higher 14.5 Receiving Yards",
-   "game": "HOU @ JAX",
-   "stat": "Receiving Yards",
-   "p": 0.5414,
-   "n_books": 7,
    "injury": null,
    "started": false
   },
@@ -5969,6 +5969,15 @@
    "started": false
   },
   {
+   "pick": "Romeo Doubs Higher 2.5 Receptions",
+   "game": "NYJ @ NE",
+   "stat": "Receptions",
+   "p": 0.537,
+   "n_books": 6,
+   "injury": null,
+   "started": false
+  },
+  {
    "pick": "Cam Skattebo Higher 49.5 Rush Yards",
    "game": "NO @ NYG",
    "stat": "Rush Yards",
@@ -5978,20 +5987,20 @@
    "started": false
   },
   {
-   "pick": "Carnell Tate Lower 4.5 Receptions",
-   "game": "TEN @ IND",
+   "pick": "Mark Andrews Lower 3.5 Receptions",
+   "game": "BAL @ CLE",
    "stat": "Receptions",
-   "p": 0.5341,
+   "p": 0.5345,
    "n_books": 6,
    "injury": null,
    "started": false
   },
   {
-   "pick": "Zay Flowers Higher 59.5 Receiving Yards",
-   "game": "BAL @ CLE",
-   "stat": "Receiving Yards",
-   "p": 0.5331,
-   "n_books": 7,
+   "pick": "Carnell Tate Lower 4.5 Receptions",
+   "game": "TEN @ IND",
+   "stat": "Receptions",
+   "p": 0.5341,
+   "n_books": 6,
    "injury": null,
    "started": false
   },
@@ -6122,6 +6131,15 @@
    "started": false
   },
   {
+   "pick": "Cam Ward Higher 199.5 Pass Yards",
+   "game": "TEN @ IND",
+   "stat": "Pass Yards",
+   "p": 0.5228,
+   "n_books": 7,
+   "injury": null,
+   "started": false
+  },
+  {
    "pick": "Ashton Jeanty Higher 3.5 Receptions",
    "game": "BUF @ LV",
    "stat": "Receptions",
@@ -6140,6 +6158,15 @@
    "started": false
   },
   {
+   "pick": "Brenton Strange Lower 39.5 Receiving Yards",
+   "game": "HOU @ JAX",
+   "stat": "Receiving Yards",
+   "p": 0.5216,
+   "n_books": 7,
+   "injury": null,
+   "started": false
+  },
+  {
    "pick": "Derrick Henry Lower 89.5 Rush Yards",
    "game": "BAL @ CLE",
    "stat": "Rush Yards",
@@ -6149,19 +6176,10 @@
    "started": false
   },
   {
-   "pick": "Brenton Strange Lower 39.5 Receiving Yards",
-   "game": "HOU @ JAX",
+   "pick": "Zay Flowers Higher 59.5 Receiving Yards",
+   "game": "BAL @ CLE",
    "stat": "Receiving Yards",
-   "p": 0.5204,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Cam Ward Higher 199.5 Pass Yards",
-   "game": "TEN @ IND",
-   "stat": "Pass Yards",
-   "p": 0.5202,
+   "p": 0.52,
    "n_books": 7,
    "injury": null,
    "started": false
@@ -6181,6 +6199,15 @@
    "stat": "Pass Yards",
    "p": 0.5198,
    "n_books": 7,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Parker Washington Lower 4.5 Receptions",
+   "game": "HOU @ JAX",
+   "stat": "Receptions",
+   "p": 0.5197,
+   "n_books": 6,
    "injury": null,
    "started": false
   },
@@ -6209,15 +6236,6 @@
    "p": 0.5188,
    "n_books": 1,
    "injury": "Questionable",
-   "started": false
-  },
-  {
-   "pick": "Parker Washington Lower 4.5 Receptions",
-   "game": "HOU @ JAX",
-   "stat": "Receptions",
-   "p": 0.5184,
-   "n_books": 6,
-   "injury": null,
    "started": false
   },
   {
@@ -6302,11 +6320,11 @@
    "started": false
   },
   {
-   "pick": "Mark Andrews Lower 3.5 Receptions",
-   "game": "BAL @ CLE",
-   "stat": "Receptions",
-   "p": 0.514,
-   "n_books": 6,
+   "pick": "Eli Raridon Lower 14.5 Receiving Yards",
+   "game": "NYJ @ NE",
+   "stat": "Receiving Yards",
+   "p": 0.5125,
+   "n_books": 7,
    "injury": null,
    "started": false
   },
@@ -6316,24 +6334,6 @@
    "stat": "Pass Yards",
    "p": 0.5123,
    "n_books": 6,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Eli Raridon Lower 14.5 Receiving Yards",
-   "game": "NYJ @ NE",
-   "stat": "Receiving Yards",
-   "p": 0.5115,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Kayshon Boutte Higher 24.5 Receiving Yards",
-   "game": "HOU @ JAX",
-   "stat": "Receiving Yards",
-   "p": 0.5111,
-   "n_books": 7,
    "injury": null,
    "started": false
   },
@@ -6353,6 +6353,15 @@
    "p": 0.5094,
    "n_books": 0,
    "injury": "Questionable",
+   "started": false
+  },
+  {
+   "pick": "Kayshon Boutte Higher 24.5 Receiving Yards",
+   "game": "HOU @ JAX",
+   "stat": "Receiving Yards",
+   "p": 0.5085,
+   "n_books": 7,
+   "injury": null,
    "started": false
   },
   {
@@ -6531,7 +6540,7 @@
  "odds_pulled": "2026-10-18T01:19:19.452960+00:00",
  "props_pulled": "2026-10-18T01:19:19.452960+00:00",
  "credits_left": 11,
- "lines_priced": 100,
+ "lines_priced": 101,
  "high_prob": [
   {
    "market": "Moneyline",
@@ -6758,18 +6767,18 @@
    "word": "Higher",
    "line": 4.5,
    "pick": "Kyle Williams Higher 4.5 Receiving Yards",
-   "p": 0.6986,
-   "p_model": 0.8971,
+   "p": 0.6898,
+   "p_model": 0.8797,
    "p_cons": null,
    "n_books": 0,
-   "proj": 20.54,
+   "proj": 16.51,
    "injury": null,
    "injury_note": null,
    "signals": [
     {
      "k": "model",
      "ok": true,
-     "txt": "Projection 20.5 vs line 4.5 (90%)"
+     "txt": "Projection 16.5 vs line 4.5 (88%)"
     },
     {
      "k": "role",
@@ -6799,7 +6808,7 @@
     {
      "k": "injury",
      "ok": true,
-     "txt": "Mack Hollins, A.J. Brown out: projection up 39%"
+     "txt": "Mack Hollins out: projection up 11%"
     }
    ],
    "support": 4,
@@ -8623,9 +8632,9 @@
    },
    {
     "week": 6,
-    "pick": "Romeo Doubs Higher 2.5 Receptions",
+    "pick": "A.J. Brown Higher 49.5 Receiving Yards",
     "game": "NYJ @ NE",
-    "p": 0.5455,
+    "p": 0.5787,
     "top10": false,
     "result": null,
     "actual": null
@@ -8643,7 +8652,7 @@
     "week": 6,
     "pick": "Kyle Williams Higher 4.5 Receiving Yards",
     "game": "NYJ @ NE",
-    "p": 0.6986,
+    "p": 0.6898,
     "top10": false,
     "result": null,
     "actual": null
@@ -8823,7 +8832,7 @@
     "week": 6,
     "pick": "Xavier Hutchinson Higher 14.5 Receiving Yards",
     "game": "HOU @ JAX",
-    "p": 0.5414,
+    "p": 0.5432,
     "top10": false,
     "result": null,
     "actual": null
@@ -8841,7 +8850,7 @@
     "week": 6,
     "pick": "Brian Thomas Jr. Higher 1.5 Receptions",
     "game": "HOU @ JAX",
-    "p": 0.5709,
+    "p": 0.5703,
     "top10": true,
     "result": null,
     "actual": null
@@ -10953,13 +10962,6 @@
   },
   {
    "team": "BAL",
-   "player": "Ja'Kobi Lane",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "source": "NFL roster"
-  },
-  {
-   "team": "BAL",
    "player": "Lamar Jackson",
    "pos": "QB",
    "status": "Out",
@@ -11051,13 +11053,6 @@
   },
   {
    "team": "NE",
-   "player": "A.J. Brown",
-   "pos": "WR",
-   "status": "Injured Reserve",
-   "source": "NFL roster"
-  },
-  {
-   "team": "NE",
    "player": "Mack Hollins",
    "pos": "WR",
    "status": "Injured Reserve",
@@ -11117,7 +11112,7 @@
    "player": "Jalen Hurts",
    "pos": "QB",
    "status": "Injured Reserve",
-   "source": "ESPN"
+   "source": "NFL roster"
   },
   {
    "team": "PHI",
@@ -11152,14 +11147,14 @@
    "player": "Roman Wilson",
    "pos": "WR",
    "status": "Injured Reserve",
-   "source": "ESPN"
+   "source": "NFL roster"
   },
   {
    "team": "SF",
    "player": "Deebo Samuel Sr.",
    "pos": "WR",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "SF",
@@ -11187,7 +11182,7 @@
    "player": "Jacory Croskey-Merritt",
    "pos": "RB",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   }
  ],
  "injury_sources": [
@@ -11263,7 +11258,7 @@
    "kickoff": "2026-10-18 09:30",
    "market_home_spread": -2.5,
    "model_home_spread": -4.5,
-   "market_total": 42.5,
+   "market_total": 41.5,
    "model_total": 43.7,
    "home_win_p": 0.584
   },
@@ -11306,11 +11301,11 @@
   {
    "game": "TEN @ IND",
    "kickoff": "2026-10-18 13:00",
-   "market_home_spread": -7.0,
+   "market_home_spread": -6.5,
    "model_home_spread": -8.6,
    "market_total": 44.5,
    "model_total": 46.1,
-   "home_win_p": 0.719
+   "home_win_p": 0.706
   },
   {
    "game": "WAS @ SF",
@@ -11401,12 +11396,12 @@
     "team": "JAX",
     "opp": "HOU",
     "pos": "QB",
-    "proj": 255.7,
+    "proj": 255.9,
     "matchup": 1.0,
     "injury": null,
     "boost": 1.0,
-    "lo": 186.1,
-    "hi": 304.7
+    "lo": 186.3,
+    "hi": 304.9
    },
    {
     "player": "Caleb Williams",
@@ -11425,12 +11420,12 @@
     "team": "HOU",
     "opp": "JAX",
     "pos": "QB",
-    "proj": 252.5,
+    "proj": 251.7,
     "matchup": 1.07,
     "injury": null,
     "boost": 1.0,
-    "lo": 183.8,
-    "hi": 300.8
+    "lo": 183.2,
+    "hi": 299.9
    },
    {
     "player": "Aaron Rodgers",
@@ -11611,7 +11606,7 @@
     "team": "JAX",
     "opp": "HOU",
     "pos": "QB",
-    "proj": 1.55,
+    "proj": 1.52,
     "matchup": 1.0,
     "injury": null,
     "boost": 1.0
@@ -11783,12 +11778,12 @@
     "team": "HOU",
     "opp": "JAX",
     "pos": "RB",
-    "proj": 61.9,
+    "proj": 61.2,
     "matchup": 0.68,
     "injury": null,
     "boost": 1.6,
-    "lo": 37.1,
-    "hi": 94.3
+    "lo": 36.7,
+    "hi": 93.2
    },
    {
     "player": "Jaylen Warren",
@@ -11901,16 +11896,16 @@
     "hi": 115.5
    },
    {
-    "player": "Zay Flowers",
-    "team": "BAL",
-    "opp": "CLE",
+    "player": "A.J. Brown",
+    "team": "NE",
+    "opp": "NYJ",
     "pos": "WR",
-    "proj": 71.8,
-    "matchup": 0.92,
-    "injury": null,
-    "boost": 1.08,
-    "lo": 39.0,
-    "hi": 119.4
+    "proj": 72.7,
+    "matchup": 0.93,
+    "injury": "Questionable",
+    "boost": 1.11,
+    "lo": 39.4,
+    "hi": 120.8
    },
    {
     "player": "Brock Bowers",
@@ -11961,16 +11956,16 @@
     "hi": 115.3
    },
    {
-    "player": "Nico Collins",
-    "team": "HOU",
-    "opp": "JAX",
+    "player": "Zay Flowers",
+    "team": "BAL",
+    "opp": "CLE",
     "pos": "WR",
     "proj": 65.5,
-    "matchup": 1.12,
+    "matchup": 0.92,
     "injury": null,
-    "boost": 1.08,
-    "lo": 35.6,
-    "hi": 108.9
+    "boost": 0.98,
+    "lo": 35.5,
+    "hi": 108.8
    },
    {
     "player": "Christian Watson",
@@ -12009,16 +12004,16 @@
     "hi": 105.7
    },
    {
-    "player": "Michael Wilson",
-    "team": "ARI",
-    "opp": "LA",
+    "player": "Nico Collins",
+    "team": "HOU",
+    "opp": "JAX",
     "pos": "WR",
-    "proj": 62.6,
-    "matchup": 0.9,
+    "proj": 63.4,
+    "matchup": 1.12,
     "injury": null,
-    "boost": 1.06,
-    "lo": 34.0,
-    "hi": 104.1
+    "boost": 1.08,
+    "lo": 34.4,
+    "hi": 105.3
    }
   ],
   "receptions": [
@@ -12238,7 +12233,7 @@
     "matchup": 0.8,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.669
+    "p_td": 0.635
    },
    {
     "player": "Bijan Robinson",
@@ -12315,7 +12310,7 @@
     "matchup": 1.82,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.603
+    "p_td": 0.524
    },
    {
     "player": "Chuba Hubbard",
