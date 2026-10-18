@@ -229,6 +229,8 @@ function ratioBar(w, l, pend, big) {
     ${dec ? `<span class="be" style="left:calc(${(be * dec / n * 100).toFixed(2)}% - 1px)" title="54% break-even"></span>` : ''}</div>`;
 }
 
+function nextMonth() { const d = new Date(); return new Date(d.getFullYear(), d.getMonth() + 1, 1).toLocaleDateString([], {month: 'long', day: 'numeric'}); }
+
 function drawTracker() {
   const T = (D.tracker || {}).top10 || {season: {}, weeks: []}, S = T.season || {};
   const w = S.wins || 0, l = S.losses || 0, pend = S.pending || 0;
@@ -271,7 +273,10 @@ function drawTop10() {
   $('top10-title').textContent = `Week ${D.week} Top 10`;
   const T = D.top10 || [];
   if (!T.length) {
-    $('top10').innerHTML = `<div class="empty"><b>The Top 10 appears once Underdog's lines are pulled.</b><span class="muted">Lines are pulled Thursday morning for Thursday's game and Sunday at 9:30 AM Central for Sunday and Monday games.</span></div>`;
+    const out = D.credits_left != null && D.credits_left < 15;
+    $('top10').innerHTML = out
+      ? `<div class="empty"><b>No Week ${D.week} picks: this month's free odds credits are used up.</b><span class="muted">Underdog lines can't be pulled until the free plan resets on ${esc(nextMonth())}. Grading, injuries and projections keep updating; picks return automatically with the first pull after the reset.</span></div>`
+      : `<div class="empty"><b>The Top 10 appears once Underdog's lines are pulled.</b><span class="muted">Lines are pulled Thursday morning for Thursday's game and Saturday at 7:30 PM Central for Sunday and Monday games.</span></div>`;
     return;
   }
   $('top10').innerHTML = T.map(c => {
@@ -385,6 +390,7 @@ function render(data) {
   const ageH = (Date.now() - new Date(D.generated)) / 36e5;
   if (ageH > 72) st.push(`<span class="pill warn">Last update ${Math.round(ageH / 24)} days ago · picks may be stale</span>`);
   (D.warnings || []).forEach(w => st.push(`<span class="pill warn">${esc(w)}</span>`));
+  if (D.credits_left != null && D.credits_left < 15) st.push(`<span class="pill warn">Free odds credits used up this month · new lines resume ${esc(nextMonth())}</span>`);
   $('status').innerHTML = st.join('');
   drawTracker(); drawTop10(); drawHP(); drawGames(); drawInjuries(); drawAll(); drawProj(); drawBoard();
 }
