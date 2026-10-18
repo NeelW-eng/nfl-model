@@ -156,10 +156,16 @@ def record(season):
         if not isinstance(r.result, str):
             continue
         if r.gl:
-            k = f"{r.game_id}|{r.market}|{r.team if r.market != 'Total' else r.side}"
+            k = f"{int(r.week)}|{r.game_id}|{r.market}|{r.team if r.market != 'Total' else r.side}"
         else:
-            k = f"{r.player_id}|{r.stat}|{r.side}|{float(r.line):g}"
-        out['results'][k] = dict(result=r.result, actual=None if pd.isna(r.actual) else r.actual)
+            k = f"{int(r.week)}|{r.player_id}|{r.stat}|{r.side}|{float(r.line):g}"
+        a = r.actual
+        if isinstance(a, str):
+            try:
+                a = float(a)
+            except ValueError:
+                pass
+        out['results'][k] = dict(result=r.result, actual=None if (not isinstance(a, str) and pd.isna(a)) else a)
     out['history'] = [dict(week=int(r.week), pick=r.pick, game=r.game, p=float(r.p), top10=bool(r.top10),
                            result=r.result if isinstance(r.result, str) else None,
                            actual=None if pd.isna(r.actual) else (r.actual if isinstance(r.actual, str) else float(r.actual)))

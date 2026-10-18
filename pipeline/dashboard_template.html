@@ -213,8 +213,9 @@ const when = iso => { if (!iso) return ''; const d = new Date(iso); return isNaN
 const kick = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString([], {weekday:'short', hour:'numeric', minute:'2-digit'}); };
 const etKick = s => { const [d, t] = String(s).split(' '); const dt = new Date(d + 'T12:00:00'); const [h, m] = (t || '13:00').split(':').map(Number);
   return (isNaN(dt) ? '' : dt.toLocaleDateString([], {weekday:'short'})) + ' ' + ((h % 12) || 12) + ':' + String(m).padStart(2, '0') + (h < 12 ? ' AM' : ' PM') + ' ET'; };
-const key = c => `${c.player_id}|${c.stat}|${c.side}|${Number(c.line)}`;
-const glKey = c => `${c.game_id}|${c.market}|${c.market === 'Total' ? c.side : c.team}`;
+const wk = c => c.week ?? D.week;
+const key = c => `${wk(c)}|${c.player_id}|${c.stat}|${c.side}|${Number(c.line)}`;
+const glKey = c => `${wk(c)}|${c.game_id}|${c.market}|${c.market === 'Total' ? c.side : c.team}`;
 const resultOf = c => ((D.tracker || {}).results || {})[c.market && c.market !== 'Prop' ? glKey(c) : key(c)];
 const odds = o => (o > 0 ? '+' : '') + o;
 
