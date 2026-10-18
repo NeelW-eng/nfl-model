@@ -1,24 +1,24 @@
 name: Sunday Edge run
 
 # Primary clock: a Claude scheduled task pushes requests/run (containing the mode), which starts this
-# workflow immediately. The cron entries below are backups (GitHub can start them hours late); odds are
-# never pulled twice for a game within 3 hours, so a late backup run costs no extra credits.
+# workflow immediately. The cron entries are late backups: with --backup they skip the odds pull entirely
+# if the primary run already pulled in the last 12 hours, so they never spend credits twice.
 #   grade    Tuesday     grade last week, refresh data and projections (no odds credits)
-#   thu      Thursday    Underdog + sportsbook props for Thursday's game, game lines
-#   sun      Sunday      props for every remaining game this week (Sunday + Monday)
-#   rescore  Sunday      re-run with updated injuries/inactives using the morning's lines (no credits)
-#   week     any time    props for every game this week (full preview)
+#   thu      Thursday    props for Thursday's game + game lines            (~7 credits)
+#   week     Saturday    props for every remaining game this week + lines (~55 credits)
+#   sun      Sunday      only games whose props are missing or 18h+ old   (~3-10 credits)
+#   rescore  any time    re-run with updated injuries/inactives using pulled lines (no credits)
 #   game:N   any time    props for games starting in the next N hours
 on:
   schedule:
     - cron: '17 12 * * 2'   # Tue ~7:17 AM Central (backup)
     - cron: '47 12 * * 4'   # Thu ~7:47 AM Central (backup)
-    - cron: '47 14 * * 0'   # Sun ~9:47 AM Central (backup)
+    - cron: '47 1 * * 0'    # Sat ~8:47 PM Central (backup)
     - cron: '7 16 * * 0'    # Sun ~11:07 AM Central (backup)
   workflow_dispatch:
     inputs:
       mode:
-        description: 'grade, thu, sun, rescore, week, or game:N'
+        description: 'grade, thu, week, sun, rescore, or game:N'
         default: 'rescore'
   push:
     branches: [main]
@@ -57,16 +57,16 @@ jobs:
         run: |
           case "${{ github.event_name }}:${{ github.event.schedule }}" in
             "schedule:17 12 * * 2") MODE=grade ;;
-            "schedule:47 12 * * 4") MODE=thu ;;
-            "schedule:47 14 * * 0") MODE=sun ;;
+            "schedule:47 12 * * 4") MODE=thu; BACKUP=--backup ;;
+            "schedule:47 1 * * 0")  MODE=week; BACKUP=--backup ;;
             "schedule:7 16 * * 0")  MODE=rescore ;;
             "workflow_dispatch:"*)  MODE="${{ github.event.inputs.mode }}" ;;
             *) if [ -f requests/run ]; then MODE=$(tr -d '[:space:]' < requests/run); else MODE=code; fi ;;
           esac
           case "$MODE" in
-            thu)     ARGS="--props-hours 20" ;;
+            thu)     ARGS="--props-hours 20 $BACKUP" ;;
             sun)     ARGS="--props-week" ;;
-            week)    ARGS="--props-week" ;;
+            week)    ARGS="--props-week $BACKUP" ;;
             game:*)  ARGS="--props-hours ${MODE#game:}" ;;
             *)       ARGS="skip" ;;
           esac

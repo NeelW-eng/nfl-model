@@ -5,13 +5,14 @@ Runs in GitHub Actions with the ODDS_API_KEY secret. Writes data/odds.json.
 Cost: The Odds API bills 1 credit per market per 10 bookmakers, so one request covering Underdog and
 9 sportsbooks costs 1 credit per market:
   game lines (moneyline, spread, total)              3 credits
-  player props, per game (5 markets)                 5 credits
+  player props, per game (4 markets)                 4 credits
 Options:
   --props-hours N   props for games starting in the next N hours
   --props-week      props for every game in the current NFL week
   --no-props        game lines only (keeps earlier prop pulls)
-  --force           ignore the "pulled in the last 3 hours" guard
-A reserve of 25 credits is always kept; games are pulled soonest-first until the budget runs out.
+  --force           ignore the "props pulled in the last 18 hours" guard
+  --backup          (late backup runs) do nothing if odds were pulled in the last 12 hours
+A reserve (ODDS_RESERVE, default 10) is always kept; games are pulled soonest-first until the budget runs out.
 """
 import json, os, sys, urllib.request, urllib.parse, datetime
 
@@ -21,9 +22,11 @@ OUT = os.path.join(DATA, 'odds.json')
 BASE = 'https://api.the-odds-api.com/v4/sports/americanfootball_nfl'
 BOOKS = 'underdog,draftkings,fanduel,betmgm,williamhill_us,espnbet,fanatics,betrivers,bovada,betonlineag'
 GAME_BOOKS = 'draftkings,fanduel,betmgm,williamhill_us,espnbet,fanatics,betrivers,pinnacle,bovada,betonlineag'
-PROP_MARKETS = ['player_pass_yds', 'player_pass_tds', 'player_rush_yds', 'player_reception_yds', 'player_receptions']
-RESERVE = 25
-FRESH_HOURS = 3
+# pass TDs dropped: Underdog posts few of them and each market costs 1 credit per game
+PROP_MARKETS = ['player_pass_yds', 'player_rush_yds', 'player_reception_yds', 'player_receptions']
+RESERVE = int(os.environ.get('ODDS_RESERVE', 10))
+FRESH_HOURS = 18     # a game's props pulled within this window are not pulled again (unless --force)
+BACKUP_HOURS = 12    # --backup: skip the whole pull if odds were pulled this recently
 
 
 def get(path, **params):
@@ -50,6 +53,11 @@ def main():
     a = sys.argv
     now = datetime.datetime.now(datetime.timezone.utc)
     prev = json.load(open(OUT)) if os.path.exists(OUT) else {}
+    if '--backup' in a and prev.get('pulled_at') and ts(prev['pulled_at']) > now - datetime.timedelta(hours=BACKUP_HOURS):
+        print('Backup run: odds already pulled at', prev['pulled_at'], '- skipping (no credits used).'); return
+    left0 = prev.get('credits_left')
+    if left0 is not None and left0 < RESERVE + 3:
+        print(f'Only {left0} credits left this month - skipping the odds pull.'); return
     games, left = get('/odds', bookmakers=GAME_BOOKS, markets='h2h,spreads,totals')
     out = {'pulled_at': now.isoformat(), 'games': games, 'props': prev.get('props', {}),
            'props_pulled_at': prev.get('props_pulled_at'), 'credits_left': left}
