@@ -37,6 +37,19 @@ def get(path, **params):
         return json.load(r), (int(float(left)) if left is not None else None)
 
 
+def live_credits():
+    """Remaining credits right now, from the free /sports endpoint (costs nothing), so a new or upgraded
+    key is seen immediately instead of trusting the last saved count."""
+    try:
+        url = 'https://api.the-odds-api.com/v4/sports?' + urllib.parse.urlencode({'apiKey': os.environ['ODDS_API_KEY']})
+        with urllib.request.urlopen(url, timeout=30) as r:
+            v = r.headers.get('x-requests-remaining')
+            return int(float(v)) if v is not None else None
+    except Exception as e:
+        print('could not read live credit balance:', e)
+        return None
+
+
 def ts(s):
     return datetime.datetime.fromisoformat(s.replace('Z', '+00:00'))
 
@@ -55,7 +68,7 @@ def main():
     prev = json.load(open(OUT)) if os.path.exists(OUT) else {}
     if '--backup' in a and prev.get('pulled_at') and ts(prev['pulled_at']) > now - datetime.timedelta(hours=BACKUP_HOURS):
         print('Backup run: odds already pulled at', prev['pulled_at'], '- skipping (no credits used).'); return
-    left0 = prev.get('credits_left')
+    left0 = live_credits()
     if left0 is not None and left0 < RESERVE + 3:
         print(f'Only {left0} credits left this month - skipping the odds pull.'); return
     games, left = get('/odds', bookmakers=GAME_BOOKS, markets='h2h,spreads,totals')
