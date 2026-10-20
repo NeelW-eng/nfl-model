@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 7,
- "generated": "2026-10-20T12:42+00:00",
+ "generated": "2026-10-20T17:11+00:00",
  "has_odds": true,
  "top10": [],
  "games": [
@@ -1351,15 +1351,6 @@
    "started": true
   },
   {
-   "pick": "Jawhar Jordan Higher 0.5 Receptions",
-   "game": "HOU @ JAX",
-   "stat": "Receptions",
-   "p": 0.5938,
-   "n_books": 0,
-   "injury": null,
-   "started": true
-  },
-  {
    "pick": "A.J. Brown Higher 49.5 Receiving Yards",
    "game": "NYJ @ NE",
    "stat": "Receiving Yards",
@@ -1372,8 +1363,17 @@
    "pick": "Jaylin Noel Higher 1.5 Receptions",
    "game": "HOU @ JAX",
    "stat": "Receptions",
-   "p": 0.5709,
+   "p": 0.5696,
    "n_books": 6,
+   "injury": null,
+   "started": true
+  },
+  {
+   "pick": "Christian McCaffrey Higher 4.5 Receptions",
+   "game": "WAS @ SF",
+   "stat": "Receptions",
+   "p": 0.5672,
+   "n_books": 5,
    "injury": null,
    "started": true
   },
@@ -1387,6 +1387,15 @@
    "started": true
   },
   {
+   "pick": "Jerry Jeudy Higher 14.5 Receiving Yards",
+   "game": "BAL @ CLE",
+   "stat": "Receiving Yards",
+   "p": 0.5607,
+   "n_books": 4,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "DK Metcalf Higher 49.5 Receiving Yards",
    "game": "PIT @ TB",
    "stat": "Receiving Yards",
@@ -1396,38 +1405,20 @@
    "started": true
   },
   {
-   "pick": "Jerry Jeudy Higher 14.5 Receiving Yards",
-   "game": "BAL @ CLE",
-   "stat": "Receiving Yards",
-   "p": 0.5547,
-   "n_books": 4,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Laquon Treadwell Higher 24.5 Receiving Yards",
-   "game": "TEN @ IND",
-   "stat": "Receiving Yards",
-   "p": 0.5546,
-   "n_books": 7,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Christian McCaffrey Higher 4.5 Receptions",
-   "game": "WAS @ SF",
-   "stat": "Receptions",
-   "p": 0.5529,
-   "n_books": 5,
-   "injury": null,
-   "started": true
-  },
-  {
    "pick": "Kayshon Boutte Lower 24.5 Receiving Yards",
    "game": "HOU @ JAX",
    "stat": "Receiving Yards",
-   "p": 0.5507,
+   "p": 0.5553,
    "n_books": 7,
+   "injury": null,
+   "started": true
+  },
+  {
+   "pick": "Noah Gray Higher 1.5 Receptions",
+   "game": "LAC @ KC",
+   "stat": "Receptions",
+   "p": 0.5516,
+   "n_books": 5,
    "injury": null,
    "started": true
   },
@@ -1468,15 +1459,6 @@
    "started": true
   },
   {
-   "pick": "Noah Gray Higher 1.5 Receptions",
-   "game": "LAC @ KC",
-   "stat": "Receptions",
-   "p": 0.5478,
-   "n_books": 5,
-   "injury": null,
-   "started": true
-  },
-  {
    "pick": "Jameis Winston Higher 4.5 Rush Yards",
    "game": "NO @ NYG",
    "stat": "Rush Yards",
@@ -1486,11 +1468,11 @@
    "started": true
   },
   {
-   "pick": "Noah Gray Higher 14.5 Receiving Yards",
-   "game": "LAC @ KC",
+   "pick": "Xavier Hutchinson Higher 14.5 Receiving Yards",
+   "game": "HOU @ JAX",
    "stat": "Receiving Yards",
-   "p": 0.5435,
-   "n_books": 6,
+   "p": 0.5426,
+   "n_books": 7,
    "injury": null,
    "started": true
   },
@@ -1522,11 +1504,11 @@
    "started": true
   },
   {
-   "pick": "Xavier Hutchinson Higher 14.5 Receiving Yards",
-   "game": "HOU @ JAX",
+   "pick": "Noah Gray Higher 14.5 Receiving Yards",
+   "game": "LAC @ KC",
    "stat": "Receiving Yards",
-   "p": 0.5416,
-   "n_books": 7,
+   "p": 0.5417,
+   "n_books": 6,
    "injury": null,
    "started": true
   },
@@ -1554,15 +1536,6 @@
    "stat": "Rush Yards",
    "p": 0.5404,
    "n_books": 7,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Christian McCaffrey Higher 39.5 Receiving Yards",
-   "game": "WAS @ SF",
-   "stat": "Receiving Yards",
-   "p": 0.5403,
-   "n_books": 6,
    "injury": null,
    "started": true
   },
@@ -1603,6 +1576,15 @@
    "started": true
   },
   {
+   "pick": "Jalen Royals Lower 24.5 Receiving Yards",
+   "game": "LAC @ KC",
+   "stat": "Receiving Yards",
+   "p": 0.5397,
+   "n_books": 6,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "Christian McCaffrey Higher 59.5 Rush Yards",
    "game": "WAS @ SF",
    "stat": "Rush Yards",
@@ -1621,19 +1603,19 @@
    "started": true
   },
   {
+   "pick": "Tyler Warren Lower 49.5 Receiving Yards",
+   "game": "TEN @ IND",
+   "stat": "Receiving Yards",
+   "p": 0.5353,
+   "n_books": 7,
+   "injury": "Questionable",
+   "started": true
+  },
+  {
    "pick": "Kenneth Walker III Lower 89.5 Rush Yards",
    "game": "LAC @ KC",
    "stat": "Rush Yards",
    "p": 0.5348,
-   "n_books": 6,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Jalen Royals Lower 24.5 Receiving Yards",
-   "game": "LAC @ KC",
-   "stat": "Receiving Yards",
-   "p": 0.5345,
    "n_books": 6,
    "injury": null,
    "started": true
@@ -1675,6 +1657,15 @@
    "started": true
   },
   {
+   "pick": "Zay Flowers Higher 59.5 Receiving Yards",
+   "game": "BAL @ CLE",
+   "stat": "Receiving Yards",
+   "p": 0.5326,
+   "n_books": 7,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "Tre Tucker Higher 39.5 Receiving Yards",
    "game": "BUF @ LV",
    "stat": "Receiving Yards",
@@ -1693,38 +1684,11 @@
    "started": true
   },
   {
-   "pick": "Zay Flowers Higher 59.5 Receiving Yards",
-   "game": "BAL @ CLE",
-   "stat": "Receiving Yards",
-   "p": 0.5308,
-   "n_books": 7,
-   "injury": null,
-   "started": true
-  },
-  {
    "pick": "Tim Patrick Higher 1.5 Receptions",
    "game": "NYJ @ NE",
    "stat": "Receptions",
    "p": 0.5308,
    "n_books": 4,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Mark Andrews Lower 3.5 Receptions",
-   "game": "BAL @ CLE",
-   "stat": "Receptions",
-   "p": 0.5305,
-   "n_books": 6,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "KC Concepcion Higher 39.5 Receiving Yards",
-   "game": "BAL @ CLE",
-   "stat": "Receiving Yards",
-   "p": 0.5301,
-   "n_books": 5,
    "injury": null,
    "started": true
   },
@@ -1756,12 +1720,30 @@
    "started": true
   },
   {
+   "pick": "Mark Andrews Lower 3.5 Receptions",
+   "game": "BAL @ CLE",
+   "stat": "Receptions",
+   "p": 0.5275,
+   "n_books": 6,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "Tyjae Spears Lower 14.5 Receiving Yards",
    "game": "TEN @ IND",
    "stat": "Receiving Yards",
    "p": 0.527,
    "n_books": 1,
    "injury": "Questionable",
+   "started": true
+  },
+  {
+   "pick": "Josh Downs Lower 49.5 Receiving Yards",
+   "game": "TEN @ IND",
+   "stat": "Receiving Yards",
+   "p": 0.5246,
+   "n_books": 7,
+   "injury": null,
    "started": true
   },
   {
@@ -1801,6 +1783,24 @@
    "started": true
   },
   {
+   "pick": "Travis Kelce Higher 4.5 Receptions",
+   "game": "LAC @ KC",
+   "stat": "Receptions",
+   "p": 0.5214,
+   "n_books": 5,
+   "injury": null,
+   "started": true
+  },
+  {
+   "pick": "Laquon Treadwell Higher 24.5 Receiving Yards",
+   "game": "TEN @ IND",
+   "stat": "Receiving Yards",
+   "p": 0.5212,
+   "n_books": 7,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "Derrick Henry Lower 89.5 Rush Yards",
    "game": "BAL @ CLE",
    "stat": "Rush Yards",
@@ -1828,12 +1828,12 @@
    "started": true
   },
   {
-   "pick": "Kaelon Black Higher 0.5 Receptions",
+   "pick": "Mike Evans Lower 5.5 Receptions",
    "game": "WAS @ SF",
    "stat": "Receptions",
-   "p": 0.52,
-   "n_books": 0,
-   "injury": null,
+   "p": 0.5196,
+   "n_books": 5,
+   "injury": "Questionable",
    "started": true
   },
   {
@@ -1855,18 +1855,18 @@
    "started": true
   },
   {
-   "pick": "Bijan Robinson Lower 89.5 Rush Yards",
-   "game": "CHI @ ATL",
-   "stat": "Rush Yards",
+   "pick": "Kirk Cousins Higher 249.5 Pass Yards",
+   "game": "BUF @ LV",
+   "stat": "Pass Yards",
    "p": 0.5181,
    "n_books": 7,
    "injury": null,
    "started": true
   },
   {
-   "pick": "Kirk Cousins Higher 249.5 Pass Yards",
-   "game": "BUF @ LV",
-   "stat": "Pass Yards",
+   "pick": "Bijan Robinson Lower 89.5 Rush Yards",
+   "game": "CHI @ ATL",
+   "stat": "Rush Yards",
    "p": 0.5181,
    "n_books": 7,
    "injury": null,
@@ -1882,6 +1882,15 @@
    "started": true
   },
   {
+   "pick": "Christian McCaffrey Higher 39.5 Receiving Yards",
+   "game": "WAS @ SF",
+   "stat": "Receiving Yards",
+   "p": 0.516,
+   "n_books": 6,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "George Pickens Lower 69.5 Receiving Yards",
    "game": "DAL @ GB",
    "stat": "Receiving Yards",
@@ -1891,11 +1900,11 @@
    "started": true
   },
   {
-   "pick": "Josh Downs Higher 49.5 Receiving Yards",
-   "game": "TEN @ IND",
-   "stat": "Receiving Yards",
-   "p": 0.5149,
-   "n_books": 7,
+   "pick": "Kaelon Black Lower 0.5 Receptions",
+   "game": "WAS @ SF",
+   "stat": "Receptions",
+   "p": 0.5143,
+   "n_books": 0,
    "injury": null,
    "started": true
   },
@@ -1918,6 +1927,15 @@
    "started": true
   },
   {
+   "pick": "Denzel Boston Lower 3.5 Receptions",
+   "game": "BAL @ CLE",
+   "stat": "Receptions",
+   "p": 0.5139,
+   "n_books": 6,
+   "injury": null,
+   "started": true
+  },
+  {
    "pick": "Chris Olave Higher 79.5 Receiving Yards",
    "game": "NO @ NYG",
    "stat": "Receiving Yards",
@@ -1932,6 +1950,15 @@
    "stat": "Receptions",
    "p": 0.5138,
    "n_books": 6,
+   "injury": null,
+   "started": true
+  },
+  {
+   "pick": "KC Concepcion Higher 39.5 Receiving Yards",
+   "game": "BAL @ CLE",
+   "stat": "Receiving Yards",
+   "p": 0.5125,
+   "n_books": 5,
    "injury": null,
    "started": true
   },
@@ -1963,20 +1990,20 @@
    "started": true
   },
   {
-   "pick": "Denzel Boston Higher 3.5 Receptions",
-   "game": "BAL @ CLE",
-   "stat": "Receptions",
-   "p": 0.5093,
-   "n_books": 6,
-   "injury": null,
-   "started": true
-  },
-  {
    "pick": "Chuba Hubbard Higher 69.5 Rush Yards",
    "game": "CAR @ PHI",
    "stat": "Rush Yards",
    "p": 0.5075,
    "n_books": 7,
+   "injury": null,
+   "started": true
+  },
+  {
+   "pick": "Brock Purdy Lower 249.5 Pass Yards",
+   "game": "WAS @ SF",
+   "stat": "Pass Yards",
+   "p": 0.5071,
+   "n_books": 6,
    "injury": null,
    "started": true
   },
@@ -2035,29 +2062,11 @@
    "started": true
   },
   {
-   "pick": "Travis Kelce Higher 4.5 Receptions",
-   "game": "LAC @ KC",
-   "stat": "Receptions",
-   "p": 0.502,
-   "n_books": 5,
-   "injury": null,
-   "started": true
-  },
-  {
    "pick": "Aaron Rodgers Higher 224.5 Pass Yards",
    "game": "PIT @ TB",
    "stat": "Pass Yards",
    "p": 0.5017,
    "n_books": 7,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Brock Purdy Lower 249.5 Pass Yards",
-   "game": "WAS @ SF",
-   "stat": "Pass Yards",
-   "p": 0.5017,
-   "n_books": 6,
    "injury": null,
    "started": true
   },
@@ -2093,7 +2102,7 @@
  "odds_pulled": "2026-10-18T01:19:19.452960+00:00",
  "props_pulled": "2026-10-18T01:19:19.452960+00:00",
  "credits_left": 11,
- "lines_priced": 87,
+ "lines_priced": 88,
  "high_prob": [
   {
    "market": "Moneyline",
@@ -6987,18 +6996,18 @@
    "source": "NFL injury report"
   },
   {
-   "team": "CLE",
-   "player": "Dylan Sampson",
-   "pos": "RB",
+   "team": "CIN",
+   "player": "Andrei Iosivas",
+   "pos": "WR",
    "status": "Injured Reserve",
    "source": "NFL roster"
   },
   {
    "team": "CLE",
-   "player": "Quinshon Judkins",
+   "player": "Dylan Sampson",
    "pos": "RB",
-   "status": "Out",
-   "source": "ESPN"
+   "status": "Injured Reserve",
+   "source": "NFL roster"
   },
   {
    "team": "DEN",
@@ -7029,18 +7038,18 @@
    "source": "NFL injury report"
   },
   {
+   "team": "HOU",
+   "player": "Jawhar Jordan",
+   "pos": "RB",
+   "status": "Practice squad",
+   "source": "NFL roster"
+  },
+  {
    "team": "IND",
    "player": "Alec Pierce",
    "pos": "WR",
    "status": "Injured Reserve",
    "source": "NFL roster"
-  },
-  {
-   "team": "IND",
-   "player": "Tyler Warren",
-   "pos": "TE",
-   "status": "Out",
-   "source": "ESPN"
   },
   {
    "team": "KC",
@@ -7078,11 +7087,18 @@
    "source": "NFL roster"
   },
   {
+   "team": "MIA",
+   "player": "De'Von Achane",
+   "pos": "RB",
+   "status": "Injured Reserve",
+   "source": "NFL roster"
+  },
+  {
    "team": "MIN",
    "player": "Jordan Mason",
    "pos": "RB",
    "status": "Injured Reserve",
-   "source": "ESPN"
+   "source": "NFL roster"
   },
   {
    "team": "NE",
@@ -7096,7 +7112,7 @@
    "player": "Romeo Doubs",
    "pos": "WR",
    "status": "Injured Reserve",
-   "source": "ESPN"
+   "source": "NFL roster"
   },
   {
    "team": "NO",
@@ -7211,13 +7227,6 @@
    "source": "NFL roster"
   },
   {
-   "team": "SF",
-   "player": "Mike Evans",
-   "pos": "WR",
-   "status": "Doubtful",
-   "source": "ESPN"
-  },
-  {
    "team": "TB",
    "player": "Baker Mayfield",
    "pos": "QB",
@@ -7249,11 +7258,11 @@
   {
    "game": "CIN @ BAL",
    "kickoff": "2026-10-25 13:00",
-   "market_home_spread": -2.5,
+   "market_home_spread": -3.0,
    "model_home_spread": -4.3,
-   "market_total": 50.5,
+   "market_total": 51.5,
    "model_total": 49.4,
-   "home_win_p": 0.584
+   "home_win_p": 0.599
   },
   {
    "game": "CLE @ TEN",
@@ -7339,11 +7348,11 @@
   {
    "game": "SF @ ATL",
    "kickoff": "2026-10-25 13:00",
-   "market_home_spread": 3.5,
+   "market_home_spread": 3.0,
    "model_home_spread": 1.1,
    "market_total": 50.5,
    "model_total": 47.6,
-   "home_win_p": 0.391
+   "home_win_p": 0.406
   },
   {
    "game": "TB @ CAR",
@@ -7427,18 +7436,6 @@
     "hi": 312.4
    },
    {
-    "player": "Brock Purdy",
-    "team": "SF",
-    "opp": "ATL",
-    "pos": "QB",
-    "proj": 261.0,
-    "matchup": 1.09,
-    "injury": null,
-    "boost": 1.0,
-    "lo": 190.0,
-    "hi": 310.9
-   },
-   {
     "player": "Matthew Stafford",
     "team": "LA",
     "opp": "LV",
@@ -7461,6 +7458,18 @@
     "boost": 1.0,
     "lo": 187.8,
     "hi": 307.4
+   },
+   {
+    "player": "Brock Purdy",
+    "team": "SF",
+    "opp": "ATL",
+    "pos": "QB",
+    "proj": 257.9,
+    "matchup": 1.09,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 187.7,
+    "hi": 307.3
    },
    {
     "player": "Dak Prescott",
@@ -7499,16 +7508,16 @@
     "hi": 283.9
    },
    {
-    "player": "Michael Penix Jr.",
-    "team": "ATL",
-    "opp": "SF",
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opp": "BAL",
     "pos": "QB",
-    "proj": 234.5,
-    "matchup": 1.02,
+    "proj": 233.6,
+    "matchup": 1.08,
     "injury": null,
     "boost": 1.0,
-    "lo": 170.7,
-    "hi": 279.4
+    "lo": 170.1,
+    "hi": 278.4
    },
    {
     "player": "Bryce Young",
@@ -7523,16 +7532,16 @@
     "hi": 278.4
    },
    {
-    "player": "Joe Burrow",
-    "team": "CIN",
-    "opp": "BAL",
+    "player": "Michael Penix Jr.",
+    "team": "ATL",
+    "opp": "SF",
     "pos": "QB",
-    "proj": 232.7,
-    "matchup": 1.08,
+    "proj": 229.3,
+    "matchup": 1.02,
     "injury": null,
     "boost": 1.0,
-    "lo": 169.4,
-    "hi": 277.3
+    "lo": 166.9,
+    "hi": 273.2
    },
    {
     "player": "Patrick Mahomes",
@@ -7548,16 +7557,6 @@
    }
   ],
   "passing_tds": [
-   {
-    "player": "Brock Purdy",
-    "team": "SF",
-    "opp": "ATL",
-    "pos": "QB",
-    "proj": 2.38,
-    "matchup": 1.09,
-    "injury": null,
-    "boost": 1.0
-   },
    {
     "player": "Joe Burrow",
     "team": "CIN",
@@ -7575,6 +7574,16 @@
     "pos": "QB",
     "proj": 2.16,
     "matchup": 0.92,
+    "injury": null,
+    "boost": 1.0
+   },
+   {
+    "player": "Brock Purdy",
+    "team": "SF",
+    "opp": "ATL",
+    "pos": "QB",
+    "proj": 2.15,
+    "matchup": 1.09,
     "injury": null,
     "boost": 1.0
    },
@@ -7737,6 +7746,18 @@
     "hi": 123.6
    },
    {
+    "player": "Woody Marks",
+    "team": "HOU",
+    "opp": "NYG",
+    "pos": "RB",
+    "proj": 79.5,
+    "matchup": 1.22,
+    "injury": null,
+    "boost": 1.6,
+    "lo": 47.7,
+    "hi": 121.2
+   },
+   {
     "player": "Derrick Henry",
     "team": "BAL",
     "opp": "CIN",
@@ -7759,18 +7780,6 @@
     "boost": 1.0,
     "lo": 44.0,
     "hi": 111.8
-   },
-   {
-    "player": "Bucky Irving",
-    "team": "TB",
-    "opp": "CAR",
-    "pos": "RB",
-    "proj": 70.6,
-    "matchup": 1.16,
-    "injury": null,
-    "boost": 1.14,
-    "lo": 42.4,
-    "hi": 107.6
    },
    {
     "player": "Jahmyr Gibbs",
@@ -7809,16 +7818,16 @@
     "hi": 103.4
    },
    {
-    "player": "Woody Marks",
-    "team": "HOU",
-    "opp": "NYG",
+    "player": "Ollie Gordon II",
+    "team": "MIA",
+    "opp": "NYJ",
     "pos": "RB",
-    "proj": 66.9,
-    "matchup": 1.22,
+    "proj": 66.0,
+    "matchup": 1.18,
     "injury": null,
-    "boost": 1.34,
-    "lo": 40.1,
-    "hi": 101.9
+    "boost": 1.6,
+    "lo": 39.6,
+    "hi": 100.6
    },
    {
     "player": "J.K. Dobbins",
@@ -7845,6 +7854,18 @@
     "hi": 95.9
    },
    {
+    "player": "Bucky Irving",
+    "team": "TB",
+    "opp": "CAR",
+    "pos": "RB",
+    "proj": 61.8,
+    "matchup": 1.16,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 37.1,
+    "hi": 94.2
+   },
+   {
     "player": "Tony Pollard",
     "team": "TEN",
     "opp": "CLE",
@@ -7867,18 +7888,6 @@
     "boost": 1.0,
     "lo": 36.3,
     "hi": 92.1
-   },
-   {
-    "player": "Jaylen Warren",
-    "team": "PIT",
-    "opp": "NO",
-    "pos": "RB",
-    "proj": 60.2,
-    "matchup": 1.14,
-    "injury": null,
-    "boost": 1.0,
-    "lo": 36.1,
-    "hi": 91.8
    }
   ],
   "receiving_yards": [
@@ -7895,18 +7904,6 @@
     "hi": 175.3
    },
    {
-    "player": "George Kittle",
-    "team": "SF",
-    "opp": "ATL",
-    "pos": "TE",
-    "proj": 96.1,
-    "matchup": 1.08,
-    "injury": null,
-    "boost": 1.5,
-    "lo": 56.0,
-    "hi": 152.6
-   },
-   {
     "player": "Jaxon Smith-Njigba",
     "team": "SEA",
     "opp": "KC",
@@ -7917,6 +7914,18 @@
     "boost": 1.1,
     "lo": 49.8,
     "hi": 152.6
+   },
+   {
+    "player": "Ja'Marr Chase",
+    "team": "CIN",
+    "opp": "BAL",
+    "pos": "WR",
+    "proj": 84.9,
+    "matchup": 1.2,
+    "injury": null,
+    "boost": 1.09,
+    "lo": 46.0,
+    "hi": 141.0
    },
    {
     "player": "Chris Olave",
@@ -7943,16 +7952,16 @@
     "hi": 130.3
    },
    {
-    "player": "Ja'Marr Chase",
-    "team": "CIN",
-    "opp": "BAL",
-    "pos": "WR",
-    "proj": 78.3,
-    "matchup": 1.2,
+    "player": "George Kittle",
+    "team": "SF",
+    "opp": "ATL",
+    "pos": "TE",
+    "proj": 77.4,
+    "matchup": 1.08,
     "injury": null,
-    "boost": 1.03,
-    "lo": 42.5,
-    "hi": 130.1
+    "boost": 1.22,
+    "lo": 45.1,
+    "hi": 123.0
    },
    {
     "player": "Garrett Wilson",
@@ -7979,6 +7988,30 @@
     "hi": 118.9
    },
    {
+    "player": "Zay Flowers",
+    "team": "BAL",
+    "opp": "CIN",
+    "pos": "WR",
+    "proj": 71.5,
+    "matchup": 0.81,
+    "injury": null,
+    "boost": 0.98,
+    "lo": 38.8,
+    "hi": 118.8
+   },
+   {
+    "player": "Mike Evans",
+    "team": "SF",
+    "opp": "ATL",
+    "pos": "WR",
+    "proj": 70.9,
+    "matchup": 1.11,
+    "injury": "Questionable",
+    "boost": 1.22,
+    "lo": 38.4,
+    "hi": 117.7
+   },
+   {
     "player": "Amon-Ra St. Brown",
     "team": "DET",
     "opp": "GB",
@@ -7989,18 +8022,6 @@
     "boost": 1.0,
     "lo": 38.3,
     "hi": 117.4
-   },
-   {
-    "player": "Zay Flowers",
-    "team": "BAL",
-    "opp": "CIN",
-    "pos": "WR",
-    "proj": 70.4,
-    "matchup": 0.81,
-    "injury": null,
-    "boost": 0.98,
-    "lo": 38.2,
-    "hi": 117.0
    },
    {
     "player": "Drake London",
@@ -8049,18 +8070,6 @@
     "boost": 1.07,
     "lo": 38.4,
     "hi": 104.8
-   },
-   {
-    "player": "Justin Jefferson",
-    "team": "MIN",
-    "opp": "IND",
-    "pos": "WR",
-    "proj": 65.5,
-    "matchup": 1.09,
-    "injury": null,
-    "boost": 1.06,
-    "lo": 35.5,
-    "hi": 108.8
    }
   ],
   "receptions": [
@@ -8085,24 +8094,14 @@
     "boost": 1.07
    },
    {
-    "player": "Christian McCaffrey",
-    "team": "SF",
-    "opp": "ATL",
-    "pos": "RB",
+    "player": "Ja'Marr Chase",
+    "team": "CIN",
+    "opp": "BAL",
+    "pos": "WR",
     "proj": 7.8,
-    "matchup": 1.08,
+    "matchup": 1.15,
     "injury": null,
-    "boost": 1.5
-   },
-   {
-    "player": "George Kittle",
-    "team": "SF",
-    "opp": "ATL",
-    "pos": "TE",
-    "proj": 7.8,
-    "matchup": 1.04,
-    "injury": null,
-    "boost": 1.5
+    "boost": 1.09
    },
    {
     "player": "Jaxon Smith-Njigba",
@@ -8113,16 +8112,6 @@
     "matchup": 0.93,
     "injury": null,
     "boost": 1.1
-   },
-   {
-    "player": "Ja'Marr Chase",
-    "team": "CIN",
-    "opp": "BAL",
-    "pos": "WR",
-    "proj": 7.2,
-    "matchup": 1.15,
-    "injury": null,
-    "boost": 1.03
    },
    {
     "player": "Chris Olave",
@@ -8155,6 +8144,26 @@
     "boost": 1.0
    },
    {
+    "player": "George Kittle",
+    "team": "SF",
+    "opp": "ATL",
+    "pos": "TE",
+    "proj": 6.3,
+    "matchup": 1.04,
+    "injury": null,
+    "boost": 1.22
+   },
+   {
+    "player": "Christian McCaffrey",
+    "team": "SF",
+    "opp": "ATL",
+    "pos": "RB",
+    "proj": 6.3,
+    "matchup": 1.08,
+    "injury": null,
+    "boost": 1.22
+   },
+   {
     "player": "Brock Bowers",
     "team": "LV",
     "opp": "LA",
@@ -8175,14 +8184,14 @@
     "boost": 1.0
    },
    {
-    "player": "Keenan Allen",
-    "team": "IND",
-    "opp": "MIN",
+    "player": "Malik Nabers",
+    "team": "NYG",
+    "opp": "HOU",
     "pos": "WR",
-    "proj": 6.0,
-    "matchup": 0.89,
+    "proj": 6.1,
+    "matchup": 0.98,
     "injury": null,
-    "boost": 1.38
+    "boost": 0.99
    },
    {
     "player": "DK Metcalf",
@@ -8217,15 +8226,15 @@
   ],
   "anytime_td": [
    {
-    "player": "Christian McCaffrey",
-    "team": "SF",
-    "opp": "ATL",
+    "player": "Derrick Henry",
+    "team": "BAL",
+    "opp": "CIN",
     "pos": "RB",
     "proj": 1.18,
-    "matchup": 1.06,
+    "matchup": 0.94,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.808
+    "p_td": 0.732
    },
    {
     "player": "Jahmyr Gibbs",
@@ -8239,15 +8248,15 @@
     "p_td": 0.691
    },
    {
-    "player": "Derrick Henry",
-    "team": "BAL",
-    "opp": "CIN",
+    "player": "Christian McCaffrey",
+    "team": "SF",
+    "opp": "ATL",
     "pos": "RB",
-    "proj": 1.15,
-    "matchup": 0.94,
+    "proj": 1.17,
+    "matchup": 1.06,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.722
+    "p_td": 0.76
    },
    {
     "player": "D'Andre Swift",
@@ -8309,11 +8318,11 @@
     "team": "SF",
     "opp": "ATL",
     "pos": "TE",
-    "proj": 0.69,
+    "proj": 0.68,
     "matchup": 0.85,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.619
+    "p_td": 0.564
    },
    {
     "player": "Bijan Robinson",
@@ -8324,7 +8333,7 @@
     "matchup": 0.99,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.47
+    "p_td": 0.475
    },
    {
     "player": "Amon-Ra St. Brown",
@@ -8346,7 +8355,7 @@
     "matchup": 0.73,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.579
+    "p_td": 0.51
    },
    {
     "player": "Jaylen Warren",
@@ -8360,26 +8369,26 @@
     "p_td": 0.527
    },
    {
-    "player": "Ja'Marr Chase",
-    "team": "CIN",
-    "opp": "BAL",
-    "pos": "WR",
-    "proj": 0.59,
-    "matchup": 0.77,
-    "injury": null,
-    "boost": 1.0,
-    "p_td": 0.456
-   },
-   {
     "player": "Chase Brown",
     "team": "CIN",
     "opp": "BAL",
     "pos": "RB",
-    "proj": 0.58,
+    "proj": 0.59,
     "matchup": 0.84,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.451
+    "p_td": 0.475
+   },
+   {
+    "player": "Ja'Marr Chase",
+    "team": "CIN",
+    "opp": "BAL",
+    "pos": "WR",
+    "proj": 0.58,
+    "matchup": 0.77,
+    "injury": null,
+    "boost": 1.0,
+    "p_td": 0.471
    }
   ]
  }
