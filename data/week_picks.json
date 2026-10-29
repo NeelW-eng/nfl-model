@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 8,
- "generated": "2026-10-29T12:44+00:00",
+ "generated": "2026-10-29T18:40+00:00",
  "has_odds": true,
  "top10": [],
  "games": [],
@@ -37,7 +37,7 @@
    "pick": "Mitchell Evans Higher 4.5 Receiving Yards",
    "game": "CAR @ PHI",
    "stat": "Receiving Yards",
-   "p": 0.679,
+   "p": 0.6789,
    "n_books": 0,
    "injury": null,
    "started": true
@@ -120,14 +120,14 @@
    "stat": "Rush Yards",
    "p": 0.5555,
    "n_books": 0,
-   "injury": null,
+   "injury": "Questionable",
    "started": true
   },
   {
    "pick": "Jordan Love Lower 274.5 Pass Yards",
    "game": "DAL @ GB",
    "stat": "Pass Yards",
-   "p": 0.5535,
+   "p": 0.553,
    "n_books": 6,
    "injury": null,
    "started": true
@@ -250,15 +250,6 @@
    "started": true
   },
   {
-   "pick": "Tyjae Spears Lower 14.5 Receiving Yards",
-   "game": "TEN @ IND",
-   "stat": "Receiving Yards",
-   "p": 0.5417,
-   "n_books": 1,
-   "injury": "Questionable",
-   "started": true
-  },
-  {
    "pick": "Zay Flowers Higher 59.5 Receiving Yards",
    "game": "BAL @ CLE",
    "stat": "Receiving Yards",
@@ -282,6 +273,15 @@
    "stat": "Receiving Yards",
    "p": 0.5382,
    "n_books": 7,
+   "injury": "Questionable",
+   "started": true
+  },
+  {
+   "pick": "Tyjae Spears Lower 14.5 Receiving Yards",
+   "game": "TEN @ IND",
+   "stat": "Receiving Yards",
+   "p": 0.5382,
+   "n_books": 1,
    "injury": "Questionable",
    "started": true
   },
@@ -370,7 +370,7 @@
    "pick": "Chuba Hubbard Lower 69.5 Rush Yards",
    "game": "CAR @ PHI",
    "stat": "Rush Yards",
-   "p": 0.5324,
+   "p": 0.5327,
    "n_books": 7,
    "injury": null,
    "started": true
@@ -460,7 +460,7 @@
    "pick": "Cam Ward Lower 199.5 Pass Yards",
    "game": "TEN @ IND",
    "stat": "Pass Yards",
-   "p": 0.5245,
+   "p": 0.5244,
    "n_books": 7,
    "injury": null,
    "started": true
@@ -646,12 +646,12 @@
    "started": true
   },
   {
-   "pick": "Tucker Kraft Higher 49.5 Receiving Yards",
-   "game": "DAL @ GB",
-   "stat": "Receiving Yards",
-   "p": 0.5088,
+   "pick": "Carnell Tate Lower 4.5 Receptions",
+   "game": "TEN @ IND",
+   "stat": "Receptions",
+   "p": 0.5096,
    "n_books": 6,
-   "injury": null,
+   "injury": "Questionable",
    "started": true
   },
   {
@@ -673,12 +673,12 @@
    "started": true
   },
   {
-   "pick": "Carnell Tate Lower 4.5 Receptions",
-   "game": "TEN @ IND",
-   "stat": "Receptions",
-   "p": 0.508,
+   "pick": "Tucker Kraft Higher 49.5 Receiving Yards",
+   "game": "DAL @ GB",
+   "stat": "Receiving Yards",
+   "p": 0.5069,
    "n_books": 6,
-   "injury": "Questionable",
+   "injury": null,
    "started": true
   },
   {
@@ -695,6 +695,15 @@
    "game": "PIT @ TB",
    "stat": "Pass Yards",
    "p": 0.5063,
+   "n_books": 7,
+   "injury": null,
+   "started": true
+  },
+  {
+   "pick": "Darren Waller Lower 24.5 Receiving Yards",
+   "game": "CAR @ PHI",
+   "stat": "Receiving Yards",
+   "p": 0.506,
    "n_books": 7,
    "injury": null,
    "started": true
@@ -723,15 +732,6 @@
    "stat": "Receptions",
    "p": 0.5031,
    "n_books": 4,
-   "injury": null,
-   "started": true
-  },
-  {
-   "pick": "Darren Waller Higher 24.5 Receiving Yards",
-   "game": "CAR @ PHI",
-   "stat": "Receiving Yards",
-   "p": 0.5007,
-   "n_books": 7,
    "injury": null,
    "started": true
   },
@@ -5742,7 +5742,7 @@
    "kickoff": "2026-10-29 20:15",
    "market_home_spread": -3.5,
    "model_home_spread": -6.9,
-   "market_total": 47.5,
+   "market_total": 46.5,
    "model_total": 46.0,
    "home_win_p": 0.618
   },
@@ -5848,11 +5848,11 @@
   {
    "game": "TEN @ CIN",
    "kickoff": "2026-11-01 13:00",
-   "market_home_spread": -10.0,
+   "market_home_spread": -11.5,
    "model_home_spread": -9.9,
    "market_total": 46.5,
    "model_total": 47.2,
-   "home_win_p": 0.793
+   "home_win_p": 0.825
   },
   {
    "game": "CHI @ SEA",
@@ -5891,6 +5891,18 @@
     "hi": 329.2
    },
    {
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opp": "TEN",
+    "pos": "QB",
+    "proj": 269.6,
+    "matchup": 1.08,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 196.3,
+    "hi": 321.2
+   },
+   {
     "player": "Dak Prescott",
     "team": "DAL",
     "opp": "ARI",
@@ -5901,18 +5913,6 @@
     "boost": 1.0,
     "lo": 195.2,
     "hi": 319.4
-   },
-   {
-    "player": "Joe Burrow",
-    "team": "CIN",
-    "opp": "TEN",
-    "pos": "QB",
-    "proj": 262.7,
-    "matchup": 1.08,
-    "injury": null,
-    "boost": 1.0,
-    "lo": 191.2,
-    "hi": 313.0
    },
    {
     "player": "Matthew Stafford",
@@ -6027,24 +6027,24 @@
     "team": "CAR",
     "opp": "GB",
     "pos": "QB",
-    "proj": 235.4,
+    "proj": 234.2,
     "matchup": 0.95,
     "injury": null,
     "boost": 1.0,
-    "lo": 171.3,
-    "hi": 280.4
+    "lo": 170.5,
+    "hi": 279.1
    },
    {
-    "player": "Jordan Love",
-    "team": "GB",
-    "opp": "CAR",
+    "player": "Bo Nix",
+    "team": "DEN",
+    "opp": "KC",
     "pos": "QB",
-    "proj": 233.9,
-    "matchup": 0.92,
+    "proj": 233.5,
+    "matchup": 0.95,
     "injury": null,
     "boost": 1.0,
-    "lo": 170.3,
-    "hi": 278.7
+    "lo": 170.0,
+    "hi": 278.2
    }
   ],
   "passing_tds": [
@@ -6053,7 +6053,7 @@
     "team": "CIN",
     "opp": "TEN",
     "pos": "QB",
-    "proj": 3.13,
+    "proj": 3.18,
     "matchup": 1.08,
     "injury": null,
     "boost": 1.0
@@ -6503,18 +6503,6 @@
     "hi": 112.1
    },
    {
-    "player": "Christian Watson",
-    "team": "GB",
-    "opp": "CAR",
-    "pos": "WR",
-    "proj": 65.3,
-    "matchup": 0.91,
-    "injury": null,
-    "boost": 1.12,
-    "lo": 35.4,
-    "hi": 108.5
-   },
-   {
     "player": "Michael Wilson",
     "team": "ARI",
     "opp": "DAL",
@@ -6527,16 +6515,16 @@
     "hi": 107.8
    },
    {
-    "player": "Matthew Golden",
+    "player": "Christian Watson",
     "team": "GB",
     "opp": "CAR",
     "pos": "WR",
-    "proj": 62.8,
+    "proj": 64.6,
     "matchup": 0.91,
-    "injury": "Questionable",
+    "injury": null,
     "boost": 1.12,
-    "lo": 34.1,
-    "hi": 104.4
+    "lo": 35.0,
+    "hi": 107.3
    },
    {
     "player": "Parker Washington",
@@ -6547,6 +6535,18 @@
     "matchup": 1.06,
     "injury": null,
     "boost": 1.0,
+    "lo": 33.7,
+    "hi": 103.3
+   },
+   {
+    "player": "Matthew Golden",
+    "team": "GB",
+    "opp": "CAR",
+    "pos": "WR",
+    "proj": 62.2,
+    "matchup": 0.91,
+    "injury": "Questionable",
+    "boost": 1.12,
     "lo": 33.7,
     "hi": 103.3
    },
@@ -6776,11 +6776,11 @@
     "team": "GB",
     "opp": "CAR",
     "pos": "RB",
-    "proj": 0.84,
+    "proj": 0.83,
     "matchup": 1.33,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.636
+    "p_td": 0.632
    },
    {
     "player": "Kyren Williams",
@@ -6802,7 +6802,7 @@
     "matchup": 0.98,
     "injury": "Questionable",
     "boost": 1.0,
-    "p_td": 0.592
+    "p_td": 0.59
    },
    {
     "player": "Bhayshul Tuten",
