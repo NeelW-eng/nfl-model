@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 9,
- "generated": "2026-11-01T00:34+00:00",
+ "generated": "2026-11-01T08:12+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -136,71 +136,6 @@
   },
   {
    "rank": 3,
-   "team": "LV",
-   "game": "LV @ NYJ",
-   "game_id": "98f1b121b793977434c046e76c707145",
-   "kickoff": "2026-11-01T18:00:00Z",
-   "started": false,
-   "player": "Ashton Jeanty",
-   "player_id": "00-0040122",
-   "opp": "SF",
-   "pos": "RB",
-   "stat": "receptions",
-   "stat_label": "Receptions",
-   "side": "Over",
-   "word": "Higher",
-   "line": 3.5,
-   "pick": "Ashton Jeanty Higher 3.5 Receptions",
-   "p": 0.5758,
-   "p_model": 0.6896,
-   "p_cons": 0.5268,
-   "n_books": 5,
-   "proj": 5.03,
-   "injury": null,
-   "injury_note": null,
-   "signals": [
-    {
-     "k": "market",
-     "ok": true,
-     "txt": "5 sportsbooks (lines 3.5) put this at 53%"
-    },
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Projection 5.0 vs line 3.5 (69%)"
-    },
-    {
-     "k": "role",
-     "ok": true,
-     "txt": "Target Share last game 19% vs 17% avg"
-    },
-    {
-     "k": "snaps",
-     "ok": false,
-     "txt": "Snap share 72% last game vs 72% avg"
-    },
-    {
-     "k": "matchup",
-     "ok": true,
-     "txt": "SF allows +43% receptions to RBs vs avg"
-    },
-    {
-     "k": "script",
-     "ok": false,
-     "txt": "LV implied team total 19.2"
-    },
-    {
-     "k": "injury",
-     "ok": true,
-     "txt": "Jack Bech out: projection up 7%"
-    }
-   ],
-   "support": 5,
-   "n_signals": 7,
-   "in_top10": true
-  },
-  {
-   "rank": 4,
    "team": "LAC",
    "game": "LAC @ LA",
    "game_id": "2ff84d3f6053d083c8c0a5bebf7cdd4c",
@@ -262,6 +197,66 @@
    ],
    "support": 4,
    "n_signals": 7,
+   "in_top10": true
+  },
+  {
+   "rank": 4,
+   "team": "LV",
+   "game": "LV @ NYJ",
+   "game_id": "98f1b121b793977434c046e76c707145",
+   "kickoff": "2026-11-01T18:00:00Z",
+   "started": false,
+   "player": "Ashton Jeanty",
+   "player_id": "00-0040122",
+   "opp": "SF",
+   "pos": "RB",
+   "stat": "receptions",
+   "stat_label": "Receptions",
+   "side": "Over",
+   "word": "Higher",
+   "line": 3.5,
+   "pick": "Ashton Jeanty Higher 3.5 Receptions",
+   "p": 0.568,
+   "p_model": 0.6461,
+   "p_cons": 0.5268,
+   "n_books": 5,
+   "proj": 4.7,
+   "injury": null,
+   "injury_note": null,
+   "signals": [
+    {
+     "k": "market",
+     "ok": true,
+     "txt": "5 sportsbooks (lines 3.5) put this at 53%"
+    },
+    {
+     "k": "model",
+     "ok": true,
+     "txt": "Projection 4.7 vs line 3.5 (65%)"
+    },
+    {
+     "k": "role",
+     "ok": true,
+     "txt": "Target Share last game 19% vs 17% avg"
+    },
+    {
+     "k": "snaps",
+     "ok": false,
+     "txt": "Snap share 72% last game vs 72% avg"
+    },
+    {
+     "k": "matchup",
+     "ok": true,
+     "txt": "SF allows +43% receptions to RBs vs avg"
+    },
+    {
+     "k": "script",
+     "ok": false,
+     "txt": "LV implied team total 19.2"
+    }
+   ],
+   "support": 4,
+   "n_signals": 6,
    "in_top10": true
   },
   {
@@ -462,7 +457,7 @@
     {
      "k": "injury",
      "ok": false,
-     "txt": "Jalen Hurts, Elijah Mitchell out: projection up 32%"
+     "txt": "Jalen Hurts, DeVonta Smith out: projection up 32%"
     },
     {
      "k": "injury",
@@ -971,18 +966,18 @@
      "word": "Higher",
      "line": 9.5,
      "pick": "Olamide Zaccheaus Higher 9.5 Receiving Yards",
-     "p": 0.5755,
-     "p_model": 0.651,
+     "p": 0.565,
+     "p_model": 0.63,
      "p_cons": null,
      "n_books": 0,
-     "proj": 12.35,
+     "proj": 11.79,
      "injury": "Questionable",
      "injury_note": "Shoulder - NFL injury report",
      "signals": [
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 12.4 vs line 9.5 (65%)"
+       "txt": "Projection 11.8 vs line 9.5 (63%)"
       },
       {
        "k": "role",
@@ -1008,15 +1003,10 @@
        "k": "ngs",
        "ok": false,
        "txt": "NGS separation 3.1 yds vs 2.9 WR median"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "Brian Robinson out: projection up 5%"
       }
      ],
-     "support": 3,
-     "n_signals": 7,
+     "support": 2,
+     "n_signals": 6,
      "in_top10": false
     },
     {
@@ -1095,75 +1085,6 @@
      "game_id": "921859689f5f8b3b8b1caf4248bdb1ec",
      "kickoff": "2026-11-01T18:00:00Z",
      "started": false,
-     "player": "Bijan Robinson",
-     "player_id": "00-0038542",
-     "opp": "CIN",
-     "pos": "RB",
-     "stat": "rushing_yards",
-     "stat_label": "Rush Yards",
-     "side": "Over",
-     "word": "Higher",
-     "line": 79.5,
-     "pick": "Bijan Robinson Higher 79.5 Rush Yards",
-     "p": 0.5557,
-     "p_model": 0.6683,
-     "p_cons": 0.5065,
-     "n_books": 7,
-     "proj": 105.14,
-     "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": false,
-       "txt": "7 sportsbooks (lines 79.5\u2013100.5) put this at 51%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 105.1 vs line 79.5 (67%)"
-      },
-      {
-       "k": "role",
-       "ok": true,
-       "txt": "Carry Share last game 77% vs 67% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 81% last game vs 75% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "CIN allows +3% rush yds to RBs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": false,
-       "txt": "ATL underdog by 3"
-      },
-      {
-       "k": "ngs",
-       "ok": true,
-       "txt": "NGS rush yds over expected +0.97/carry"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "Brian Robinson out: projection up 46%"
-      }
-     ],
-     "support": 4,
-     "n_signals": 8,
-     "in_top10": false
-    },
-    {
-     "team": "ATL",
-     "game": "ATL @ TB",
-     "game_id": "921859689f5f8b3b8b1caf4248bdb1ec",
-     "kickoff": "2026-11-01T18:00:00Z",
-     "started": false,
      "player": "Zachariah Branch",
      "player_id": "00-0041044",
      "opp": "CIN",
@@ -1174,11 +1095,11 @@
      "word": "Lower",
      "line": 9.5,
      "pick": "Zachariah Branch Lower 9.5 Receiving Yards",
-     "p": 0.5434,
-     "p_model": 0.5221,
-     "p_cons": 0.5574,
+     "p": 0.554,
+     "p_model": 0.5452,
+     "p_cons": 0.5598,
      "n_books": 2,
-     "proj": 8.84,
+     "proj": 8.43,
      "injury": null,
      "injury_note": null,
      "signals": [
@@ -1190,7 +1111,7 @@
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 8.8 vs line 9.5 (52%)"
+       "txt": "Projection 8.4 vs line 9.5 (55%)"
       },
       {
        "k": "role",
@@ -1211,14 +1132,73 @@
        "k": "script",
        "ok": false,
        "txt": "ATL implied team total 23.2"
-      },
-      {
-       "k": "injury",
-       "ok": false,
-       "txt": "Brian Robinson out: projection up 5%"
       }
      ],
      "support": 3,
+     "n_signals": 6,
+     "in_top10": false
+    },
+    {
+     "team": "ATL",
+     "game": "ATL @ TB",
+     "game_id": "921859689f5f8b3b8b1caf4248bdb1ec",
+     "kickoff": "2026-11-01T18:00:00Z",
+     "started": false,
+     "player": "Drake London",
+     "player_id": "00-0037238",
+     "opp": "CIN",
+     "pos": "WR",
+     "stat": "receiving_yards",
+     "stat_label": "Receiving Yards",
+     "side": "Under",
+     "word": "Lower",
+     "line": 79.5,
+     "pick": "Drake London Lower 79.5 Receiving Yards",
+     "p": 0.5307,
+     "p_model": 0.558,
+     "p_cons": 0.513,
+     "n_books": 7,
+     "proj": 68.8,
+     "injury": null,
+     "injury_note": null,
+     "signals": [
+      {
+       "k": "market",
+       "ok": true,
+       "txt": "7 sportsbooks (lines 77.5\u201397.5) put this at 51%"
+      },
+      {
+       "k": "model",
+       "ok": true,
+       "txt": "Projection 68.8 vs line 79.5 (56%)"
+      },
+      {
+       "k": "role",
+       "ok": false,
+       "txt": "Target Share last game 31% vs 30% avg"
+      },
+      {
+       "k": "snaps",
+       "ok": true,
+       "txt": "Snap share 81% last game vs 90% avg"
+      },
+      {
+       "k": "matchup",
+       "ok": true,
+       "txt": "CIN allows -13% rec yds to WRs vs avg"
+      },
+      {
+       "k": "script",
+       "ok": false,
+       "txt": "ATL implied team total 23.2"
+      },
+      {
+       "k": "ngs",
+       "ok": false,
+       "txt": "NGS separation 2.9 yds vs 2.9 WR median"
+      }
+     ],
+     "support": 4,
      "n_signals": 7,
      "in_top10": false
     }
@@ -1952,7 +1932,7 @@
    "kickoff": "2026-11-01T18:00:00Z",
    "picks": [
     {
-     "rank": 3,
+     "rank": 4,
      "team": "LV",
      "game": "LV @ NYJ",
      "game_id": "98f1b121b793977434c046e76c707145",
@@ -1968,11 +1948,11 @@
      "word": "Higher",
      "line": 3.5,
      "pick": "Ashton Jeanty Higher 3.5 Receptions",
-     "p": 0.5758,
-     "p_model": 0.6896,
+     "p": 0.568,
+     "p_model": 0.6461,
      "p_cons": 0.5268,
      "n_books": 5,
-     "proj": 5.03,
+     "proj": 4.7,
      "injury": null,
      "injury_note": null,
      "signals": [
@@ -1984,7 +1964,7 @@
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 5.0 vs line 3.5 (69%)"
+       "txt": "Projection 4.7 vs line 3.5 (65%)"
       },
       {
        "k": "role",
@@ -2005,15 +1985,10 @@
        "k": "script",
        "ok": false,
        "txt": "LV implied team total 19.2"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "Jack Bech out: projection up 7%"
       }
      ],
-     "support": 5,
-     "n_signals": 7,
+     "support": 4,
+     "n_signals": 6,
      "in_top10": true
     },
     {
@@ -2150,67 +2125,62 @@
      "game_id": "98f1b121b793977434c046e76c707145",
      "kickoff": "2026-11-01T18:00:00Z",
      "started": false,
-     "player": "Tre Tucker",
-     "player_id": "00-0038563",
+     "player": "Brock Bowers",
+     "player_id": "00-0039338",
      "opp": "SF",
-     "pos": "WR",
-     "stat": "receptions",
-     "stat_label": "Receptions",
-     "side": "Over",
-     "word": "Higher",
-     "line": 3.5,
-     "pick": "Tre Tucker Higher 3.5 Receptions",
-     "p": 0.5325,
-     "p_model": 0.5679,
-     "p_cons": 0.5101,
-     "n_books": 5,
-     "proj": 4.18,
+     "pos": "TE",
+     "stat": "receiving_yards",
+     "stat_label": "Receiving Yards",
+     "side": "Under",
+     "word": "Lower",
+     "line": 69.5,
+     "pick": "Brock Bowers Lower 69.5 Receiving Yards",
+     "p": 0.5301,
+     "p_model": 0.6255,
+     "p_cons": 0.4838,
+     "n_books": 6,
+     "proj": 54.49,
      "injury": null,
      "injury_note": null,
      "signals": [
       {
        "k": "market",
-       "ok": true,
-       "txt": "5 sportsbooks (lines 3.5) put this at 51%"
+       "ok": false,
+       "txt": "6 sportsbooks (lines 68.5\u201382.5) put this at 48%"
       },
       {
        "k": "model",
        "ok": true,
-       "txt": "Projection 4.2 vs line 3.5 (57%)"
+       "txt": "Projection 54.5 vs line 69.5 (63%)"
       },
       {
        "k": "role",
        "ok": true,
-       "txt": "Target Share last game 28% vs 19% avg"
+       "txt": "Target Share last game 19% vs 25% avg"
       },
       {
        "k": "snaps",
        "ok": false,
-       "txt": "Snap share 82% last game vs 78% avg"
+       "txt": "Snap share 84% last game vs 87% avg"
       },
       {
        "k": "matchup",
        "ok": false,
-       "txt": "SF allows -1% receptions to WRs vs avg"
+       "txt": "SF allows -5% rec yds to TEs vs avg"
       },
       {
        "k": "script",
-       "ok": false,
+       "ok": true,
        "txt": "LV implied team total 19.2"
       },
       {
        "k": "ngs",
-       "ok": false,
-       "txt": "NGS separation 2.9 yds vs 2.9 WR median"
-      },
-      {
-       "k": "injury",
        "ok": true,
-       "txt": "Jack Bech out: projection up 7%"
+       "txt": "NGS separation 2.8 yds vs 3.5 TE median"
       }
      ],
      "support": 4,
-     "n_signals": 8,
+     "n_signals": 7,
      "in_top10": false
     }
    ],
@@ -2756,7 +2726,7 @@
    "kickoff": "2026-11-01T21:05:00Z",
    "picks": [
     {
-     "rank": 4,
+     "rank": 3,
      "team": "LAC",
      "game": "LAC @ LA",
      "game_id": "2ff84d3f6053d083c8c0a5bebf7cdd4c",
@@ -3622,7 +3592,7 @@
       {
        "k": "injury",
        "ok": false,
-       "txt": "Jalen Hurts, Elijah Mitchell out: projection up 32%"
+       "txt": "Jalen Hurts, DeVonta Smith out: projection up 32%"
       },
       {
        "k": "injury",
@@ -3834,7 +3804,7 @@
       {
        "k": "injury",
        "ok": true,
-       "txt": "Jalen Hurts, Elijah Mitchell out: projection up 32%"
+       "txt": "Jalen Hurts, DeVonta Smith out: projection up 32%"
       },
       {
        "k": "injury",
@@ -5942,24 +5912,6 @@
    "started": false
   },
   {
-   "pick": "Ashton Jeanty Higher 3.5 Receptions",
-   "game": "LV @ NYJ",
-   "stat": "Receptions",
-   "p": 0.5758,
-   "n_books": 5,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Olamide Zaccheaus Higher 9.5 Receiving Yards",
-   "game": "ATL @ TB",
-   "stat": "Receiving Yards",
-   "p": 0.5755,
-   "n_books": 0,
-   "injury": "Questionable",
-   "started": false
-  },
-  {
    "pick": "Kimani Vidal Lower 24.5 Rush Yards",
    "game": "LAC @ LA",
    "stat": "Rush Yards",
@@ -5978,12 +5930,30 @@
    "started": false
   },
   {
+   "pick": "Ashton Jeanty Higher 3.5 Receptions",
+   "game": "LV @ NYJ",
+   "stat": "Receptions",
+   "p": 0.568,
+   "n_books": 5,
+   "injury": null,
+   "started": false
+  },
+  {
    "pick": "Ollie Gordon II Lower 1.5 Receptions",
    "game": "NE @ MIA",
    "stat": "Receptions",
    "p": 0.5679,
    "n_books": 5,
    "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Olamide Zaccheaus Higher 9.5 Receiving Yards",
+   "game": "ATL @ TB",
+   "stat": "Receiving Yards",
+   "p": 0.565,
+   "n_books": 0,
+   "injury": "Questionable",
    "started": false
   },
   {
@@ -6050,11 +6020,11 @@
    "started": false
   },
   {
-   "pick": "Bijan Robinson Higher 79.5 Rush Yards",
+   "pick": "Zachariah Branch Lower 9.5 Receiving Yards",
    "game": "ATL @ TB",
-   "stat": "Rush Yards",
-   "p": 0.5557,
-   "n_books": 7,
+   "stat": "Receiving Yards",
+   "p": 0.554,
+   "n_books": 2,
    "injury": null,
    "started": false
   },
@@ -6239,15 +6209,6 @@
    "started": false
   },
   {
-   "pick": "Zachariah Branch Lower 9.5 Receiving Yards",
-   "game": "ATL @ TB",
-   "stat": "Receiving Yards",
-   "p": 0.5434,
-   "n_books": 2,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Derrick Henry Lower 79.5 Rush Yards",
    "game": "BAL @ BUF",
    "stat": "Rush Yards",
@@ -6279,15 +6240,6 @@
    "game": "CHI @ SEA",
    "stat": "Rush Yards",
    "p": 0.5413,
-   "n_books": 6,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Kyle Pitts Higher 3.5 Receptions",
-   "game": "ATL @ TB",
-   "stat": "Receptions",
-   "p": 0.5406,
    "n_books": 6,
    "injury": null,
    "started": false
@@ -6401,15 +6353,6 @@
    "started": false
   },
   {
-   "pick": "Tre Tucker Higher 3.5 Receptions",
-   "game": "LV @ NYJ",
-   "stat": "Receptions",
-   "p": 0.5325,
-   "n_books": 5,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Matthew Stafford Higher 249.5 Pass Yards",
    "game": "LAC @ LA",
    "stat": "Pass Yards",
@@ -6437,10 +6380,37 @@
    "started": false
   },
   {
+   "pick": "Drake London Lower 79.5 Receiving Yards",
+   "game": "ATL @ TB",
+   "stat": "Receiving Yards",
+   "p": 0.5307,
+   "n_books": 7,
+   "injury": null,
+   "started": false
+  },
+  {
    "pick": "Cade Otton Higher 3.5 Receptions",
    "game": "ATL @ TB",
    "stat": "Receptions",
    "p": 0.5303,
+   "n_books": 6,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Brock Bowers Lower 69.5 Receiving Yards",
+   "game": "LV @ NYJ",
+   "stat": "Receiving Yards",
+   "p": 0.5301,
+   "n_books": 6,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Kyle Pitts Higher 3.5 Receptions",
+   "game": "ATL @ TB",
+   "stat": "Receptions",
+   "p": 0.5296,
    "n_books": 6,
    "injury": null,
    "started": false
@@ -6451,6 +6421,15 @@
    "stat": "Receptions",
    "p": 0.5295,
    "n_books": 6,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Bijan Robinson Higher 79.5 Rush Yards",
+   "game": "ATL @ TB",
+   "stat": "Rush Yards",
+   "p": 0.5294,
+   "n_books": 7,
    "injury": null,
    "started": false
   },
@@ -6581,30 +6560,12 @@
    "started": false
   },
   {
-   "pick": "Drake London Lower 79.5 Receiving Yards",
-   "game": "ATL @ TB",
-   "stat": "Receiving Yards",
-   "p": 0.5212,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "George Pickens Lower 4.5 Receptions",
    "game": "ARI @ DAL",
    "stat": "Receptions",
    "p": 0.5207,
    "n_books": 5,
    "injury": "Questionable",
-   "started": false
-  },
-  {
-   "pick": "Brock Bowers Lower 69.5 Receiving Yards",
-   "game": "LV @ NYJ",
-   "stat": "Receiving Yards",
-   "p": 0.5204,
-   "n_books": 6,
-   "injury": null,
    "started": false
   },
   {
@@ -6667,6 +6628,24 @@
    "stat": "Rush Yards",
    "p": 0.5158,
    "n_books": 5,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Tre Tucker Higher 3.5 Receptions",
+   "game": "LV @ NYJ",
+   "stat": "Receptions",
+   "p": 0.5148,
+   "n_books": 5,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Tre Tucker Lower 49.5 Receiving Yards",
+   "game": "LV @ NYJ",
+   "stat": "Receiving Yards",
+   "p": 0.5138,
+   "n_books": 6,
    "injury": null,
    "started": false
   },
@@ -6811,15 +6790,6 @@
    "stat": "Pass Yards",
    "p": 0.5025,
    "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Tre Tucker Higher 49.5 Receiving Yards",
-   "game": "LV @ NYJ",
-   "stat": "Receiving Yards",
-   "p": 0.5022,
-   "n_books": 6,
    "injury": null,
    "started": false
   },
@@ -9395,9 +9365,9 @@
    },
    {
     "week": 9,
-    "pick": "Tre Tucker Higher 3.5 Receptions",
+    "pick": "Brock Bowers Lower 69.5 Receiving Yards",
     "game": "LV @ NYJ",
-    "p": 0.5325,
+    "p": 0.5301,
     "top10": false,
     "result": null,
     "actual": null
@@ -9494,18 +9464,18 @@
    },
    {
     "week": 9,
-    "pick": "Zachariah Branch Lower 9.5 Receiving Yards",
+    "pick": "Drake London Lower 79.5 Receiving Yards",
     "game": "ATL @ TB",
-    "p": 0.5434,
+    "p": 0.5307,
     "top10": false,
     "result": null,
     "actual": null
    },
    {
     "week": 9,
-    "pick": "Bijan Robinson Higher 79.5 Rush Yards",
+    "pick": "Zachariah Branch Lower 9.5 Receiving Yards",
     "game": "ATL @ TB",
-    "p": 0.5557,
+    "p": 0.554,
     "top10": false,
     "result": null,
     "actual": null
@@ -9514,7 +9484,7 @@
     "week": 9,
     "pick": "Olamide Zaccheaus Higher 9.5 Receiving Yards",
     "game": "ATL @ TB",
-    "p": 0.5755,
+    "p": 0.565,
     "top10": false,
     "result": null,
     "actual": null
@@ -9586,7 +9556,7 @@
     "week": 9,
     "pick": "Ashton Jeanty Higher 3.5 Receptions",
     "game": "LV @ NYJ",
-    "p": 0.5758,
+    "p": 0.568,
     "top10": true,
     "result": null,
     "actual": null
@@ -12838,7 +12808,7 @@
    "player": "Kyle Monangai",
    "pos": "RB",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "CIN",
@@ -12866,7 +12836,7 @@
    "player": "RJ Harvey",
    "pos": "RB",
    "status": "Injured Reserve",
-   "source": "ESPN"
+   "source": "NFL roster"
   },
   {
    "team": "GB",
@@ -12936,13 +12906,6 @@
    "player": "Marquez Valdes-Scantling",
    "pos": "WR",
    "status": "Practice squad",
-   "source": "NFL roster"
-  },
-  {
-   "team": "LV",
-   "player": "Jack Bech",
-   "pos": "WR",
-   "status": "Injured Reserve",
    "source": "NFL roster"
   },
   {
@@ -13017,13 +12980,6 @@
   },
   {
    "team": "PHI",
-   "player": "Elijah Mitchell",
-   "pos": "RB",
-   "status": "Practice squad",
-   "source": "NFL roster"
-  },
-  {
-   "team": "PHI",
    "player": "Jalen Hurts",
    "pos": "QB",
    "status": "Injured Reserve",
@@ -13055,7 +13011,7 @@
    "player": "Rashid Shaheed",
    "pos": "WR",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "SF",
@@ -13575,12 +13531,12 @@
     "team": "ATL",
     "opp": "CIN",
     "pos": "RB",
-    "proj": 105.1,
+    "proj": 86.8,
     "matchup": 1.03,
     "injury": null,
-    "boost": 1.46,
-    "lo": 63.1,
-    "hi": 160.2
+    "boost": 1.21,
+    "lo": 52.1,
+    "hi": 132.3
    },
    {
     "player": "D'Andre Swift",
@@ -13813,18 +13769,6 @@
     "hi": 130.5
    },
    {
-    "player": "Drake London",
-    "team": "ATL",
-    "opp": "CIN",
-    "pos": "WR",
-    "proj": 72.1,
-    "matchup": 0.87,
-    "injury": null,
-    "boost": 1.05,
-    "lo": 39.1,
-    "hi": 119.8
-   },
-   {
     "player": "Tee Higgins",
     "team": "CIN",
     "opp": "ATL",
@@ -13835,6 +13779,18 @@
     "boost": 1.16,
     "lo": 38.8,
     "hi": 118.7
+   },
+   {
+    "player": "Drake London",
+    "team": "ATL",
+    "opp": "CIN",
+    "pos": "WR",
+    "proj": 68.8,
+    "matchup": 0.87,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 37.3,
+    "hi": 114.3
    },
    {
     "player": "Christian Watson",
@@ -14005,16 +13961,6 @@
     "boost": 1.09
    },
    {
-    "player": "Brock Bowers",
-    "team": "LV",
-    "opp": "SF",
-    "pos": "TE",
-    "proj": 6.2,
-    "matchup": 1.1,
-    "injury": null,
-    "boost": 1.07
-   },
-   {
     "player": "CeeDee Lamb",
     "team": "DAL",
     "opp": "IND",
@@ -14023,16 +13969,6 @@
     "matchup": 1.03,
     "injury": null,
     "boost": 1.0
-   },
-   {
-    "player": "Drake London",
-    "team": "ATL",
-    "opp": "CIN",
-    "pos": "WR",
-    "proj": 5.9,
-    "matchup": 0.83,
-    "injury": null,
-    "boost": 1.05
    },
    {
     "player": "Rashee Rice",
@@ -14051,6 +13987,16 @@
     "pos": "WR",
     "proj": 5.8,
     "matchup": 0.9,
+    "injury": null,
+    "boost": 1.0
+   },
+   {
+    "player": "Brock Bowers",
+    "team": "LV",
+    "opp": "SF",
+    "pos": "TE",
+    "proj": 5.8,
+    "matchup": 1.1,
     "injury": null,
     "boost": 1.0
    },
@@ -14083,6 +14029,16 @@
     "matchup": 1.12,
     "injury": null,
     "boost": 1.16
+   },
+   {
+    "player": "Tucker Kraft",
+    "team": "GB",
+    "opp": "NE",
+    "pos": "TE",
+    "proj": 5.6,
+    "matchup": 1.06,
+    "injury": null,
+    "boost": 1.18
    }
   ],
   "anytime_td": [
