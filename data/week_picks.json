@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 9,
- "generated": "2026-11-05T13:42+00:00",
+ "generated": "2026-11-05T20:19+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -10325,11 +10325,11 @@
   {
    "game": "GB @ NE",
    "kickoff": "2026-11-08 16:25",
-   "market_home_spread": -3.5,
+   "market_home_spread": -3.0,
    "model_home_spread": -2.9,
    "market_total": 45.5,
    "model_total": 44.9,
-   "home_win_p": 0.612
+   "home_win_p": 0.597
   },
   {
    "game": "HOU @ LAC",
@@ -10354,7 +10354,7 @@
    "kickoff": "2026-11-08 16:05",
    "market_home_spread": -10.0,
    "model_home_spread": -11.3,
-   "market_total": 52.5,
+   "market_total": 51.5,
    "model_total": 48.3,
    "home_win_p": 0.795
   },
@@ -10388,11 +10388,11 @@
   {
    "game": "BUF @ MIN",
    "kickoff": "2026-11-09 20:15",
-   "market_home_spread": 3.5,
+   "market_home_spread": 3.0,
    "model_home_spread": 1.0,
-   "market_total": 45.5,
+   "market_total": 44.5,
    "model_total": 46.5,
-   "home_win_p": 0.392
+   "home_win_p": 0.407
   }
  ],
  "projections": {
@@ -10426,12 +10426,12 @@
     "team": "SF",
     "opp": "LV",
     "pos": "QB",
-    "proj": 284.3,
+    "proj": 275.5,
     "matchup": 1.02,
     "injury": null,
     "boost": 1.0,
-    "lo": 206.9,
-    "hi": 338.7
+    "lo": 200.5,
+    "hi": 328.2
    },
    {
     "player": "Jared Goff",
@@ -10510,24 +10510,24 @@
     "team": "GB",
     "opp": "NE",
     "pos": "QB",
-    "proj": 249.3,
+    "proj": 246.2,
     "matchup": 0.94,
     "injury": null,
     "boost": 1.0,
-    "lo": 181.5,
-    "hi": 297.1
+    "lo": 179.2,
+    "hi": 293.4
    },
    {
     "player": "Kirk Cousins",
     "team": "LV",
     "opp": "SF",
     "pos": "QB",
-    "proj": 246.6,
+    "proj": 243.0,
     "matchup": 1.01,
     "injury": null,
     "boost": 1.0,
-    "lo": 179.5,
-    "hi": 293.8
+    "lo": 176.9,
+    "hi": 289.5
    },
    {
     "player": "Drake Maye",
@@ -10610,16 +10610,6 @@
     "boost": 1.0
    },
    {
-    "player": "Drake Maye",
-    "team": "NE",
-    "opp": "GB",
-    "pos": "QB",
-    "proj": 2.06,
-    "matchup": 0.95,
-    "injury": null,
-    "boost": 1.0
-   },
-   {
     "player": "Jared Goff",
     "team": "DET",
     "opp": "MIA",
@@ -10640,12 +10630,12 @@
     "boost": 1.0
    },
    {
-    "player": "Jordan Love",
-    "team": "GB",
-    "opp": "NE",
+    "player": "Drake Maye",
+    "team": "NE",
+    "opp": "GB",
     "pos": "QB",
-    "proj": 1.92,
-    "matchup": 0.94,
+    "proj": 1.97,
+    "matchup": 0.95,
     "injury": null,
     "boost": 1.0
    },
@@ -10656,6 +10646,16 @@
     "pos": "QB",
     "proj": 1.89,
     "matchup": 1.1,
+    "injury": null,
+    "boost": 1.0
+   },
+   {
+    "player": "Jordan Love",
+    "team": "GB",
+    "opp": "NE",
+    "pos": "QB",
+    "proj": 1.88,
+    "matchup": 0.94,
     "injury": null,
     "boost": 1.0
    },
@@ -10710,22 +10710,22 @@
     "boost": 1.0
    },
    {
-    "player": "Carson Wentz",
-    "team": "MIN",
-    "opp": "BUF",
-    "pos": "QB",
-    "proj": 1.41,
-    "matchup": 0.94,
-    "injury": null,
-    "boost": 1.0
-   },
-   {
     "player": "Caleb Williams",
     "team": "CHI",
     "opp": "TB",
     "pos": "QB",
     "proj": 1.4,
     "matchup": 1.03,
+    "injury": null,
+    "boost": 1.0
+   },
+   {
+    "player": "Kirk Cousins",
+    "team": "LV",
+    "opp": "SF",
+    "pos": "QB",
+    "proj": 1.39,
+    "matchup": 1.01,
     "injury": null,
     "boost": 1.0
    }
@@ -10998,18 +10998,6 @@
     "hi": 116.4
    },
    {
-    "player": "Brock Bowers",
-    "team": "LV",
-    "opp": "SF",
-    "pos": "TE",
-    "proj": 69.5,
-    "matchup": 0.95,
-    "injury": null,
-    "boost": 1.0,
-    "lo": 40.5,
-    "hi": 110.4
-   },
-   {
     "player": "A.J. Brown",
     "team": "NE",
     "opp": "GB",
@@ -11022,13 +11010,25 @@
     "hi": 114.8
    },
    {
+    "player": "Brock Bowers",
+    "team": "LV",
+    "opp": "SF",
+    "pos": "TE",
+    "proj": 69.0,
+    "matchup": 0.95,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 40.2,
+    "hi": 109.6
+   },
+   {
     "player": "Malik Nabers",
     "team": "NYG",
     "opp": "PHI",
     "pos": "WR",
     "proj": 67.7,
     "matchup": 1.11,
-    "injury": null,
+    "injury": "Questionable",
     "boost": 0.96,
     "lo": 36.7,
     "hi": 112.5
@@ -11038,12 +11038,12 @@
     "team": "SF",
     "opp": "LV",
     "pos": "TE",
-    "proj": 67.5,
+    "proj": 67.0,
     "matchup": 0.91,
     "injury": null,
     "boost": 1.06,
-    "lo": 39.3,
-    "hi": 107.2
+    "lo": 39.0,
+    "hi": 106.4
    },
    {
     "player": "CeeDee Lamb",
@@ -11325,17 +11325,6 @@
     "p_td": 0.604
    },
    {
-    "player": "Josh Allen",
-    "team": "BUF",
-    "opp": "MIN",
-    "pos": "QB",
-    "proj": 0.79,
-    "matchup": 0.07,
-    "injury": null,
-    "boost": 1.0,
-    "p_td": 0.546
-   },
-   {
     "player": "Jonathan Taylor",
     "team": "IND",
     "opp": "DAL",
@@ -11347,15 +11336,15 @@
     "p_td": 0.585
    },
    {
-    "player": "James Cook",
+    "player": "Josh Allen",
     "team": "BUF",
     "opp": "MIN",
-    "pos": "RB",
-    "proj": 0.73,
-    "matchup": 0.78,
+    "pos": "QB",
+    "proj": 0.75,
+    "matchup": 0.07,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.519
+    "p_td": 0.526
    },
    {
     "player": "Bhayshul Tuten",
@@ -11389,6 +11378,17 @@
     "injury": null,
     "boost": 1.0,
     "p_td": 0.501
+   },
+   {
+    "player": "James Cook",
+    "team": "BUF",
+    "opp": "MIN",
+    "pos": "RB",
+    "proj": 0.64,
+    "matchup": 0.78,
+    "injury": null,
+    "boost": 1.0,
+    "p_td": 0.475
    },
    {
     "player": "George Kittle",
