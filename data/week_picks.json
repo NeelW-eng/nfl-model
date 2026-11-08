@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 9,
- "generated": "2026-11-08T01:33+00:00",
+ "generated": "2026-11-08T08:01+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -3435,7 +3435,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "MIA implied team total 21.5"
+       "txt": "MIA implied team total 21.8"
       },
       {
        "k": "ngs",
@@ -3504,7 +3504,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "MIA underdog by 6.5"
+       "txt": "MIA underdog by 6"
       },
       {
        "k": "ngs",
@@ -3573,7 +3573,7 @@
       {
        "k": "script",
        "ok": true,
-       "txt": "MIA underdog by 6.5"
+       "txt": "MIA underdog by 6"
       }
      ],
      "support": 3,
@@ -3632,7 +3632,7 @@
       {
        "k": "script",
        "ok": false,
-       "txt": "DET favored by 6.5"
+       "txt": "DET favored by 6"
       },
       {
        "k": "ngs",
@@ -8158,15 +8158,6 @@
    "started": false
   },
   {
-   "pick": "Jahmyr Gibbs Higher 30.5 Receiving Yards",
-   "game": "DET @ MIA",
-   "stat": "Receiving Yards",
-   "p": 0.5397,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Alvin Kamara Higher 40.5 Rush Yards",
    "game": "CLE @ NO",
    "stat": "Rush Yards",
@@ -8289,6 +8280,15 @@
    "stat": "Rush Yards",
    "p": 0.537,
    "n_books": 5,
+   "injury": null,
+   "started": false
+  },
+  {
+   "pick": "Jahmyr Gibbs Higher 30.5 Receiving Yards",
+   "game": "DET @ MIA",
+   "stat": "Receiving Yards",
+   "p": 0.5367,
+   "n_books": 7,
    "injury": null,
    "started": false
   },
@@ -8914,21 +8914,21 @@
    "started": false
   },
   {
-   "pick": "Malik Willis Lower 208.5 Pass Yards",
-   "game": "DET @ MIA",
-   "stat": "Pass Yards",
-   "p": 0.5208,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Emeka Egbuka Lower 50.5 Receiving Yards",
    "game": "TB @ CHI",
    "stat": "Receiving Yards",
    "p": 0.5208,
    "n_books": 5,
    "injury": "Questionable",
+   "started": false
+  },
+  {
+   "pick": "Malik Willis Lower 208.5 Pass Yards",
+   "game": "DET @ MIA",
+   "stat": "Pass Yards",
+   "p": 0.5206,
+   "n_books": 7,
+   "injury": null,
    "started": false
   },
   {
@@ -9499,15 +9499,6 @@
    "started": false
   },
   {
-   "pick": "Sam LaPorta Higher 48.5 Receiving Yards",
-   "game": "DET @ MIA",
-   "stat": "Receiving Yards",
-   "p": 0.5057,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Josh Downs Lower 44.5 Receiving Yards",
    "game": "DAL @ IND",
    "stat": "Receiving Yards",
@@ -9607,6 +9598,15 @@
    "started": false
   },
   {
+   "pick": "Amon-Ra St. Brown Lower 76.5 Receiving Yards",
+   "game": "DET @ MIA",
+   "stat": "Receiving Yards",
+   "p": 0.5044,
+   "n_books": 7,
+   "injury": "Questionable",
+   "started": false
+  },
+  {
    "pick": "Skyler Bell Higher 5.5 Receiving Yards",
    "game": "BUF @ MIN",
    "stat": "Receiving Yards",
@@ -9652,12 +9652,12 @@
    "started": false
   },
   {
-   "pick": "Amon-Ra St. Brown Lower 76.5 Receiving Yards",
+   "pick": "Sam LaPorta Higher 48.5 Receiving Yards",
    "game": "DET @ MIA",
    "stat": "Receiving Yards",
-   "p": 0.5032,
+   "p": 0.5031,
    "n_books": 7,
-   "injury": "Questionable",
+   "injury": null,
    "started": false
   },
   {
@@ -16674,7 +16674,7 @@
    "player": "Josh Palmer",
    "pos": "WR",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "CAR",
@@ -16723,7 +16723,7 @@
    "player": "David Montgomery",
    "pos": "RB",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "HOU",
@@ -16793,14 +16793,14 @@
    "player": "Jauan Jennings",
    "pos": "WR",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "MIN",
    "player": "Kyler Murray",
    "pos": "QB",
    "status": "Out",
-   "source": "ESPN"
+   "source": "NFL injury report"
   },
   {
    "team": "NE",
@@ -17054,11 +17054,11 @@
   {
    "game": "DET @ MIA",
    "kickoff": "2026-11-08 13:00",
-   "market_home_spread": 6.5,
+   "market_home_spread": 6.0,
    "model_home_spread": 4.3,
    "market_total": 49.5,
    "model_total": 48.2,
-   "home_win_p": 0.301
+   "home_win_p": 0.314
   },
   {
    "game": "GB @ NE",
@@ -17740,12 +17740,12 @@
     "team": "DET",
     "opp": "MIA",
     "pos": "WR",
-    "proj": 73.3,
+    "proj": 72.8,
     "matchup": 0.95,
     "injury": "Questionable",
     "boost": 1.0,
-    "lo": 39.8,
-    "hi": 121.8
+    "lo": 39.5,
+    "hi": 121.0
    },
    {
     "player": "Malik Nabers",
