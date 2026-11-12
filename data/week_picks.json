@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 10,
- "generated": "2026-11-12T13:42+00:00",
+ "generated": "2026-11-12T20:30+00:00",
  "has_odds": true,
  "top10": [],
  "games": [
@@ -9684,6 +9684,13 @@
  "injuries": [
   {
    "team": "ARI",
+   "player": "Bam Knight",
+   "pos": "RB",
+   "status": "Out",
+   "source": "ESPN"
+  },
+  {
+   "team": "ARI",
    "player": "Gardner Minshew",
    "pos": "QB",
    "status": "Injured Reserve",
@@ -9970,6 +9977,13 @@
    "source": "ESPN"
   },
   {
+   "team": "TEN",
+   "player": "Carnell Tate",
+   "pos": "WR",
+   "status": "Out",
+   "source": "ESPN"
+  },
+  {
    "team": "WAS",
    "player": "Jacory Croskey-Merritt",
    "pos": "RB",
@@ -10028,7 +10042,7 @@
    "kickoff": "2026-11-15 13:00",
    "market_home_spread": 4.5,
    "model_home_spread": 5.4,
-   "market_total": 41.5,
+   "market_total": 40.5,
    "model_total": 42.0,
    "home_win_p": 0.355
   },
@@ -10073,7 +10087,7 @@
    "kickoff": "2026-11-15 13:00",
    "market_home_spread": -3.0,
    "model_home_spread": -3.8,
-   "market_total": 42.5,
+   "market_total": 41.5,
    "model_total": 41.7,
    "home_win_p": 0.598
   },
@@ -10214,24 +10228,12 @@
     "team": "HOU",
     "opp": "CLE",
     "pos": "QB",
-    "proj": 246.5,
+    "proj": 245.7,
     "matchup": 0.9,
     "injury": null,
     "boost": 1.0,
-    "lo": 179.4,
-    "hi": 293.7
-   },
-   {
-    "player": "Jordan Love",
-    "team": "GB",
-    "opp": "MIN",
-    "pos": "QB",
-    "proj": 241.2,
-    "matchup": 0.8,
-    "injury": null,
-    "boost": 1.0,
-    "lo": 175.6,
-    "hi": 287.4
+    "lo": 178.9,
+    "hi": 292.8
    },
    {
     "player": "Aaron Rodgers",
@@ -10256,6 +10258,18 @@
     "boost": 1.0,
     "lo": 175.3,
     "hi": 286.9
+   },
+   {
+    "player": "Jordan Love",
+    "team": "GB",
+    "opp": "MIN",
+    "pos": "QB",
+    "proj": 239.3,
+    "matchup": 0.8,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 174.2,
+    "hi": 285.1
    },
    {
     "player": "Bryce Young",
@@ -10338,22 +10352,22 @@
     "boost": 1.0
    },
    {
-    "player": "C.J. Stroud",
-    "team": "HOU",
-    "opp": "CLE",
-    "pos": "QB",
-    "proj": 1.94,
-    "matchup": 0.9,
-    "injury": null,
-    "boost": 1.0
-   },
-   {
     "player": "Brock Purdy",
     "team": "SF",
     "opp": "DAL",
     "pos": "QB",
     "proj": 1.93,
     "matchup": 1.07,
+    "injury": null,
+    "boost": 1.0
+   },
+   {
+    "player": "C.J. Stroud",
+    "team": "HOU",
+    "opp": "CLE",
+    "pos": "QB",
+    "proj": 1.89,
+    "matchup": 0.9,
     "injury": null,
     "boost": 1.0
    },
@@ -10368,16 +10382,6 @@
     "boost": 1.0
    },
    {
-    "player": "Jordan Love",
-    "team": "GB",
-    "opp": "MIN",
-    "pos": "QB",
-    "proj": 1.75,
-    "matchup": 0.8,
-    "injury": null,
-    "boost": 1.0
-   },
-   {
     "player": "Patrick Mahomes",
     "team": "KC",
     "opp": "ATL",
@@ -10385,6 +10389,16 @@
     "proj": 1.7,
     "matchup": 1.02,
     "injury": "Questionable",
+    "boost": 1.0
+   },
+   {
+    "player": "Jordan Love",
+    "team": "GB",
+    "opp": "MIN",
+    "pos": "QB",
+    "proj": 1.7,
+    "matchup": 0.8,
+    "injury": null,
     "boost": 1.0
    },
    {
@@ -10532,6 +10546,18 @@
     "hi": 108.1
    },
    {
+    "player": "Tyler Allgeier",
+    "team": "ARI",
+    "opp": "LA",
+    "pos": "RB",
+    "proj": 69.4,
+    "matchup": 0.89,
+    "injury": null,
+    "boost": 1.6,
+    "lo": 41.6,
+    "hi": 105.7
+   },
+   {
     "player": "Javonte Williams",
     "team": "DAL",
     "opp": "SF",
@@ -10566,18 +10592,6 @@
     "boost": 1.0,
     "lo": 40.3,
     "hi": 102.3
-   },
-   {
-    "player": "Tyler Allgeier",
-    "team": "ARI",
-    "opp": "LA",
-    "pos": "RB",
-    "proj": 66.6,
-    "matchup": 0.89,
-    "injury": null,
-    "boost": 1.53,
-    "lo": 39.9,
-    "hi": 101.4
    },
    {
     "player": "Tony Pollard",
@@ -10934,6 +10948,16 @@
     "boost": 1.2
    },
    {
+    "player": "Wan'Dale Robinson",
+    "team": "TEN",
+    "opp": "JAX",
+    "pos": "WR",
+    "proj": 5.8,
+    "matchup": 1.08,
+    "injury": null,
+    "boost": 1.17
+   },
+   {
     "player": "Germie Bernard",
     "team": "PIT",
     "opp": "CIN",
@@ -10962,16 +10986,6 @@
     "matchup": 0.96,
     "injury": "Questionable",
     "boost": 1.15
-   },
-   {
-    "player": "Stefon Diggs",
-    "team": "WAS",
-    "opp": "NYG",
-    "pos": "WR",
-    "proj": 5.5,
-    "matchup": 0.97,
-    "injury": null,
-    "boost": 1.39
    }
   ],
   "anytime_td": [
@@ -11127,7 +11141,7 @@
     "matchup": 0.77,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.479
+    "p_td": 0.535
    },
    {
     "player": "George Kittle",
