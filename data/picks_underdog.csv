@@ -620,7 +620,7 @@ season,week,logged,kickoff,game_id,game,player,player_id,team,opp,pos,stat,stat_
 2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,41e2dd69bddd65d7e823d9ed61cc2afc,TB @ DET,,,DET,,,Spread,Spread,cover,,-3.5,DET -3.5,0.5033,4,1,4,False,,False,,,Spread,DET,TB,-101.0,True,False
 2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,41e2dd69bddd65d7e823d9ed61cc2afc,TB @ DET,,,,,,Total,Total,Over,,47.5,Over 47.5,0.5178,4,1,4,False,,False,,,Total,DET,TB,-107.0,True,False
 2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,41e2dd69bddd65d7e823d9ed61cc2afc,TB @ DET,,,DET,,,Moneyline,Moneyline,win,,,DET to win,0.6163,4,2,2,False,,False,,,Moneyline,DET,TB,-161.0,True,False
-2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,cbe45bafcc2615fc1d96cbc12840377a,PIT @ PHI,,,PIT,,,Spread,Spread,cover,,-4.5,PIT -4.5,0.5002,4,1,4,False,,False,,,Spread,PHI,PIT,-100.0,True,False
+2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,cbe45bafcc2615fc1d96cbc12840377a,PIT @ PHI,,,PIT,,,Spread,Spread,cover,,-4.5,PIT -4.5,0.5002,4,2,4,False,,False,,,Spread,PHI,PIT,-100.0,True,False
 2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,cbe45bafcc2615fc1d96cbc12840377a,PIT @ PHI,,,,,,Total,Total,Over,,38.5,Over 38.5,0.5335,4,2,4,False,,False,,,Total,PHI,PIT,-114.0,True,False
 2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T18:00:00Z,cbe45bafcc2615fc1d96cbc12840377a,PIT @ PHI,,,PIT,,,Moneyline,Moneyline,win,,,PIT to win,0.6433,4,1,2,False,,False,,,Moneyline,PHI,PIT,-180.0,True,True
 2026,11,2026-11-15T01:33:21.226465+00:00,2026-11-22T21:05:00Z,4b20b742b6168aaca4f25d87f11b1526,NYJ @ LAC,,,LAC,,,Spread,Spread,cover,,-1.5,LAC -1.5,0.5067,4,2,4,False,,False,,,Spread,LAC,NYJ,-103.0,True,False
