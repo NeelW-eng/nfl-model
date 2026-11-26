@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 12,
- "generated": "2026-11-26T13:41+00:00",
+ "generated": "2026-11-26T21:58+00:00",
  "has_odds": true,
  "top10": [
   {
@@ -1674,11 +1674,14 @@
    "kickoff": "2026-11-26T18:00:00Z",
    "picks": [
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "DET",
      "game": "CHI @ DET",
      "game_id": "9b825e6518156008da499be041975fdd",
      "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
+     "started": true,
      "player": "Tyler Conklin",
      "player_id": "00-0034270",
      "opp": "CHI",
@@ -1690,54 +1693,22 @@
      "line": 0.5,
      "pick": "Tyler Conklin Higher 0.5 Receiving Yards",
      "p": 0.7273,
-     "p_model": 0.9546,
-     "p_cons": null,
      "n_books": 0,
-     "proj": 6.0,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 6.0 vs line 0.5 (95%)"
-      },
-      {
-       "k": "role",
-       "ok": false,
-       "txt": "Target Share last game 4% vs 6% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 29% last game vs 35% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "CHI allows -12% rec yds to TEs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "DET implied team total 27.5"
-      },
-      {
-       "k": "ngs",
-       "ok": true,
-       "txt": "NGS separation 3.9 yds vs 3.5 TE median"
-      }
-     ],
+     "signals": [],
      "support": 3,
      "n_signals": 6,
      "in_top10": false
     },
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "CHI",
      "game": "CHI @ DET",
      "game_id": "9b825e6518156008da499be041975fdd",
      "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
+     "started": true,
      "player": "Kyle Monangai",
      "player_id": "00-0040236",
      "opp": "DET",
@@ -1749,54 +1720,22 @@
      "line": 3.5,
      "pick": "Kyle Monangai Higher 3.5 Receiving Yards",
      "p": 0.6355,
-     "p_model": 0.7075,
-     "p_cons": 0.5972,
      "n_books": 6,
-     "proj": 5.35,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "6 sportsbooks (lines 3.5\u20134.5) put this at 60%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 5.3 vs line 3.5 (71%)"
-      },
-      {
-       "k": "role",
-       "ok": false,
-       "txt": "Target Share last game 5% vs 5% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 38% last game vs 41% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "DET allows +3% rec yds to RBs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "CHI implied team total 29.0"
-      }
-     ],
+     "signals": [],
      "support": 3,
      "n_signals": 6,
      "in_top10": false
     },
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "DET",
      "game": "CHI @ DET",
      "game_id": "9b825e6518156008da499be041975fdd",
      "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
+     "started": true,
      "player": "Brock Wright",
      "player_id": "00-0036754",
      "opp": "CHI",
@@ -1808,59 +1747,22 @@
      "line": 2.5,
      "pick": "Brock Wright Higher 2.5 Receiving Yards",
      "p": 0.583,
-     "p_model": 0.921,
-     "p_cons": 0.5701,
      "n_books": 5,
-     "proj": 11.8,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "5 sportsbooks (lines 2.5\u20134.5) put this at 57%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 11.8 vs line 2.5 (92%)"
-      },
-      {
-       "k": "role",
-       "ok": true,
-       "txt": "Target Share last game 7% vs 6% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": true,
-       "txt": "Snap share 74% last game vs 58% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "CHI allows -12% rec yds to TEs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "DET implied team total 27.5"
-      },
-      {
-       "k": "ngs",
-       "ok": false,
-       "txt": "NGS separation 3.7 yds vs 3.5 TE median"
-      }
-     ],
+     "signals": [],
      "support": 5,
      "n_signals": 7,
      "in_top10": false
     },
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "CHI",
      "game": "CHI @ DET",
      "game_id": "9b825e6518156008da499be041975fdd",
      "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
+     "started": true,
      "player": "Sam Roush",
      "player_id": "00-0041558",
      "opp": "DET",
@@ -1872,44 +1774,9 @@
      "line": 7.5,
      "pick": "Sam Roush Higher 7.5 Receiving Yards",
      "p": 0.5605,
-     "p_model": 0.6922,
-     "p_cons": 0.5093,
      "n_books": 6,
-     "proj": 10.41,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": false,
-       "txt": "6 sportsbooks (lines 6.5\u20139.5) put this at 51%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 10.4 vs line 7.5 (69%)"
-      },
-      {
-       "k": "role",
-       "ok": true,
-       "txt": "Target Share last game 5% vs 4% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": true,
-       "txt": "Snap share 46% last game vs 33% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": true,
-       "txt": "DET allows +13% rec yds to TEs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "CHI implied team total 29.0"
-      }
-     ],
+     "signals": [],
      "support": 5,
      "n_signals": 6,
      "in_top10": false
@@ -1917,114 +1784,118 @@
    ],
    "lines": [
     {
-     "market": "Spread",
-     "game": "CHI @ DET",
-     "game_id": "9b825e6518156008da499be041975fdd",
+     "season": 2026,
+     "week": 12,
+     "logged": "2026-11-26T13:41:08.513242+00:00",
      "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
-     "home": "DET",
-     "away": "CHI",
+     "game_id": "9b825e6518156008da499be041975fdd",
+     "game": "CHI @ DET",
+     "player": NaN,
+     "player_id": NaN,
      "team": "DET",
+     "opp": NaN,
+     "pos": NaN,
+     "stat": "Spread",
+     "stat_label": "Spread",
      "side": "cover",
+     "word": NaN,
      "line": 1.0,
-     "p": 0.5146,
-     "fair_odds": -106,
      "pick": "DET +1",
+     "p": 0.5146,
      "n_books": 8,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "8 sportsbooks: fair line DET +0.8"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Stats model leans DET by +5.8 pts"
-      },
-      {
-       "k": "rest",
-       "ok": false,
-       "txt": "Rest edge +0 days"
-      },
-      {
-       "k": "injury",
-       "ok": false,
-       "txt": "CHI starting QB out"
-      }
-     ],
      "support": 2,
-     "n_signals": 4
-    },
-    {
-     "market": "Total",
-     "game": "CHI @ DET",
-     "game_id": "9b825e6518156008da499be041975fdd",
-     "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
+     "n_signals": 4,
+     "top10": false,
+     "rank": NaN,
+     "game4": false,
+     "result": NaN,
+     "actual": NaN,
+     "market": "Spread",
      "home": "DET",
      "away": "CHI",
-     "team": null,
+     "fair_odds": -106.0,
+     "gl": true,
+     "hp": false,
+     "started": true,
+     "signals": [],
+     "injury": null,
+     "history": 99
+    },
+    {
+     "season": 2026,
+     "week": 12,
+     "logged": "2026-11-26T13:41:08.513242+00:00",
+     "kickoff": "2026-11-26T18:00:00Z",
+     "game_id": "9b825e6518156008da499be041975fdd",
+     "game": "CHI @ DET",
+     "player": NaN,
+     "player_id": NaN,
+     "team": NaN,
+     "opp": NaN,
+     "pos": NaN,
+     "stat": "Total",
+     "stat_label": "Total",
      "side": "Under",
+     "word": NaN,
      "line": 56.5,
-     "p": 0.5223,
-     "fair_odds": -109,
      "pick": "Under 56.5",
+     "p": 0.5223,
      "n_books": 8,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "8 sportsbooks: fair total 56.1"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Stats model total 49.7"
-      },
-      {
-       "k": "weather",
-       "ok": false,
-       "txt": "Wind 0 mph"
-      },
-      {
-       "k": "injury",
-       "ok": false,
-       "txt": "A starting QB is out"
-      }
-     ],
      "support": 2,
-     "n_signals": 4
-    },
-    {
-     "market": "Moneyline",
-     "game": "CHI @ DET",
-     "game_id": "9b825e6518156008da499be041975fdd",
-     "kickoff": "2026-11-26T18:00:00Z",
-     "started": false,
+     "n_signals": 4,
+     "top10": false,
+     "rank": NaN,
+     "game4": false,
+     "result": NaN,
+     "actual": NaN,
+     "market": "Total",
      "home": "DET",
      "away": "CHI",
+     "fair_odds": -109.0,
+     "gl": true,
+     "hp": false,
+     "started": true,
+     "signals": [],
+     "injury": null,
+     "history": 99
+    },
+    {
+     "season": 2026,
+     "week": 12,
+     "logged": "2026-11-26T13:41:08.513242+00:00",
+     "kickoff": "2026-11-26T18:00:00Z",
+     "game_id": "9b825e6518156008da499be041975fdd",
+     "game": "CHI @ DET",
+     "player": NaN,
+     "player_id": NaN,
      "team": "CHI",
+     "opp": NaN,
+     "pos": NaN,
+     "stat": "Moneyline",
+     "stat_label": "Moneyline",
      "side": "win",
+     "word": NaN,
      "line": null,
-     "p": 0.5145,
-     "fair_odds": -106,
      "pick": "CHI to win",
+     "p": 0.5145,
      "n_books": 8,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "8 sportsbooks: CHI wins 51%"
-      },
-      {
-       "k": "model",
-       "ok": false,
-       "txt": "Stats model margin CHI -5.0"
-      }
-     ],
      "support": 1,
-     "n_signals": 2
+     "n_signals": 2,
+     "top10": false,
+     "rank": NaN,
+     "game4": false,
+     "result": NaN,
+     "actual": NaN,
+     "market": "Moneyline",
+     "home": "DET",
+     "away": "CHI",
+     "fair_odds": -106.0,
+     "gl": true,
+     "hp": false,
+     "started": true,
+     "signals": [],
+     "injury": null,
+     "history": 99
     }
    ]
   },
@@ -2034,11 +1905,14 @@
    "kickoff": "2026-11-26T21:30:00Z",
    "picks": [
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "DAL",
      "game": "PHI @ DAL",
      "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
      "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
+     "started": true,
      "player": "Javonte Williams",
      "player_id": "00-0036997",
      "opp": "PHI",
@@ -2050,59 +1924,22 @@
      "line": 7.5,
      "pick": "Javonte Williams Higher 7.5 Receiving Yards",
      "p": 0.5919,
-     "p_model": 0.741,
-     "p_cons": 0.5415,
      "n_books": 7,
-     "proj": 12.76,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "7 sportsbooks (lines 7.5\u20138.5) put this at 54%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 12.8 vs line 7.5 (74%)"
-      },
-      {
-       "k": "role",
-       "ok": true,
-       "txt": "Target Share last game 9% vs 8% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 66% last game vs 70% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "PHI allows -21% rec yds to RBs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "DAL implied team total 28.5"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "Jake Ferguson out: projection up 13%"
-      }
-     ],
+     "signals": [],
      "support": 5,
      "n_signals": 7,
      "in_top10": false
     },
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "PHI",
      "game": "PHI @ DAL",
      "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
      "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
+     "started": true,
      "player": "Will Shipley",
      "player_id": "00-0039746",
      "opp": "DAL",
@@ -2114,69 +1951,22 @@
      "line": 13.5,
      "pick": "Will Shipley Lower 13.5 Rush Yards",
      "p": 0.5806,
-     "p_model": 0.6315,
-     "p_cons": 0.5503,
      "n_books": 5,
-     "proj": 10.75,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "5 sportsbooks (lines 11.5\u201313.5) put this at 55%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 10.8 vs line 13.5 (63%)"
-      },
-      {
-       "k": "role",
-       "ok": false,
-       "txt": "Carry Share last game 17% vs 13% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 36% last game vs 27% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "DAL allows +13% rush yds to RBs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "PHI underdog by 8.5"
-      },
-      {
-       "k": "ngs",
-       "ok": true,
-       "txt": "NGS rush yds over expected -0.83/carry"
-      },
-      {
-       "k": "injury",
-       "ok": false,
-       "txt": "Jalen Hurts, Elijah Mitchell out: projection up 34%"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "PHI starting QB out"
-      }
-     ],
+     "signals": [],
      "support": 5,
      "n_signals": 9,
      "in_top10": false
     },
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "PHI",
      "game": "PHI @ DAL",
      "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
      "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
+     "started": true,
      "player": "Makai Lemon",
      "player_id": "00-0040867",
      "opp": "DAL",
@@ -2188,64 +1978,22 @@
      "line": 29.5,
      "pick": "Makai Lemon Higher 29.5 Receiving Yards",
      "p": 0.5539,
-     "p_model": 0.6205,
-     "p_cons": 0.5168,
      "n_books": 7,
-     "proj": 35.86,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "7 sportsbooks (lines 29.5\u201340.5) put this at 52%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 35.9 vs line 29.5 (62%)"
-      },
-      {
-       "k": "role",
-       "ok": false,
-       "txt": "Target Share last game 14% vs 20% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 83% last game vs 84% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": true,
-       "txt": "DAL allows +15% rec yds to WRs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": false,
-       "txt": "PHI implied team total 20.0"
-      },
-      {
-       "k": "ngs",
-       "ok": false,
-       "txt": "NGS separation 2.9 yds vs 2.9 WR median"
-      },
-      {
-       "k": "injury",
-       "ok": false,
-       "txt": "PHI starting QB out"
-      }
-     ],
+     "signals": [],
      "support": 3,
      "n_signals": 8,
      "in_top10": false
     },
     {
+     "rank": NaN,
+     "market": "Prop",
+     "fair_odds": NaN,
      "team": "PHI",
      "game": "PHI @ DAL",
      "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
      "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
+     "started": true,
      "player": "DeVonta Smith",
      "player_id": "00-0036912",
      "opp": "DAL",
@@ -2257,54 +2005,9 @@
      "line": 5.5,
      "pick": "DeVonta Smith Lower 5.5 Receptions",
      "p": 0.544,
-     "p_model": 0.6311,
-     "p_cons": 0.5,
      "n_books": 6,
-     "proj": 4.91,
      "injury": null,
-     "injury_note": null,
-     "signals": [
-      {
-       "k": "market",
-       "ok": false,
-       "txt": "6 sportsbooks (lines 5.5) put this at 50%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Projection 4.9 vs line 5.5 (63%)"
-      },
-      {
-       "k": "role",
-       "ok": false,
-       "txt": "Target Share last game 57% vs 32% avg"
-      },
-      {
-       "k": "snaps",
-       "ok": false,
-       "txt": "Snap share 81% last game vs 80% avg"
-      },
-      {
-       "k": "matchup",
-       "ok": false,
-       "txt": "DAL allows +9% receptions to WRs vs avg"
-      },
-      {
-       "k": "script",
-       "ok": true,
-       "txt": "PHI implied team total 20.0"
-      },
-      {
-       "k": "ngs",
-       "ok": false,
-       "txt": "NGS separation 2.7 yds vs 2.9 WR median"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "PHI starting QB out"
-      }
-     ],
+     "signals": [],
      "support": 3,
      "n_signals": 8,
      "in_top10": false
@@ -2312,114 +2015,118 @@
    ],
    "lines": [
     {
-     "market": "Spread",
-     "game": "PHI @ DAL",
-     "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
+     "season": 2026,
+     "week": 12,
+     "logged": "2026-11-26T13:41:08.513242+00:00",
      "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
-     "home": "DAL",
-     "away": "PHI",
+     "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
+     "game": "PHI @ DAL",
+     "player": NaN,
+     "player_id": NaN,
      "team": "DAL",
+     "opp": NaN,
+     "pos": NaN,
+     "stat": "Spread",
+     "stat_label": "Spread",
      "side": "cover",
+     "word": NaN,
      "line": -8.5,
-     "p": 0.5256,
-     "fair_odds": -111,
      "pick": "DAL -8.5",
+     "p": 0.5256,
      "n_books": 8,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "8 sportsbooks: fair line DAL -8.9"
-      },
-      {
-       "k": "model",
-       "ok": false,
-       "txt": "Stats model leans DAL by -5.4 pts"
-      },
-      {
-       "k": "rest",
-       "ok": false,
-       "txt": "Rest edge +0 days"
-      },
-      {
-       "k": "injury",
-       "ok": true,
-       "txt": "PHI starting QB out"
-      }
-     ],
      "support": 2,
-     "n_signals": 4
-    },
-    {
-     "market": "Total",
-     "game": "PHI @ DAL",
-     "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
-     "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
+     "n_signals": 4,
+     "top10": false,
+     "rank": NaN,
+     "game4": false,
+     "result": NaN,
+     "actual": NaN,
+     "market": "Spread",
      "home": "DAL",
      "away": "PHI",
-     "team": null,
+     "fair_odds": -111.0,
+     "gl": true,
+     "hp": false,
+     "started": true,
+     "signals": [],
+     "injury": null,
+     "history": 99
+    },
+    {
+     "season": 2026,
+     "week": 12,
+     "logged": "2026-11-26T13:41:08.513242+00:00",
+     "kickoff": "2026-11-26T21:30:00Z",
+     "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
+     "game": "PHI @ DAL",
+     "player": NaN,
+     "player_id": NaN,
+     "team": NaN,
+     "opp": NaN,
+     "pos": NaN,
+     "stat": "Total",
+     "stat_label": "Total",
      "side": "Over",
+     "word": NaN,
      "line": 49.5,
-     "p": 0.508,
-     "fair_odds": -103,
      "pick": "Over 49.5",
+     "p": 0.508,
      "n_books": 8,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "8 sportsbooks: fair total 49.4"
-      },
-      {
-       "k": "model",
-       "ok": false,
-       "txt": "Stats model total 48.8"
-      },
-      {
-       "k": "weather",
-       "ok": false,
-       "txt": "Wind 0 mph"
-      },
-      {
-       "k": "injury",
-       "ok": false,
-       "txt": "A starting QB is out"
-      }
-     ],
      "support": 1,
-     "n_signals": 4
-    },
-    {
-     "market": "Moneyline",
-     "game": "PHI @ DAL",
-     "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
-     "kickoff": "2026-11-26T21:30:00Z",
-     "started": false,
+     "n_signals": 4,
+     "top10": false,
+     "rank": NaN,
+     "game4": false,
+     "result": NaN,
+     "actual": NaN,
+     "market": "Total",
      "home": "DAL",
      "away": "PHI",
+     "fair_odds": -103.0,
+     "gl": true,
+     "hp": false,
+     "started": true,
+     "signals": [],
+     "injury": null,
+     "history": 99
+    },
+    {
+     "season": 2026,
+     "week": 12,
+     "logged": "2026-11-26T13:41:08.513242+00:00",
+     "kickoff": "2026-11-26T21:30:00Z",
+     "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
+     "game": "PHI @ DAL",
+     "player": NaN,
+     "player_id": NaN,
      "team": "DAL",
+     "opp": NaN,
+     "pos": NaN,
+     "stat": "Moneyline",
+     "stat_label": "Moneyline",
      "side": "win",
+     "word": NaN,
      "line": null,
-     "p": 0.7871,
-     "fair_odds": -370,
      "pick": "DAL to win",
+     "p": 0.7871,
      "n_books": 8,
-     "signals": [
-      {
-       "k": "market",
-       "ok": true,
-       "txt": "8 sportsbooks: DAL wins 79%"
-      },
-      {
-       "k": "model",
-       "ok": true,
-       "txt": "Stats model margin DAL +3.5"
-      }
-     ],
      "support": 2,
-     "n_signals": 2
+     "n_signals": 2,
+     "top10": false,
+     "rank": NaN,
+     "game4": false,
+     "result": NaN,
+     "actual": NaN,
+     "market": "Moneyline",
+     "home": "DAL",
+     "away": "PHI",
+     "fair_odds": -370.0,
+     "gl": true,
+     "hp": true,
+     "started": true,
+     "signals": [],
+     "injury": null,
+     "history": 99
     }
    ]
   },
@@ -4228,7 +3935,7 @@
    "p": 0.7273,
    "n_books": 0,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Kyle Monangai Higher 3.5 Receiving Yards",
@@ -4237,7 +3944,7 @@
    "p": 0.6355,
    "n_books": 6,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Tyler Conklin Higher 0.5 Receptions",
@@ -4246,7 +3953,7 @@
    "p": 0.6067,
    "n_books": 0,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Patrick Mahomes Higher 11.5 Rush Yards",
@@ -4264,7 +3971,7 @@
    "p": 0.5919,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Brock Wright Higher 2.5 Receiving Yards",
@@ -4273,7 +3980,7 @@
    "p": 0.583,
    "n_books": 5,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Will Shipley Lower 13.5 Rush Yards",
@@ -4282,7 +3989,7 @@
    "p": 0.5806,
    "n_books": 5,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "James Cook Higher 6.5 Receiving Yards",
@@ -4309,16 +4016,16 @@
    "p": 0.5605,
    "n_books": 6,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Makai Lemon Higher 29.5 Receiving Yards",
    "game": "PHI @ DAL",
    "stat": "Receiving Yards",
-   "p": 0.5539,
+   "p": 0.5573,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Jahmyr Gibbs Lower 4.5 Receptions",
@@ -4327,7 +4034,7 @@
    "p": 0.5513,
    "n_books": 6,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Xavier Worthy Higher 19.5 Receiving Yards",
@@ -4366,13 +4073,13 @@
    "started": false
   },
   {
-   "pick": "DeVonta Smith Lower 5.5 Receptions",
+   "pick": "Saquon Barkley Higher 7.5 Receiving Yards",
    "game": "PHI @ DAL",
-   "stat": "Receptions",
-   "p": 0.544,
-   "n_books": 6,
+   "stat": "Receiving Yards",
+   "p": 0.5468,
+   "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Caleb Williams Lower 22.5 Rush Yards",
@@ -4381,7 +4088,7 @@
    "p": 0.5437,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Noah Gray Higher 12.5 Receiving Yards",
@@ -4399,22 +4106,13 @@
    "p": 0.5417,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Patrick Mahomes Lower 232.5 Pass Yards",
    "game": "KC @ BUF",
    "stat": "Pass Yards",
    "p": 0.5415,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Saquon Barkley Higher 7.5 Receiving Yards",
-   "game": "PHI @ DAL",
-   "stat": "Receiving Yards",
-   "p": 0.5412,
    "n_books": 7,
    "injury": null,
    "started": false
@@ -4427,6 +4125,15 @@
    "n_books": 7,
    "injury": null,
    "started": false
+  },
+  {
+   "pick": "DeVonta Smith Lower 5.5 Receptions",
+   "game": "PHI @ DAL",
+   "stat": "Receptions",
+   "p": 0.5386,
+   "n_books": 6,
+   "injury": null,
+   "started": true
   },
   {
    "pick": "Rashee Rice Higher 44.5 Receiving Yards",
@@ -4444,7 +4151,16 @@
    "p": 0.5374,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
+  },
+  {
+   "pick": "Dak Prescott Higher 259.5 Pass Yards",
+   "game": "PHI @ DAL",
+   "stat": "Pass Yards",
+   "p": 0.5372,
+   "n_books": 7,
+   "injury": null,
+   "started": true
   },
   {
    "pick": "Isaac TeSlaa Lower 19.5 Receiving Yards",
@@ -4453,7 +4169,7 @@
    "p": 0.5366,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "D'Andre Swift Lower 15.5 Receiving Yards",
@@ -4462,16 +4178,7 @@
    "p": 0.5366,
    "n_books": 7,
    "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Darius Cooper Lower 2.5 Receptions",
-   "game": "PHI @ DAL",
-   "stat": "Receptions",
-   "p": 0.5361,
-   "n_books": 5,
-   "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Ty Johnson Lower 16.5 Receiving Yards",
@@ -4513,10 +4220,10 @@
    "pick": "Joe Milton III Lower 198.5 Pass Yards",
    "game": "PHI @ DAL",
    "stat": "Pass Yards",
-   "p": 0.5328,
+   "p": 0.5333,
    "n_books": 6,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Luther Burden III Lower 62.5 Receiving Yards",
@@ -4525,7 +4232,16 @@
    "p": 0.5324,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
+  },
+  {
+   "pick": "Darius Cooper Lower 2.5 Receptions",
+   "game": "PHI @ DAL",
+   "stat": "Receptions",
+   "p": 0.5295,
+   "n_books": 5,
+   "injury": null,
+   "started": true
   },
   {
    "pick": "George Pickens Higher 68.5 Receiving Yards",
@@ -4534,7 +4250,7 @@
    "p": 0.5293,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Kalif Raymond Lower 25.5 Receiving Yards",
@@ -4543,7 +4259,16 @@
    "p": 0.5278,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
+  },
+  {
+   "pick": "Dallas Goedert Higher 30.5 Receiving Yards",
+   "game": "PHI @ DAL",
+   "stat": "Receiving Yards",
+   "p": 0.5273,
+   "n_books": 7,
+   "injury": null,
+   "started": true
   },
   {
    "pick": "Ryan Flournoy Higher 30.5 Receiving Yards",
@@ -4552,7 +4277,7 @@
    "p": 0.5248,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Khalil Shakir Higher 40.5 Receiving Yards",
@@ -4564,22 +4289,13 @@
    "started": false
   },
   {
-   "pick": "Dak Prescott Higher 259.5 Pass Yards",
-   "game": "PHI @ DAL",
-   "stat": "Pass Yards",
-   "p": 0.5232,
-   "n_books": 7,
-   "injury": null,
-   "started": false
-  },
-  {
    "pick": "Jared Goff Lower 281.5 Pass Yards",
    "game": "CHI @ DET",
    "stat": "Pass Yards",
    "p": 0.5224,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Brevyn Spann-Ford Higher 13.5 Receiving Yards",
@@ -4588,7 +4304,7 @@
    "p": 0.5221,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Rome Odunze Higher 48.5 Receiving Yards",
@@ -4597,7 +4313,7 @@
    "p": 0.5197,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Luke Schoonmaker Higher 2.5 Receiving Yards",
@@ -4606,7 +4322,7 @@
    "p": 0.5191,
    "n_books": 5,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Khalil Shakir Higher 3.5 Receptions",
@@ -4624,16 +4340,7 @@
    "p": 0.5183,
    "n_books": 7,
    "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Will Shipley Lower 5.5 Receiving Yards",
-   "game": "PHI @ DAL",
-   "stat": "Receiving Yards",
-   "p": 0.5183,
-   "n_books": 6,
-   "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Dalton Kincaid Lower 38.5 Receiving Yards",
@@ -4660,16 +4367,7 @@
    "p": 0.5153,
    "n_books": 7,
    "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Dallas Goedert Higher 30.5 Receiving Yards",
-   "game": "PHI @ DAL",
-   "stat": "Receiving Yards",
-   "p": 0.515,
-   "n_books": 7,
-   "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "D'Andre Swift Lower 47.5 Rush Yards",
@@ -4678,7 +4376,7 @@
    "p": 0.5149,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Amon-Ra St. Brown Lower 82.5 Receiving Yards",
@@ -4687,7 +4385,7 @@
    "p": 0.5145,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Joe Milton III Lower 31.5 Rush Yards",
@@ -4696,7 +4394,16 @@
    "p": 0.5141,
    "n_books": 6,
    "injury": null,
-   "started": false
+   "started": true
+  },
+  {
+   "pick": "Will Shipley Lower 5.5 Receiving Yards",
+   "game": "PHI @ DAL",
+   "stat": "Receiving Yards",
+   "p": 0.513,
+   "n_books": 6,
+   "injury": null,
+   "started": true
   },
   {
    "pick": "Kyle Monangai Higher 33.5 Rush Yards",
@@ -4705,7 +4412,16 @@
    "p": 0.5123,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
+  },
+  {
+   "pick": "Darius Cooper Higher 30.5 Receiving Yards",
+   "game": "PHI @ DAL",
+   "stat": "Receiving Yards",
+   "p": 0.512,
+   "n_books": 7,
+   "injury": null,
+   "started": true
   },
   {
    "pick": "Sam LaPorta Higher 44.5 Receiving Yards",
@@ -4714,7 +4430,7 @@
    "p": 0.5097,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "DJ Moore Lower 48.5 Receiving Yards",
@@ -4731,8 +4447,8 @@
    "stat": "Receiving Yards",
    "p": 0.5061,
    "n_books": 7,
-   "injury": null,
-   "started": false
+   "injury": "Questionable",
+   "started": true
   },
   {
    "pick": "Jahmyr Gibbs Higher 35.5 Receiving Yards",
@@ -4741,16 +4457,7 @@
    "p": 0.5053,
    "n_books": 7,
    "injury": null,
-   "started": false
-  },
-  {
-   "pick": "Darius Cooper Higher 30.5 Receiving Yards",
-   "game": "PHI @ DAL",
-   "stat": "Receiving Yards",
-   "p": 0.5048,
-   "n_books": 7,
-   "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Caleb Williams Higher 261.5 Pass Yards",
@@ -4759,16 +4466,16 @@
    "p": 0.5032,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
-   "pick": "DeVonta Smith Lower 63.5 Receiving Yards",
+   "pick": "DeVonta Smith Higher 63.5 Receiving Yards",
    "game": "PHI @ DAL",
    "stat": "Receiving Yards",
-   "p": 0.5025,
+   "p": 0.5027,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "CeeDee Lamb Higher 89.5 Receiving Yards",
@@ -4777,7 +4484,7 @@
    "p": 0.5015,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Jameson Williams Higher 58.5 Receiving Yards",
@@ -4786,7 +4493,7 @@
    "p": 0.5003,
    "n_books": 7,
    "injury": null,
-   "started": false
+   "started": true
   },
   {
    "pick": "Emmett Johnson Higher 79.5 Rush Yards",
@@ -4863,30 +4570,28 @@
    "model_only": null
   },
   {
+   "rank": NaN,
    "market": "Moneyline",
-   "fair_odds": -370,
+   "fair_odds": -370.0,
    "team": "DAL",
    "game": "PHI @ DAL",
    "game_id": "ffaa06af56a7137d4b078c5c46c0b730",
    "kickoff": "2026-11-26T21:30:00Z",
-   "started": false,
+   "started": true,
+   "player": NaN,
+   "player_id": NaN,
+   "opp": NaN,
+   "pos": NaN,
+   "stat": "Moneyline",
+   "stat_label": "Moneyline",
    "side": "win",
+   "word": NaN,
    "line": null,
    "pick": "DAL to win",
    "p": 0.7871,
    "n_books": 8,
-   "signals": [
-    {
-     "k": "market",
-     "ok": true,
-     "txt": "8 sportsbooks: DAL wins 79%"
-    },
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Stats model margin DAL +3.5"
-    }
-   ],
+   "injury": null,
+   "signals": [],
    "support": 2,
    "n_signals": 2,
    "model_only": null
@@ -4950,13 +4655,14 @@
    "model_only": null
   },
   {
+   "rank": NaN,
    "market": "Prop",
+   "fair_odds": NaN,
    "team": "DET",
-   "model_only": true,
    "game": "CHI @ DET",
    "game_id": "9b825e6518156008da499be041975fdd",
    "kickoff": "2026-11-26T18:00:00Z",
-   "started": false,
+   "started": true,
    "player": "Tyler Conklin",
    "player_id": "00-0034270",
    "opp": "CHI",
@@ -4968,48 +4674,13 @@
    "line": 0.5,
    "pick": "Tyler Conklin Higher 0.5 Receiving Yards",
    "p": 0.7273,
-   "p_model": 0.9546,
-   "p_cons": null,
    "n_books": 0,
-   "proj": 6.0,
    "injury": null,
-   "injury_note": null,
-   "signals": [
-    {
-     "k": "model",
-     "ok": true,
-     "txt": "Projection 6.0 vs line 0.5 (95%)"
-    },
-    {
-     "k": "role",
-     "ok": false,
-     "txt": "Target Share last game 4% vs 6% avg"
-    },
-    {
-     "k": "snaps",
-     "ok": false,
-     "txt": "Snap share 29% last game vs 35% avg"
-    },
-    {
-     "k": "matchup",
-     "ok": false,
-     "txt": "CHI allows -12% rec yds to TEs vs avg"
-    },
-    {
-     "k": "script",
-     "ok": true,
-     "txt": "DET implied team total 27.5"
-    },
-    {
-     "k": "ngs",
-     "ok": true,
-     "txt": "NGS separation 3.9 yds vs 3.5 TE median"
-    }
-   ],
+   "signals": [],
    "support": 3,
    "n_signals": 6,
    "in_top10": false,
-   "fair_odds": null
+   "model_only": null
   },
   {
    "rank": NaN,
@@ -5356,8 +5027,8 @@
     "wins": 162,
     "losses": 153,
     "pushes": 0,
-    "voids": 34,
-    "pending": 60,
+    "voids": 41,
+    "pending": 53,
     "hit": 0.5143,
     "expected": 0.5626
    },
@@ -5427,8 +5098,8 @@
      "wins": 0,
      "losses": 0,
      "pushes": 0,
-     "voids": 0,
-     "pending": 60,
+     "voids": 7,
+     "pending": 53,
      "hit": null,
      "expected": null
     }
@@ -5436,13 +5107,13 @@
   },
   "gl": {
    "season": {
-    "wins": 171,
-    "losses": 122,
+    "wins": 172,
+    "losses": 124,
     "pushes": 4,
     "voids": 0,
-    "pending": 45,
-    "hit": 0.5836,
-    "expected": 0.5661
+    "pending": 42,
+    "hit": 0.5811,
+    "expected": 0.5656
    },
    "weeks": [
     {
@@ -5517,13 +5188,13 @@
     },
     {
      "week": 12,
-     "wins": 2,
-     "losses": 1,
+     "wins": 3,
+     "losses": 3,
      "pushes": 0,
      "voids": 0,
-     "pending": 45,
-     "hit": 0.6667,
-     "expected": 0.5418
+     "pending": 42,
+     "hit": 0.5,
+     "expected": 0.5295
     }
    ]
   },
@@ -5532,8 +5203,8 @@
     "wins": 51,
     "losses": 22,
     "pushes": 1,
-    "voids": 2,
-    "pending": 15,
+    "voids": 3,
+    "pending": 14,
     "hit": 0.6986,
     "expected": 0.7162
    },
@@ -5613,8 +5284,8 @@
      "wins": 0,
      "losses": 0,
      "pushes": 0,
-     "voids": 0,
-     "pending": 15,
+     "voids": 1,
+     "pending": 14,
      "hit": null,
      "expected": null
     }
@@ -8197,6 +7868,18 @@
     "result": "loss",
     "actual": "CIN 20-22 WAS"
    },
+   "12|00-0040236|rushing_yards|Over|44.5": {
+    "result": "void",
+    "actual": null
+   },
+   "12|00-0039918|passing_yards|Over|243.5": {
+    "result": "void",
+    "actual": null
+   },
+   "12|00-0040669|receiving_yards|Over|14.5": {
+    "result": "void",
+    "actual": null
+   },
    "12|5b612899d6dcdf998107f2c6c6e49a58|Spread|LA": {
     "result": "win",
     "actual": "GB 13-26 LA"
@@ -8208,6 +7891,34 @@
    "12|5b612899d6dcdf998107f2c6c6e49a58|Moneyline|LA": {
     "result": "win",
     "actual": "GB 13-26 LA"
+   },
+   "12|00-0034270|receiving_yards|Over|0.5": {
+    "result": "void",
+    "actual": null
+   },
+   "12|00-0040236|receiving_yards|Over|3.5": {
+    "result": "void",
+    "actual": null
+   },
+   "12|00-0036754|receiving_yards|Over|2.5": {
+    "result": "void",
+    "actual": null
+   },
+   "12|00-0041558|receiving_yards|Over|7.5": {
+    "result": "void",
+    "actual": null
+   },
+   "12|9b825e6518156008da499be041975fdd|Spread|DET": {
+    "result": "loss",
+    "actual": "CHI 39-35 DET"
+   },
+   "12|9b825e6518156008da499be041975fdd|Total|Under": {
+    "result": "loss",
+    "actual": "CHI 39-35 DET"
+   },
+   "12|9b825e6518156008da499be041975fdd|Moneyline|CHI": {
+    "result": "win",
+    "actual": "CHI 39-35 DET"
    }
   },
   "history": [
@@ -8667,8 +8378,8 @@
     "game": "CHI @ DET",
     "p": 0.5145,
     "top10": false,
-    "result": null,
-    "actual": null
+    "result": "win",
+    "actual": "CHI 39-35 DET"
    },
    {
     "week": 12,
@@ -8676,8 +8387,8 @@
     "game": "CHI @ DET",
     "p": 0.5223,
     "top10": false,
-    "result": null,
-    "actual": null
+    "result": "loss",
+    "actual": "CHI 39-35 DET"
    },
    {
     "week": 12,
@@ -8685,8 +8396,8 @@
     "game": "CHI @ DET",
     "p": 0.5146,
     "top10": false,
-    "result": null,
-    "actual": null
+    "result": "loss",
+    "actual": "CHI 39-35 DET"
    },
    {
     "week": 12,
@@ -8694,7 +8405,7 @@
     "game": "CHI @ DET",
     "p": 0.5605,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -8703,7 +8414,7 @@
     "game": "CHI @ DET",
     "p": 0.583,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -8712,7 +8423,7 @@
     "game": "CHI @ DET",
     "p": 0.6355,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -8721,7 +8432,7 @@
     "game": "CHI @ DET",
     "p": 0.7273,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -8982,7 +8693,7 @@
     "game": "TB @ DET",
     "p": 0.5631,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -9009,7 +8720,7 @@
     "game": "NO @ CHI",
     "p": 0.5491,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -9018,7 +8729,7 @@
     "game": "NO @ CHI",
     "p": 0.5594,
     "top10": false,
-    "result": null,
+    "result": "void",
     "actual": null
    },
    {
@@ -15438,7 +15149,7 @@
    "kickoff": "2026-11-26 16:30",
    "market_home_spread": -8.5,
    "model_home_spread": -3.5,
-   "market_total": 48.5,
+   "market_total": 49.5,
    "model_total": 48.8,
    "home_win_p": 0.75
   },
@@ -15481,11 +15192,11 @@
   {
    "game": "NE @ LAC",
    "kickoff": "2026-11-29 16:05",
-   "market_home_spread": 1.5,
+   "market_home_spread": 2.5,
    "model_home_spread": 3.9,
    "market_total": 35.5,
    "model_total": 45.2,
-   "home_win_p": 0.447
+   "home_win_p": 0.417
   },
   {
    "game": "NO @ CIN",
@@ -15510,18 +15221,18 @@
    "kickoff": "2026-11-29 13:00",
    "market_home_spread": 4.5,
    "model_home_spread": -4.9,
-   "market_total": 40.5,
+   "market_total": 39.5,
    "model_total": 45.0,
    "home_win_p": 0.372
   },
   {
    "game": "SEA @ SF",
    "kickoff": "2026-11-29 16:25",
-   "market_home_spread": -2.5,
+   "market_home_spread": -3.0,
    "model_home_spread": -0.0,
-   "market_total": 44.5,
+   "market_total": 43.5,
    "model_total": 46.5,
-   "home_win_p": 0.577
+   "home_win_p": 0.592
   },
   {
    "game": "TEN @ JAX",
@@ -15554,6 +15265,18 @@
  "projections": {
   "passing_yards": [
    {
+    "player": "Dak Prescott",
+    "team": "DAL",
+    "opp": "PHI",
+    "pos": "QB",
+    "proj": 282.0,
+    "matchup": 0.96,
+    "injury": null,
+    "boost": 1.0,
+    "lo": 205.3,
+    "hi": 336.1
+   },
+   {
     "player": "Jared Goff",
     "team": "DET",
     "opp": "CHI",
@@ -15576,18 +15299,6 @@
     "boost": 1.0,
     "lo": 201.1,
     "hi": 329.2
-   },
-   {
-    "player": "Dak Prescott",
-    "team": "DAL",
-    "opp": "PHI",
-    "pos": "QB",
-    "proj": 272.8,
-    "matchup": 0.96,
-    "injury": null,
-    "boost": 1.0,
-    "lo": 198.6,
-    "hi": 325.0
    },
    {
     "player": "Caleb Williams",
@@ -15642,12 +15353,12 @@
     "team": "PHI",
     "opp": "DAL",
     "pos": "QB",
-    "proj": 244.3,
+    "proj": 245.4,
     "matchup": 1.11,
     "injury": null,
     "boost": 1.0,
-    "lo": 177.8,
-    "hi": 291.1
+    "lo": 178.6,
+    "hi": 292.4
    },
    {
     "player": "Josh Allen",
@@ -15810,9 +15521,19 @@
     "team": "SF",
     "opp": "SEA",
     "pos": "QB",
-    "proj": 1.66,
+    "proj": 1.63,
     "matchup": 0.8,
     "injury": "Questionable",
+    "boost": 1.0
+   },
+   {
+    "player": "Geno Smith",
+    "team": "NYJ",
+    "opp": "MIA",
+    "pos": "QB",
+    "proj": 1.45,
+    "matchup": 0.99,
+    "injury": null,
     "boost": 1.0
    },
    {
@@ -15823,16 +15544,6 @@
     "proj": 1.43,
     "matchup": 1.06,
     "injury": "Questionable",
-    "boost": 1.0
-   },
-   {
-    "player": "Geno Smith",
-    "team": "NYJ",
-    "opp": "MIA",
-    "pos": "QB",
-    "proj": 1.43,
-    "matchup": 0.99,
-    "injury": null,
     "boost": 1.0
    },
    {
@@ -16172,7 +15883,7 @@
     "pos": "WR",
     "proj": 70.7,
     "matchup": 1.36,
-    "injury": null,
+    "injury": "Questionable",
     "boost": 1.0,
     "lo": 38.4,
     "hi": 117.5
@@ -16196,7 +15907,7 @@
     "pos": "WR",
     "proj": 68.4,
     "matchup": 1.05,
-    "injury": "Questionable",
+    "injury": null,
     "boost": 1.06,
     "lo": 37.1,
     "hi": 113.7
@@ -16286,7 +15997,7 @@
     "team": "SEA",
     "opp": "SF",
     "pos": "WR",
-    "proj": 7.3,
+    "proj": 7.5,
     "matchup": 1.12,
     "injury": "Questionable",
     "boost": 1.04
@@ -16348,7 +16059,7 @@
     "pos": "WR",
     "proj": 5.5,
     "matchup": 0.92,
-    "injury": "Questionable",
+    "injury": null,
     "boost": 1.06
    },
    {
@@ -16419,22 +16130,22 @@
     "team": "SF",
     "opp": "SEA",
     "pos": "RB",
-    "proj": 0.89,
+    "proj": 0.92,
     "matchup": 0.77,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.607
+    "p_td": 0.617
    },
    {
     "player": "Javonte Williams",
     "team": "DAL",
     "opp": "PHI",
     "pos": "RB",
-    "proj": 0.82,
+    "proj": 0.83,
     "matchup": 0.72,
     "injury": null,
     "boost": 1.0,
-    "p_td": 0.664
+    "p_td": 0.669
    },
    {
     "player": "Derrick Henry",
